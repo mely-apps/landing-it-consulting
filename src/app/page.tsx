@@ -1,10 +1,13 @@
+import About from '@/components/About';
+import Header from '@/components/Header';
+import Hero from '@/components/Hero';
+
 export default function Home() {
   return (
-    <div className='container'>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus unde
-      nam officiis quibusdam cumque reiciendis odit, corporis aliquid rem
-      distinctio magnam, veritatis suscipit neque quisquam blanditiis ipsam ipsa
-      omnis tempora.
+    <div>
+      <Header />
+      <Hero />
+      <About />
     </div>
   );
 }

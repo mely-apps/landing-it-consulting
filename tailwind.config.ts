@@ -10,6 +10,10 @@ const config = {
   ],
   prefix: '',
   theme: {
+    fontFamily: {
+      inter: ['var(--font-inter)', 'Inter', 'sans-serif'],
+      montserrat: ['var(--font-montserrat)', 'Montserrat', 'serif'],
+    },
     container: {
       center: true,
       padding: '2rem',
@@ -19,18 +23,21 @@ const config = {
     },
     extend: {
       colors: {
+        gray: {
+          DEFAULT: '#C7D5D3',
+        },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
+          DEFAULT: 'var(--primary)',
+          foreground: 'var(--primary-foreground)',
         },
         secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
+          DEFAULT: 'var(--secondary)',
+          foreground: 'var(--secondary-foreground)',
         },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
@@ -38,7 +45,7 @@ const config = {
         },
         muted: {
           DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))',
+          foreground: 'var(--muted-foreground)',
         },
         accent: {
           DEFAULT: 'hsl(var(--accent))',
