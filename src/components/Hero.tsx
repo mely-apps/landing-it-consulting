@@ -15,6 +15,9 @@ const Hero = () => {
         <p className='mt-4 text-lg font-bold uppercase text-muted-foreground'>
           SATURDAY, 12TH OCTORBER, NETCOMPANY OFFICE
         </p>
+        <button className='mt-10 w-auto rounded-md bg-[#7FFFF7] px-6 py-2 font-semibold text-black'>
+          Register Now
+        </button>
       </div>
       <div className='flex items-center justify-center'>
         <div className='relative h-[546px] w-[406px] overflow-hidden rounded-lg'>
