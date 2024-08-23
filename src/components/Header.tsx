@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
-import { BackgroundGradientAnimation } from './ui/background-gradient-animation';
+import BlurFade from './magicui/blur-fade';
+import { FadeText } from './magicui/fade-text';
 
 const SECTION_ITEMS = [
   {
@@ -34,9 +35,9 @@ const Header = () => {
       </div>
 
       <div className='flex items-center gap-x-8'>
-        <nav className='flex items-center gap-x-8 font-semibold text-gray'>
-          {SECTION_ITEMS.map((item) => (
-            <p key={item.title} className='cursor-pointer hover:text-white'>
+        <nav className='flex h-full items-center gap-x-8 font-semibold text-gray'>
+          {SECTION_ITEMS.map((item, idx) => (
+            <p className='cursor-pointer hover:text-white' key={item.title}>
               {item.title}
             </p>
           ))}
