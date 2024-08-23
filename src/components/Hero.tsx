@@ -1,5 +1,7 @@
+'use client';
 import Image from 'next/image';
 import React from 'react';
+import { BackgroundGradient } from './ui/background-gradient';
 
 const Hero = () => {
   return (
@@ -20,15 +22,18 @@ const Hero = () => {
         </button>
       </div>
       <div className='flex items-center justify-center'>
-        <div className='relative h-[546px] w-[406px] overflow-hidden rounded-lg'>
-          <Image
-            src='/Untitled.png'
-            alt='landing-it-consulting'
-            sizes='auto'
-            fill
-            className='object-cover'
-          />
-        </div>
+        <BackgroundGradient className='!overflow-hidden'>
+          <div className='relative h-[546px] w-[406px] overflow-hidden rounded-3xl'>
+            <Image
+              src='/Untitled.png'
+              alt='landing-it-consulting'
+              sizes='auto'
+              className='object-cover'
+              priority
+              fill
+            />
+          </div>
+        </BackgroundGradient>
       </div>
     </div>
   );

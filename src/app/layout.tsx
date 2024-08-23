@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Montserrat } from 'next/font/google';
 import '../styles/globals.css';
+import clsx from 'clsx';
 
 export const inter = Inter({
   subsets: ['latin'],

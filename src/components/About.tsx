@@ -6,7 +6,7 @@ const About = () => {
       <h2 className='text-[70px] font-extrabold uppercase text-primary'>
         About
       </h2>
-      <div className='mx-auto mt-10 flex w-[1000px] flex-col gap-10 font-inter italic'>
+      <div className='mx-auto mt-[110px] flex max-w-[1280px] flex-col gap-[130px] font-inter text-3xl italic'>
         <p>
           IT Consultant <span className='text-primary'>Challenge</span> là cuộc
           thi dành cho các bạn sinh viên đam mê công nghệ và lập trình. Cuộc thi

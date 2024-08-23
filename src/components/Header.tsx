@@ -1,4 +1,6 @@
+'use client';
 import React from 'react';
+import { BackgroundGradientAnimation } from './ui/background-gradient-animation';
 
 const SECTION_ITEMS = [
   {
