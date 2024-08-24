@@ -8,7 +8,7 @@ const About = () => {
         className='text-[50px] font-extrabold uppercase !text-primary'
         words={['What is the IT Consultant Challenge?']}
       />
-      <div className='mx-auto mt-20 flex max-w-[1280px] flex-col gap-12 font-inter text-xl italic'>
+      <div className='mx-auto mt-12 flex max-w-[1280px] flex-col gap-8 font-inter text-xl italic'>
         <p>
           <span className='font-extrabold'>IT Consultant Challenge</span>
           —an exciting full-day event where IT students have the chance to
