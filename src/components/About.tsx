@@ -13,8 +13,8 @@ const About = () => {
           <span className='font-extrabold'>IT Consultant Challenge</span>
           —an exciting full-day event where IT students have the chance to
           showcase their skills, creativity, and problem-solving abilities. This
-          event, hosted by{' '}
-          <span className='font-extrabold'>{`Netcompany`}</span>
+          event, hosted by
+          <span className='font-extrabold'>{` Netcompany `}</span>
           and
           <span className='font-extrabold'>{` Code MeLy `}</span>, is your
           opportunity to step into the shoes of an IT consultant and tackle

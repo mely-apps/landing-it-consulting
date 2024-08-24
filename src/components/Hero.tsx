@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 import { BackgroundGradient } from './ui/background-gradient';
 import { FlipWords } from './ui/flip-words';
-import BlurFade from './magicui/blur-fade';
+import BlurFade from './ui/blur-fade';
 
 const Hero = () => {
   return (
