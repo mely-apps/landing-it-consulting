@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Prizes from '@/components/Prizes';
 import Rules from '@/components/Rules';
+import TimeCounter from '@/components/TimeCounter';
 import { BackgroundGradientAnimation } from '@/components/ui/background-gradient-animation';
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <About />
         <Rules />
         <Prizes />
+        <TimeCounter />
       </div>
     </BackgroundGradientAnimation>
   );
