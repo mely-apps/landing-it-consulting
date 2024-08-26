@@ -30,6 +30,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.30",
+    "lucide": "^0.433.0",
     "lucide-react": "^0.428.0",
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.5",
@@ -37,6 +38,7 @@
     "react-countdown": "^2.3.6",
     "react-dom": "^18",
     "react-element-to-jsx-string": "^15.0.0",
+    "react-icons": "^5.3.0",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7"
   },

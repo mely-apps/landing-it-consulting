@@ -1,5 +1,6 @@
 'use client';
 import About from '@/components/About';
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Organizer from '@/components/Organizer';
@@ -21,6 +22,7 @@ export default function Home() {
         <TimeCounter />
         <Registration />
         <Organizer />
+        <Footer />
       </div>
     </BackgroundGradientAnimation>
   );

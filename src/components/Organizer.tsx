@@ -5,7 +5,7 @@ const Organizer = () => {
   return (
     <div className='container mt-40'>
       <h2 className='flex w-full justify-center text-[50px] font-extrabold uppercase text-primary'>
-        Organizer
+        Organizers
       </h2>
 
       <div className='flex flex-col gap-20'>
@@ -19,7 +19,7 @@ const Organizer = () => {
             />
           </div>
           <div className='col-span-2'>
-            <p className='text-3xl font-light italic leading-[1.3]'>
+            <p className='text-2xl font-light italic leading-[1.3]'>
               <span className='font-bold'>Code MeLy</span> is a vibrant IT
               community and launchpad for young talents, especially female
               programmers. Our mission is to foster a dynamic IT GenZ community
@@ -40,7 +40,7 @@ const Organizer = () => {
             />
           </div>
           <div className='col-span-2'>
-            <p className='text-3xl font-light italic leading-[1.3]'>
+            <p className='text-2xl font-light italic leading-[1.3]'>
               <span className='font-bold'>Netcompany</span> is an IT consulting
               firm founded in 2000 in Copenhagen, Denmark. The company plays a
               crucial role in digital transformation for both public and private
