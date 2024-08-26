@@ -10,7 +10,7 @@ const TimeCounter = () => {
   }, []);
 
   const date = useMemo(() => {
-    return Date.now() + (new Date('2024-12-30').getTime() - Date.now());
+    return Date.now() + (new Date('2024-10-19').getTime() - Date.now());
   }, []);
 
   return (

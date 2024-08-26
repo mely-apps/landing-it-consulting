@@ -2,7 +2,9 @@
 import About from '@/components/About';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import Organizer from '@/components/Organizer';
 import Prizes from '@/components/Prizes';
+import Registration from '@/components/Registration';
 import Rules from '@/components/Rules';
 import TimeCounter from '@/components/TimeCounter';
 import { BackgroundGradientAnimation } from '@/components/ui/background-gradient-animation';
@@ -17,6 +19,8 @@ export default function Home() {
         <Rules />
         <Prizes />
         <TimeCounter />
+        <Registration />
+        <Organizer />
       </div>
     </BackgroundGradientAnimation>
   );

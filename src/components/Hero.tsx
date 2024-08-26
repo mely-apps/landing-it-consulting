@@ -7,7 +7,7 @@ import BlurFade from './ui/blur-fade';
 
 const Hero = () => {
   return (
-    <div className='container grid grid-cols-2 items-center py-20'>
+    <div className='container relative grid grid-cols-2 items-center py-10'>
       <div>
         <h1 className='text-7xl font-extrabold leading-[1.2]'>
           <BlurFade delay={0}>IT CONSULTANT</BlurFade>{' '}
@@ -29,15 +29,16 @@ const Hero = () => {
           </p>
         </BlurFade>
         <BlurFade delay={0.7}>
-          <button className='mt-10 w-auto rounded-md bg-[#7FFFF7] px-6 py-2 font-semibold text-black'>
+          <button className='mt-10 w-auto rounded-md !bg-[#7FFFF7] px-6 py-2 font-semibold text-black hover:opacity-90'>
             Register Now
           </button>
         </BlurFade>
       </div>
+
       <div className='flex items-center justify-center'>
         <BlurFade delay={1} duration={0.5}>
-          <BackgroundGradient className='!overflow-hidden'>
-            <div className='relative h-[546px] w-[406px] overflow-hidden rounded-3xl'>
+          <BackgroundGradient className='h-auto w-auto'>
+            <div className='relative h-[570px] w-[406px] overflow-hidden rounded-3xl'>
               <Image
                 src='/Untitled.png'
                 alt='landing-it-consulting'
