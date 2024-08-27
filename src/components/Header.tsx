@@ -1,7 +1,5 @@
 'use client';
 import React from 'react';
-import BlurFade from './ui/blur-fade';
-import { FadeText } from './ui/fade-text';
 
 const SECTION_ITEMS = [
   {
