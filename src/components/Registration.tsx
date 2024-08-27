@@ -2,6 +2,8 @@
 import React from 'react';
 import { ErrorMessage, Field, Form, Formik, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
+import DatePickerField from './DatePickerField';
+import { toast } from 'react-toastify';
 
 interface RegistrationForm {
   fullName: string;
@@ -33,19 +35,38 @@ const initialValues: RegistrationForm = {
   fullName: '',
   dateOfBirth: '',
   email: '',
-  gender: null,
+  gender: 'male',
   major: '',
   phoneNumber: '',
   school: '',
 };
 
 const Registration = () => {
-  const handleSubmit = (
+  const handleSubmit = async (
     values: RegistrationForm,
     formikHelpers: FormikHelpers<RegistrationForm>,
   ) => {
-    console.log(values);
-    formikHelpers.resetForm();
+    try {
+      const url =
+        `https://docs.google.com/forms/d/e/1FAIpQLSelxRAkMVo0fiFYDDUsOTQwfu-vfHJ0OTZOCZHEMQrG_BIJ6A/formResponse?` +
+        `entry.1173258311=${encodeURIComponent(values.fullName)}&` +
+        `entry.1794780755=${encodeURIComponent(values.dateOfBirth)}&` +
+        `entry.1908292169=${encodeURIComponent(values.school)}&` +
+        `entry.349812765=${encodeURIComponent(values.major)}&` +
+        `entry.1938692918=${encodeURIComponent(values.phoneNumber)}&` +
+        `entry.1820835535=${encodeURIComponent(values.email)}`;
+
+      const response = await fetch(url, {
+        method: 'POST',
+        mode: 'no-cors',
+      });
+
+      toast.success('Registration successful!');
+
+      formikHelpers.resetForm();
+    } catch (error) {
+      toast.error('Registration failed, please try again!');
+    }
   };
 
   return (
@@ -55,6 +76,7 @@ const Registration = () => {
       </h2>
 
       <Formik
+        enableReinitialize
         initialValues={initialValues}
         validationSchema={registrationFormSchema}
         onSubmit={handleSubmit}
@@ -83,6 +105,7 @@ const Registration = () => {
               <Field
                 name='dateOfBirth'
                 className='mt-1 w-full rounded-lg px-4 py-2 text-black'
+                component={DatePickerField}
               />
               <ErrorMessage
                 render={(msg) => (
@@ -174,7 +197,10 @@ const Registration = () => {
             </div>
 
             <div className='col-span-2 mt-4 flex justify-end'>
-              <button className='rounded-lg bg-[#7FFFF7] px-6 py-2 font-bold text-black hover:opacity-90'>
+              <button
+                type='submit'
+                className='rounded-lg bg-[#7FFFF7] px-6 py-2 font-bold text-black hover:opacity-90'
+              >
                 Submit
               </button>
             </div>

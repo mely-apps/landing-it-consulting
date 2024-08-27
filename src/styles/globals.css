@@ -66,6 +66,9 @@
   body {
     @apply bg-background text-foreground;
   }
+  .react-datepicker-wrapper {
+    display: block !important;
+  }
 }
 
 @layer utilities {

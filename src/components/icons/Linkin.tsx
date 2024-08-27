@@ -10,8 +10,8 @@ const LinkedIn = () => {
       fill='none'
       stroke='currentColor'
       strokeWidth='2'
-      stroke-linecap='round'
-      stroke-linejoin='round'
+      strokeLinecap='round'
+      strokeLinejoin='round'
       className='lucide lucide-linkedin'
     >
       <path d='M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z' />
