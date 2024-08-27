@@ -28,7 +28,7 @@ const SECTION_ITEMS = [
 
 const Header = () => {
   return (
-    <div className='container flex items-center justify-between pt-8'>
+    <div className='container relative flex items-center justify-between pt-8'>
       <div className='font-montserrat text-2xl font-extrabold'>
         <p className='text-white'>IT Consultant</p>
         <p className='text-primary'>Challenge</p>
@@ -42,10 +42,6 @@ const Header = () => {
             </p>
           ))}
         </nav>
-
-        <button className='rounded-xl bg-gray px-6 py-2 font-semibold text-[#081717]'>
-          Register Now
-        </button>
       </div>
     </div>
   );
