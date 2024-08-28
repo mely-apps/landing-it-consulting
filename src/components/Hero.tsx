@@ -4,8 +4,12 @@ import React from 'react';
 import { BackgroundGradient } from './ui/background-gradient';
 import { FlipWords } from './ui/flip-words';
 import BlurFade from './ui/blur-fade';
+import { useTranslations } from 'next-intl';
+import { LocaleProps } from '@/@types';
 
 const Hero = () => {
+  const t = useTranslations('HomePage');
+
   return (
     <div className='container relative grid grid-cols-2 items-center py-10'>
       <div>
@@ -19,18 +23,17 @@ const Hero = () => {
         </h1>
         <BlurFade delay={0.3}>
           <p className='max-w-[60%] py-5 text-muted-foreground'>
-            Hackathon cuoc thi danh cho cacd coder mới đẻ, khi tham gia cuộc thi
-            các bạn sẻ được tham gia code cùng với chúng tôi
+            {t('hero.subTitle')}
           </p>
         </BlurFade>
         <BlurFade delay={0.5}>
           <p className='mt-4 text-lg font-bold uppercase text-muted-foreground'>
-            SATURDAY, 12TH OCTORBER, NETCOMPANY OFFICE
+            {t('hero.time')}
           </p>
         </BlurFade>
         <BlurFade delay={0.7}>
           <button className='mt-10 w-auto rounded-md !bg-[#7FFFF7] px-6 py-2 font-semibold text-black hover:opacity-90'>
-            Register Now
+            {t('hero.buttonTitle')}
           </button>
         </BlurFade>
       </div>

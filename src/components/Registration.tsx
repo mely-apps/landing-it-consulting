@@ -4,6 +4,8 @@ import { ErrorMessage, Field, Form, Formik, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
 import DatePickerField from './DatePickerField';
 import { toast } from 'react-toastify';
+import clsx from 'clsx';
+import { FaSpinner } from 'react-icons/fa';
 
 interface RegistrationForm {
   fullName: string;
@@ -42,11 +44,15 @@ const initialValues: RegistrationForm = {
 };
 
 const Registration = () => {
+  const [isLoading, setIsLoading] = React.useState(false);
+
   const handleSubmit = async (
     values: RegistrationForm,
     formikHelpers: FormikHelpers<RegistrationForm>,
   ) => {
     try {
+      setIsLoading(true);
+
       const url =
         `https://docs.google.com/forms/d/e/1FAIpQLSelxRAkMVo0fiFYDDUsOTQwfu-vfHJ0OTZOCZHEMQrG_BIJ6A/formResponse?` +
         `entry.1173258311=${encodeURIComponent(values.fullName)}&` +
@@ -66,6 +72,8 @@ const Registration = () => {
       formikHelpers.resetForm();
     } catch (error) {
       toast.error('Registration failed, please try again!');
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -198,10 +206,14 @@ const Registration = () => {
 
             <div className='col-span-2 mt-4 flex justify-end'>
               <button
+                disabled={isLoading}
                 type='submit'
-                className='rounded-lg bg-[#7FFFF7] px-6 py-2 font-bold text-black hover:opacity-90'
+                className={clsx(
+                  'flex items-center justify-center rounded-lg bg-[#7FFFF7] px-6 py-2 font-bold text-black hover:opacity-90',
+                  isLoading && 'cursor-not-allowed opacity-90',
+                )}
               >
-                Submit
+                {isLoading ? <FaSpinner className='animate-spin' /> : 'Submit'}
               </button>
             </div>
           </Form>

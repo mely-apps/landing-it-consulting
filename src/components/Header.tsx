@@ -1,5 +1,8 @@
 'use client';
+import { LocaleProps } from '@/@types';
+import { useRouter } from 'next/navigation';
 import React from 'react';
+import { FaGlobeAmericas } from 'react-icons/fa';
 
 const SECTION_ITEMS = [
   {
@@ -24,7 +27,13 @@ const SECTION_ITEMS = [
   },
 ];
 
-const Header = () => {
+const Header = ({ locale }: LocaleProps) => {
+  const router = useRouter();
+
+  const handleToggleLocale = () => {
+    locale === 'vi' ? router.push('/en') : router.push('/vi');
+  };
+
   return (
     <div className='container relative flex items-center justify-between pt-8'>
       <div className='font-montserrat text-2xl font-extrabold'>
@@ -39,6 +48,14 @@ const Header = () => {
               {item.title}
             </p>
           ))}
+
+          <div
+            className='flex min-w-12 cursor-pointer items-center gap-x-2 uppercase hover:text-white'
+            onClick={handleToggleLocale}
+          >
+            <FaGlobeAmericas />
+            <span>{locale}</span>
+          </div>
         </nav>
       </div>
     </div>

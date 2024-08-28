@@ -1,12 +1,16 @@
+'use client';
 import React from 'react';
 import { FlipWords } from './ui/flip-words';
+import { useTranslations } from 'next-intl';
 
 const About = () => {
+  const t = useTranslations('HomePage');
+
   return (
     <div className='container mt-24'>
       <FlipWords
         className='text-[50px] font-extrabold uppercase !text-primary'
-        words={['What is the IT Consultant Challenge?']}
+        words={[t('about.heading')]}
       />
       <div className='mx-auto mt-12 flex max-w-[1280px] flex-col gap-8 font-inter text-xl italic'>
         <p>
