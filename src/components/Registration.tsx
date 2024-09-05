@@ -1,11 +1,12 @@
 'use client';
 import React from 'react';
-import { ErrorMessage, Field, Form, Formik, FormikHelpers } from 'formik';
+import { Form, Formik, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
-import DatePickerField from './DatePickerField';
 import { toast } from 'react-toastify';
 import clsx from 'clsx';
 import { FaSpinner } from 'react-icons/fa';
+import { SECTION_IDS } from '@/constants';
+import { DateTimeField, FormField, SelectField } from './FormField';
 
 interface RegistrationForm {
   fullName: string;
@@ -45,6 +46,13 @@ const initialValues: RegistrationForm = {
 
 const Registration = () => {
   const [isLoading, setIsLoading] = React.useState(false);
+  const [typeForm, setTypeForm] = React.useState<'team' | 'personal'>(
+    'personal',
+  );
+
+  const toggleTypeForm = (type: 'team' | 'personal') => {
+    setTypeForm(type);
+  };
 
   const handleSubmit = async (
     values: RegistrationForm,
@@ -78,7 +86,7 @@ const Registration = () => {
   };
 
   return (
-    <div className='container'>
+    <div className='container' id={SECTION_IDS.REGISTER}>
       <h2 className='text-center text-[50px] font-extrabold uppercase text-primary'>
         Registration
       </h2>
@@ -89,119 +97,60 @@ const Registration = () => {
         validationSchema={registrationFormSchema}
         onSubmit={handleSubmit}
       >
-        {({ errors, touched }) => (
+        {() => (
           <Form className='mx-auto mt-10 grid w-[70%] grid-cols-2 gap-4 rounded-lg border border-white/30 bg-white/10 p-10'>
-            <div className='col-span-2'>
-              <label className='block w-full font-bold capitalize text-primary'>
-                Full Name
-              </label>
-              <Field
-                name='fullName'
-                className='mt-1 w-full rounded-lg px-4 py-2 text-black'
-              />
-              <ErrorMessage
-                render={(msg) => (
-                  <p className='capitalize italic text-red-500'>{msg}</p>
+            <div className='col-span-2 grid w-full grid-cols-2 text-center text-3xl font-bold'>
+              <button
+                onClick={() => toggleTypeForm('personal')}
+                className={clsx(
+                  'border-b-4 border-white pb-4 uppercase transition-all',
+                  typeForm === 'personal' &&
+                    'border-b-4 border-primary text-primary',
                 )}
-                name='fullName'
-              />
-            </div>
-            <div className='col-span-1'>
-              <label className='block w-full font-bold capitalize text-primary'>
-                Date of birth
-              </label>
-              <Field
-                name='dateOfBirth'
-                className='mt-1 w-full rounded-lg px-4 py-2 text-black'
-                component={DatePickerField}
-              />
-              <ErrorMessage
-                render={(msg) => (
-                  <p className='capitalize italic text-red-500'>{msg}</p>
-                )}
-                name='dateOfBirth'
-              />
-            </div>
-            <div className='col-span-1'>
-              <label className='block w-full font-bold capitalize text-primary'>
-                Gender
-              </label>
-              <Field
-                name='gender'
-                as='select'
-                className='mt-1 w-full rounded-lg px-4 py-2 text-black'
+                type='button'
               >
-                <option value='male'>Male</option>
-                <option value='female'>Female</option>
-              </Field>
-              <ErrorMessage
-                render={(msg) => (
-                  <p className='capitalize italic text-red-500'>{msg}</p>
+                individual
+              </button>
+              <button
+                onClick={() => toggleTypeForm('team')}
+                className={clsx(
+                  'border-b-4 border-white pb-4 uppercase transition-all',
+                  typeForm === 'team' &&
+                    'border-b-4 border-primary text-primary',
                 )}
-                name='gender'
-              />
+                type='button'
+              >
+                team
+              </button>
             </div>
 
-            <div className='col-span-1'>
-              <label className='block w-full font-bold capitalize text-primary'>
-                School
-              </label>
-              <Field
-                name='school'
-                className='mt-1 w-full rounded-lg px-4 py-2 text-black'
-              />
-              <ErrorMessage
-                render={(msg) => (
-                  <p className='capitalize italic text-red-500'>{msg}</p>
-                )}
-                name='school'
-              />
+            <div className='col-span-2'>
+              <FormField label='Full name' name='fullName' />
             </div>
             <div className='col-span-1'>
-              <label className='block w-full font-bold capitalize text-primary'>
-                Major
-              </label>
-              <Field
-                name='major'
-                className='mt-1 w-full rounded-lg px-4 py-2 text-black'
-              />
-              <ErrorMessage
-                render={(msg) => (
-                  <p className='capitalize italic text-red-500'>{msg}</p>
-                )}
-                name='major'
+              <DateTimeField name='dateOfBirth' label='Date of birth' />
+            </div>
+            <div className='col-span-1'>
+              <SelectField
+                label='Gender'
+                name='gender'
+                options={[
+                  { value: 'male', label: 'Male' },
+                  { value: 'female', label: 'Female' },
+                ]}
               />
             </div>
-            <div className='col-span-2'>
-              <label className='block w-full font-bold capitalize text-primary'>
-                Phone Number
-              </label>
-              <Field
-                name='phoneNumber'
-                className='mt-1 w-full rounded-lg px-4 py-2 text-black'
-              />
-              <ErrorMessage
-                render={(msg) => (
-                  <p className='capitalize italic text-red-500'>{msg}</p>
-                )}
-                name='phoneNumber'
-              />
+            <div className='col-span-1'>
+              <FormField label='School' name='school' />
+            </div>
+            <div className='col-span-1'>
+              <FormField label='Major' name='major' />
             </div>
             <div className='col-span-2'>
-              <label className='block w-full font-bold capitalize text-primary'>
-                Email
-              </label>
-              <Field
-                type='email'
-                name='email'
-                className='mt-1 w-full rounded-lg px-4 py-2 text-black'
-              />
-              <ErrorMessage
-                render={(msg) => (
-                  <p className='capitalize italic text-red-500'>{msg}</p>
-                )}
-                name='email'
-              />
+              <FormField label='Phone Number' name='phoneNumber' />
+            </div>
+            <div className='col-span-2'>
+              <FormField label='Email' name='email' />
             </div>
 
             <div className='col-span-2 mt-4 flex justify-end'>

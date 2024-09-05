@@ -1,5 +1,6 @@
 'use client';
 import { LocaleProps } from '@/@types';
+import { SECTION_IDS } from '@/constants';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 import { FaGlobeAmericas } from 'react-icons/fa';
@@ -7,23 +8,27 @@ import { FaGlobeAmericas } from 'react-icons/fa';
 const SECTION_ITEMS = [
   {
     title: 'Home',
-    path: '#',
+    path: SECTION_IDS.HOME,
   },
   {
     title: 'About',
-    path: '#about',
+    path: SECTION_IDS.ABOUT,
   },
   {
-    title: 'Schedule',
-    path: '#schedule',
+    title: 'Rules',
+    path: SECTION_IDS.RULES,
+  },
+  {
+    title: 'Prizes',
+    path: SECTION_IDS.PRIZES,
   },
   {
     title: 'Register',
-    path: '#register',
+    path: SECTION_IDS.REGISTER,
   },
   {
-    title: 'Q&A',
-    path: '#q&a',
+    title: 'Organizers',
+    path: SECTION_IDS.ORGANIZERS,
   },
 ];
 
@@ -32,6 +37,13 @@ const Header = ({ locale }: LocaleProps) => {
 
   const handleToggleLocale = () => {
     locale === 'vi' ? router.push('/en') : router.push('/vi');
+  };
+
+  const handleSrollToSection = (path: string) => {
+    const section = document.getElementById(path);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -44,13 +56,19 @@ const Header = ({ locale }: LocaleProps) => {
       <div className='flex items-center gap-x-8'>
         <nav className='flex h-full items-center gap-x-8 font-semibold text-gray'>
           {SECTION_ITEMS.map((item, idx) => (
-            <p className='cursor-pointer hover:text-white' key={item.title}>
+            <p
+              className='cursor-pointer hover:text-primary'
+              key={item.title}
+              onClick={() => {
+                handleSrollToSection(item.path);
+              }}
+            >
               {item.title}
             </p>
           ))}
 
           <div
-            className='flex min-w-12 cursor-pointer items-center gap-x-2 uppercase hover:text-white'
+            className='flex min-w-12 cursor-pointer items-center gap-x-2 uppercase hover:text-primary'
             onClick={handleToggleLocale}
           >
             <FaGlobeAmericas />

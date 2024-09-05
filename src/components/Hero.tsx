@@ -1,17 +1,21 @@
 'use client';
-import Image from 'next/image';
 import React from 'react';
-import { BackgroundGradient } from './ui/background-gradient';
-import { FlipWords } from './ui/flip-words';
-import BlurFade from './ui/blur-fade';
 import { useTranslations } from 'next-intl';
-import { LocaleProps } from '@/@types';
+import Image from 'next/image';
+import { IoLocationSharp } from 'react-icons/io5';
+import { SECTION_IDS } from '@/constants';
+import { BackgroundGradient } from './ui/background-gradient';
+import BlurFade from './ui/blur-fade';
+import { FlipWords } from './ui/flip-words';
 
 const Hero = () => {
   const t = useTranslations('HomePage');
 
   return (
-    <div className='container relative grid grid-cols-2 items-center py-10'>
+    <div
+      className='container relative grid grid-cols-2 items-center py-10'
+      id={SECTION_IDS.HOME}
+    >
       <div>
         <h1 className='text-7xl font-extrabold leading-[1.2]'>
           <BlurFade delay={0}>IT CONSULTANT</BlurFade>{' '}
@@ -27,9 +31,12 @@ const Hero = () => {
           </p>
         </BlurFade>
         <BlurFade delay={0.5}>
-          <p className='mt-4 text-lg font-bold uppercase text-muted-foreground'>
-            {t('hero.time')}
-          </p>
+          <div className='mt-4 flex items-center gap-x-1'>
+            <IoLocationSharp />
+            <p className='text-lg font-bold uppercase text-muted-foreground'>
+              {t('hero.time')}
+            </p>
+          </div>
         </BlurFade>
         <BlurFade delay={0.7}>
           <button className='mt-10 w-auto rounded-md !bg-[#7FFFF7] px-6 py-2 font-semibold text-black hover:opacity-90'>
