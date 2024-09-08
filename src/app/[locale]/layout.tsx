@@ -33,7 +33,15 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className='dark'>
+    <html lang={locale} className='dark !scroll-smooth'>
+      <head>
+        <meta charSet='utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <link rel='icon' href='/favicon.png' />
+        <link rel='apple-touch-icon' href='/favicon.png' />
+        <link rel='mask-icon' href='/favicon.png' color='#000000' />
+        <meta name='theme-color' content='#000000' />
+      </head>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
           {children}
