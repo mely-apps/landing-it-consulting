@@ -4,6 +4,7 @@ import { SECTION_IDS } from '@/constants';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 import { FaGlobeAmericas } from 'react-icons/fa';
+import { Switch } from './ui/switch';
 
 const SECTION_ITEMS = [
   {
@@ -70,11 +71,8 @@ const Header = ({ locale }: LocaleProps) => {
             </p>
           ))}
 
-          <div
-            className='flex min-w-12 cursor-pointer items-center gap-x-2 uppercase hover:text-primary'
-            onClick={handleToggleLocale}
-          >
-            <FaGlobeAmericas />
+          <div className='flex min-w-12 cursor-pointer items-center gap-x-2 uppercase hover:text-primary'>
+            <Switch onClick={handleToggleLocale} checked={locale === 'vi'} />
             <span>{locale}</span>
           </div>
         </nav>
