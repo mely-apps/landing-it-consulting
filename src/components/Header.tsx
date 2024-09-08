@@ -3,7 +3,6 @@ import { LocaleProps } from '@/@types';
 import { SECTION_IDS } from '@/constants';
 import { useRouter } from 'next/navigation';
 import React from 'react';
-import { FaGlobeAmericas } from 'react-icons/fa';
 import { Switch } from './ui/switch';
 
 const SECTION_ITEMS = [

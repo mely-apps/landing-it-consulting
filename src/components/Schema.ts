@@ -1,4 +1,5 @@
 import * as Yup from 'yup';
+import dayjs from 'dayjs';
 
 export interface PersonalForm {
   fullName: string;
@@ -56,7 +57,7 @@ export const teamFormInitValue: TeamForm = {
 
 export const personalFormInitValue: PersonalForm = {
   fullName: '',
-  dateOfBirth: '',
+  dateOfBirth: dayjs(Date.now()).format('YYYY-MM-DD'),
   email: '',
   gender: 'male',
   major: '',

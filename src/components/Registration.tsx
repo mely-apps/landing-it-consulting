@@ -25,6 +25,35 @@ const Registration = () => {
     setTypeForm(type);
   };
 
+  const handleTeamSubmit = async (
+    values: TeamForm,
+    formikHelpers: FormikHelpers<TeamForm>,
+  ) => {
+    try {
+      setIsLoading(true);
+      const url =
+        `https://docs.google.com/forms/d/e/1FAIpQLSc7OU4gVBt1yD5LjohwqHPhH2tPF93AF0tvzGTUv0AYkBdZjQ/formResponse?` +
+        `entry.924616653=${encodeURIComponent(values.teamName)}&` +
+        `entry.521549446=${encodeURIComponent(values.teamSize)}&` +
+        `entry.2134395723=${encodeURIComponent(values.school)}&` +
+        `entry.614204740=${encodeURIComponent(values.phoneNumber)}&` +
+        `entry.742289880=${encodeURIComponent(values.email)}&`;
+
+      const response = await fetch(url, {
+        method: 'POST',
+        mode: 'no-cors',
+      });
+
+      toast.success('Registration successful!');
+
+      formikHelpers.resetForm();
+    } catch (error) {
+      toast.error('Registration failed, please try again!');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   const handleSubmit = async (
     values: PersonalForm,
     formikHelpers: FormikHelpers<PersonalForm>,
@@ -50,6 +79,7 @@ const Registration = () => {
 
       formikHelpers.resetForm();
     } catch (error) {
+      console.log(error);
       toast.error('Registration failed, please try again!');
     } finally {
       setIsLoading(false);
@@ -146,7 +176,7 @@ const Registration = () => {
           enableReinitialize
           initialValues={teamFormInitValue}
           validationSchema={teamFormSchema}
-          onSubmit={() => {}}
+          onSubmit={handleTeamSubmit}
         >
           {() => (
             <Form className='mx-auto mt-10 grid w-[70%] grid-cols-2 gap-4 rounded-lg border border-white/30 bg-white/10 p-10'>
@@ -175,7 +205,7 @@ const Registration = () => {
                 <FormField label='Team Name' name='teamName' />
               </div>
               <div className='col-span-2'>
-                <FormField label='Number of Team Members' name='teanSize' />
+                <FormField label='Number of Team Members' name='teamSize' />
               </div>
               <div className='col-span-2'>
                 <FormField label='School' name='school' />
@@ -188,8 +218,8 @@ const Registration = () => {
               </div>
               <div className='col-span-2 mt-4 flex justify-end'>
                 <button
-                  disabled={isLoading}
                   type='submit'
+                  disabled={isLoading}
                   className={clsx(
                     'flex items-center justify-center rounded-lg bg-[#7FFFF7] px-6 py-2 font-bold text-black hover:opacity-90',
                     isLoading && 'cursor-not-allowed opacity-90',

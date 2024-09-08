@@ -33,6 +33,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
+    "dayjs": "^1.11.13",
     "formik": "^2.4.6",
     "framer-motion": "^11.3.30",
     "i18next": "^23.14.0",

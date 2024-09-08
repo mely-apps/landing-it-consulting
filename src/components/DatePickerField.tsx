@@ -18,7 +18,7 @@ const DatePickerField: React.FC<DatePickerFieldProps> = () => {
       'dateOfBirth',
       `${startDate.getFullYear()}-${startDate.getMonth() > 9 ? startDate.getMonth() : `0${startDate.getMonth()}`}-${startDate.getDay() > 9 ? startDate.getDay() : `0${startDate.getDay()}`}`,
     );
-  }, [startDate, setFieldValue]);
+  }, [startDate]);
 
   return (
     <div className='react-datepicker-wrapper !block w-full'>
