@@ -2,10 +2,14 @@
 import Image from 'next/image';
 import React from 'react';
 import GradualSpacing from './ui/gradual-spacing';
+import { SECTION_IDS } from '@/constants';
 
 const Rules = () => {
   return (
-    <div className='container mt-44 rounded-lg border-2 border-[#868686] bg-[#ccc]/10 px-20 py-10 shadow-2xl backdrop-blur-sm'>
+    <div
+      className='container mt-44 rounded-lg border-2 border-[#868686] bg-[#ccc]/10 px-20 py-10 shadow-2xl backdrop-blur-sm'
+      id={SECTION_IDS.RULES}
+    >
       <div className='grid grid-cols-4'>
         <GradualSpacing
           text='Rules'

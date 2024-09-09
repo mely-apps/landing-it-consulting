@@ -64,7 +64,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply scroll-smooth bg-background text-foreground;
   }
   .react-datepicker-wrapper {
     display: block !important;

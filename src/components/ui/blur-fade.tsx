@@ -51,6 +51,7 @@ export default function BlurFade({
         ref={ref}
         initial='hidden'
         animate={isInView ? 'visible' : 'hidden'}
+        whileInView={isInView ? 'visible' : 'hidden'}
         exit='hidden'
         variants={combinedVariants}
         transition={{

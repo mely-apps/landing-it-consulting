@@ -1,8 +1,6 @@
 import React from 'react';
 import CodeSandBox from './icons/CodeSandBox';
 import Phone from './icons/Phone';
-import { Facebook } from './icons/Facebook';
-import LinkedIn from './icons/Linkin';
 import { FaFacebookF, FaLinkedinIn, FaTiktok, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
