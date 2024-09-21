@@ -101,7 +101,7 @@ const Registration = () => {
         >
           {() => (
             <Form className='mx-auto mt-10 grid w-[70%] grid-cols-2 gap-4 rounded-lg border border-white/30 bg-white/10 p-10'>
-              <div className='col-span-2 grid w-full grid-cols-2 text-center text-3xl font-bold'>
+              <div className='col-span-2 grid w-full grid-cols-1 gap-y-6 text-center text-3xl font-bold sm:grid-cols-2'>
                 <button
                   onClick={() => toggleTypeForm('personal')}
                   className={clsx(
@@ -126,10 +126,10 @@ const Registration = () => {
               <div className='col-span-2'>
                 <FormField label='Full name' name='fullName' />
               </div>
-              <div className='col-span-1'>
+              <div className='col-span-2 md:col-span-1'>
                 <DateTimeField name='dateOfBirth' label='Date of birth' />
               </div>
-              <div className='col-span-1'>
+              <div className='col-span-2 md:col-span-1'>
                 <SelectField
                   label='Gender'
                   name='gender'
@@ -139,10 +139,10 @@ const Registration = () => {
                   ]}
                 />
               </div>
-              <div className='col-span-1'>
+              <div className='col-span-2 md:col-span-1'>
                 <FormField label='School' name='school' />
               </div>
-              <div className='col-span-1'>
+              <div className='col-span-2 md:col-span-1'>
                 <FormField label='Major' name='major' />
               </div>
               <div className='col-span-2'>
@@ -180,7 +180,7 @@ const Registration = () => {
         >
           {() => (
             <Form className='mx-auto mt-10 grid w-[70%] grid-cols-2 gap-4 rounded-lg border border-white/30 bg-white/10 p-10'>
-              <div className='col-span-2 grid w-full grid-cols-2 text-center text-3xl font-bold'>
+              <div className='col-span-2 grid w-full grid-cols-1 gap-y-6 text-center text-3xl font-bold sm:grid-cols-2'>
                 <button
                   onClick={() => toggleTypeForm('personal')}
                   className={clsx(
