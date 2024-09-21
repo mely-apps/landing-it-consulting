@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className='mt-40 bg-[#023C38] py-10'>
       <div className='container grid grid-cols-4'>
-        <div className='text-3xl font-extrabold'>
+        <div className='text-lg font-extrabold'>
           <p>IT CONSULTANT</p>
           <p className='text-primary'>CHALLENGE</p>
         </div>

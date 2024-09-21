@@ -13,10 +13,10 @@ const Rules = () => {
       <div className='grid grid-cols-4'>
         <GradualSpacing
           text='Rules'
-          className='col-span-1 text-[50px] font-extrabold uppercase !text-primary'
+          className='col-span-1 text-2xl font-extrabold uppercase !text-primary'
         />
         <div className='col-span-3'>
-          <p className='text-xl italic'>
+          <p className='text-base italic'>
             &quot;Teams select a case study from the challenge provided by the
             organizers, then analyze and design ideas and solutions to address
             the identified issues. Awards will be given to ideas that are

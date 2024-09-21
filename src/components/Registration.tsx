@@ -88,7 +88,7 @@ const Registration = () => {
 
   return (
     <div className='container' id={SECTION_IDS.REGISTER}>
-      <h2 className='text-center text-[50px] font-extrabold uppercase text-primary'>
+      <h2 className='text-center text-2xl font-extrabold uppercase text-primary'>
         Registration
       </h2>
 
@@ -105,7 +105,7 @@ const Registration = () => {
                 <button
                   onClick={() => toggleTypeForm('personal')}
                   className={clsx(
-                    'border-b-4 border-white pb-4 uppercase transition-all',
+                    'border-b-4 border-white pb-4 text-xl uppercase transition-all',
                     typeForm === 'personal' && '!border-[#FFB84E] text-primary',
                   )}
                   type='button'
@@ -115,7 +115,7 @@ const Registration = () => {
                 <button
                   onClick={() => toggleTypeForm('team')}
                   className={clsx(
-                    'border-b-4 border-white pb-4 uppercase transition-all',
+                    'border-b-4 border-white pb-4 text-xl uppercase transition-all',
                   )}
                   type='button'
                 >
@@ -184,7 +184,7 @@ const Registration = () => {
                 <button
                   onClick={() => toggleTypeForm('personal')}
                   className={clsx(
-                    'border-b-4 border-white pb-4 uppercase transition-all',
+                    'border-b-4 border-white pb-4 text-xl uppercase transition-all',
                   )}
                   type='button'
                 >
@@ -193,7 +193,7 @@ const Registration = () => {
                 <button
                   onClick={() => toggleTypeForm('team')}
                   className={clsx(
-                    'border-b-4 border-white pb-4 uppercase transition-all',
+                    'border-b-4 border-white pb-4 text-xl uppercase transition-all',
                     typeForm === 'team' && '!border-[#FFB84E] text-primary',
                   )}
                   type='button'

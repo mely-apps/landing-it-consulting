@@ -11,10 +11,10 @@ const About = () => {
   return (
     <div className='container pt-24' id={SECTION_IDS.ABOUT}>
       <FlipWords
-        className='text-[50px] font-extrabold uppercase !text-primary'
+        className='text-2xl font-extrabold uppercase !text-primary'
         words={[t('about.heading')]}
       />
-      <div className='mx-auto mt-12 flex max-w-[1280px] flex-col gap-8 font-inter text-xl italic'>
+      <div className='mx-auto mt-12 flex flex-col gap-8 font-inter text-base italic'>
         <motion.p
           initial={{
             opacity: 0,

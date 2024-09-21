@@ -7,7 +7,7 @@ const Prizes = () => {
   return (
     <div className='container pt-32' id={SECTION_IDS.PRIZES}>
       <motion.h2
-        className='text-center text-[50px] font-extrabold uppercase text-primary'
+        className='text-center text-2xl font-extrabold uppercase text-primary'
         initial={{
           opacity: 0,
           y: 50,
@@ -67,10 +67,10 @@ const Prizes = () => {
                 />
               </div>
               <div>
-                <p className='mt-4 text-3xl font-extrabold text-primary'>
+                <p className='mt-4 text-xl font-extrabold text-primary'>
                   2ND PRIZE
                 </p>
-                <p className='text-xl'>8.000.000 VND</p>
+                <p className='text-base'>8.000.000 VND</p>
               </div>
             </div>
           </div>
@@ -104,10 +104,10 @@ const Prizes = () => {
                 />
               </div>
               <div>
-                <p className='mt-4 text-3xl font-extrabold text-primary'>
+                <p className='mt-4 text-xl font-extrabold text-primary'>
                   1ST PRIZE
                 </p>
-                <p className='mt-2 text-xl'>20.000.000 VND</p>
+                <p className='mt-2 text-base'>20.000.000 VND</p>
               </div>
             </div>
           </div>
@@ -141,10 +141,10 @@ const Prizes = () => {
                 />
               </div>
               <div>
-                <p className='mt-4 text-2xl font-extrabold text-primary'>
+                <p className='mt-4 text-xl font-extrabold text-primary'>
                   3RD PRIZE
                 </p>
-                <p className='text-xl'>2.000.000 VND</p>
+                <p className='text-base'>2.000.000 VND</p>
               </div>
             </div>
           </div>

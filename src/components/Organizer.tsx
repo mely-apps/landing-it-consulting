@@ -7,7 +7,7 @@ const Organizer = () => {
   return (
     <div className='container mt-40' id={SECTION_IDS.ORGANIZERS}>
       <motion.h2
-        className='flex w-full justify-center text-[50px] font-extrabold uppercase text-primary'
+        className='flex w-full justify-center text-2xl font-extrabold uppercase text-primary'
         initial={{
           opacity: 0,
           y: 50,
@@ -44,7 +44,7 @@ const Organizer = () => {
           </motion.div>
           <div className='col-span-2'>
             <motion.p
-              className='text-2xl font-light italic leading-[1.3]'
+              className='text-lg font-light italic leading-[1.3]'
               initial={{
                 opacity: 0.2,
                 y: 50,
@@ -84,7 +84,7 @@ const Organizer = () => {
           </motion.div>
           <div className='col-span-2'>
             <motion.p
-              className='text-2xl font-light italic leading-[1.3]'
+              className='text-lg font-light italic leading-[1.3]'
               initial={{
                 opacity: 0.2,
                 y: 50,

@@ -17,7 +17,7 @@ const Hero = () => {
       id={SECTION_IDS.HOME}
     >
       <div>
-        <h1 className='text-7xl font-extrabold leading-[1.2]'>
+        <h1 className='text-4xl font-extrabold leading-[1.2]'>
           <BlurFade delay={0}>IT CONSULTANT</BlurFade>{' '}
           <FlipWords
             duration={3}
@@ -33,7 +33,7 @@ const Hero = () => {
         <BlurFade delay={0.5}>
           <div className='mt-4 flex items-center gap-x-1'>
             <IoLocationSharp />
-            <p className='text-lg font-bold uppercase text-muted-foreground'>
+            <p className='font-bold uppercase text-muted-foreground'>
               {t('hero.time')}
             </p>
           </div>
