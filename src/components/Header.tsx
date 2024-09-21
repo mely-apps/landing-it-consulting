@@ -85,7 +85,7 @@ const Header = ({ locale }: LocaleProps) => {
             </DropdownMenuTrigger>
             <DropdownMenuContent
               align='end'
-              className='border-0 bg-[#226472]'
+              className='border-0 bg-[#226472] font-semibold'
               onCloseAutoFocus={(e) => e.preventDefault()}
             >
               {SECTION_ITEMS.map((item) => (
