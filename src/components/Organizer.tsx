@@ -27,7 +27,7 @@ const Organizer = () => {
       <div className='flex flex-col gap-20'>
         <div className='mt-20 grid grid-cols-3 gap-x-10 gap-y-10'>
           <motion.div
-            className='relative col-span-3 flex h-56 min-w-52 items-center justify-center rounded-lg border border-white/40 bg-white/10 shadow-lg md:col-span-1 md:max-w-96'
+            className='relative col-span-3 flex h-32 min-w-52 items-center justify-center rounded-lg border border-white/40 bg-white/10 shadow-lg sm:h-56 md:col-span-1 md:max-w-96'
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{
               opacity: 1,
@@ -37,7 +37,7 @@ const Organizer = () => {
           >
             <Image
               src={'/companies/codemely.png'}
-              className='object-contain px-10'
+              className='object-contain px-6 sm:px-10'
               alt=''
               fill
             />
@@ -67,7 +67,7 @@ const Organizer = () => {
 
         <div className='grid grid-cols-3 gap-x-10 gap-y-10'>
           <motion.div
-            className='relative col-span-3 flex h-56 min-w-52 items-center justify-center rounded-lg border border-white/40 bg-white/10 shadow-lg md:col-span-1 md:max-w-96'
+            className='relative col-span-3 flex h-32 min-w-52 items-center justify-center rounded-lg border border-white/40 bg-white/10 shadow-lg sm:h-56 md:col-span-1 md:max-w-96'
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{
               opacity: 1,
@@ -77,7 +77,7 @@ const Organizer = () => {
           >
             <Image
               src={'/companies/netcompany.png'}
-              className='object-contain px-20 sm:px-40 md:px-10'
+              className='object-contain px-6 sm:px-10'
               alt=''
               fill
             />
