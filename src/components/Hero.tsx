@@ -13,11 +13,11 @@ const Hero = () => {
 
   return (
     <div
-      className='container relative grid grid-cols-1 items-center py-10 lg:grid-cols-2'
+      className='container relative grid grid-cols-1 items-center gap-y-6 py-10 lg:grid-cols-2'
       id={SECTION_IDS.HOME}
     >
-      <div className='text-center lg:text-left'>
-        <h1 className='text-center text-4xl font-extrabold leading-[1.2] lg:text-left'>
+      <div className='order-2 text-center sm:order-1 lg:text-left'>
+        <h1 className='hidden text-center text-4xl font-extrabold leading-[1.2] sm:block lg:text-left'>
           <BlurFade delay={0}>IT CONSULTANT</BlurFade>{' '}
           <FlipWords
             duration={3}
@@ -26,26 +26,26 @@ const Hero = () => {
           />
         </h1>
         <BlurFade delay={0.3}>
-          <p className='m-auto max-w-[60%] py-5 text-center text-muted-foreground lg:m-0 lg:text-left'>
+          <p className='m-auto hidden max-w-[60%] py-5 text-center text-muted-foreground sm:block lg:m-0 lg:text-left'>
             {t('hero.subTitle')}
           </p>
         </BlurFade>
         <BlurFade delay={0.5}>
-          <div className='mt-4 flex items-center justify-center gap-x-1 lg:justify-start'>
-            <IoLocationSharp />
-            <p className='font-bold uppercase text-muted-foreground'>
+          <div className='mt-4 flex items-center justify-center gap-x-1 max-sm:mx-10 lg:justify-start'>
+            <IoLocationSharp className='max-sm:h-10 max-sm:w-10' />
+            <p className='text-left font-bold uppercase text-muted-foreground max-sm:ps-2 max-sm:text-sm'>
               {t('hero.time')}
             </p>
           </div>
         </BlurFade>
         <BlurFade delay={0.7}>
-          <button className='mt-10 w-auto rounded-md !bg-[#7FFFF7] px-6 py-2 font-semibold text-black hover:opacity-90'>
+          <button className='mt-6 w-auto rounded-md !bg-[#7FFFF7] px-6 py-2 font-semibold text-black hover:opacity-90'>
             {t('hero.buttonTitle')}
           </button>
         </BlurFade>
       </div>
 
-      <div className='mt-14 flex items-center justify-center lg:mt-0'>
+      <div className='order-1 flex items-center justify-center sm:order-2 lg:mt-0'>
         <BlurFade delay={1} duration={0.5}>
           <BackgroundGradient
             className='h-full w-full'
