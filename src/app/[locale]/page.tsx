@@ -33,8 +33,10 @@ export default function Home({
       <ToastContainer {...toastContainerConfig} />
       <div className='absolute inset-0 left-0 top-0 z-50 h-screen w-screen overflow-y-scroll scrollbar-none'>
         <ScrollToTop />
-        <Header locale={locale as LocaleProps['locale']} />
-        <Hero />
+        <div className='container mt-10 rounded-lg border border-white'>
+          <Header locale={locale as LocaleProps['locale']} />
+          <Hero />
+        </div>
         <About />
         <Rules />
         <Prizes />

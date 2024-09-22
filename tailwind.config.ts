@@ -64,6 +64,10 @@ const config = {
           foreground: 'hsl(var(--card-foreground))',
         },
       },
+      backgroundImage: {
+        'gradient-white':
+          'linear-gradient(112.01deg, rgba(217, 217, 217, 0.12) -14.61%, rgba(115, 115, 115, 0.03) 86.96%);',
+      },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
