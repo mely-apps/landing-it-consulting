@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './animation.css';
+@import './background.css';
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -87,5 +89,20 @@
     background-image: url('../../public/Vector13.svg');
     background-size: cover;
     background-repeat: no-repeat;
+  }
+}
+
+.progress {
+  background-color: var(--primary);
+  animation: progressBar 0.5s ease-in-out;
+  animation-fill-mode: both;
+}
+
+@keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }

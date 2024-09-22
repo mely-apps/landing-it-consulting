@@ -2,8 +2,11 @@ import { SECTION_IDS } from '@/constants';
 import Image from 'next/image';
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 const Organizer = () => {
+  const t = useTranslations('HomePage');
+
   return (
     <div className='container mt-40' id={SECTION_IDS.ORGANIZERS}>
       <motion.h2
@@ -44,7 +47,7 @@ const Organizer = () => {
           </motion.div>
           <div className='col-span-2'>
             <motion.p
-              className='text-2xl font-light italic leading-[1.3]'
+              className='text-2xl font-light leading-[1.3]'
               initial={{
                 opacity: 0.2,
                 y: 50,
@@ -55,12 +58,8 @@ const Organizer = () => {
                 transition: { duration: 0.3, delay: 0.1 },
               }}
             >
-              <span className='font-bold'>Code MeLy</span> is a vibrant IT
-              community and launchpad for young talents, especially female
-              programmers. Our mission is to foster a dynamic IT GenZ community
-              by creating engaging competitions and platforms that enhance
-              programming skills and provide top-tier talent for IT projects
-              worldwide.
+              <span className='font-bold'>Code MeLy</span>{' '}
+              {t('organizers.codemely')}
             </motion.p>
           </div>
         </div>
@@ -84,7 +83,7 @@ const Organizer = () => {
           </motion.div>
           <div className='col-span-2'>
             <motion.p
-              className='text-2xl font-light italic leading-[1.3]'
+              className='text-2xl font-light leading-[1.3]'
               initial={{
                 opacity: 0.2,
                 y: 50,
@@ -95,12 +94,8 @@ const Organizer = () => {
                 transition: { duration: 0.2, delay: 0.2 },
               }}
             >
-              <span className='font-bold'>Netcompany</span> is an IT consulting
-              firm founded in 2000 in Copenhagen, Denmark. The company plays a
-              crucial role in digital transformation for both public and private
-              sectors. Netcompany believes that technology can have a positive
-              impact on society and business, and continuously seeks talented IT
-              professionals, offering career development opportunities.
+              <span className='font-bold'>Netcompany</span>{' '}
+              {t('organizers.netcompany')}
             </motion.p>
           </div>
         </div>

@@ -41,6 +41,15 @@ export default async function LocaleLayout({
         <link rel='apple-touch-icon' href='/favicon.png' />
         <link rel='mask-icon' href='/favicon.png' color='#000000' />
         <meta name='theme-color' content='#000000' />
+        <meta
+          property='og:image'
+          content='/about-image.png'
+          data-react-helmet='true'
+        ></meta>
+        <meta
+          property='og:description'
+          content='IT Consultant Challenge—một sự kiện kéo dài cả ngày thú vị, nơi sinh viên CNTT có cơ hội thể hiện kỹ năng, sự sáng tạo và khả năng giải quyết vấn đề của mình. Sự kiện này do Netcompany và Code Mely tổ chức, là cơ hội để bạn bước vào vai trò của một chuyên gia tư vấn CNTT và giải quyết những thách thức thực tế thông qua quá trình chuyển đổi số. Làm việc cùng những người đồng cấp có cùng chí hướng, tích lũy kinh nghiệm quý báu và tạo ra tác động lâu dài.'
+        ></meta>
       </head>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>

@@ -29,9 +29,9 @@ export default function Home({
   params: { locale: string };
 }) {
   return (
-    <BackgroundGradientAnimation>
+    <>
       <ToastContainer {...toastContainerConfig} />
-      <div className='absolute inset-0 left-0 top-0 z-50 h-screen w-screen overflow-y-scroll scrollbar-none'>
+      <div className='color-change-2x absolute inset-0 left-0 top-0 z-50 h-screen w-screen overflow-y-scroll scrollbar-none'>
         <ScrollToTop />
         <Header locale={locale as LocaleProps['locale']} />
         <Hero />
@@ -43,6 +43,58 @@ export default function Home({
         <Organizer />
         <Footer />
       </div>
-    </BackgroundGradientAnimation>
+      <div className='stars'>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+        <div className='star'></div>
+      </div>
+    </>
   );
 }

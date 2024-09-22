@@ -21,9 +21,7 @@ const FormField = ({ label, name }: FormFieldProps) => {
         className='mt-1 w-full rounded-lg px-4 py-2 text-black'
       />
       <ErrorMessage
-        render={(msg) => (
-          <p className='capitalize italic text-red-500'>{msg}</p>
-        )}
+        render={(msg) => <p className='capitalize text-red-500'>{msg}</p>}
         name={name}
       />
     </div>
@@ -42,9 +40,7 @@ const DateTimeField = ({ name, label }: FormFieldProps) => {
         component={DatePickerField}
       />
       <ErrorMessage
-        render={(msg) => (
-          <p className='capitalize italic text-red-500'>{msg}</p>
-        )}
+        render={(msg) => <p className='capitalize text-red-500'>{msg}</p>}
         name={name}
       />
     </div>
@@ -78,9 +74,7 @@ const SelectField = ({
         ))}
       </Field>
       <ErrorMessage
-        render={(msg) => (
-          <p className='capitalize italic text-red-500'>{msg}</p>
-        )}
+        render={(msg) => <p className='capitalize text-red-500'>{msg}</p>}
         name={name}
       />
     </div>

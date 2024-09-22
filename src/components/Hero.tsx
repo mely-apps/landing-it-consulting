@@ -11,46 +11,50 @@ import { FlipWords } from './ui/flip-words';
 const Hero = () => {
   const t = useTranslations('HomePage');
 
+  const toRegister = () => {
+    const section = document.getElementById(SECTION_IDS.REGISTER);
+    section?.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <div
       className='container relative grid grid-cols-2 items-center py-10'
       id={SECTION_IDS.HOME}
     >
       <div>
-        <h1 className='text-7xl font-extrabold leading-[1.2]'>
-          <BlurFade delay={0}>IT CONSULTANT</BlurFade>{' '}
-          <FlipWords
-            duration={3}
-            className='!text-primary'
-            words={['CHALLENGE']}
-          />
+        <h1 className='text-shadow-pop-left text-7xl font-extrabold leading-[1.2]'>
+          IT CONSULTANT
+          <br />
+          <span className='!text-primary'>CHALLENGE</span>
         </h1>
-        <BlurFade delay={0.3}>
+        {/* <BlurFade delay={0.3}>
           <p className='max-w-[60%] py-5 text-muted-foreground'>
             {t('hero.subTitle')}
           </p>
-        </BlurFade>
+        </BlurFade> */}
         <BlurFade delay={0.5}>
           <div className='mt-4 flex items-center gap-x-1'>
             <IoLocationSharp />
-            <p className='text-lg font-bold uppercase text-muted-foreground'>
+            <p className='text-lg font-bold uppercase text-white'>
               {t('hero.time')}
             </p>
           </div>
         </BlurFade>
         <BlurFade delay={0.7}>
-          <button className='mt-10 w-auto rounded-md !bg-[#7FFFF7] px-6 py-2 font-semibold text-black hover:opacity-90'>
+          <button
+            onClick={toRegister}
+            className='mt-10 w-auto rounded-md !bg-[#7FFFF7] px-6 py-2 font-semibold text-black hover:opacity-90'
+          >
             {t('hero.buttonTitle')}
           </button>
         </BlurFade>
       </div>
 
       <div className='flex items-center justify-center'>
-        <BlurFade delay={1} duration={0.5}>
+        <>
           <BackgroundGradient className='h-auto w-auto'>
-            <div className='relative h-[570px] w-[406px] overflow-hidden rounded-3xl'>
+            <div className='fade-in-right relative h-[570px] w-[406px] overflow-hidden rounded-3xl'>
               <Image
-                src='/Untitled.png'
+                src='/poster.webp'
                 alt='landing-it-consulting'
                 sizes='auto'
                 className='object-cover'
@@ -59,7 +63,7 @@ const Hero = () => {
               />
             </div>
           </BackgroundGradient>
-        </BlurFade>
+        </>
       </div>
     </div>
   );

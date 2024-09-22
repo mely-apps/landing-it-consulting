@@ -1,5 +1,13 @@
 {
   "HomePage": {
+    "header": {
+      "home": "Trang Chủ",
+      "about": "Giới thiệu",
+      "rules": "Thể lệ",
+      "prizes": "Giải thưởng",
+      "register": "Đăng ký",
+      "organizer": "Tổ chức"
+    },
     "hero": {
       "subTitle": "Hackathon là cuộc thi dành cho các coder mới trẻ, khi tham gia cuộc thi các bạn sẻ nhận được tham gia code cùng với chúng tôi!",
       "time": "Thứ 7, Ngày 12 Tháng 10 năm 2024, NETCOMPANY OFFICE",
@@ -7,6 +15,10 @@
     },
     "about": {
       "heading": "IT Consultant Challenge là gì?"
+    },
+    "organizers": {
+      "codemely": "là một cộng đồng IT được tạo ra bởi những người trẻ đầy năng lượng với sự mệnh kết nối những người yêu thích công nghệ với nhau, lan tỏa và chia sẻ những giá trị tích cực bằng cách tạo ra môi trường, những sân chơi dành cho cộng đồng lập trình viên Việt Nam",
+      "netcompany": "là một công ty tư vấn CNTT được thành lập năm 2000 tại Copenhagen, Đan Mạch. Công ty đóng vai trò quan trọng trong quá trình chuyển đổi số cho cả khu vực công và tư. Netcompany tin rằng công nghệ có thể tác động tích cực đến xã hội và doanh nghiệp, và liên tục tìm kiếm các chuyên gia CNTT tài năng, cung cấp các cơ hội phát triển nghề nghiệp."
     }
   }
 }
