@@ -101,11 +101,11 @@ const Registration = () => {
         >
           {() => (
             <Form className='mx-auto mt-10 grid w-full grid-cols-2 gap-4 rounded-lg border border-white/30 bg-white/10 p-10 sm:w-3/4'>
-              <div className='col-span-2 grid w-full grid-cols-1 gap-y-6 text-center text-3xl font-bold sm:grid-cols-2'>
+              <div className='col-span-2 grid w-full grid-cols-2 gap-y-6 text-center text-3xl font-bold'>
                 <button
                   onClick={() => toggleTypeForm('personal')}
                   className={clsx(
-                    'border-b-4 border-white pb-4 text-xl uppercase transition-all',
+                    'border-b-4 border-white pb-4 text-base uppercase transition-all sm:text-lg',
                     typeForm === 'personal' && '!border-[#FFB84E] text-primary',
                   )}
                   type='button'
@@ -115,7 +115,7 @@ const Registration = () => {
                 <button
                   onClick={() => toggleTypeForm('team')}
                   className={clsx(
-                    'border-b-4 border-white pb-4 text-xl uppercase transition-all',
+                    'border-b-4 border-white pb-4 text-base uppercase transition-all sm:text-lg',
                   )}
                   type='button'
                 >
@@ -180,11 +180,11 @@ const Registration = () => {
         >
           {() => (
             <Form className='mx-auto mt-10 grid w-full grid-cols-2 gap-4 rounded-lg border border-white/30 bg-white/10 p-10 sm:w-3/4'>
-              <div className='col-span-2 grid w-full grid-cols-1 gap-y-6 text-center text-3xl font-bold sm:grid-cols-2'>
+              <div className='col-span-2 grid w-full grid-cols-2 gap-y-6 text-center text-3xl font-bold'>
                 <button
                   onClick={() => toggleTypeForm('personal')}
                   className={clsx(
-                    'border-b-4 border-white pb-4 text-xl uppercase transition-all',
+                    'border-b-4 border-white pb-4 text-base uppercase transition-all sm:text-lg',
                   )}
                   type='button'
                 >
@@ -193,7 +193,7 @@ const Registration = () => {
                 <button
                   onClick={() => toggleTypeForm('team')}
                   className={clsx(
-                    'border-b-4 border-white pb-4 text-xl uppercase transition-all',
+                    'border-b-4 border-white pb-4 text-base uppercase transition-all sm:text-lg',
                     typeForm === 'team' && '!border-[#FFB84E] text-primary',
                   )}
                   type='button'
