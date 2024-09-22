@@ -15,7 +15,10 @@ const TimeCounter = () => {
 
   return (
     isClient && (
-      <div className='container my-40' suppressHydrationWarning>
+      <div
+        className='container my-16 sm:my-24 md:my-40'
+        suppressHydrationWarning
+      >
         <Countdown
           date={date}
           renderer={(time) => (
