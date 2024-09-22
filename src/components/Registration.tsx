@@ -100,7 +100,7 @@ const Registration = () => {
           onSubmit={handleSubmit}
         >
           {() => (
-            <Form className='mx-auto mt-10 grid w-[70%] grid-cols-2 gap-4 rounded-lg border border-white/30 bg-white/10 p-10'>
+            <Form className='mx-auto mt-10 grid w-full grid-cols-2 gap-4 rounded-lg border border-white/30 bg-white/10 p-10 sm:w-3/4'>
               <div className='col-span-2 grid w-full grid-cols-1 gap-y-6 text-center text-3xl font-bold sm:grid-cols-2'>
                 <button
                   onClick={() => toggleTypeForm('personal')}
@@ -179,7 +179,7 @@ const Registration = () => {
           onSubmit={handleTeamSubmit}
         >
           {() => (
-            <Form className='mx-auto mt-10 grid w-[70%] grid-cols-2 gap-4 rounded-lg border border-white/30 bg-white/10 p-10'>
+            <Form className='mx-auto mt-10 grid w-full grid-cols-2 gap-4 rounded-lg border border-white/30 bg-white/10 p-10 sm:w-3/4'>
               <div className='col-span-2 grid w-full grid-cols-1 gap-y-6 text-center text-3xl font-bold sm:grid-cols-2'>
                 <button
                   onClick={() => toggleTypeForm('personal')}
