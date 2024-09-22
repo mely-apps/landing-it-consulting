@@ -22,36 +22,36 @@ const TimeCounter = () => {
         <Countdown
           date={date}
           renderer={(time) => (
-            <div className='mt-16 flex h-64 w-full items-center justify-center gap-x-20 rounded-3xl border border-white bg-white/10 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]'>
+            <div className='mt-16 flex h-64 w-full flex-wrap items-center justify-around rounded-3xl border border-white bg-white/10 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)] sm:justify-center sm:gap-x-20'>
               <div>
-                <p className='neon-text text-center text-3xl font-extrabold drop-shadow-2xl'>
+                <p className='neon-text text-center text-2xl font-extrabold drop-shadow-2xl sm:text-3xl'>
                   {time.days >= 10 ? time.days : `0${time.days}`}
                 </p>
-                <p className='text-center text-lg font-semibold uppercase text-white'>
+                <p className='text-center text-base font-semibold uppercase text-white sm:text-lg'>
                   Days
                 </p>
               </div>
               <div>
-                <p className='neon-text text-center text-3xl font-extrabold drop-shadow-2xl'>
+                <p className='neon-text text-center text-2xl font-extrabold drop-shadow-2xl sm:text-3xl'>
                   {time.hours >= 10 ? time.hours : `0${time.hours}`}
                 </p>
-                <p className='text-center text-lg font-semibold uppercase text-white'>
+                <p className='text-center text-base font-semibold uppercase text-white sm:text-lg'>
                   hours
                 </p>
               </div>
               <div>
-                <p className='neon-text text-center text-3xl font-extrabold drop-shadow-2xl'>
+                <p className='neon-text text-center text-2xl font-extrabold drop-shadow-2xl sm:text-3xl'>
                   {time.minutes >= 10 ? time.minutes : `0${time.minutes}`}
                 </p>
-                <p className='text-center text-lg font-semibold uppercase text-white'>
+                <p className='text-center text-base font-semibold uppercase text-white sm:text-lg'>
                   min
                 </p>
               </div>
               <div>
-                <p className='neon-text text-center text-3xl font-extrabold drop-shadow-2xl'>
+                <p className='neon-text text-center text-2xl font-extrabold drop-shadow-2xl sm:text-3xl'>
                   {time.seconds >= 10 ? time.seconds : `0${time.seconds}`}
                 </p>
-                <p className='text-center text-lg font-semibold uppercase text-white'>
+                <p className='text-center text-base font-semibold uppercase text-white sm:text-lg'>
                   sec
                 </p>
               </div>
