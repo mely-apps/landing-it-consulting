@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Timeline() {
   return (
     <div
-      className="md:px-20' container mt-44 h-max w-11/12 rounded-lg border-2 border-[#868686] bg-[#ccc]/10 p-4 py-10 shadow-2xl backdrop-blur-sm sm:px-10"
+      className='container relative mt-44 w-11/12 rounded-lg border-2 border-[#868686] bg-[#ccc]/10 px-0 py-10 shadow-2xl backdrop-blur-sm'
       id={SECTION_IDS.TIMELINE}
     >
       <motion.h2
@@ -26,9 +26,9 @@ export default function Timeline() {
           y: 0,
           transition: { duration: 0.5, bounce: 0.5, delay: 0.4 },
         }}
-        className='relative h-[300px] w-full select-none sm:h-[400px] lg:h-[550px] xl:h-[650px]'
+        className='relative h-[200px] w-full select-none sm:h-[380px] lg:h-[550px] xl:h-[650px]'
       >
-        <Image src={'/timeline.png'} className='object-contain' fill alt='' />
+        <Image src={'/timeline.png'} className='object-cover' fill alt='' />
       </motion.div>
     </div>
   );
