@@ -59,7 +59,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           x2='575'
           y2='82'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='544'
@@ -67,7 +67,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           x2='973'
           y2='82'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='978'
@@ -75,7 +75,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           x2='1407'
           y2='82'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <g filter='url(#filter9_i_301_432)'>
           <circle cx='561.5' cy='82.5' r='10.5' fill='#80FFF7' />
@@ -86,7 +86,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
             cy='82.5'
             r='5.25'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter11_f_301_432)'>
@@ -101,7 +101,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
             cy='82.5'
             r='5.25'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter14_i_301_432)'>
@@ -113,7 +113,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
             cy='82.5'
             r='5.25'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter16_i_301_432)'>
@@ -125,7 +125,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
             cy='82.5'
             r='5.25'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <line
@@ -134,7 +134,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           x2='136'
           y2='358'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='1413'
@@ -142,7 +142,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           x2='1413'
           y2='353'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='356'
@@ -150,7 +150,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           x2='356'
           y2='235'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='562'
@@ -158,7 +158,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           x2='562'
           y2='235'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='770'
@@ -166,7 +166,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           x2='770'
           y2='235'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='562'
@@ -174,7 +174,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           x2='562'
           y2='157'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='355'
@@ -182,7 +182,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           x2='769'
           y2='156'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <g filter='url(#filter18_i_301_432)'>
           <circle cx='355.5' cy='245.5' r='10.5' fill='#80FFF7' />
@@ -193,7 +193,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
             cy='245.5'
             r='5.25'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter20_i_301_432)'>
@@ -205,7 +205,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
             cy='245.5'
             r='5.25'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter22_i_301_432)'>
@@ -217,7 +217,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
             cy='245.5'
             r='5.25'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter24_i_301_432)'>
@@ -229,7 +229,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
             cy='363.5'
             r='5.25'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter26_i_301_432)'>
@@ -241,7 +241,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
             cy='363.5'
             r='5.25'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
       </g>
@@ -288,7 +288,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           x2='575'
           y2='82'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='544'
@@ -296,7 +296,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           x2='973'
           y2='82'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='978'
@@ -304,7 +304,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           x2='1407'
           y2='82'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <g filter='url(#filter29_i_301_432)'>
           <circle cx='561.5' cy='82.5' r='10.5' fill='#80FFF7' />
@@ -315,7 +315,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
             cy='82.5'
             r='5.25'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter31_f_301_432)'>
@@ -330,7 +330,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
             cy='82.5'
             r='5.25'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter34_i_301_432)'>
@@ -342,7 +342,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
             cy='82.5'
             r='5.25'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter36_i_301_432)'>
@@ -354,7 +354,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
             cy='82.5'
             r='5.25'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <line
@@ -363,7 +363,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           x2='136'
           y2='358'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='1413'
@@ -371,7 +371,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           x2='1413'
           y2='353'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='356'
@@ -379,7 +379,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           x2='356'
           y2='235'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='562'
@@ -387,7 +387,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           x2='562'
           y2='235'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='770'
@@ -395,7 +395,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           x2='770'
           y2='235'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='562'
@@ -403,7 +403,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           x2='562'
           y2='157'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='355'
@@ -411,7 +411,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           x2='769'
           y2='156'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <g filter='url(#filter38_i_301_432)'>
           <circle cx='355.5' cy='245.5' r='10.5' fill='#80FFF7' />
@@ -422,7 +422,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
             cy='245.5'
             r='5.25'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter40_i_301_432)'>
@@ -434,7 +434,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
             cy='245.5'
             r='5.25'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter42_i_301_432)'>
@@ -446,7 +446,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
             cy='245.5'
             r='5.25'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter44_i_301_432)'>
@@ -458,7 +458,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
             cy='363.5'
             r='5.25'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter46_i_301_432)'>
@@ -470,7 +470,7 @@ export default function RulesDesktop(props: RulesDesktopProps) {
             cy='363.5'
             r='5.25'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
       </g>
@@ -502,9 +502,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='41'
           height='41'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -523,9 +523,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='41'
           height='41'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -544,9 +544,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='41'
           height='41'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -565,9 +565,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='41'
           height='41'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -586,9 +586,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='41'
           height='41'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -607,9 +607,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='41'
           height='41'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -628,9 +628,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='41'
           height='41'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -649,9 +649,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='41'
           height='41'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -670,9 +670,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='1318'
           height='322'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feColorMatrix
             in='SourceAlpha'
             type='matrix'
@@ -705,9 +705,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='21'
           height='24'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -746,9 +746,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='10.5'
           height='14.5'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -781,9 +781,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='41'
           height='41'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -802,9 +802,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='21'
           height='24'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -843,9 +843,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='10.5'
           height='14.5'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -878,9 +878,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='21'
           height='24'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -919,9 +919,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='10.5'
           height='14.5'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -954,9 +954,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='21'
           height='24'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -995,9 +995,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='10.5'
           height='14.5'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1030,9 +1030,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='21'
           height='24'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1071,9 +1071,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='10.5'
           height='14.5'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1106,9 +1106,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='21'
           height='24'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1147,9 +1147,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='10.5'
           height='14.5'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1182,9 +1182,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='21'
           height='24'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1223,9 +1223,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='10.5'
           height='14.5'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1258,9 +1258,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='21'
           height='24'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1299,9 +1299,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='10.5'
           height='14.5'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1334,9 +1334,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='21'
           height='24'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1375,9 +1375,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='10.5'
           height='14.5'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1410,9 +1410,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='1318'
           height='322'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feColorMatrix
             in='SourceAlpha'
             type='matrix'
@@ -1445,9 +1445,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='21'
           height='24'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1486,9 +1486,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='10.5'
           height='14.5'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1521,9 +1521,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='41'
           height='41'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1542,9 +1542,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='21'
           height='24'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1583,9 +1583,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='10.5'
           height='14.5'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1618,9 +1618,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='21'
           height='24'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1659,9 +1659,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='10.5'
           height='14.5'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1694,9 +1694,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='21'
           height='24'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1735,9 +1735,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='10.5'
           height='14.5'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1770,9 +1770,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='21'
           height='24'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1811,9 +1811,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='10.5'
           height='14.5'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1846,9 +1846,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='21'
           height='24'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1887,9 +1887,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='10.5'
           height='14.5'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1922,9 +1922,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='21'
           height='24'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1963,9 +1963,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='10.5'
           height='14.5'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -1998,9 +1998,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='21'
           height='24'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -2039,9 +2039,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='10.5'
           height='14.5'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -2074,9 +2074,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='21'
           height='24'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'
@@ -2115,9 +2115,9 @@ export default function RulesDesktop(props: RulesDesktopProps) {
           width='10.5'
           height='14.5'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feBlend
             mode='normal'
             in='SourceGraphic'

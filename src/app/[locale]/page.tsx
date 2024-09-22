@@ -10,6 +10,7 @@ import Registration from '@/components/Registration';
 import Rules from '@/components/Rules';
 import ScrollToTop from '@/components/ScrollToTop';
 import TimeCounter from '@/components/TimeCounter';
+import Timeline from '@/components/Timeline';
 import { BackgroundGradientAnimation } from '@/components/ui/background-gradient-animation';
 import { Bounce, ToastContainer, ToastContainerProps } from 'react-toastify';
 
@@ -37,6 +38,7 @@ export default function Home({
         <Hero />
         <About />
         <Rules />
+        <Timeline />
         <Prizes />
         <TimeCounter />
         <Registration />

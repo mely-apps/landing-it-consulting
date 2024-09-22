@@ -10,7 +10,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
 
 const SECTION_ITEMS = [
   {
@@ -24,6 +24,10 @@ const SECTION_ITEMS = [
   {
     title: 'Rules',
     path: SECTION_IDS.RULES,
+  },
+  {
+    title: 'Timeline',
+    path: SECTION_IDS.TIMELINE,
   },
   {
     title: 'Prizes',
