@@ -1,13 +1,13 @@
-'use client';
-import Image from 'next/image';
 import React from 'react';
 import GradualSpacing from './ui/gradual-spacing';
 import { SECTION_IDS } from '@/constants';
+import RulesMobile from '@/assets/RulesMobile';
+import RulesDesktop from '@/assets/RulesDesktop';
 
 const Rules = () => {
   return (
     <div
-      className='container mt-44 rounded-lg border-2 border-[#868686] bg-[#ccc]/10 px-20 py-10 shadow-2xl backdrop-blur-sm'
+      className='container mt-44 w-11/12 rounded-lg border-2 border-[#868686] bg-[#ccc]/10 py-10 shadow-2xl backdrop-blur-sm sm:px-10 md:px-20'
       id={SECTION_IDS.RULES}
     >
       <div className='grid grid-cols-4 gap-y-8'>
@@ -26,13 +26,9 @@ const Rules = () => {
           </p>
         </div>
       </div>
-      <div className='pointer-events-none relative mt-20 h-[400px] w-full select-none'>
-        <Image
-          className='h-full w-full object-contain'
-          src={'/rules.png'}
-          fill
-          alt=''
-        />
+      <div className='pointer-events-none relative mt-20 h-max w-full select-none'>
+        <RulesDesktop className='hidden w-full sm:block' />
+        <RulesMobile className='w-full sm:hidden' />
       </div>
     </div>
   );
