@@ -47,8 +47,11 @@ const Hero = () => {
 
       <div className='mt-14 flex items-center justify-center lg:mt-0'>
         <BlurFade delay={1} duration={0.5}>
-          <BackgroundGradient className='h-auto w-auto'>
-            <div className='relative h-[570px] w-[406px] overflow-hidden rounded-3xl'>
+          <BackgroundGradient
+            className='h-full w-full'
+            containerClassName='w-[300px] h-[421px] sm:h-[570px] sm:w-[406px]'
+          >
+            <div className='relative h-full w-full overflow-hidden rounded-3xl'>
               <Image
                 src='/Untitled.png'
                 alt='landing-it-consulting'
