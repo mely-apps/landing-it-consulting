@@ -24,7 +24,7 @@ const Hero = () => {
       id={SECTION_IDS.HOME}
     >
       <div className='order-2 text-center sm:order-1 lg:text-left'>
-        <h1 className='hidden text-center text-4xl font-extrabold leading-[1.2] sm:block lg:text-left'>
+        <h1 className='hidden text-center font-montserrat text-3xl font-extrabold leading-[1.2] sm:block lg:text-left'>
           <BlurFade delay={0}>IT CONSULTANT</BlurFade>{' '}
           <FlipWords
             duration={3}

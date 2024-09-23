@@ -16,6 +16,7 @@ export default function Timeline() {
           y: 0,
           transition: { duration: 0.5, bounce: 0.5 },
         }}
+        viewport={{ once: true }}
       >
         timeline
       </motion.h2>
@@ -27,6 +28,7 @@ export default function Timeline() {
           transition: { duration: 0.5, bounce: 0.5, delay: 0.4 },
         }}
         className='relative h-[200px] w-full select-none sm:h-[380px] lg:h-[550px] xl:h-[650px]'
+        viewport={{ once: true }}
       >
         <Image src={'/timeline.png'} className='object-cover' fill alt='' />
       </motion.div>

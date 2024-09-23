@@ -27,6 +27,7 @@ const About = () => {
               duration: 0.5,
             },
           }}
+          viewport={{ once: true }}
         >
           <span className='font-extrabold'>IT Consultant Challenge</span>
           —an exciting full-day event where IT students have the chance to
@@ -54,6 +55,7 @@ const About = () => {
               delay: 0.3,
             },
           }}
+          viewport={{ once: true }}
         >
           <p className='font-bold'>Who can join the event?</p>
           <ul className='ml-10 list-disc'>

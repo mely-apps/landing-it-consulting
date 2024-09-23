@@ -20,6 +20,7 @@ const Organizer = () => {
             bounce: 0.5,
           },
         }}
+        viewport={{ once: true }}
       >
         Organizers
       </motion.h2>
@@ -34,6 +35,7 @@ const Organizer = () => {
               scale: 1,
               transition: { duration: 0.2 },
             }}
+            viewport={{ once: true }}
           >
             <Image
               src={'/companies/codemely.png'}
@@ -54,6 +56,7 @@ const Organizer = () => {
                 y: 0,
                 transition: { duration: 0.3, delay: 0.1 },
               }}
+              viewport={{ once: true }}
             >
               <span className='font-bold'>Code MeLy</span> is a vibrant IT
               community and launchpad for young talents, especially female
@@ -74,6 +77,7 @@ const Organizer = () => {
               scale: 1,
               transition: { duration: 0.3, delay: 0.2 },
             }}
+            viewport={{ once: true }}
           >
             <Image
               src={'/companies/netcompany.png'}
@@ -94,6 +98,7 @@ const Organizer = () => {
                 y: 0,
                 transition: { duration: 0.2, delay: 0.2 },
               }}
+              viewport={{ once: true }}
             >
               <span className='font-bold'>Netcompany</span> is an IT consulting
               firm founded in 2000 in Copenhagen, Denmark. The company plays a

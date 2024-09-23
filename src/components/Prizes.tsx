@@ -20,6 +20,7 @@ const Prizes = () => {
             bounce: 0.5,
           },
         }}
+        viewport={{ once: true }}
       >
         prizes
       </motion.h2>
@@ -38,6 +39,7 @@ const Prizes = () => {
             delay: 0.4,
           },
         }}
+        viewport={{ once: true }}
       >
         <motion.div className='relative flex items-center justify-center transition-all hover:scale-105'>
           <Image
@@ -66,13 +68,6 @@ const Prizes = () => {
           />
         </motion.div>
       </motion.div>
-
-      {/* <div className='mt-20 flex flex-col items-center gap-2'>
-        <p className='text-lg font-extrabold text-white'>
-          TỔNG GIẢI THƯỞNG LÊN ĐẾN
-        </p>
-        <p className='text-4xl font-extrabold text-[#E86F0B]'>30.000.000 VNĐ</p>
-      </div> */}
     </div>
   );
 };
