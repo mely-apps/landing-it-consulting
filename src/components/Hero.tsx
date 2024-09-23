@@ -11,6 +11,13 @@ import { FlipWords } from './ui/flip-words';
 const Hero = () => {
   const t = useTranslations('HomePage');
 
+  const handleScrollToRegistration = () => {
+    const section = document.getElementById(SECTION_IDS.REGISTER);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div
       className='container relative grid grid-cols-1 items-center px-0 sm:px-8 sm:py-10 lg:grid-cols-2'
@@ -39,7 +46,10 @@ const Hero = () => {
           </div>
         </BlurFade>
         <BlurFade delay={0.7}>
-          <button className='mt-6 w-auto rounded-md !bg-[#7FFFF7] px-6 py-2 font-semibold text-black hover:opacity-90'>
+          <button
+            className='mt-6 w-auto rounded-md !bg-[#7FFFF7] px-6 py-2 font-semibold text-black hover:opacity-90'
+            onClick={handleScrollToRegistration}
+          >
             {t('hero.buttonTitle')}
           </button>
         </BlurFade>
