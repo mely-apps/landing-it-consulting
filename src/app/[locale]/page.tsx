@@ -32,7 +32,7 @@ export default function Home({
   return (
     <BackgroundGradientAnimation>
       <ToastContainer {...toastContainerConfig} />
-      <div className='absolute inset-0 left-0 top-0 z-50 h-screen w-screen overflow-x-hidden overflow-y-scroll scrollbar-none'>
+      <div className='main-container absolute inset-0 left-0 top-0 z-50 h-screen w-screen overflow-x-hidden overflow-y-scroll scrollbar-none'>
         <ScrollToTop />
         <Header locale={locale as LocaleProps['locale']} />
         <Hero />
