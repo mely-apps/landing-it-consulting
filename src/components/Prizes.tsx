@@ -24,7 +24,7 @@ const Prizes = () => {
         prizes
       </motion.h2>
       <motion.div
-        className='mt-24 grid h-[200px] grid-cols-3 max-[870px]:gap-x-8 sm:h-[300px] md:h-[450px]'
+        className='mt-10 grid h-[200px] grid-cols-3 max-[870px]:gap-x-8 sm:mt-24 sm:h-[300px] md:h-[450px]'
         initial={{
           opacity: 0,
           y: 50,

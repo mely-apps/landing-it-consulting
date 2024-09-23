@@ -18,7 +18,7 @@ const Rules = () => {
           />
         </div>
         <div className='col-span-4 lg:col-span-3'>
-          <p className='text-center text-base italic lg:text-left'>
+          <p className='text-justify text-base italic lg:text-left'>
             &quot;Teams select a case study from the challenge provided by the
             organizers, then analyze and design ideas and solutions to address
             the identified issues. Awards will be given to ideas that are

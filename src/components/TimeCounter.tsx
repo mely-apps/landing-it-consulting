@@ -22,11 +22,11 @@ const TimeCounter = () => {
         <Countdown
           date={date}
           renderer={(time) => (
-            <div className='mx-auto flex h-60 w-full flex-col items-center justify-center gap-y-6 rounded-3xl border border-white bg-white/10 sm:w-3/4 lg:h-64'>
+            <div className='mx-auto flex h-44 w-full flex-col items-center justify-center gap-y-6 rounded-3xl border border-white bg-white/10 sm:h-60 sm:w-3/4 lg:h-64'>
               <h2 className='text-center text-2xl font-extrabold text-primary'>
                 TIME LEFT
               </h2>
-              <div className='flex w-full flex-wrap items-center justify-around rounded-3xl [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)] md:justify-center md:gap-x-20'>
+              <div className='flex w-full flex-wrap items-center justify-around rounded-3xl [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]'>
                 <div>
                   <p className='neon-text text-center text-3xl font-extrabold drop-shadow-2xl'>
                     {time.days >= 10 ? time.days : `0${time.days}`}

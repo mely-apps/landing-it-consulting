@@ -13,7 +13,7 @@ const Hero = () => {
 
   return (
     <div
-      className='container relative grid grid-cols-1 items-center gap-y-6 py-10 lg:grid-cols-2'
+      className='container relative grid grid-cols-1 items-center px-0 sm:px-8 sm:py-10 lg:grid-cols-2'
       id={SECTION_IDS.HOME}
     >
       <div className='order-2 text-center sm:order-1 lg:text-left'>
@@ -31,9 +31,9 @@ const Hero = () => {
           </p>
         </BlurFade>
         <BlurFade delay={0.5}>
-          <div className='mt-4 flex items-center justify-center gap-x-1 max-sm:mx-10 lg:justify-start'>
-            <IoLocationSharp className='max-sm:h-10 max-sm:w-10' />
-            <p className='text-left font-bold uppercase text-muted-foreground max-sm:ps-2 max-sm:text-sm'>
+          <div className='mt-4 flex items-center justify-center gap-x-1 max-sm:mx-16 lg:justify-start'>
+            <IoLocationSharp className='max-sm:h-10 max-sm:w-10 max-sm:text-primary' />
+            <p className='text-left font-bold uppercase text-muted-foreground max-sm:ps-2 max-sm:text-sm max-sm:text-primary'>
               {t('hero.time')}
             </p>
           </div>
@@ -46,7 +46,7 @@ const Hero = () => {
       </div>
 
       <div className='order-1 flex items-center justify-center sm:order-2 lg:mt-0'>
-        <BlurFade delay={1} duration={0.5}>
+        <BlurFade delay={1} duration={0.5} className='max-sm:hidden'>
           <BackgroundGradient
             className='h-full w-full'
             containerClassName='w-[300px] h-[421px] sm:h-[570px] sm:w-[406px]'
@@ -63,6 +63,17 @@ const Hero = () => {
             </div>
           </BackgroundGradient>
         </BlurFade>
+
+        <div className='relative h-[600px] w-full overflow-hidden sm:hidden'>
+          <Image
+            src='/Untitled.png'
+            alt='landing-it-consulting'
+            sizes='auto'
+            className='object-contain'
+            priority
+            fill
+          />
+        </div>
       </div>
     </div>
   );
