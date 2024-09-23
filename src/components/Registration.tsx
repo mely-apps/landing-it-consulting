@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import { Form, Formik, FormikHelpers } from 'formik';
 import { toast } from 'react-toastify';
 import clsx from 'clsx';
@@ -14,12 +14,15 @@ import {
   teamFormInitValue,
   teamFormSchema,
 } from './Schema';
+import { Check } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const Registration = () => {
   const [isLoading, setIsLoading] = React.useState(false);
   const [typeForm, setTypeForm] = React.useState<'team' | 'personal'>(
     'personal',
   );
+  const [submitSuccess, setSubmitSuccess] = useState(false);
 
   const toggleTypeForm = (type: 'team' | 'personal') => {
     setTypeForm(type);
@@ -39,13 +42,13 @@ const Registration = () => {
         `entry.614204740=${encodeURIComponent(values.phoneNumber)}&` +
         `entry.742289880=${encodeURIComponent(values.email)}&`;
 
-      const response = await fetch(url, {
+      await fetch(url, {
         method: 'POST',
         mode: 'no-cors',
       });
 
+      setSubmitSuccess(true);
       toast.success('Registration successful!');
-
       formikHelpers.resetForm();
     } catch (error) {
       toast.error('Registration failed, please try again!');
@@ -70,13 +73,13 @@ const Registration = () => {
         `entry.1938692918=${encodeURIComponent(values.phoneNumber)}&` +
         `entry.1820835535=${encodeURIComponent(values.email)}`;
 
-      const response = await fetch(url, {
+      await fetch(url, {
         method: 'POST',
         mode: 'no-cors',
       });
 
+      setSubmitSuccess(true);
       toast.success('Registration successful!');
-
       formikHelpers.resetForm();
     } catch (error) {
       console.log(error);
@@ -92,7 +95,36 @@ const Registration = () => {
         Registration
       </h2>
 
-      {typeForm === 'personal' ? (
+      {submitSuccess ? (
+        <div className='mx-auto mt-10 flex w-full flex-col items-center justify-center gap-y-6 rounded-lg border border-white/30 bg-white/10 p-10 sm:w-3/4'>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+              transition: { duration: 0.5, bounce: 0.5, delay: 0.4 },
+            }}
+            viewport={{ once: true }}
+          >
+            <Check className='h-16 w-16 rounded-full bg-primary p-2' />
+          </motion.div>
+          <motion.div
+            className='text-center'
+            initial={{ opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+              transition: { duration: 0.5, bounce: 0.5, delay: 0.2 },
+            }}
+            viewport={{ once: true }}
+          >
+            <p className='text-base font-bold min-[400px]:text-lg'>
+              Congratulations!
+            </p>
+            <p className='text-base font-bold min-[400px]:text-lg'>
+              Your application has been successfully submitted.
+            </p>
+          </motion.div>
+        </div>
+      ) : typeForm === 'personal' ? (
         <Formik
           enableReinitialize
           initialValues={personalFormInitValue}
@@ -124,15 +156,20 @@ const Registration = () => {
               </div>
 
               <div className='col-span-2'>
-                <FormField label='Full name' name='fullName' />
+                <FormField label='Full name' name='fullName' required />
               </div>
               <div className='col-span-2 md:col-span-1'>
-                <DateTimeField name='dateOfBirth' label='Date of birth' />
+                <DateTimeField
+                  name='dateOfBirth'
+                  label='Date of birth'
+                  required
+                />
               </div>
               <div className='col-span-2 md:col-span-1'>
                 <SelectField
                   label='Gender'
                   name='gender'
+                  required
                   options={[
                     { value: 'male', label: 'Male' },
                     { value: 'female', label: 'Female' },
@@ -140,16 +177,16 @@ const Registration = () => {
                 />
               </div>
               <div className='col-span-2 md:col-span-1'>
-                <FormField label='School' name='school' />
+                <FormField label='School' name='school' required />
               </div>
               <div className='col-span-2 md:col-span-1'>
-                <FormField label='Major' name='major' />
+                <FormField label='Major' name='major' required />
               </div>
               <div className='col-span-2'>
-                <FormField label='Phone Number' name='phoneNumber' />
+                <FormField label='Phone Number' name='phoneNumber' required />
               </div>
               <div className='col-span-2'>
-                <FormField label='Email' name='email' />
+                <FormField label='Email' name='email' required />
               </div>
 
               <div className='col-span-2 mt-4 flex justify-end'>
@@ -202,19 +239,23 @@ const Registration = () => {
                 </button>
               </div>
               <div className='col-span-2'>
-                <FormField label='Team Name' name='teamName' />
+                <FormField label='Team Name' name='teamName' required />
               </div>
               <div className='col-span-2'>
-                <FormField label='Number of Team Members' name='teamSize' />
+                <FormField
+                  label='Number of Team Members'
+                  name='teamSize'
+                  required
+                />
               </div>
               <div className='col-span-2'>
-                <FormField label='School' name='school' />
+                <FormField label='School' name='school' required />
               </div>
               <div className='col-span-2'>
-                <FormField label='Phone Number' name='phoneNumber' />
+                <FormField label='Phone Number' name='phoneNumber' required />
               </div>
               <div className='col-span-2'>
-                <FormField label='Email' name='email' />
+                <FormField label='Email' name='email' required />
               </div>
               <div className='col-span-2 mt-4 flex justify-end'>
                 <button
