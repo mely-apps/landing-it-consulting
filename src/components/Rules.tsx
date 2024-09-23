@@ -26,7 +26,7 @@ const Rules = () => {
           </p>
         </div>
       </div>
-      <div className='pointer-events-none relative mt-20 h-max w-full select-none'>
+      <div className='pointer-events-none relative h-max w-full select-none max-sm:mt-10 xl:mt-20'>
         <RulesDesktop className='hidden w-full sm:block' />
         <RulesMobile className='w-full sm:hidden' />
       </div>
