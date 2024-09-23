@@ -14,7 +14,7 @@ const About = () => {
         className='text-2xl font-extrabold uppercase !text-primary'
         words={[t('about.heading')]}
       />
-      <div className='mx-auto mt-12 flex flex-col gap-8 font-inter text-base italic'>
+      <div className='mx-auto mt-12 flex flex-col gap-8 font-inter text-base italic max-sm:text-justify'>
         <motion.p
           initial={{
             opacity: 0,

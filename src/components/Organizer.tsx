@@ -44,7 +44,7 @@ const Organizer = () => {
           </motion.div>
           <div className='col-span-3 md:col-span-2'>
             <motion.p
-              className='text-lg font-light italic leading-[1.3]'
+              className='text-lg font-light italic leading-[1.3] max-sm:text-justify'
               initial={{
                 opacity: 0.2,
                 y: 50,
@@ -84,7 +84,7 @@ const Organizer = () => {
           </motion.div>
           <div className='col-span-3 md:col-span-2'>
             <motion.p
-              className='text-lg font-light italic leading-[1.3]'
+              className='text-lg font-light italic leading-[1.3] max-sm:text-justify'
               initial={{
                 opacity: 0.2,
                 y: 50,
