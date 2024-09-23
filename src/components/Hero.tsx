@@ -13,7 +13,7 @@ const Hero = () => {
 
   return (
     <div
-      className='relative grid grid-cols-2 items-center py-10'
+      className='container relative grid grid-cols-2 items-center py-10'
       id={SECTION_IDS.HOME}
     >
       <div>

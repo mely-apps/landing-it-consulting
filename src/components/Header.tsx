@@ -48,7 +48,7 @@ const Header = ({ locale }: LocaleProps) => {
 
   return (
     <div
-      className='relative hidden items-center justify-between pt-4 lg:flex'
+      className='container relative hidden items-center justify-between pt-4 lg:flex'
       id='header'
     >
       <div className='font-montserrat text-2xl font-extrabold'>
