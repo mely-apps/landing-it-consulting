@@ -1,4 +1,3 @@
-import React from 'react';
 import { clsx } from 'clsx';
 import type { IconBaseProps } from 'react-icons';
 
@@ -6,25 +5,28 @@ export interface IPhoneProps extends IconBaseProps {
   className?: string;
 }
 
-const Phone = (props: IPhoneProps) => {
+const MailContact = (props: IPhoneProps) => {
   const classN = clsx(props.className, 'lucide lucide-phone');
   return (
     <svg
-      xmlns='http://www.w3.org/2000/svg'
       width='24'
       height='24'
       viewBox='0 0 24 24'
       fill='none'
-      stroke='currentColor'
-      strokeWidth='2'
-      strokeLinecap='round'
-      strokeLinejoin='round'
-      className={classN}
-      {...props}
+      xmlns='http://www.w3.org/2000/svg'
     >
-      <path d='M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z' />
+      <g id='Icons/communication/outline/mail'>
+        <path
+          id='Vector'
+          d='M6 8L9.7812 10.5208C11.1248 11.4165 12.8752 11.4165 14.2188 10.5208L18 8M6 21H18C20.2091 21 22 19.2091 22 17V7C22 4.79086 20.2091 3 18 3H6C3.79086 3 2 4.79086 2 7V17C2 19.2091 3.79086 21 6 21Z'
+          stroke='#FFFFFF'
+          stroke-width='1.5'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+      </g>
     </svg>
   );
 };
 
-export default Phone;
+export default MailContact;
