@@ -31,14 +31,12 @@ const Hero = () => {
             {t('hero.subTitle')}
           </p>
         </BlurFade> */}
-        <BlurFade delay={0.5}>
-          <div className='mt-4 flex items-center gap-x-1'>
-            <IoLocationSharp />
-            <p className='text-lg font-bold uppercase text-white'>
-              {t('hero.time')}
-            </p>
-          </div>
-        </BlurFade>
+        <div className='mt-4 flex items-center gap-x-1'>
+          <IoLocationSharp />
+          <p className='text-lg font-bold uppercase text-white'>
+            {t('hero.time')}
+          </p>
+        </div>
         <BlurFade delay={0.7}>
           <button
             onClick={toRegister}

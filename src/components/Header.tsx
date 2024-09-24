@@ -53,7 +53,7 @@ const Header = ({ locale }: LocaleProps) => {
   return (
     <>
       {loading && (
-        <div className='progress' style={{ height: '5px', width: '70%' }}></div>
+        <div className='progress' style={{ height: '2px', width: '70%' }}></div>
       )}
 
       <div
@@ -66,7 +66,7 @@ const Header = ({ locale }: LocaleProps) => {
         </div>
 
         <div className='flex items-center gap-x-8'>
-          <nav className='flex h-full items-center gap-x-8 font-semibold text-gray'>
+          <nav className='flex h-full items-center gap-x-8 font-semibold'>
             {SECTION_ITEMS.map((item, idx) => (
               <p
                 className='cursor-pointer hover:text-primary'

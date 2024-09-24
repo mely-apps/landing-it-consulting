@@ -24,7 +24,6 @@
 }
 
 .fade-in-right {
-  -webkit-animation: fade-in-right 0.75s cubic-bezier(0.39, 0.575, 0.565, 1)
-    both;
-  animation: fade-in-right 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation: fade-in-right 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-right 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }

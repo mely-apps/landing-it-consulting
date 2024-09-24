@@ -14,12 +14,15 @@ import {
   teamFormInitValue,
   teamFormSchema,
 } from './Schema';
+import { useTranslations } from 'next-intl';
 
 const Registration = () => {
   const [isLoading, setIsLoading] = React.useState(false);
   const [typeForm, setTypeForm] = React.useState<'team' | 'personal'>(
     'personal',
   );
+
+  const t = useTranslations('HomePage.registration');
 
   const toggleTypeForm = (type: 'team' | 'personal') => {
     setTypeForm(type);
@@ -110,7 +113,7 @@ const Registration = () => {
                   )}
                   type='button'
                 >
-                  individual
+                  {t('individual')}
                 </button>
                 <button
                   onClick={() => toggleTypeForm('team')}
@@ -119,20 +122,29 @@ const Registration = () => {
                   )}
                   type='button'
                 >
-                  team
+                  {t('team')}
                 </button>
               </div>
 
               <div className='col-span-2'>
-                <FormField label='Full name' name='fullName' />
+                <FormField
+                  label={t('fullname')}
+                  name='fullName'
+                  placeholder='ex: Nguyễn Văn A'
+                />
               </div>
               <div className='col-span-1'>
-                <DateTimeField name='dateOfBirth' label='Date of birth' />
+                <DateTimeField
+                  name='dateOfBirth'
+                  label={t('dateOfBirth')}
+                  placeholder='ex: 01/01/2000'
+                />
               </div>
               <div className='col-span-1'>
                 <SelectField
-                  label='Gender'
+                  label={t('gender')}
                   name='gender'
+                  placeholder='ex: Male'
                   options={[
                     { value: 'male', label: 'Male' },
                     { value: 'female', label: 'Female' },
@@ -140,16 +152,32 @@ const Registration = () => {
                 />
               </div>
               <div className='col-span-1'>
-                <FormField label='School' name='school' />
+                <FormField
+                  label={t('school')}
+                  name='school'
+                  placeholder='ex: Trường Đại Học A'
+                />
               </div>
               <div className='col-span-1'>
-                <FormField label='Major' name='major' />
+                <FormField
+                  label={t('major')}
+                  name='major'
+                  placeholder='ex: CNTT'
+                />
               </div>
               <div className='col-span-2'>
-                <FormField label='Phone Number' name='phoneNumber' />
+                <FormField
+                  label={t('phonenumber')}
+                  name='phoneNumber'
+                  placeholder='092929211xx'
+                />
               </div>
               <div className='col-span-2'>
-                <FormField label='Email' name='email' />
+                <FormField
+                  label='Email'
+                  name='email'
+                  placeholder='Ex: example@gmail.com'
+                />
               </div>
 
               <div className='col-span-2 mt-4 flex justify-end'>
@@ -188,7 +216,7 @@ const Registration = () => {
                   )}
                   type='button'
                 >
-                  individual
+                  {t('individual')}
                 </button>
                 <button
                   onClick={() => toggleTypeForm('team')}
@@ -198,23 +226,43 @@ const Registration = () => {
                   )}
                   type='button'
                 >
-                  team
+                  {t('team')}
                 </button>
               </div>
               <div className='col-span-2'>
-                <FormField label='Team Name' name='teamName' />
+                <FormField
+                  label={t('teamName')}
+                  name='teamName'
+                  placeholder='ex: Team A'
+                />
               </div>
               <div className='col-span-2'>
-                <FormField label='Number of Team Members' name='teamSize' />
+                <FormField
+                  label={t('teamSize')}
+                  placeholder='ex: 4'
+                  name='teamSize'
+                />
               </div>
               <div className='col-span-2'>
-                <FormField label='School' name='school' />
+                <FormField
+                  label={t('school')}
+                  name='school'
+                  placeholder='ex: Trường Đại Học A'
+                />{' '}
               </div>
               <div className='col-span-2'>
-                <FormField label='Phone Number' name='phoneNumber' />
+                <FormField
+                  label={t('phonenumber')}
+                  name='phoneNumber'
+                  placeholder='092929211xx'
+                />{' '}
               </div>
               <div className='col-span-2'>
-                <FormField label='Email' name='email' />
+                <FormField
+                  label='Email'
+                  name='email'
+                  placeholder='Ex: example@gmail.com'
+                />
               </div>
               <div className='col-span-2 mt-4 flex justify-end'>
                 <button
@@ -228,7 +276,7 @@ const Registration = () => {
                   {isLoading ? (
                     <FaSpinner className='animate-spin' />
                   ) : (
-                    'Submit'
+                    t('submit')
                   )}
                 </button>
               </div>

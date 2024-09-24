@@ -27,7 +27,7 @@ const Rules = () => {
       <div className='pointer-events-none relative mt-20 h-[400px] w-full select-none'>
         <Image
           className='h-full w-full object-contain'
-          src={'/rules.png'}
+          src={'/rules.webp'}
           fill
           alt=''
         />

@@ -5,9 +5,10 @@ import DatePickerField from './DatePickerField';
 interface FormFieldProps {
   name: string;
   label: string;
+  placeholder: string;
 }
 
-const FormField = ({ label, name }: FormFieldProps) => {
+const FormField = ({ label, name, placeholder }: FormFieldProps) => {
   return (
     <div>
       <label
@@ -19,6 +20,7 @@ const FormField = ({ label, name }: FormFieldProps) => {
       <Field
         name={name}
         className='mt-1 w-full rounded-lg px-4 py-2 text-black'
+        placeholder={placeholder}
       />
       <ErrorMessage
         render={(msg) => <p className='capitalize text-red-500'>{msg}</p>}
