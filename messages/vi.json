@@ -12,7 +12,7 @@
       "timeline": "Mốc thời gian",
       "prizes": "Phần thưởng",
       "register": "Đăng ký",
-      "organizers": "Ban tổ chức"
+      "organizers": "Đơn vị tổ chức"
     },
     "hero": {
       "subTitle": "Hackathon là cuộc thi dành cho các coder mới trẻ, khi tham gia cuộc thi các bạn sẻ nhận được tham gia code cùng với chúng tôi!",
@@ -140,6 +140,15 @@
         "teamSize": {
           "required": "Số thành viên không được để trống"
         }
+      }
+    },
+    "organizers": {
+      "title": "Đơn vị tổ chức",
+      "codeMely": {
+        "description": "<bold>{codeMelyName}</bold> là một cộng đồng CNTT sôi động và là bệ phóng cho các tài năng trẻ, đặc biệt là các nữ lập trình viên. Sứ mệnh của chúng tôi là nuôi dưỡng, thúc đẩy một cộng đồng GenZ năng động trong lĩnh vực CNTT bằng cách tạo ra các cuộc thi hấp dẫn và nền tảng nâng cao kỹ năng lập trình, đồng thời cung cấp nguồn nhân lực tài năng hàng đầu cho các dự án CNTT trên toàn thế giới."
+      },
+      "netcompany": {
+        "description": "<bold>{netcompanyName}</bold> là một công ty tư vấn CNTT được thành lập vào năm 2000 tại Copenhagen, Đan Mạch. Công ty đóng vai trò quan trọng trong quá trình chuyển đổi số cho cả khu vực công và tư nhân. {netcompanyName} tin rằng công nghệ có thể mang lại tác động tích cực cho xã hội và doanh nghiệp, đồng thời luôn tìm kiếm những chuyên gia CNTT tài năng, cung cấp các cơ hội phát triển nghề nghiệp."
       }
     }
   }

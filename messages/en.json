@@ -141,6 +141,15 @@
           "required": "Number of team members is required"
         }
       }
+    },
+    "organizers": {
+      "title": "Organizers",
+      "codeMely": {
+        "description": "<bold>{codeMelyName}</bold> is a vibrant IT community and launchpad for young talents, especially female programmers. Our mission is to foster a dynamic IT GenZ community by creating engaging competitions and platforms that enhance programming skills and provide top-tier talent for IT projects worldwide."
+      },
+      "netcompany": {
+        "description": "<bold>{netcompanyName}</bold> is an IT consulting firm founded in 2000 in Copenhagen, Denmark. The company plays a crucial role in digital transformation for both public and private sectors. Netcompany believes that technology can have a positive impact on society and business, and continuously seeks talented IT professionals, offering career development opportunities."
+      }
     }
   }
 }

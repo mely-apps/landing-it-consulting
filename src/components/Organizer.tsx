@@ -2,8 +2,11 @@ import { SECTION_IDS } from '@/constants';
 import Image from 'next/image';
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 const Organizer = () => {
+  const t = useTranslations('HomePage');
+
   return (
     <div className='container mt-40' id={SECTION_IDS.ORGANIZERS}>
       <motion.h2
@@ -22,7 +25,7 @@ const Organizer = () => {
         }}
         viewport={{ once: true }}
       >
-        Organizers
+        {t('organizers.title')}
       </motion.h2>
 
       <div className='flex flex-col gap-20'>
@@ -58,12 +61,10 @@ const Organizer = () => {
               }}
               viewport={{ once: true }}
             >
-              <span className='font-bold'>Code MeLy</span> is a vibrant IT
-              community and launchpad for young talents, especially female
-              programmers. Our mission is to foster a dynamic IT GenZ community
-              by creating engaging competitions and platforms that enhance
-              programming skills and provide top-tier talent for IT projects
-              worldwide.
+              {t.rich('organizers.codeMely.description', {
+                bold: (chunks) => <span className='font-bold'>{chunks}</span>,
+                codeMelyName: t('names.codeMelyName'),
+              })}
             </motion.p>
           </div>
         </div>
@@ -100,12 +101,10 @@ const Organizer = () => {
               }}
               viewport={{ once: true }}
             >
-              <span className='font-bold'>Netcompany</span> is an IT consulting
-              firm founded in 2000 in Copenhagen, Denmark. The company plays a
-              crucial role in digital transformation for both public and private
-              sectors. Netcompany believes that technology can have a positive
-              impact on society and business, and continuously seeks talented IT
-              professionals, offering career development opportunities.
+              {t.rich('organizers.netcompany.description', {
+                bold: (chunks) => <span className='font-bold'>{chunks}</span>,
+                netcompanyName: t('names.netcompanyName'),
+              })}
             </motion.p>
           </div>
         </div>
