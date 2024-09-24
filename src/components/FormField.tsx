@@ -1,6 +1,7 @@
 import { ErrorMessage, Field } from 'formik';
 import React from 'react';
 import DatePickerField from './DatePickerField';
+import { useTranslations } from 'next-intl';
 
 interface FormFieldProps {
   name: string;
@@ -9,12 +10,11 @@ interface FormFieldProps {
 }
 
 const FormField = ({ label, name, required = false }: FormFieldProps) => {
+  const t = useTranslations('HomePage.registration.errorMessages');
+
   return (
     <div>
-      <label
-        className='block w-full font-bold capitalize text-primary'
-        htmlFor={name}
-      >
+      <label className='block w-full font-bold text-primary' htmlFor={name}>
         {label} {required && <span className='text-red-500'>*</span>}
       </label>
       <Field
@@ -22,9 +22,7 @@ const FormField = ({ label, name, required = false }: FormFieldProps) => {
         className='mt-1 w-full rounded-lg px-4 py-2 text-black'
       />
       <ErrorMessage
-        render={(msg) => (
-          <p className='capitalize italic text-red-500'>{msg}</p>
-        )}
+        render={(msg) => <p className='italic text-red-500'>{t(msg as any)}</p>}
         name={name}
       />
     </div>
@@ -34,7 +32,7 @@ const FormField = ({ label, name, required = false }: FormFieldProps) => {
 const DateTimeField = ({ name, label, required = false }: FormFieldProps) => {
   return (
     <div>
-      <label className='block w-full font-bold capitalize text-primary'>
+      <label className='block w-full font-bold text-primary'>
         {label} {required && <span className='text-red-500'>*</span>}
       </label>
       <Field
@@ -43,9 +41,7 @@ const DateTimeField = ({ name, label, required = false }: FormFieldProps) => {
         component={DatePickerField}
       />
       <ErrorMessage
-        render={(msg) => (
-          <p className='capitalize italic text-red-500'>{msg}</p>
-        )}
+        render={(msg) => <p className='italic text-red-500'>{msg}</p>}
         name={name}
       />
     </div>
@@ -65,7 +61,7 @@ const SelectField = ({
 }) => {
   return (
     <div>
-      <label className='block w-full font-bold capitalize text-primary'>
+      <label className='block w-full font-bold text-primary'>
         {label} {required && <span className='text-red-500'>*</span>}
       </label>
       <Field
@@ -80,9 +76,7 @@ const SelectField = ({
         ))}
       </Field>
       <ErrorMessage
-        render={(msg) => (
-          <p className='capitalize italic text-red-500'>{msg}</p>
-        )}
+        render={(msg) => <p className='italic text-red-500'>{msg}</p>}
         name={name}
       />
     </div>

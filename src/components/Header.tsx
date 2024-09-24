@@ -79,7 +79,7 @@ const Header = ({ locale }: LocaleProps) => {
                 handleScrollToSection(item.path);
               }}
             >
-              {t(`header.${item.path}`)}
+              {t(`header.${item.path}` as any)}
             </p>
           ))}
         </div>

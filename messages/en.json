@@ -54,6 +54,93 @@
       "hours": "hours",
       "minutes": "minutes",
       "seconds": "seconds"
+    },
+    "registration": {
+      "title": "Registration",
+      "individual": {
+        "title": "Individual",
+        "fullName": {
+          "label": "Full name"
+        },
+        "dateOfBirth": {
+          "label": "Date of Birth"
+        },
+        "gender": {
+          "label": "Gender",
+          "male": "Male",
+          "female": "Female"
+        },
+        "school": {
+          "label": "School"
+        },
+        "major": {
+          "label": "Major"
+        },
+        "phoneNumber": {
+          "label": "Phone number"
+        },
+        "email": {
+          "label": "Email"
+        }
+      },
+      "team": {
+        "title": "Team",
+        "teamName": {
+          "label": "Team name"
+        },
+        "teamSize": {
+          "label": "Number of team members"
+        },
+        "school": {
+          "label": "School"
+        },
+        "phoneNumber": {
+          "label": "Phone number"
+        },
+        "email": {
+          "label": "Email"
+        }
+      },
+      "submit": "Submit",
+      "success": {
+        "title": "Congratulations!",
+        "content": "Your application has been successfully submitted.",
+        "toastMessage": "Registration successful!"
+      },
+      "failed": {
+        "toastMessage": "Registration failed, please try again!"
+      },
+      "errorMessages": {
+        "fullName": {
+          "required": "Full name is required"
+        },
+        "dateOfBirth": {
+          "required": "Date of birth is required"
+        },
+        "gender": {
+          "required": "Gender is required"
+        },
+        "school": {
+          "required": "School is required"
+        },
+        "major": {
+          "required": "Major is required"
+        },
+        "phoneNumber": {
+          "required": "Phone number is required",
+          "invalid": "Phone number is invalid"
+        },
+        "email": {
+          "required": "Email is required",
+          "invalid": "Email is invalid"
+        },
+        "teamName": {
+          "required": "Team name is required"
+        },
+        "teamSize": {
+          "required": "Number of team members is required"
+        }
+      }
     }
   }
 }

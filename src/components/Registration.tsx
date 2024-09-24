@@ -16,8 +16,10 @@ import {
 } from './Schema';
 import { Check } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 const Registration = () => {
+  const t = useTranslations('HomePage');
   const [isLoading, setIsLoading] = React.useState(false);
   const [typeForm, setTypeForm] = React.useState<'team' | 'personal'>(
     'personal',
@@ -48,10 +50,10 @@ const Registration = () => {
       });
 
       setSubmitSuccess(true);
-      toast.success('Registration successful!');
+      toast.success(t('registration.success.toastMessage'));
       formikHelpers.resetForm();
     } catch (error) {
-      toast.error('Registration failed, please try again!');
+      toast.error(t('registration.failed.toastMessage'));
     } finally {
       setIsLoading(false);
     }
@@ -79,11 +81,11 @@ const Registration = () => {
       });
 
       setSubmitSuccess(true);
-      toast.success('Registration successful!');
+      toast.success(t('registration.success.toastMessage'));
       formikHelpers.resetForm();
     } catch (error) {
       console.log(error);
-      toast.error('Registration failed, please try again!');
+      toast.error(t('registration.failed.toastMessage'));
     } finally {
       setIsLoading(false);
     }
@@ -117,10 +119,10 @@ const Registration = () => {
             viewport={{ once: true }}
           >
             <p className='text-base font-bold min-[400px]:text-lg'>
-              Congratulations!
+              {t('registration.success.title')}
             </p>
             <p className='text-base font-bold min-[400px]:text-lg'>
-              Your application has been successfully submitted.
+              {t('registration.success.content')}
             </p>
           </motion.div>
         </div>
@@ -142,7 +144,7 @@ const Registration = () => {
                   )}
                   type='button'
                 >
-                  individual
+                  {t('registration.individual.title')}
                 </button>
                 <button
                   onClick={() => toggleTypeForm('team')}
@@ -151,42 +153,68 @@ const Registration = () => {
                   )}
                   type='button'
                 >
-                  team
+                  {t('registration.team.title')}
                 </button>
               </div>
 
               <div className='col-span-2'>
-                <FormField label='Full name' name='fullName' required />
+                <FormField
+                  label={t('registration.individual.fullName.label')}
+                  name='fullName'
+                  required
+                />
               </div>
               <div className='col-span-2 md:col-span-1'>
                 <DateTimeField
                   name='dateOfBirth'
-                  label='Date of birth'
+                  label={t('registration.individual.dateOfBirth.label')}
                   required
                 />
               </div>
               <div className='col-span-2 md:col-span-1'>
                 <SelectField
-                  label='Gender'
+                  label={t('registration.individual.gender.label')}
                   name='gender'
                   required
                   options={[
-                    { value: 'male', label: 'Male' },
-                    { value: 'female', label: 'Female' },
+                    {
+                      value: 'male',
+                      label: t('registration.individual.gender.male'),
+                    },
+                    {
+                      value: 'female',
+                      label: t('registration.individual.gender.female'),
+                    },
                   ]}
                 />
               </div>
               <div className='col-span-2 md:col-span-1'>
-                <FormField label='School' name='school' required />
+                <FormField
+                  label={t('registration.individual.school.label')}
+                  name='school'
+                  required
+                />
               </div>
               <div className='col-span-2 md:col-span-1'>
-                <FormField label='Major' name='major' required />
+                <FormField
+                  label={t('registration.individual.major.label')}
+                  name='major'
+                  required
+                />
               </div>
               <div className='col-span-2'>
-                <FormField label='Phone Number' name='phoneNumber' required />
+                <FormField
+                  label={t('registration.individual.phoneNumber.label')}
+                  name='phoneNumber'
+                  required
+                />
               </div>
               <div className='col-span-2'>
-                <FormField label='Email' name='email' required />
+                <FormField
+                  label={t('registration.individual.email.label')}
+                  name='email'
+                  required
+                />
               </div>
 
               <div className='col-span-2 mt-4 flex justify-end'>
@@ -201,7 +229,7 @@ const Registration = () => {
                   {isLoading ? (
                     <FaSpinner className='animate-spin' />
                   ) : (
-                    'Submit'
+                    t('registration.submit')
                   )}
                 </button>
               </div>
@@ -225,7 +253,7 @@ const Registration = () => {
                   )}
                   type='button'
                 >
-                  individual
+                  {t('registration.individual.title')}
                 </button>
                 <button
                   onClick={() => toggleTypeForm('team')}
@@ -235,27 +263,43 @@ const Registration = () => {
                   )}
                   type='button'
                 >
-                  team
+                  {t('registration.team.title')}
                 </button>
               </div>
               <div className='col-span-2'>
-                <FormField label='Team Name' name='teamName' required />
+                <FormField
+                  label={t('registration.team.teamName.label')}
+                  name='teamName'
+                  required
+                />
               </div>
               <div className='col-span-2'>
                 <FormField
-                  label='Number of Team Members'
+                  label={t('registration.team.teamSize.label')}
                   name='teamSize'
                   required
                 />
               </div>
               <div className='col-span-2'>
-                <FormField label='School' name='school' required />
+                <FormField
+                  label={t('registration.team.school.label')}
+                  name='school'
+                  required
+                />
               </div>
               <div className='col-span-2'>
-                <FormField label='Phone Number' name='phoneNumber' required />
+                <FormField
+                  label={t('registration.team.phoneNumber.label')}
+                  name='phoneNumber'
+                  required
+                />
               </div>
               <div className='col-span-2'>
-                <FormField label='Email' name='email' required />
+                <FormField
+                  label={t('registration.team.email.label')}
+                  name='email'
+                  required
+                />
               </div>
               <div className='col-span-2 mt-4 flex justify-end'>
                 <button
@@ -269,7 +313,7 @@ const Registration = () => {
                   {isLoading ? (
                     <FaSpinner className='animate-spin' />
                   ) : (
-                    'Submit'
+                    t('registration.submit')
                   )}
                 </button>
               </div>

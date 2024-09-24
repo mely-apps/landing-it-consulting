@@ -54,6 +54,93 @@
       "hours": "giờ",
       "minutes": "phút",
       "seconds": "giây"
+    },
+    "registration": {
+      "title": "Đăng ký",
+      "individual": {
+        "title": "Cá nhân",
+        "fullName": {
+          "label": "Tên đầy đủ"
+        },
+        "dateOfBirth": {
+          "label": "Ngày tháng năm sinh"
+        },
+        "gender": {
+          "label": "Giới tính",
+          "male": "Nam",
+          "female": "Nữ"
+        },
+        "school": {
+          "label": "Trường học"
+        },
+        "major": {
+          "label": "Chuyên ngành"
+        },
+        "phoneNumber": {
+          "label": "Số điện thoại"
+        },
+        "email": {
+          "label": "Email"
+        }
+      },
+      "team": {
+        "title": "Đội",
+        "teamName": {
+          "label": "Tên đội"
+        },
+        "teamSize": {
+          "label": "Số thành viên"
+        },
+        "school": {
+          "label": "Trường học"
+        },
+        "phoneNumber": {
+          "label": "Số điện thoại"
+        },
+        "email": {
+          "label": "Email"
+        }
+      },
+      "submit": "Đăng ký",
+      "success": {
+        "title": "Xin chúc mừng!",
+        "content": "Bạn đã nộp đơn đăng ký thành công!",
+        "toastMessage": "Đăng ký thành công!"
+      },
+      "failed": {
+        "toastMessage": "Đăng ký thất bại, vui lòng thử lại!"
+      },
+      "errorMessages": {
+        "fullName": {
+          "required": "Tên đầy đủ không được để trống"
+        },
+        "dateOfBirth": {
+          "required": "Ngày tháng năm sinh không được để trống"
+        },
+        "gender": {
+          "required": "Giới tính không được để trống"
+        },
+        "school": {
+          "required": "Trường học không được để trống"
+        },
+        "major": {
+          "required": "Chuyên ngành không được để trống"
+        },
+        "phoneNumber": {
+          "required": "Số điện thoại không được để trống",
+          "invalid": "Số điện thoại không hợp lệ"
+        },
+        "email": {
+          "required": "Email không được để trống",
+          "invalid": "Email không hợp lệ"
+        },
+        "teamName": {
+          "required": "Tên đội không được để trống"
+        },
+        "teamSize": {
+          "required": "Số thành viên không được để trống"
+        }
+      }
     }
   }
 }
