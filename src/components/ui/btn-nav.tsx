@@ -22,13 +22,13 @@ export const BtnNav = (item: { icon: React.ReactNode; path: SECTION_IDS }) => {
     const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
-        if (entry.intersectionRatio < 0.5) {
+        if (entry.intersectionRatio < 0.6) {
           setIsActive(false);
         } else {
           setIsActive(true);
         }
       },
-      { threshold: 0.5 },
+      { threshold: 0.6 },
     );
 
     const currentElement = document.getElementById(item.path);
