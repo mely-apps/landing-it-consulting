@@ -78,7 +78,7 @@ const Hero = () => {
             src='/cover.png'
             alt='landing-it-consulting'
             sizes='auto'
-            className='object-contain'
+            className='object-cover'
             priority
             fill
           />
