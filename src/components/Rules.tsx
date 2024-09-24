@@ -5,7 +5,11 @@ import RulesMobile from '@/assets/RulesMobile';
 import RulesDesktop from '@/assets/RulesDesktop';
 import { useTranslations } from 'next-intl';
 
-const Rules = () => {
+interface RulesProps {
+  locale?: string;
+}
+
+const Rules = ({ locale }: RulesProps) => {
   const t = useTranslations('HomePage');
 
   return (
@@ -27,8 +31,8 @@ const Rules = () => {
         </div>
       </div>
       <div className='pointer-events-none relative h-max w-full select-none'>
-        <RulesDesktop className='hidden w-full sm:block' />
-        <RulesMobile className='w-full sm:hidden' />
+        <RulesDesktop className='hidden w-full sm:block' locale={locale} />
+        <RulesMobile className='w-full sm:hidden' locale={locale} />
       </div>
     </div>
   );

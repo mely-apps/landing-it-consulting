@@ -1,9 +1,14 @@
 'use client';
+import { cn } from '@/lib/utils';
 import { useTranslations } from 'next-intl';
 import React, { useEffect, useMemo, useState } from 'react';
 import Countdown from 'react-countdown';
 
-const TimeCounter = () => {
+interface TimeCounterProps {
+  locale?: string;
+}
+
+const TimeCounter = ({ locale = 'en' }: TimeCounterProps) => {
   const t = useTranslations('HomePage');
   const [isClient, setIsClient] = useState(false);
 
@@ -24,7 +29,12 @@ const TimeCounter = () => {
         <Countdown
           date={date}
           renderer={(time) => (
-            <div className='card-gradient-border mx-auto flex h-44 w-full flex-col items-center justify-center gap-y-6 rounded-3xl sm:h-60 sm:w-3/4 lg:h-64'>
+            <div
+              className={cn(
+                { 'max-sm:py-28': locale === 'vi' },
+                'card-gradient-border mx-auto flex h-44 w-full flex-col items-center justify-center gap-y-6 rounded-3xl sm:h-60 sm:w-3/4 lg:h-64',
+              )}
+            >
               <h2 className='text-center text-2xl font-extrabold uppercase text-primary'>
                 {t('timeCounter.title')}
               </h2>
