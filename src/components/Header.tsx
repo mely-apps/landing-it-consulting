@@ -2,8 +2,15 @@
 import { LocaleProps } from '@/@types';
 import { SECTION_IDS } from '@/constants';
 import { useRouter } from 'next/navigation';
-import React from 'react';
+import React, { useState } from 'react';
 import { Switch } from './ui/switch';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+import { Menu } from 'lucide-react';
 
 const SECTION_ITEMS = [
   {
@@ -17,6 +24,10 @@ const SECTION_ITEMS = [
   {
     title: 'Rules',
     path: SECTION_IDS.RULES,
+  },
+  {
+    title: 'Timeline',
+    path: SECTION_IDS.TIMELINE,
   },
   {
     title: 'Prizes',
@@ -39,7 +50,7 @@ const Header = ({ locale }: LocaleProps) => {
     locale === 'vi' ? router.push('/en') : router.push('/vi');
   };
 
-  const handleSrollToSection = (path: string) => {
+  const handleScrollToSection = (path: string) => {
     const section = document.getElementById(path);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
@@ -48,34 +59,56 @@ const Header = ({ locale }: LocaleProps) => {
 
   return (
     <div
-      className='container relative flex items-center justify-between pt-8'
+      className='container relative hidden items-center justify-between pt-4 lg:flex'
       id='header'
     >
-      <div className='font-montserrat text-2xl font-extrabold'>
+      <div className='invisible font-montserrat text-lg font-extrabold sm:visible'>
         <p className='text-white'>IT Consultant</p>
         <p className='text-primary'>Challenge</p>
       </div>
 
-      <div className='flex items-center gap-x-8'>
-        <nav className='flex h-full items-center gap-x-8 font-semibold text-gray'>
+      <nav className='flex h-full items-center gap-x-8 font-semibold text-gray'>
+        <div className='hidden items-center gap-x-8 lg:flex'>
           {SECTION_ITEMS.map((item, idx) => (
             <p
               className='cursor-pointer hover:text-primary'
               key={item.title}
               onClick={() => {
-                handleSrollToSection(item.path);
+                handleScrollToSection(item.path);
               }}
             >
               {item.title}
             </p>
           ))}
+        </div>
 
-          <div className='flex min-w-12 cursor-pointer items-center gap-x-2 uppercase hover:text-primary'>
-            <Switch onClick={handleToggleLocale} checked={locale === 'vi'} />
-            <span>{locale}</span>
-          </div>
-        </nav>
-      </div>
+        <div className='flex lg:hidden'>
+          <DropdownMenu>
+            <DropdownMenuTrigger>
+              <Menu />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent
+              align='end'
+              className='border-0 bg-[#226472] font-semibold'
+              onCloseAutoFocus={(e) => e.preventDefault()}
+            >
+              {SECTION_ITEMS.map((item) => (
+                <DropdownMenuItem
+                  key={item.title}
+                  onSelect={() => handleScrollToSection(item.path)}
+                >
+                  {item.title}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
+
+        <div className='flex min-w-12 cursor-pointer items-center gap-x-2 uppercase hover:text-primary'>
+          <Switch onClick={handleToggleLocale} checked={locale === 'vi'} />
+          <span>{locale}</span>
+        </div>
+      </nav>
     </div>
   );
 };
