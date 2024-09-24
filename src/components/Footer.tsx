@@ -1,6 +1,6 @@
 import { FaFacebookF, FaLinkedinIn, FaTiktok, FaYoutube } from 'react-icons/fa';
 import CodeSandBox from './icons/CodeSandBox';
-import MailContact from './icons/Phone';
+import MailContact from './icons/MailContact';
 
 const Footer = () => {
   return (
