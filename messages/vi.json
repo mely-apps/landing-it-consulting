@@ -1,5 +1,14 @@
 {
   "HomePage": {
+    "header": {
+      "home": "Trang chủ",
+      "about": "Về sự kiện",
+      "rules": "Luật thi",
+      "timeline": "Mốc thời gian",
+      "prizes": "Phần thưởng",
+      "register": "Đăng ký",
+      "organizers": "Ban tổ chức"
+    },
     "hero": {
       "subTitle": "Hackathon là cuộc thi dành cho các coder mới trẻ, khi tham gia cuộc thi các bạn sẻ nhận được tham gia code cùng với chúng tôi!",
       "time": "Thứ 7, Ngày 12 Tháng 10 năm 2024, NETCOMPANY OFFICE",
