@@ -41,6 +41,19 @@
     "rules": {
       "title": "Luật thi",
       "description": "Các đội thi lựa chọn một case study (nghiên cứu tình huống) từ thử thách được ban tổ chức đưa ra, sau đó phân tích và thiết kế nên các ý tưởng, giải pháp để giải quyết các vấn đề đã xác định. Phần thưởng sẽ được trao cho những ý tưởng có tính khả thi, sáng tạo, và thể hiện tinh thần làm việc nhóm mạnh mẽ."
+    },
+    "timeline": {
+      "title": "Mốc thời gian"
+    },
+    "prizes": {
+      "title": "Phần thưởng"
+    },
+    "timeCounter": {
+      "title": "Thời gian còn lại",
+      "days": "ngày",
+      "hours": "giờ",
+      "minutes": "phút",
+      "seconds": "giây"
     }
   }
 }

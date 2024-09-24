@@ -1,8 +1,11 @@
 import { SECTION_IDS } from '@/constants';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 export default function Timeline() {
+  const t = useTranslations('HomePage');
+
   return (
     <div
       className='card-gradient-border container relative mt-44 w-11/12 px-0 py-3 shadow-2xl backdrop-blur-sm md:py-8 lg:py-10'
@@ -18,7 +21,7 @@ export default function Timeline() {
         }}
         viewport={{ once: true }}
       >
-        timeline
+        {t('timeline.title')}
       </motion.h2>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
