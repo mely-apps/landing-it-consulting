@@ -150,6 +150,10 @@
       "netcompany": {
         "description": "<bold>{netcompanyName}</bold> là một công ty tư vấn CNTT được thành lập vào năm 2000 tại Copenhagen, Đan Mạch. Công ty đóng vai trò quan trọng trong quá trình chuyển đổi số cho cả khu vực công và tư nhân. {netcompanyName} tin rằng công nghệ có thể mang lại tác động tích cực cho xã hội và doanh nghiệp, đồng thời luôn tìm kiếm những chuyên gia CNTT tài năng, cung cấp các cơ hội phát triển nghề nghiệp."
       }
+    },
+    "footer": {
+      "contact": "Liên hệ",
+      "followUs": "Theo dõi chúng tôi tại"
     }
   }
 }

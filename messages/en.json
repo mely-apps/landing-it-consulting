@@ -150,6 +150,10 @@
       "netcompany": {
         "description": "<bold>{netcompanyName}</bold> is an IT consulting firm founded in 2000 in Copenhagen, Denmark. The company plays a crucial role in digital transformation for both public and private sectors. Netcompany believes that technology can have a positive impact on society and business, and continuously seeks talented IT professionals, offering career development opportunities."
       }
+    },
+    "footer": {
+      "contact": "Contact",
+      "followUs": "Follow us via"
     }
   }
 }
