@@ -10,11 +10,7 @@ const itemVariants: Variants = {
   },
   closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
 };
-export const BtnNav = (item: {
-  icon: React.ReactNode;
-  path: SECTION_IDS;
-  key: string;
-}) => {
+export const BtnNav = (item: { icon: React.ReactNode; path: SECTION_IDS }) => {
   const [isActive, setIsActive] = useState(false);
   const handleSrollToSection = () => {
     const section = document.getElementById(item.path);
@@ -68,7 +64,6 @@ export const BtnNav = (item: {
       }}
       variants={itemVariants}
       onClick={handleSrollToSection}
-      key={item.key}
     >
       {item.icon}
     </motion.li>
