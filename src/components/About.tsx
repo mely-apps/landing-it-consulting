@@ -9,15 +9,12 @@ const About = () => {
   const t = useTranslations('HomePage');
 
   return (
-    <div
-      className='container w-11/12 border-2 border-transparent pt-24 lg:px-20'
-      id={SECTION_IDS.ABOUT}
-    >
+    <div className='container pt-24' id={SECTION_IDS.ABOUT}>
       <FlipWords
-        className='font-montserrat text-2xl font-extrabold uppercase !text-primary'
+        className='text-[50px] font-extrabold uppercase !text-primary'
         words={[t('about.heading')]}
       />
-      <div className='mx-auto mt-12 flex flex-col gap-8 text-justify font-inter text-base italic'>
+      <div className='mx-auto mt-12 flex max-w-[1280px] flex-col gap-8 font-inter text-xl italic'>
         <motion.p
           initial={{
             opacity: 0,
@@ -30,8 +27,6 @@ const About = () => {
               duration: 0.5,
             },
           }}
-          viewport={{ once: true }}
-          className='lg:px-20'
         >
           <span className='font-extrabold'>IT Consultant Challenge</span>
           —an exciting full-day event where IT students have the chance to
@@ -59,8 +54,6 @@ const About = () => {
               delay: 0.3,
             },
           }}
-          viewport={{ once: true }}
-          className='lg:px-20'
         >
           <p className='font-bold'>Who can join the event?</p>
           <ul className='ml-10 list-disc'>

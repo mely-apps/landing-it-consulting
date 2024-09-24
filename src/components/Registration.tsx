@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import { Form, Formik, FormikHelpers } from 'formik';
 import { toast } from 'react-toastify';
 import clsx from 'clsx';
@@ -14,15 +14,12 @@ import {
   teamFormInitValue,
   teamFormSchema,
 } from './Schema';
-import { Check } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 const Registration = () => {
   const [isLoading, setIsLoading] = React.useState(false);
   const [typeForm, setTypeForm] = React.useState<'team' | 'personal'>(
     'personal',
   );
-  const [submitSuccess, setSubmitSuccess] = useState(false);
 
   const toggleTypeForm = (type: 'team' | 'personal') => {
     setTypeForm(type);
@@ -42,13 +39,13 @@ const Registration = () => {
         `entry.614204740=${encodeURIComponent(values.phoneNumber)}&` +
         `entry.742289880=${encodeURIComponent(values.email)}&`;
 
-      await fetch(url, {
+      const response = await fetch(url, {
         method: 'POST',
         mode: 'no-cors',
       });
 
-      setSubmitSuccess(true);
       toast.success('Registration successful!');
+
       formikHelpers.resetForm();
     } catch (error) {
       toast.error('Registration failed, please try again!');
@@ -73,13 +70,13 @@ const Registration = () => {
         `entry.1938692918=${encodeURIComponent(values.phoneNumber)}&` +
         `entry.1820835535=${encodeURIComponent(values.email)}`;
 
-      await fetch(url, {
+      const response = await fetch(url, {
         method: 'POST',
         mode: 'no-cors',
       });
 
-      setSubmitSuccess(true);
       toast.success('Registration successful!');
+
       formikHelpers.resetForm();
     } catch (error) {
       console.log(error);
@@ -91,40 +88,11 @@ const Registration = () => {
 
   return (
     <div className='container' id={SECTION_IDS.REGISTER}>
-      <h2 className='text-center text-2xl font-extrabold uppercase text-primary'>
+      <h2 className='text-center text-[50px] font-extrabold uppercase text-primary'>
         Registration
       </h2>
 
-      {submitSuccess ? (
-        <div className='card-gradient-border mx-auto mt-10 flex w-full flex-col items-center justify-center gap-y-6 p-10 sm:w-3/4'>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{
-              opacity: 1,
-              transition: { duration: 0.5, bounce: 0.5, delay: 0.4 },
-            }}
-            viewport={{ once: true }}
-          >
-            <Check className='h-16 w-16 rounded-full bg-primary p-2' />
-          </motion.div>
-          <motion.div
-            className='text-center'
-            initial={{ opacity: 0 }}
-            whileInView={{
-              opacity: 1,
-              transition: { duration: 0.5, bounce: 0.5, delay: 0.2 },
-            }}
-            viewport={{ once: true }}
-          >
-            <p className='text-base font-bold min-[400px]:text-lg'>
-              Congratulations!
-            </p>
-            <p className='text-base font-bold min-[400px]:text-lg'>
-              Your application has been successfully submitted.
-            </p>
-          </motion.div>
-        </div>
-      ) : typeForm === 'personal' ? (
+      {typeForm === 'personal' ? (
         <Formik
           enableReinitialize
           initialValues={personalFormInitValue}
@@ -132,12 +100,12 @@ const Registration = () => {
           onSubmit={handleSubmit}
         >
           {() => (
-            <Form className='card-gradient-border mx-auto mt-10 grid w-full grid-cols-2 gap-4 p-10 sm:w-3/4'>
-              <div className='col-span-2 grid w-full grid-cols-2 gap-y-6 text-center text-3xl font-bold'>
+            <Form className='mx-auto mt-10 grid w-[70%] grid-cols-2 gap-4 rounded-lg border border-white/30 bg-white/10 p-10'>
+              <div className='col-span-2 grid w-full grid-cols-2 text-center text-3xl font-bold'>
                 <button
                   onClick={() => toggleTypeForm('personal')}
                   className={clsx(
-                    'border-b-4 border-white pb-4 text-base uppercase transition-all sm:text-lg',
+                    'border-b-4 border-white pb-4 uppercase transition-all',
                     typeForm === 'personal' && '!border-[#FFB84E] text-primary',
                   )}
                   type='button'
@@ -147,7 +115,7 @@ const Registration = () => {
                 <button
                   onClick={() => toggleTypeForm('team')}
                   className={clsx(
-                    'border-b-4 border-white pb-4 text-base uppercase transition-all sm:text-lg',
+                    'border-b-4 border-white pb-4 uppercase transition-all',
                   )}
                   type='button'
                 >
@@ -156,37 +124,32 @@ const Registration = () => {
               </div>
 
               <div className='col-span-2'>
-                <FormField label='Full name' name='fullName' required />
+                <FormField label='Full name' name='fullName' />
               </div>
-              <div className='col-span-2 md:col-span-1'>
-                <DateTimeField
-                  name='dateOfBirth'
-                  label='Date of birth'
-                  required
-                />
+              <div className='col-span-1'>
+                <DateTimeField name='dateOfBirth' label='Date of birth' />
               </div>
-              <div className='col-span-2 md:col-span-1'>
+              <div className='col-span-1'>
                 <SelectField
                   label='Gender'
                   name='gender'
-                  required
                   options={[
                     { value: 'male', label: 'Male' },
                     { value: 'female', label: 'Female' },
                   ]}
                 />
               </div>
-              <div className='col-span-2 md:col-span-1'>
-                <FormField label='School' name='school' required />
+              <div className='col-span-1'>
+                <FormField label='School' name='school' />
               </div>
-              <div className='col-span-2 md:col-span-1'>
-                <FormField label='Major' name='major' required />
-              </div>
-              <div className='col-span-2'>
-                <FormField label='Phone Number' name='phoneNumber' required />
+              <div className='col-span-1'>
+                <FormField label='Major' name='major' />
               </div>
               <div className='col-span-2'>
-                <FormField label='Email' name='email' required />
+                <FormField label='Phone Number' name='phoneNumber' />
+              </div>
+              <div className='col-span-2'>
+                <FormField label='Email' name='email' />
               </div>
 
               <div className='col-span-2 mt-4 flex justify-end'>
@@ -216,12 +179,12 @@ const Registration = () => {
           onSubmit={handleTeamSubmit}
         >
           {() => (
-            <Form className='card-gradient-border mx-auto mt-10 grid w-full grid-cols-2 gap-4 p-10 sm:w-3/4'>
-              <div className='col-span-2 grid w-full grid-cols-2 gap-y-6 text-center text-3xl font-bold'>
+            <Form className='mx-auto mt-10 grid w-[70%] grid-cols-2 gap-4 rounded-lg border border-white/30 bg-white/10 p-10'>
+              <div className='col-span-2 grid w-full grid-cols-2 text-center text-3xl font-bold'>
                 <button
                   onClick={() => toggleTypeForm('personal')}
                   className={clsx(
-                    'border-b-4 border-white pb-4 text-base uppercase transition-all sm:text-lg',
+                    'border-b-4 border-white pb-4 uppercase transition-all',
                   )}
                   type='button'
                 >
@@ -230,7 +193,7 @@ const Registration = () => {
                 <button
                   onClick={() => toggleTypeForm('team')}
                   className={clsx(
-                    'border-b-4 border-white pb-4 text-base uppercase transition-all sm:text-lg',
+                    'border-b-4 border-white pb-4 uppercase transition-all',
                     typeForm === 'team' && '!border-[#FFB84E] text-primary',
                   )}
                   type='button'
@@ -239,23 +202,19 @@ const Registration = () => {
                 </button>
               </div>
               <div className='col-span-2'>
-                <FormField label='Team Name' name='teamName' required />
+                <FormField label='Team Name' name='teamName' />
               </div>
               <div className='col-span-2'>
-                <FormField
-                  label='Number of Team Members'
-                  name='teamSize'
-                  required
-                />
+                <FormField label='Number of Team Members' name='teamSize' />
               </div>
               <div className='col-span-2'>
-                <FormField label='School' name='school' required />
+                <FormField label='School' name='school' />
               </div>
               <div className='col-span-2'>
-                <FormField label='Phone Number' name='phoneNumber' required />
+                <FormField label='Phone Number' name='phoneNumber' />
               </div>
               <div className='col-span-2'>
-                <FormField label='Email' name='email' required />
+                <FormField label='Email' name='email' />
               </div>
               <div className='col-span-2 mt-4 flex justify-end'>
                 <button

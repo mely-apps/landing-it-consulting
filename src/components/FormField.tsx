@@ -5,17 +5,16 @@ import DatePickerField from './DatePickerField';
 interface FormFieldProps {
   name: string;
   label: string;
-  required?: boolean;
 }
 
-const FormField = ({ label, name, required = false }: FormFieldProps) => {
+const FormField = ({ label, name }: FormFieldProps) => {
   return (
     <div>
       <label
         className='block w-full font-bold capitalize text-primary'
         htmlFor={name}
       >
-        {label} {required && <span className='text-red-500'>*</span>}
+        {label}
       </label>
       <Field
         name={name}
@@ -31,11 +30,11 @@ const FormField = ({ label, name, required = false }: FormFieldProps) => {
   );
 };
 
-const DateTimeField = ({ name, label, required = false }: FormFieldProps) => {
+const DateTimeField = ({ name, label }: FormFieldProps) => {
   return (
     <div>
       <label className='block w-full font-bold capitalize text-primary'>
-        {label} {required && <span className='text-red-500'>*</span>}
+        {label}
       </label>
       <Field
         name={name}
@@ -56,7 +55,6 @@ const SelectField = ({
   name,
   label,
   options,
-  required = false,
 }: FormFieldProps & {
   options: {
     value: string;
@@ -66,7 +64,7 @@ const SelectField = ({
   return (
     <div>
       <label className='block w-full font-bold capitalize text-primary'>
-        {label} {required && <span className='text-red-500'>*</span>}
+        {label}
       </label>
       <Field
         name={name}
