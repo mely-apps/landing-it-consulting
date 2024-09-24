@@ -7,7 +7,7 @@ import RulesDesktop from '@/assets/RulesDesktop';
 const Rules = () => {
   return (
     <div
-      className='container mt-44 w-11/12 rounded-lg border-2 border-[#868686] bg-[#ccc]/10 py-3 shadow-2xl backdrop-blur-sm sm:px-10 md:px-20 md:py-8 lg:py-10'
+      className='card-gradient-border container mt-44 w-11/12 rounded-lg py-3 shadow-2xl backdrop-blur-sm sm:px-10 md:px-20 md:py-8 lg:py-10'
       id={SECTION_IDS.RULES}
     >
       <div className='grid grid-cols-4 gap-y-4'>

@@ -96,7 +96,7 @@ const Registration = () => {
       </h2>
 
       {submitSuccess ? (
-        <div className='mx-auto mt-10 flex w-full flex-col items-center justify-center gap-y-6 rounded-lg border border-white/30 bg-white/10 p-10 sm:w-3/4'>
+        <div className='card-gradient-border mx-auto mt-10 flex w-full flex-col items-center justify-center gap-y-6 p-10 sm:w-3/4'>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{
@@ -132,7 +132,7 @@ const Registration = () => {
           onSubmit={handleSubmit}
         >
           {() => (
-            <Form className='mx-auto mt-10 grid w-full grid-cols-2 gap-4 rounded-lg border border-white/30 bg-white/10 p-10 sm:w-3/4'>
+            <Form className='card-gradient-border mx-auto mt-10 grid w-full grid-cols-2 gap-4 p-10 sm:w-3/4'>
               <div className='col-span-2 grid w-full grid-cols-2 gap-y-6 text-center text-3xl font-bold'>
                 <button
                   onClick={() => toggleTypeForm('personal')}
@@ -216,7 +216,7 @@ const Registration = () => {
           onSubmit={handleTeamSubmit}
         >
           {() => (
-            <Form className='mx-auto mt-10 grid w-full grid-cols-2 gap-4 rounded-lg border border-white/30 bg-white/10 p-10 sm:w-3/4'>
+            <Form className='card-gradient-border mx-auto mt-10 grid w-full grid-cols-2 gap-4 p-10 sm:w-3/4'>
               <div className='col-span-2 grid w-full grid-cols-2 gap-y-6 text-center text-3xl font-bold'>
                 <button
                   onClick={() => toggleTypeForm('personal')}
