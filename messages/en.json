@@ -37,6 +37,10 @@
           "content": "Have interest in exploring a role of an IT consultant"
         }
       ]
+    },
+    "rules": {
+      "title": "Rules",
+      "description": "Teams select a case study from the challenge provided by the organizers, then analyze and design ideas and solutions to address the identified issues. Awards will be given to ideas that are feasible, creative, and exemplify strong teamwork."
     }
   }
 }
