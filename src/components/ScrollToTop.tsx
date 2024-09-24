@@ -1,15 +1,14 @@
 'use client';
-import React from 'react';
-import { FaArrowUp } from 'react-icons/fa';
-import { AnimatePresence, motion } from 'framer-motion';
-import { Submit } from '@/components/icons/Submit';
-import { Prize } from '@/components/icons/Prize';
-import { SECTION_IDS } from '@/constants';
-import { BtnNav } from '@/components/ui/btn-nav';
-import { Rule } from '@/components/icons/Rule';
-import { Information } from '@/components/icons/Information';
-import { Home } from '@/components/icons/Home';
 import { Group } from '@/components/icons/Group';
+import { Home } from '@/components/icons/Home';
+import { Information } from '@/components/icons/Information';
+import { Prize } from '@/components/icons/Prize';
+import { Rule } from '@/components/icons/Rule';
+import { Submit } from '@/components/icons/Submit';
+import { BtnNav } from '@/components/ui/btn-nav';
+import { SECTION_IDS } from '@/constants';
+import { AnimatePresence, motion } from 'framer-motion';
+import { FaArrowUp } from 'react-icons/fa';
 
 const itemNavs = [
   {
@@ -56,7 +55,7 @@ const ScrollToTop = () => {
           ease: 'easeInOut',
         }}
       >
-        <motion.ul className='flex items-center justify-center rounded-l-2xl rounded-r-2xl border-2 border-[#fefefe66] bg-gradient-white pl-1 pr-1 shadow-2xl'>
+        <motion.ul className='flex items-center justify-center rounded-[20px] border border-[#fefefe66] bg-gradient-white pl-1 pr-1 shadow-2xl'>
           {itemNavs.map((item) => (
             <BtnNav
               icon={item.icon}
