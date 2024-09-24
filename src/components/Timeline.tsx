@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Timeline() {
   return (
     <div
-      className='container relative mt-44 w-11/12 rounded-lg border-2 border-[#868686] bg-[#ccc]/10 px-0 py-10 shadow-2xl backdrop-blur-sm'
+      className='container relative mt-44 w-11/12 rounded-lg border-2 border-[#868686] bg-[#ccc]/10 px-0 py-3 shadow-2xl backdrop-blur-sm md:py-8 lg:py-10'
       id={SECTION_IDS.TIMELINE}
     >
       <motion.h2
