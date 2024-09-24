@@ -1,7 +1,7 @@
 import React from 'react';
-import type { IconType } from 'react-icons';
+import type { IconBaseProps } from 'react-icons';
 
-export const Rule = (props: IconType) => {
+export const Rule = (props: IconBaseProps) => {
   return (
     <svg
       width={24}

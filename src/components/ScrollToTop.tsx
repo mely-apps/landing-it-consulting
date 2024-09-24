@@ -1,4 +1,8 @@
 'use client';
+import React, { ComponentRef, useEffect, useRef, useState } from 'react';
+import { FaArrowUp } from 'react-icons/fa';
+import { motion, AnimatePresence } from 'framer-motion';
+import { cn } from '@/lib/utils';
 import { Group } from '@/components/icons/Group';
 import { Home } from '@/components/icons/Home';
 import { Information } from '@/components/icons/Information';
@@ -7,8 +11,6 @@ import { Rule } from '@/components/icons/Rule';
 import { Submit } from '@/components/icons/Submit';
 import { BtnNav } from '@/components/ui/btn-nav';
 import { SECTION_IDS } from '@/constants';
-import { AnimatePresence, motion } from 'framer-motion';
-import { FaArrowUp } from 'react-icons/fa';
 
 const itemNavs = [
   {
@@ -38,13 +40,34 @@ const itemNavs = [
 ];
 const ScrollToTop = () => {
   const scrollToTop = () => {
-    console.log(document.querySelector('#header'));
     document.querySelector('#header')?.scrollIntoView({ behavior: 'smooth' });
   };
+  const scrollToTopRef = useRef<ComponentRef<'div'>>(null);
+  const [showScrollToTopButton, setShowScrollToTopButton] = useState(false);
+
+  useEffect(() => {
+    const mainContainer = document.querySelector('.main-container');
+
+    const handleScroll = () => {
+      const aboutSectionPosition = document
+        .querySelector('#about')!
+        .getBoundingClientRect().y;
+      if (scrollToTopRef.current) {
+        setShowScrollToTopButton(
+          mainContainer!.scrollTop > aboutSectionPosition,
+        );
+      }
+    };
+
+    mainContainer!.addEventListener('scroll', handleScroll);
+    return () => mainContainer!.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <AnimatePresence>
       <motion.div
+        ref={scrollToTopRef}
+        onClick={showScrollToTopButton ? scrollToTop : undefined}
         key={'header-mobile'}
         className='fixed inset-x-0 bottom-4 z-50 flex cursor-pointer justify-center lg:hidden'
         initial={{ opacity: 0, y: 20 }}
@@ -68,11 +91,13 @@ const ScrollToTop = () => {
 
       <motion.div
         key={'tool-pc'}
-        onClick={scrollToTop}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: 20 }}
-        className='fixed bottom-8 right-4 z-50 hidden h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-[#226472] opacity-40 transition-all hover:opacity-100 lg:flex'
+        ref={scrollToTopRef}
+        onClick={showScrollToTopButton ? scrollToTop : undefined}
+        className={cn(
+          { 'cursor-pointer opacity-100': showScrollToTopButton },
+          { 'opacity-0': !showScrollToTopButton },
+          'fixed bottom-8 right-8 z-50 hidden h-12 w-12 items-center justify-center rounded-full bg-[#226472] transition-all lg:flex',
+        )}
       >
         <motion.div
           className='flex h-12 w-12 items-center justify-center overflow-hidden'

@@ -1,8 +1,8 @@
 import React from 'react';
 import { clsx } from 'clsx';
-import type { IconType } from 'react-icons';
+import type { IconBaseProps } from 'react-icons';
 
-export interface IPhoneProps extends IconType {
+export interface IPhoneProps extends IconBaseProps {
   className?: string;
 }
 

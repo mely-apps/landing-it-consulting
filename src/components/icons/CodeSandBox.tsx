@@ -1,10 +1,8 @@
-import React from 'react';
+import React, { ComponentProps } from 'react';
 import { clsx } from 'clsx';
-import type { IconType } from 'react-icons';
+import type { IconBaseProps, IconType } from 'react-icons';
 
-export interface ICodeSandBoxProps extends IconType {
-  className?: string;
-}
+export interface ICodeSandBoxProps extends IconBaseProps {}
 
 const CodeSandBox = (props: ICodeSandBoxProps) => {
   const classN = clsx(props.className, 'lucide lucide-codesandbox');
