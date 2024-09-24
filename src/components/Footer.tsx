@@ -5,49 +5,43 @@ import { FaFacebookF, FaLinkedinIn, FaTiktok, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <div className='mt-40 bg-[#023C38] pb-28 pt-10'>
-      <div className='container grid lg:grid-cols-4'>
-        <div className='pb-8 pt-8 text-3xl font-extrabold lg:pb-0 lg:pt-0'>
-          <p className='text-center lg:text-left'>IT CONSULTANT</p>
-          <p className='text-center text-primary lg:text-left'>CHALLENGE</p>
+    <div className='mt-40 bg-[#023C38] py-10'>
+      <div className='container grid grid-cols-2 gap-x-4 gap-y-12 md:grid-cols-4'>
+        <div className='text-lg font-extrabold max-md:col-span-2 max-md:text-center'>
+          <p>IT CONSULTANT</p>
+          <p className='text-primary'>CHALLENGE</p>
         </div>
-        <div className='grid grid-cols-2 pb-8 pt-8 lg:col-span-2 lg:pb-0 lg:pt-0'>
-          <div className='flex justify-center'>
-            <div>
-              <p className='inline-block border-b-2 border-[#419D98] py-1 font-bold'>
-                Đơn vị tổ chức
-              </p>
-              <ul className='mt-2 flex flex-col gap-2'>
-                <li className='flex gap-x-3'>
-                  <CodeSandBox className={'hidden lg:block'} />
-                  <p>Code MeLy</p>
-                </li>
-                <li className='flex gap-x-3'>
-                  <CodeSandBox className={'hidden lg:block'} />
-                  <p>Netcompany</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className='flex justify-center'>
-            <div>
-              <p className='inline-block border-b-2 border-[#419D98] py-1 font-bold'>
-                Liên Hệ
-              </p>
-              <ul className='mt-2 flex flex-col gap-2'>
-                <li className='flex gap-x-3'>
-                  <Phone className={'hidden lg:block'} />
-                  <p>contact@codemely.dev</p>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div>
+          <p className='inline-block border-b-2 border-[#419D98] py-1 font-bold'>
+            Đơn vị tổ chức
+          </p>
+          <ul className='mt-2 flex flex-col gap-2'>
+            <li className='flex gap-x-3'>
+              <CodeSandBox />
+              <p className='uppercase'>Code MeLy</p>
+            </li>
+            <li className='flex gap-x-3'>
+              <CodeSandBox />
+              <p className='uppercase'>net company</p>
+            </li>
+          </ul>
         </div>
-        <div className='flex flex-col lg:block'>
-          <p className='inline-block py-1 text-center font-bold lg:border-b-2 lg:border-[#419D98] lg:text-left'>
+        <div>
+          <p className='inline-block border-b-2 border-[#419D98] py-1 font-bold'>
+            Liên Hệ
+          </p>
+          <ul className='mt-2 flex flex-col gap-2'>
+            <li className='flex gap-x-3'>
+              <Phone className='h-6 w-6' />
+              <p className='inline-block break-all'>contact@codemely.dev</p>
+            </li>
+          </ul>
+        </div>
+        <div className='max-md:col-span-2 max-md:flex max-md:flex-col max-md:items-center max-md:justify-center'>
+          <p className='inline-block border-b-2 border-[#419D98] py-1 font-bold'>
             Theo dõi chúng tôi tại
           </p>
-          <div className='mt-2 flex justify-center gap-x-3 lg:justify-start'>
+          <div className='mt-2 flex gap-x-3'>
             <div className='flex h-10 w-10 items-center justify-center rounded-lg bg-[#FFFFFF] text-black'>
               <FaFacebookF />
             </div>
