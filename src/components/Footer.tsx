@@ -5,7 +5,7 @@ import MailContact from './icons/MailContact';
 const Footer = () => {
   return (
     <div className='mt-40 bg-[#023C38] py-10'>
-      <div className='container grid grid-cols-2 gap-x-4 gap-y-12 md:grid-cols-4'>
+      <div className='container grid grid-cols-2 gap-x-4 gap-y-6 md:grid-cols-4'>
         <div className='text-lg font-extrabold max-md:col-span-2'>
           <p>IT CONSULTANT</p>
           <p className='text-primary'>CHALLENGE</p>
@@ -15,12 +15,12 @@ const Footer = () => {
             Đơn vị tổ chức
           </p>
           <ul className='mt-2 flex flex-col gap-2'>
-            <li className='flex gap-x-3'>
-              <CodeSandBox />
+            <li className='flex gap-x-2'>
+              <CodeSandBox className='h-5 w-5' />
               <p>Code MeLy</p>
             </li>
-            <li className='flex gap-x-3'>
-              <CodeSandBox />
+            <li className='flex gap-x-2'>
+              <CodeSandBox className='h-5 w-5' />
               <p>Netcompany</p>
             </li>
           </ul>
@@ -30,7 +30,7 @@ const Footer = () => {
             Liên Hệ
           </p>
           <ul className='mt-2 flex flex-col gap-2'>
-            <li className='flex gap-x-3'>
+            <li className='flex gap-x-2'>
               <MailContact className='h-6 w-6' />
               <p className='inline-block break-all text-white'>
                 contact@codemely.dev
@@ -43,16 +43,16 @@ const Footer = () => {
             Theo dõi chúng tôi tại
           </p>
           <div className='mt-2 flex gap-x-3'>
-            <div className='flex h-10 w-10 items-center justify-center rounded-lg bg-[#FFFFFF] text-black'>
+            <div className='flex h-8 w-8 items-center justify-center rounded-lg bg-[#FFFFFF] text-black'>
               <FaFacebookF />
             </div>
-            <div className='flex h-10 w-10 items-center justify-center rounded-lg bg-[#FFFFFF] text-black'>
+            <div className='flex h-8 w-8 items-center justify-center rounded-lg bg-[#FFFFFF] text-black'>
               <FaLinkedinIn />
             </div>
-            <div className='flex h-10 w-10 items-center justify-center rounded-lg bg-[#FFFFFF] text-black'>
+            <div className='flex h-8 w-8 items-center justify-center rounded-lg bg-[#FFFFFF] text-black'>
               <FaTiktok />
             </div>
-            <div className='flex h-10 w-10 items-center justify-center rounded-lg bg-[#FFFFFF] text-black'>
+            <div className='flex h-8 w-8 items-center justify-center rounded-lg bg-[#FFFFFF] text-black'>
               <FaYoutube />
             </div>
           </div>
