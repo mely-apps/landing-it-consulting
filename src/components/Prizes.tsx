@@ -1,10 +1,21 @@
 import { SECTION_IDS } from '@/constants';
-import Image from 'next/image';
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import {
+  Top1Desktop,
+  Top1Mobile,
+  Top2Desktop,
+  Top2Mobile,
+  Top3Desktop,
+  Top3Mobile,
+} from '@/assets/Prizes';
 
-const Prizes = () => {
+interface PrizesProps {
+  locale?: string;
+}
+
+const Prizes = ({ locale }: PrizesProps) => {
   const t = useTranslations('HomePage');
 
   return (
@@ -28,7 +39,7 @@ const Prizes = () => {
         {t('prizes.title')}
       </motion.h2>
       <motion.div
-        className='mt-10 grid h-[200px] grid-cols-3 max-[870px]:gap-x-8 sm:mt-24 sm:h-[300px] md:h-[450px]'
+        className='mt-10 grid grid-cols-3'
         initial={{
           opacity: 0,
           y: 50,
@@ -45,30 +56,18 @@ const Prizes = () => {
         viewport={{ once: true }}
       >
         <motion.div className='relative flex items-center justify-center transition-all hover:scale-105'>
-          <Image
-            src={'/prizes/top2.png'}
-            className='object-contain'
-            fill
-            alt=''
-          />
+          <Top2Desktop className='w-2/3 max-sm:hidden' locale={locale} />
+          <Top2Mobile className='w-full sm:hidden' locale={locale} />
         </motion.div>
 
         <motion.div className='relative flex -translate-y-12 items-center justify-center transition-all hover:scale-105 sm:-translate-y-20'>
-          <Image
-            src={'/prizes/top1.png'}
-            className='object-contain'
-            fill
-            alt=''
-          />
+          <Top1Desktop className='w-2/3 max-sm:hidden' locale={locale} />
+          <Top1Mobile className='w-full sm:hidden' locale={locale} />
         </motion.div>
 
         <motion.div className='relative flex items-center justify-center transition-all hover:scale-105'>
-          <Image
-            src={'/prizes/top3.png'}
-            className='object-contain'
-            fill
-            alt=''
-          />
+          <Top3Desktop className='w-2/3 max-sm:hidden' locale={locale} />
+          <Top3Mobile className='w-full sm:hidden' locale={locale} />
         </motion.div>
       </motion.div>
     </div>

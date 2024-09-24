@@ -39,7 +39,7 @@ export default function Home({
         <About />
         <Rules locale={locale} />
         <Timeline />
-        <Prizes />
+        <Prizes locale={locale} />
         <TimeCounter locale={locale} />
         <Registration />
         <Organizer />
