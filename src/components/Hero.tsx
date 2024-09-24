@@ -1,9 +1,8 @@
 'use client';
-import React from 'react';
+import { SECTION_IDS } from '@/constants';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { IoLocationSharp } from 'react-icons/io5';
-import { SECTION_IDS } from '@/constants';
 import { BackgroundGradient } from './ui/background-gradient';
 import BlurFade from './ui/blur-fade';
 import { FlipWords } from './ui/flip-words';
@@ -63,7 +62,7 @@ const Hero = () => {
           >
             <div className='relative h-full w-full overflow-hidden rounded-3xl'>
               <Image
-                src='/Untitled.png'
+                src='/cover.png'
                 alt='landing-it-consulting'
                 sizes='auto'
                 className='object-cover'
@@ -74,9 +73,9 @@ const Hero = () => {
           </BackgroundGradient>
         </BlurFade>
 
-        <div className='relative h-[600px] w-full overflow-hidden sm:hidden'>
+        <div className='relative h-[600px] w-full overflow-hidden p-0 sm:hidden'>
           <Image
-            src='/Untitled.png'
+            src='/cover.png'
             alt='landing-it-consulting'
             sizes='auto'
             className='object-contain'
