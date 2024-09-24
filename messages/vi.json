@@ -1,5 +1,10 @@
 {
   "HomePage": {
+    "names": {
+      "contestName": "IT Consultant Challenge",
+      "codeMelyName": "Code Mely",
+      "netcompanyName": "Netcompany"
+    },
     "header": {
       "home": "Trang chủ",
       "about": "Về sự kiện",
@@ -11,11 +16,27 @@
     },
     "hero": {
       "subTitle": "Hackathon là cuộc thi dành cho các coder mới trẻ, khi tham gia cuộc thi các bạn sẻ nhận được tham gia code cùng với chúng tôi!",
-      "time": "Thứ 7, Ngày 12 Tháng 10 năm 2024, NETCOMPANY OFFICE",
+      "time": "Thứ 7, Ngày 12 Tháng 10 năm 2024, Văn phòng NETCOMPANY",
       "buttonTitle": "Đăng ký ngay"
     },
     "about": {
-      "heading": "IT Consultant Challenge là gì?"
+      "title": "IT Consultant Challenge là gì?",
+      "description": "<extrabold>{contestName}</extrabold>—một sự kiện kéo dài cả ngày đầy thú vị, nơi các sinh viên ngành CNTT có cơ hội thể hiện kỹ năng, sự sáng tạo, và khả năng giải quyết vấn đề. Sự kiện được <extrabold>{netcompanyName}</extrabold> và <extrabold>{codeMelyName}</extrabold> tổ chức, là cơ hội để bạn hóa thân thành một chuyên viên tư vấn CNTT (IT Consultant) và đối mặt với các thử thách thực tế thông qua chuyển đổi số. Hãy tham gia cùng với những người chung chí hướng, tích lũy kinh nghiệm quý báu, và kiến tạo nên những ảnh hưởng lâu dài.",
+      "whoCanJoinQuestion": "<bold>Ai có thể tham gia sự kiện này?</bold>",
+      "whoCanJoinAnswers": [
+        {
+          "content": "Có nền tảng về: CNTT, Kỹ thuật phần mềm"
+        },
+        {
+          "content": "Sinh viên năm 2, 3"
+        },
+        {
+          "content": "Có niềm đam mê với công nghệ"
+        },
+        {
+          "content": "Có hứng thú trong việc khám phá vai trò của một chuyên viên tư vấn CNTT (IT Consultant)"
+        }
+      ]
     }
   }
 }

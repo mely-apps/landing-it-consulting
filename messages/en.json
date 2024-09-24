@@ -1,5 +1,10 @@
 {
   "HomePage": {
+    "names": {
+      "contestName": "IT Consultant Challenge",
+      "codeMelyName": "Code Mely",
+      "netcompanyName": "Netcompany"
+    },
     "header": {
       "home": "Home",
       "about": "About",
@@ -15,7 +20,23 @@
       "buttonTitle": "Register now"
     },
     "about": {
-      "heading": "What is the IT Consultant Challenge?"
+      "title": "What is the IT Consultant Challenge?",
+      "description": "<extrabold>{contestName}</extrabold>—an exciting full-day event where IT students have the chance to showcase their skills, creativity, and problem-solving abilities. This event, hosted by <extrabold>{netcompanyName}</extrabold> and <extrabold>{codeMelyName}</extrabold>, is your opportunity to step into the shoes of an IT consultant and tackle real-life challenges through digital transformation. Work alongside like-minded peers, gain valuable experience, and make a lasting impact.",
+      "whoCanJoinQuestion": "<bold>Who can join the event?</bold>",
+      "whoCanJoinAnswers": [
+        {
+          "content": "Background: IT, Software Engineer"
+        },
+        {
+          "content": "2nd, 3rd year students"
+        },
+        {
+          "content": "Have passion with technology"
+        },
+        {
+          "content": "Have interest in exploring a role of an IT consultant"
+        }
+      ]
     }
   }
 }
