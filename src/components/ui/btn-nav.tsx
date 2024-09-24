@@ -10,9 +10,10 @@ const itemVariants: Variants = {
   },
   closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
 };
-export const BtnNav = (item: { icon: React.ReactNode; path: SECTION_IDS }) => {
+export const BtnNav = (item: { icon: React.ReactNode; path?: SECTION_IDS }) => {
   const [isActive, setIsActive] = useState(false);
   const handleSrollToSection = () => {
+    if (!item.path) return;
     const section = document.getElementById(item.path);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
@@ -22,13 +23,13 @@ export const BtnNav = (item: { icon: React.ReactNode; path: SECTION_IDS }) => {
     const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
-        if (entry.intersectionRatio < 0.5) {
+        if (entry.intersectionRatio < 0.6) {
           setIsActive(false);
         } else {
           setIsActive(true);
         }
       },
-      { threshold: 0.5 },
+      { threshold: 0.6 },
     );
 
     const currentElement = document.getElementById(item.path);

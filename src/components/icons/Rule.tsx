@@ -9,7 +9,7 @@ export const Rule = (props: IconBaseProps) => {
       viewBox='0 0 20 16'
       xmlns='http://www.w3.org/2000/svg'
       stroke='currentColor'
-      fill='none'
+      fill='currentColor'
       {...props}
     >
       <path
