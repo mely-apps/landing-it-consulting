@@ -1,5 +1,6 @@
 'use client';
 import { LocaleProps } from '@/@types';
+import HexagonBackground from '@/assets/HexagonBackground';
 import About from '@/components/About';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
@@ -34,8 +35,13 @@ export default function Home({
       <ToastContainer {...toastContainerConfig} />
       <div className='main-container absolute inset-0 left-0 top-0 z-50 h-screen w-screen overflow-x-hidden overflow-y-scroll scrollbar-none'>
         <ScrollToTop />
-        <Header locale={locale as LocaleProps['locale']} />
-        <Hero />
+        <div className='relative'>
+          <div className='absolute inset-0 mt-6'>
+            <HexagonBackground className='h-[110%]' />
+          </div>
+          <Header locale={locale as LocaleProps['locale']} />
+          <Hero />
+        </div>
         <About />
         <Rules locale={locale} />
         <Timeline />
