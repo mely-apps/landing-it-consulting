@@ -1,10 +1,13 @@
 'use client';
-import React, { useState } from 'react';
-import { Form, Formik, FormikHelpers } from 'formik';
-import { toast } from 'react-toastify';
-import clsx from 'clsx';
-import { FaSpinner } from 'react-icons/fa';
 import { SECTION_IDS } from '@/constants';
+import clsx from 'clsx';
+import { Form, Formik, FormikHelpers } from 'formik';
+import { motion } from 'framer-motion';
+import { Check } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import React, { useState } from 'react';
+import { FaSpinner } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 import { DateTimeField, FormField, SelectField } from './FormField';
 import {
   PersonalForm,
@@ -14,9 +17,6 @@ import {
   teamFormInitValue,
   teamFormSchema,
 } from './Schema';
-import { Check } from 'lucide-react';
-import { motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
 
 const Registration = () => {
   const t = useTranslations('HomePage');
