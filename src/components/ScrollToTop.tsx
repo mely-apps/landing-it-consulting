@@ -1,14 +1,15 @@
 'use client';
-import React, { ComponentRef, useEffect, useRef, useState } from 'react';
-import { FaArrowUp } from 'react-icons/fa';
-import { AnimatePresence, motion } from 'framer-motion';
-import { cn } from '@/lib/utils';
 import { Home } from '@/components/icons/Home';
 import { Information } from '@/components/icons/Information';
 import { Rule } from '@/components/icons/Rule';
 import { BtnNav } from '@/components/ui/btn-nav';
 import { SECTION_IDS } from '@/constants';
+import { cn } from '@/lib/utils';
+import { AnimatePresence, motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import { useRouter } from 'next/navigation';
+import { ComponentRef, useEffect, useRef, useState } from 'react';
+import { FaArrowUp } from 'react-icons/fa';
 
 const itemNavs = [
   {
@@ -25,6 +26,7 @@ const itemNavs = [
   },
 ];
 const ScrollToTop = ({ locale }: { locale: string }) => {
+  const router = useRouter();
   const translations = useTranslations('HomePage');
   const isHiddenComponent = [SECTION_IDS.HOME, SECTION_IDS.REGISTER];
   const [isHidden, setIsHidden] = useState(false);
@@ -40,7 +42,9 @@ const ScrollToTop = ({ locale }: { locale: string }) => {
       section.scrollIntoView({ behavior: 'smooth' });
     }
   };
-  const changeLanguage = () => {};
+  const changeLanguage = () => {
+    locale === 'vi' ? router.push('/en') : router.push('/vi');
+  };
 
   useEffect(() => {
     const mainContainer = document.querySelector('.main-container');
@@ -73,25 +77,25 @@ const ScrollToTop = ({ locale }: { locale: string }) => {
       { threshold: 0.6 },
     );
 
-    const home = document.getElementById(SECTION_IDS.HOME);
-    const register = document.getElementById(SECTION_IDS.REGISTER);
+    // const home = document.getElementById(SECTION_IDS.HOME);
+    // const register = document.getElementById(SECTION_IDS.REGISTER);
 
-    if (home) {
-      observer.observe(home);
-    }
+    // if (home) {
+    //   observer.observe(home);
+    // }
 
-    if (register) {
-      observer.observe(register);
-    }
+    // if (register) {
+    //   observer.observe(register);
+    // }
 
-    return () => {
-      if (home) {
-        observer.unobserve(home);
-      }
-      if (register) {
-        observer.unobserve(register);
-      }
-    };
+    // return () => {
+    //   if (home) {
+    //     observer.unobserve(home);
+    //   }
+    //   if (register) {
+    //     observer.unobserve(register);
+    //   }
+    // };
   }, []);
 
   return (
@@ -125,32 +129,18 @@ const ScrollToTop = ({ locale }: { locale: string }) => {
           ))}
           <BtnNav
             icon={<div className='font-extrabold'>{lang}</div>}
+            onTap={changeLanguage}
             key={'icon_lang'}
           />
-          {!isHidden && (
-            <motion.div className='w h-[28px] border border-[#7CD5C4]' />
-          )}
-          {!isHidden && (
-            <motion.button
-              initial={{ width: 0, content: '' }}
-              animate={{
-                width: 'auto',
-                content: translations('hero.buttonTitle'),
-              }}
-              transition={{
-                duration: 0.5,
-                ease: 'linear',
-              }}
-              className='mx-[4px] my-[8px] line-clamp-1 overflow-hidden rounded-[12px] !bg-[#7FFFF7] px-[11px] py-[8px] font-semibold text-black hover:opacity-90'
-              onClick={handleScrollToRegistration}
-            >
-              {translations('hero.buttonTitle')}
-              {/*<GradualSpacing*/}
-              {/*  text={translations('hero.buttonTitle')}*/}
-              {/*  // className='text-2xl font-extrabold uppercase !text-primary'*/}
-              {/*/>*/}
-            </motion.button>
-          )}
+
+          <div className='w ml-[2px] h-[28px] border border-[#7CD5C4]' />
+
+          <button
+            className='mx-[8px] rounded-[12px] !bg-[#7FFFF7] p-[10px] font-semibold text-black shadow-[0_0_2px_#7FFFF7,inset_0_0_2px_#7FFFF7,0_0_5px_#7FFFF7,0_0_15px_#7FFFF7,0_0_30px_#7FFFF7] hover:opacity-90'
+            onClick={handleScrollToRegistration}
+          >
+            {translations('hero.buttonTitle')}
+          </button>
         </motion.ul>
       </motion.div>
 

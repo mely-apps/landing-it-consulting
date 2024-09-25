@@ -10,7 +10,11 @@ const itemVariants: Variants = {
   },
   closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
 };
-export const BtnNav = (item: { icon: React.ReactNode; path?: SECTION_IDS }) => {
+export const BtnNav = (item: {
+  icon: React.ReactNode;
+  path?: SECTION_IDS;
+  onTap?: () => void;
+}) => {
   const [isActive, setIsActive] = useState(false);
   const handleSrollToSection = () => {
     if (!item.path) return;
@@ -32,7 +36,9 @@ export const BtnNav = (item: { icon: React.ReactNode; path?: SECTION_IDS }) => {
       { threshold: 0.6 },
     );
 
-    const currentElement = document.getElementById(item.path);
+    const currentElement = item.path
+      ? document.getElementById(item.path)
+      : null;
 
     if (currentElement) {
       observer.observe(currentElement);
@@ -44,6 +50,7 @@ export const BtnNav = (item: { icon: React.ReactNode; path?: SECTION_IDS }) => {
       }
     };
   }, []);
+
   return (
     <motion.li
       className={
@@ -64,7 +71,7 @@ export const BtnNav = (item: { icon: React.ReactNode; path?: SECTION_IDS }) => {
         ease: 'easeInOut',
       }}
       variants={itemVariants}
-      onClick={handleSrollToSection}
+      onClick={item.onTap ?? handleSrollToSection}
     >
       {item.icon}
     </motion.li>
