@@ -1,8 +1,15 @@
 'use client';
+import { cn } from '@/lib/utils';
+import { useTranslations } from 'next-intl';
 import React, { useEffect, useMemo, useState } from 'react';
 import Countdown from 'react-countdown';
 
-const TimeCounter = () => {
+interface TimeCounterProps {
+  locale?: string;
+}
+
+const TimeCounter = ({ locale = 'en' }: TimeCounterProps) => {
+  const t = useTranslations('HomePage');
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -22,9 +29,14 @@ const TimeCounter = () => {
         <Countdown
           date={date}
           renderer={(time) => (
-            <div className='card-gradient-border mx-auto flex h-44 w-full flex-col items-center justify-center gap-y-6 rounded-3xl sm:h-60 sm:w-3/4 lg:h-64'>
-              <h2 className='text-center text-2xl font-extrabold text-primary'>
-                TIME LEFT
+            <div
+              className={cn(
+                { 'max-sm:py-28': locale === 'vi' },
+                'card-gradient-border mx-auto flex h-44 w-full flex-col items-center justify-center gap-y-6 rounded-3xl sm:h-60 sm:w-3/4 lg:h-64',
+              )}
+            >
+              <h2 className='text-center text-2xl font-extrabold uppercase text-primary'>
+                {t('timeCounter.title')}
               </h2>
               <div className='flex w-full flex-wrap items-center justify-around rounded-3xl [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]'>
                 <div>
@@ -32,7 +44,7 @@ const TimeCounter = () => {
                     {time.days >= 10 ? time.days : `0${time.days}`}
                   </p>
                   <p className='text-center text-base font-semibold uppercase text-white sm:text-lg'>
-                    Days
+                    {t('timeCounter.days')}
                   </p>
                 </div>
                 <div>
@@ -40,7 +52,7 @@ const TimeCounter = () => {
                     {time.hours >= 10 ? time.hours : `0${time.hours}`}
                   </p>
                   <p className='text-center text-base font-semibold uppercase text-white sm:text-lg'>
-                    hours
+                    {t('timeCounter.hours')}
                   </p>
                 </div>
                 <div>
@@ -48,7 +60,7 @@ const TimeCounter = () => {
                     {time.minutes >= 10 ? time.minutes : `0${time.minutes}`}
                   </p>
                   <p className='text-center text-base font-semibold uppercase text-white sm:text-lg'>
-                    min
+                    {t('timeCounter.minutes')}
                   </p>
                 </div>
                 <div>
@@ -56,7 +68,7 @@ const TimeCounter = () => {
                     {time.seconds >= 10 ? time.seconds : `0${time.seconds}`}
                   </p>
                   <p className='text-center text-base font-semibold uppercase text-white sm:text-lg'>
-                    sec
+                    {t('timeCounter.seconds')}
                   </p>
                 </div>
               </div>

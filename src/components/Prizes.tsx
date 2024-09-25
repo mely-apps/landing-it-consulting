@@ -2,8 +2,11 @@ import { SECTION_IDS } from '@/constants';
 import Image from 'next/image';
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 const Prizes = () => {
+  const t = useTranslations('HomePage');
+
   return (
     <div className='container pt-32' id={SECTION_IDS.PRIZES}>
       <motion.h2
@@ -22,7 +25,7 @@ const Prizes = () => {
         }}
         viewport={{ once: true }}
       >
-        prizes
+        {t('prizes.title')}
       </motion.h2>
       <motion.div
         className='mt-10 grid h-[200px] grid-cols-3 max-[870px]:gap-x-8 sm:mt-24 sm:h-[300px] md:h-[450px]'

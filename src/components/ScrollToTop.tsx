@@ -1,16 +1,15 @@
 'use client';
-import React, { ComponentRef, useEffect, useRef, useState } from 'react';
-import { FaArrowUp } from 'react-icons/fa';
-import { motion, AnimatePresence } from 'framer-motion';
-import { cn } from '@/lib/utils';
-import { Group } from '@/components/icons/Group';
 import { Home } from '@/components/icons/Home';
 import { Information } from '@/components/icons/Information';
-import { Prize } from '@/components/icons/Prize';
 import { Rule } from '@/components/icons/Rule';
-import { Submit } from '@/components/icons/Submit';
 import { BtnNav } from '@/components/ui/btn-nav';
 import { SECTION_IDS } from '@/constants';
+import { cn } from '@/lib/utils';
+import { AnimatePresence, motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
+import { useRouter } from 'next/navigation';
+import { ComponentRef, useEffect, useRef, useState } from 'react';
+import { FaArrowUp } from 'react-icons/fa';
 
 const itemNavs = [
   {
@@ -25,25 +24,27 @@ const itemNavs = [
     icon: <Rule />,
     path: SECTION_IDS.RULES,
   },
-  {
-    icon: <Prize />,
-    path: SECTION_IDS.PRIZES,
-  },
-  {
-    icon: <Submit />,
-    path: SECTION_IDS.REGISTER,
-  },
-  {
-    icon: <Group />,
-    path: SECTION_IDS.ORGANIZERS,
-  },
 ];
-const ScrollToTop = () => {
+const ScrollToTop = ({ locale }: { locale: string }) => {
+  const router = useRouter();
+  const translations = useTranslations('HomePage');
+  const isHiddenComponent = [SECTION_IDS.HOME, SECTION_IDS.REGISTER];
+  const [isHidden, setIsHidden] = useState(false);
   const scrollToTop = () => {
     document.querySelector('#header')?.scrollIntoView({ behavior: 'smooth' });
   };
   const scrollToTopRef = useRef<ComponentRef<'div'>>(null);
   const [showScrollToTopButton, setShowScrollToTopButton] = useState(false);
+  const [lang, setLang] = useState(locale.toUpperCase());
+  const handleScrollToRegistration = () => {
+    const section = document.getElementById(SECTION_IDS.REGISTER);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  const changeLanguage = () => {
+    locale === 'vi' ? router.push('/en') : router.push('/vi');
+  };
 
   useEffect(() => {
     const mainContainer = document.querySelector('.main-container');
@@ -63,6 +64,40 @@ const ScrollToTop = () => {
     return () => mainContainer!.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (entry.intersectionRatio < 0.6) {
+          setIsHidden(true);
+        } else {
+          setIsHidden(false);
+        }
+      },
+      { threshold: 0.6 },
+    );
+
+    // const home = document.getElementById(SECTION_IDS.HOME);
+    // const register = document.getElementById(SECTION_IDS.REGISTER);
+
+    // if (home) {
+    //   observer.observe(home);
+    // }
+
+    // if (register) {
+    //   observer.observe(register);
+    // }
+
+    // return () => {
+    //   if (home) {
+    //     observer.unobserve(home);
+    //   }
+    //   if (register) {
+    //     observer.unobserve(register);
+    //   }
+    // };
+  }, []);
+
   return (
     <AnimatePresence>
       <motion.div
@@ -78,7 +113,13 @@ const ScrollToTop = () => {
           ease: 'easeInOut',
         }}
       >
-        <motion.ul className='flex items-center justify-center rounded-[20px] border border-[#fefefe66] bg-gradient-white pl-1 pr-1 shadow-2xl'>
+        <motion.ul
+          transition={{
+            duration: 0.3,
+            ease: 'easeIn',
+          }}
+          className='card-gradient-border flex items-center justify-center !rounded-[20px] pl-1 pr-1 shadow-2xl before:rounded-[20px]'
+        >
           {itemNavs.map((item) => (
             <BtnNav
               icon={item.icon}
@@ -86,6 +127,20 @@ const ScrollToTop = () => {
               key={'icon_' + item.path}
             />
           ))}
+          <BtnNav
+            icon={<div className='font-extrabold'>{lang}</div>}
+            onTap={changeLanguage}
+            key={'icon_lang'}
+          />
+
+          <div className='w ml-[2px] h-[28px] border border-[#7CD5C4]' />
+
+          <button
+            className='mx-[8px] rounded-[12px] !bg-[#7FFFF7] p-[10px] font-semibold text-black shadow-[0_0_2px_#7FFFF7,inset_0_0_2px_#7FFFF7,0_0_5px_#7FFFF7,0_0_15px_#7FFFF7,0_0_30px_#7FFFF7] hover:opacity-90'
+            onClick={handleScrollToRegistration}
+          >
+            {translations('hero.buttonTitle')}
+          </button>
         </motion.ul>
       </motion.div>
 

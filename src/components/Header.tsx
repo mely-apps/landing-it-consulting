@@ -11,6 +11,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Menu } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 const SECTION_ITEMS = [
   {
@@ -45,6 +46,7 @@ const SECTION_ITEMS = [
 
 const Header = ({ locale }: LocaleProps) => {
   const router = useRouter();
+  const t = useTranslations('HomePage');
 
   const handleToggleLocale = () => {
     locale === 'vi' ? router.push('/en') : router.push('/vi');
@@ -77,7 +79,7 @@ const Header = ({ locale }: LocaleProps) => {
                 handleScrollToSection(item.path);
               }}
             >
-              {item.title}
+              {t(`header.${item.path}` as any)}
             </p>
           ))}
         </div>

@@ -1,10 +1,13 @@
 'use client';
-import React, { useState } from 'react';
-import { Form, Formik, FormikHelpers } from 'formik';
-import { toast } from 'react-toastify';
-import clsx from 'clsx';
-import { FaSpinner } from 'react-icons/fa';
 import { SECTION_IDS } from '@/constants';
+import clsx from 'clsx';
+import { Form, Formik, FormikHelpers } from 'formik';
+import { motion } from 'framer-motion';
+import { Check } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import React, { useState } from 'react';
+import { FaSpinner } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 import { DateTimeField, FormField, SelectField } from './FormField';
 import {
   PersonalForm,
@@ -14,10 +17,9 @@ import {
   teamFormInitValue,
   teamFormSchema,
 } from './Schema';
-import { Check } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 const Registration = () => {
+  const t = useTranslations('HomePage');
   const [isLoading, setIsLoading] = React.useState(false);
   const [typeForm, setTypeForm] = React.useState<'team' | 'personal'>(
     'personal',
@@ -35,12 +37,12 @@ const Registration = () => {
     try {
       setIsLoading(true);
       const url =
-        `https://docs.google.com/forms/d/e/1FAIpQLSc7OU4gVBt1yD5LjohwqHPhH2tPF93AF0tvzGTUv0AYkBdZjQ/formResponse?` +
-        `entry.924616653=${encodeURIComponent(values.teamName)}&` +
-        `entry.521549446=${encodeURIComponent(values.teamSize)}&` +
-        `entry.2134395723=${encodeURIComponent(values.school)}&` +
-        `entry.614204740=${encodeURIComponent(values.phoneNumber)}&` +
-        `entry.742289880=${encodeURIComponent(values.email)}&`;
+        `https://docs.google.com/forms/d/e/1FAIpQLScxKAC9Ww4wevdbu82gMn9rM_FlTurlnYVIFpwQdiOGWPcMfg/formResponse?` +
+        `entry.224019388=${encodeURIComponent(values.teamName)}&` +
+        `entry.629332802=${encodeURIComponent(values.teamSize)}&` +
+        `entry.255642493=${encodeURIComponent(values.school)}&` +
+        `entry.1071420772=${encodeURIComponent(values.phoneNumber)}&` +
+        `entry.1527414272=${encodeURIComponent(values.email)}&`;
 
       await fetch(url, {
         method: 'POST',
@@ -48,10 +50,10 @@ const Registration = () => {
       });
 
       setSubmitSuccess(true);
-      toast.success('Registration successful!');
+      toast.success(t('registration.success.toastMessage'));
       formikHelpers.resetForm();
     } catch (error) {
-      toast.error('Registration failed, please try again!');
+      toast.error(t('registration.failed.toastMessage'));
     } finally {
       setIsLoading(false);
     }
@@ -65,25 +67,24 @@ const Registration = () => {
       setIsLoading(true);
 
       const url =
-        `https://docs.google.com/forms/d/e/1FAIpQLSelxRAkMVo0fiFYDDUsOTQwfu-vfHJ0OTZOCZHEMQrG_BIJ6A/formResponse?` +
-        `entry.1173258311=${encodeURIComponent(values.fullName)}&` +
-        `entry.1794780755=${encodeURIComponent(values.dateOfBirth)}&` +
-        `entry.1908292169=${encodeURIComponent(values.school)}&` +
-        `entry.349812765=${encodeURIComponent(values.major)}&` +
-        `entry.1938692918=${encodeURIComponent(values.phoneNumber)}&` +
-        `entry.1820835535=${encodeURIComponent(values.email)}`;
-
+        `https://docs.google.com/forms/d/e/1FAIpQLSea32a8wFT9NJl8Tjpq_UbsuaEzd9W3JN482qH06Q_rG7wTZw/formResponse?` +
+        `entry.2104713088=${encodeURIComponent(values.fullName)}&` +
+        `entry.1209528409=${encodeURIComponent(values.dateOfBirth)}&` +
+        `entry.1701909681=${encodeURIComponent(values.school)}&` +
+        `entry.480658283=${encodeURIComponent(values.major)}&` +
+        `entry.350657595=${encodeURIComponent(values.phoneNumber)}&` +
+        `entry.489003859=${encodeURIComponent(values.email)}`;
       await fetch(url, {
         method: 'POST',
         mode: 'no-cors',
       });
 
       setSubmitSuccess(true);
-      toast.success('Registration successful!');
+      toast.success(t('registration.success.toastMessage'));
       formikHelpers.resetForm();
     } catch (error) {
       console.log(error);
-      toast.error('Registration failed, please try again!');
+      toast.error(t('registration.failed.toastMessage'));
     } finally {
       setIsLoading(false);
     }
@@ -117,10 +118,10 @@ const Registration = () => {
             viewport={{ once: true }}
           >
             <p className='text-base font-bold min-[400px]:text-lg'>
-              Congratulations!
+              {t('registration.success.title')}
             </p>
             <p className='text-base font-bold min-[400px]:text-lg'>
-              Your application has been successfully submitted.
+              {t('registration.success.content')}
             </p>
           </motion.div>
         </div>
@@ -142,7 +143,7 @@ const Registration = () => {
                   )}
                   type='button'
                 >
-                  individual
+                  {t('registration.individual.title')}
                 </button>
                 <button
                   onClick={() => toggleTypeForm('team')}
@@ -151,42 +152,68 @@ const Registration = () => {
                   )}
                   type='button'
                 >
-                  team
+                  {t('registration.team.title')}
                 </button>
               </div>
 
               <div className='col-span-2'>
-                <FormField label='Full name' name='fullName' required />
+                <FormField
+                  label={t('registration.individual.fullName.label')}
+                  name='fullName'
+                  required
+                />
               </div>
               <div className='col-span-2 md:col-span-1'>
                 <DateTimeField
                   name='dateOfBirth'
-                  label='Date of birth'
+                  label={t('registration.individual.dateOfBirth.label')}
                   required
                 />
               </div>
               <div className='col-span-2 md:col-span-1'>
                 <SelectField
-                  label='Gender'
+                  label={t('registration.individual.gender.label')}
                   name='gender'
                   required
                   options={[
-                    { value: 'male', label: 'Male' },
-                    { value: 'female', label: 'Female' },
+                    {
+                      value: 'male',
+                      label: t('registration.individual.gender.male'),
+                    },
+                    {
+                      value: 'female',
+                      label: t('registration.individual.gender.female'),
+                    },
                   ]}
                 />
               </div>
               <div className='col-span-2 md:col-span-1'>
-                <FormField label='School' name='school' required />
+                <FormField
+                  label={t('registration.individual.school.label')}
+                  name='school'
+                  required
+                />
               </div>
               <div className='col-span-2 md:col-span-1'>
-                <FormField label='Major' name='major' required />
+                <FormField
+                  label={t('registration.individual.major.label')}
+                  name='major'
+                  required
+                />
               </div>
               <div className='col-span-2'>
-                <FormField label='Phone Number' name='phoneNumber' required />
+                <FormField
+                  label={t('registration.individual.phoneNumber.label')}
+                  name='phoneNumber'
+                  required
+                />
               </div>
               <div className='col-span-2'>
-                <FormField label='Email' name='email' required />
+                <FormField
+                  label={t('registration.individual.email.label')}
+                  name='email'
+                  required
+                />
               </div>
 
               <div className='col-span-2 mt-4 flex justify-end'>
@@ -201,7 +228,7 @@ const Registration = () => {
                   {isLoading ? (
                     <FaSpinner className='animate-spin' />
                   ) : (
-                    'Submit'
+                    t('registration.submit')
                   )}
                 </button>
               </div>
@@ -225,7 +252,7 @@ const Registration = () => {
                   )}
                   type='button'
                 >
-                  individual
+                  {t('registration.individual.title')}
                 </button>
                 <button
                   onClick={() => toggleTypeForm('team')}
@@ -235,27 +262,43 @@ const Registration = () => {
                   )}
                   type='button'
                 >
-                  team
+                  {t('registration.team.title')}
                 </button>
               </div>
               <div className='col-span-2'>
-                <FormField label='Team Name' name='teamName' required />
+                <FormField
+                  label={t('registration.team.teamName.label')}
+                  name='teamName'
+                  required
+                />
               </div>
               <div className='col-span-2'>
                 <FormField
-                  label='Number of Team Members'
+                  label={t('registration.team.teamSize.label')}
                   name='teamSize'
                   required
                 />
               </div>
               <div className='col-span-2'>
-                <FormField label='School' name='school' required />
+                <FormField
+                  label={t('registration.team.school.label')}
+                  name='school'
+                  required
+                />
               </div>
               <div className='col-span-2'>
-                <FormField label='Phone Number' name='phoneNumber' required />
+                <FormField
+                  label={t('registration.team.phoneNumber.label')}
+                  name='phoneNumber'
+                  required
+                />
               </div>
               <div className='col-span-2'>
-                <FormField label='Email' name='email' required />
+                <FormField
+                  label={t('registration.team.email.label')}
+                  name='email'
+                  required
+                />
               </div>
               <div className='col-span-2 mt-4 flex justify-end'>
                 <button
@@ -269,7 +312,7 @@ const Registration = () => {
                   {isLoading ? (
                     <FaSpinner className='animate-spin' />
                   ) : (
-                    'Submit'
+                    t('registration.submit')
                   )}
                 </button>
               </div>
