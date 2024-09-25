@@ -10,24 +10,21 @@ interface DatePickerFieldProps {
 }
 
 const DatePickerField: React.FC<DatePickerFieldProps> = () => {
-  const [startDate, setStartDate] = useState(new Date());
+  const [date, setDate] = useState(new Date());
   const { setFieldValue } = useFormikContext();
 
   useEffect(() => {
-    setFieldValue(
-      'dateOfBirth',
-      `${startDate.getFullYear()}-${startDate.getMonth() > 9 ? startDate.getMonth() : `0${startDate.getMonth()}`}-${startDate.getDay() > 9 ? startDate.getDay() : `0${startDate.getDay()}`}`,
-    );
-  }, [startDate]);
+    setFieldValue('dateOfBirth', date.toISOString().replace(/T.*/, ''));
+  }, [date]);
 
   return (
     <div className='react-datepicker-wrapper !block w-full'>
       <DatePicker
-        dateFormat={'dd-MM-YYYY'}
-        selected={startDate}
+        dateFormat='dd-MM-YYYY'
+        selected={date}
         onChange={(date) => {
           if (date) {
-            setStartDate(date);
+            setDate(date);
           }
         }}
         className='mt-1 w-full flex-1 rounded-lg px-4 py-2 text-black'

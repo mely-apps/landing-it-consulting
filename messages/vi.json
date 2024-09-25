@@ -1,12 +1,159 @@
 {
   "HomePage": {
+    "names": {
+      "contestName": "IT Consultant Challenge",
+      "codeMelyName": "Code Mely",
+      "netcompanyName": "Netcompany"
+    },
+    "header": {
+      "home": "Trang chủ",
+      "about": "Về sự kiện",
+      "rules": "Luật thi",
+      "timeline": "Mốc thời gian",
+      "prizes": "Phần thưởng",
+      "register": "Đăng ký",
+      "organizers": "Đơn vị tổ chức"
+    },
     "hero": {
       "subTitle": "Hackathon là cuộc thi dành cho các coder mới trẻ, khi tham gia cuộc thi các bạn sẻ nhận được tham gia code cùng với chúng tôi!",
-      "time": "Thứ 7, Ngày 12 Tháng 10 năm 2024, NETCOMPANY OFFICE",
+      "time": "Thứ 7, Ngày 12 Tháng 10 năm 2024, Văn phòng NETCOMPANY",
       "buttonTitle": "Đăng ký ngay"
     },
     "about": {
-      "heading": "IT Consultant Challenge là gì?"
+      "title": "IT Consultant Challenge là gì?",
+      "description": "<extrabold>{contestName}</extrabold>—một sự kiện kéo dài cả ngày đầy thú vị, nơi các sinh viên ngành CNTT có cơ hội thể hiện kỹ năng, sự sáng tạo, và khả năng giải quyết vấn đề. Sự kiện được <extrabold>{netcompanyName}</extrabold> và <extrabold>{codeMelyName}</extrabold> tổ chức, là cơ hội để bạn hóa thân thành một chuyên viên tư vấn CNTT (IT Consultant) và đối mặt với các thử thách thực tế thông qua chuyển đổi số. Hãy tham gia cùng với những người chung chí hướng, tích lũy kinh nghiệm quý báu, và kiến tạo nên những ảnh hưởng lâu dài.",
+      "whoCanJoinQuestion": "<bold>Ai có thể tham gia sự kiện này?</bold>",
+      "whoCanJoinAnswers": [
+        {
+          "content": "Có nền tảng về: CNTT, Kỹ thuật phần mềm"
+        },
+        {
+          "content": "Sinh viên năm 2, 3"
+        },
+        {
+          "content": "Có niềm đam mê với công nghệ"
+        },
+        {
+          "content": "Có hứng thú trong việc khám phá vai trò của một chuyên viên tư vấn CNTT (IT Consultant)"
+        }
+      ]
+    },
+    "rules": {
+      "title": "Luật thi",
+      "description": "Các đội thi lựa chọn một case study (nghiên cứu tình huống) từ thử thách được ban tổ chức đưa ra, sau đó phân tích và thiết kế nên các ý tưởng, giải pháp để giải quyết các vấn đề đã xác định. Phần thưởng sẽ được trao cho những ý tưởng có tính khả thi, sáng tạo, và thể hiện tinh thần làm việc nhóm mạnh mẽ."
+    },
+    "timeline": {
+      "title": "Mốc thời gian"
+    },
+    "prizes": {
+      "title": "Phần thưởng"
+    },
+    "timeCounter": {
+      "title": "Thời gian còn lại",
+      "days": "ngày",
+      "hours": "giờ",
+      "minutes": "phút",
+      "seconds": "giây"
+    },
+    "registration": {
+      "title": "Đăng ký",
+      "individual": {
+        "title": "Cá nhân",
+        "fullName": {
+          "label": "Tên đầy đủ"
+        },
+        "dateOfBirth": {
+          "label": "Ngày tháng năm sinh"
+        },
+        "gender": {
+          "label": "Giới tính",
+          "male": "Nam",
+          "female": "Nữ"
+        },
+        "school": {
+          "label": "Trường học"
+        },
+        "major": {
+          "label": "Chuyên ngành"
+        },
+        "phoneNumber": {
+          "label": "Số điện thoại"
+        },
+        "email": {
+          "label": "Email"
+        }
+      },
+      "team": {
+        "title": "Đội",
+        "teamName": {
+          "label": "Tên đội"
+        },
+        "teamSize": {
+          "label": "Số thành viên"
+        },
+        "school": {
+          "label": "Trường học"
+        },
+        "phoneNumber": {
+          "label": "Số điện thoại"
+        },
+        "email": {
+          "label": "Email"
+        }
+      },
+      "submit": "Đăng ký",
+      "success": {
+        "title": "Xin chúc mừng!",
+        "content": "Bạn đã nộp đơn đăng ký thành công!",
+        "toastMessage": "Đăng ký thành công!"
+      },
+      "failed": {
+        "toastMessage": "Đăng ký thất bại, vui lòng thử lại!"
+      },
+      "errorMessages": {
+        "fullName": {
+          "required": "Tên đầy đủ không được để trống"
+        },
+        "dateOfBirth": {
+          "required": "Ngày tháng năm sinh không được để trống"
+        },
+        "gender": {
+          "required": "Giới tính không được để trống"
+        },
+        "school": {
+          "required": "Trường học không được để trống"
+        },
+        "major": {
+          "required": "Chuyên ngành không được để trống"
+        },
+        "phoneNumber": {
+          "required": "Số điện thoại không được để trống",
+          "invalid": "Số điện thoại không hợp lệ"
+        },
+        "email": {
+          "required": "Email không được để trống",
+          "invalid": "Email không hợp lệ"
+        },
+        "teamName": {
+          "required": "Tên đội không được để trống"
+        },
+        "teamSize": {
+          "required": "Số thành viên không được để trống"
+        }
+      }
+    },
+    "organizers": {
+      "title": "Đơn vị tổ chức",
+      "codeMely": {
+        "description": "<bold>{codeMelyName}</bold> là một cộng đồng CNTT sôi động và là bệ phóng cho các tài năng trẻ, đặc biệt là các nữ lập trình viên. Sứ mệnh của chúng tôi là nuôi dưỡng, thúc đẩy một cộng đồng GenZ năng động trong lĩnh vực CNTT bằng cách tạo ra các cuộc thi hấp dẫn và nền tảng nâng cao kỹ năng lập trình, đồng thời cung cấp nguồn nhân lực tài năng hàng đầu cho các dự án CNTT trên toàn thế giới."
+      },
+      "netcompany": {
+        "description": "<bold>{netcompanyName}</bold> là một công ty tư vấn CNTT được thành lập vào năm 2000 tại Copenhagen, Đan Mạch. Công ty đóng vai trò quan trọng trong quá trình chuyển đổi số cho cả khu vực công và tư nhân. {netcompanyName} tin rằng công nghệ có thể mang lại tác động tích cực cho xã hội và doanh nghiệp, đồng thời luôn tìm kiếm những chuyên gia CNTT tài năng, cung cấp các cơ hội phát triển nghề nghiệp."
+      }
+    },
+    "footer": {
+      "contact": "Liên hệ",
+      "followUs": "Theo dõi chúng tôi tại"
     }
   }
 }

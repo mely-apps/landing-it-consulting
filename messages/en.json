@@ -1,12 +1,159 @@
 {
   "HomePage": {
+    "names": {
+      "contestName": "IT Consultant Challenge",
+      "codeMelyName": "Code Mely",
+      "netcompanyName": "Netcompany"
+    },
+    "header": {
+      "home": "Home",
+      "about": "About",
+      "rules": "Rules",
+      "timeline": "Timeline",
+      "prizes": "Prizes",
+      "register": "Register",
+      "organizers": "Organizers"
+    },
     "hero": {
       "subTitle": "Hackathon is a competition for young, new coders. When participating in the competition, you will get the opportunity to code together with us!",
       "time": "saturday, 12th october, netcompany office",
       "buttonTitle": "Register now"
     },
     "about": {
-      "heading": "What is the IT Consultant Challenge?"
+      "title": "What is the IT Consultant Challenge?",
+      "description": "<extrabold>{contestName}</extrabold>—an exciting full-day event where IT students have the chance to showcase their skills, creativity, and problem-solving abilities. This event, hosted by <extrabold>{netcompanyName}</extrabold> and <extrabold>{codeMelyName}</extrabold>, is your opportunity to step into the shoes of an IT consultant and tackle real-life challenges through digital transformation. Work alongside like-minded peers, gain valuable experience, and make a lasting impact.",
+      "whoCanJoinQuestion": "<bold>Who can join the event?</bold>",
+      "whoCanJoinAnswers": [
+        {
+          "content": "Background: IT, Software Engineer"
+        },
+        {
+          "content": "2nd, 3rd year students"
+        },
+        {
+          "content": "Have passion with technology"
+        },
+        {
+          "content": "Have interest in exploring a role of an IT consultant"
+        }
+      ]
+    },
+    "rules": {
+      "title": "Rules",
+      "description": "Teams select a case study from the challenge provided by the organizers, then analyze and design ideas and solutions to address the identified issues. Prizes will be given to ideas that are feasible, creative, and exemplify strong teamwork."
+    },
+    "timeline": {
+      "title": "Timeline"
+    },
+    "prizes": {
+      "title": "Prizes"
+    },
+    "timeCounter": {
+      "title": "Time left",
+      "days": "days",
+      "hours": "hours",
+      "minutes": "minutes",
+      "seconds": "seconds"
+    },
+    "registration": {
+      "title": "Registration",
+      "individual": {
+        "title": "Individual",
+        "fullName": {
+          "label": "Full name"
+        },
+        "dateOfBirth": {
+          "label": "Date of Birth"
+        },
+        "gender": {
+          "label": "Gender",
+          "male": "Male",
+          "female": "Female"
+        },
+        "school": {
+          "label": "School"
+        },
+        "major": {
+          "label": "Major"
+        },
+        "phoneNumber": {
+          "label": "Phone number"
+        },
+        "email": {
+          "label": "Email"
+        }
+      },
+      "team": {
+        "title": "Team",
+        "teamName": {
+          "label": "Team name"
+        },
+        "teamSize": {
+          "label": "Number of team members"
+        },
+        "school": {
+          "label": "School"
+        },
+        "phoneNumber": {
+          "label": "Phone number"
+        },
+        "email": {
+          "label": "Email"
+        }
+      },
+      "submit": "Submit",
+      "success": {
+        "title": "Congratulations!",
+        "content": "Your application has been successfully submitted.",
+        "toastMessage": "Registration successful!"
+      },
+      "failed": {
+        "toastMessage": "Registration failed, please try again!"
+      },
+      "errorMessages": {
+        "fullName": {
+          "required": "Full name is required"
+        },
+        "dateOfBirth": {
+          "required": "Date of birth is required"
+        },
+        "gender": {
+          "required": "Gender is required"
+        },
+        "school": {
+          "required": "School is required"
+        },
+        "major": {
+          "required": "Major is required"
+        },
+        "phoneNumber": {
+          "required": "Phone number is required",
+          "invalid": "Phone number is invalid"
+        },
+        "email": {
+          "required": "Email is required",
+          "invalid": "Email is invalid"
+        },
+        "teamName": {
+          "required": "Team name is required"
+        },
+        "teamSize": {
+          "required": "Number of team members is required"
+        }
+      }
+    },
+    "organizers": {
+      "title": "Organizers",
+      "codeMely": {
+        "description": "<bold>{codeMelyName}</bold> is a vibrant IT community and launchpad for young talents, especially female programmers. Our mission is to foster a dynamic IT GenZ community by creating engaging competitions and platforms that enhance programming skills and provide top-tier talent for IT projects worldwide."
+      },
+      "netcompany": {
+        "description": "<bold>{netcompanyName}</bold> is an IT consulting firm founded in 2000 in Copenhagen, Denmark. The company plays a crucial role in digital transformation for both public and private sectors. Netcompany believes that technology can have a positive impact on society and business, and continuously seeks talented IT professionals, offering career development opportunities."
+      }
+    },
+    "footer": {
+      "contact": "Contact",
+      "followUs": "Follow us via"
     }
   }
 }
