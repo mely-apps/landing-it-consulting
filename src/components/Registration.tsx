@@ -1,10 +1,13 @@
 'use client';
-import React, { useState } from 'react';
-import { Form, Formik, FormikHelpers } from 'formik';
-import { toast } from 'react-toastify';
-import clsx from 'clsx';
-import { FaSpinner } from 'react-icons/fa';
 import { SECTION_IDS } from '@/constants';
+import clsx from 'clsx';
+import { Form, Formik, FormikHelpers } from 'formik';
+import { motion } from 'framer-motion';
+import { Check } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import React, { useState } from 'react';
+import { FaSpinner } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 import { DateTimeField, FormField, SelectField } from './FormField';
 import {
   PersonalForm,
@@ -14,9 +17,6 @@ import {
   teamFormInitValue,
   teamFormSchema,
 } from './Schema';
-import { Check } from 'lucide-react';
-import { motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
 
 const Registration = () => {
   const t = useTranslations('HomePage');
@@ -37,12 +37,12 @@ const Registration = () => {
     try {
       setIsLoading(true);
       const url =
-        `https://docs.google.com/forms/d/e/1FAIpQLSc7OU4gVBt1yD5LjohwqHPhH2tPF93AF0tvzGTUv0AYkBdZjQ/formResponse?` +
-        `entry.924616653=${encodeURIComponent(values.teamName)}&` +
-        `entry.521549446=${encodeURIComponent(values.teamSize)}&` +
-        `entry.2134395723=${encodeURIComponent(values.school)}&` +
-        `entry.614204740=${encodeURIComponent(values.phoneNumber)}&` +
-        `entry.742289880=${encodeURIComponent(values.email)}&`;
+        `https://docs.google.com/forms/d/e/1FAIpQLScxKAC9Ww4wevdbu82gMn9rM_FlTurlnYVIFpwQdiOGWPcMfg/formResponse?` +
+        `entry.224019388=${encodeURIComponent(values.teamName)}&` +
+        `entry.629332802=${encodeURIComponent(values.teamSize)}&` +
+        `entry.255642493=${encodeURIComponent(values.school)}&` +
+        `entry.1071420772=${encodeURIComponent(values.phoneNumber)}&` +
+        `entry.1527414272=${encodeURIComponent(values.email)}&`;
 
       await fetch(url, {
         method: 'POST',
@@ -67,14 +67,13 @@ const Registration = () => {
       setIsLoading(true);
 
       const url =
-        `https://docs.google.com/forms/d/e/1FAIpQLSelxRAkMVo0fiFYDDUsOTQwfu-vfHJ0OTZOCZHEMQrG_BIJ6A/formResponse?` +
-        `entry.1173258311=${encodeURIComponent(values.fullName)}&` +
-        `entry.1794780755=${encodeURIComponent(values.dateOfBirth)}&` +
-        `entry.1908292169=${encodeURIComponent(values.school)}&` +
-        `entry.349812765=${encodeURIComponent(values.major)}&` +
-        `entry.1938692918=${encodeURIComponent(values.phoneNumber)}&` +
-        `entry.1820835535=${encodeURIComponent(values.email)}`;
-
+        `https://docs.google.com/forms/d/e/1FAIpQLSea32a8wFT9NJl8Tjpq_UbsuaEzd9W3JN482qH06Q_rG7wTZw/formResponse?` +
+        `entry.2104713088=${encodeURIComponent(values.fullName)}&` +
+        `entry.1209528409=${encodeURIComponent(values.dateOfBirth)}&` +
+        `entry.1701909681=${encodeURIComponent(values.school)}&` +
+        `entry.480658283=${encodeURIComponent(values.major)}&` +
+        `entry.350657595=${encodeURIComponent(values.phoneNumber)}&` +
+        `entry.489003859=${encodeURIComponent(values.email)}`;
       await fetch(url, {
         method: 'POST',
         mode: 'no-cors',

@@ -34,14 +34,9 @@ export default function Home({
     <BackgroundGradientAnimation>
       <ToastContainer {...toastContainerConfig} />
       <div className='main-container absolute inset-0 left-0 top-0 z-50 h-screen w-screen overflow-x-hidden overflow-y-scroll scrollbar-none'>
-        <ScrollToTop />
-        <div className='relative'>
-          <div className='absolute inset-0 mt-6'>
-            <HexagonBackground className='h-[110%]' />
-          </div>
-          <Header locale={locale as LocaleProps['locale']} />
-          <Hero />
-        </div>
+        <ScrollToTop locale={locale} />
+        <Header locale={locale as LocaleProps['locale']} />
+        <Hero />
         <About />
         <Rules locale={locale} />
         <Timeline />
