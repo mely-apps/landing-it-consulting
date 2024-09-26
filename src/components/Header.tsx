@@ -64,7 +64,7 @@ const Header = ({ locale }: LocaleProps) => {
       className='container relative hidden w-11/12 items-center justify-between border-2 border-transparent px-20 pt-4 lg:flex'
       id='header'
     >
-      <div className='invisible translate-y-10 font-montserrat text-lg font-extrabold sm:visible'>
+      <div className='invisible font-montserrat text-lg font-extrabold sm:visible'>
         <p className='text-white'>IT Consultant</p>
         <p className='text-primary'>Challenge</p>
       </div>

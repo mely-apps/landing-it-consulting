@@ -15,26 +15,32 @@
       "organizers": "Đơn vị tổ chức"
     },
     "hero": {
-      "subTitle": "Hackathon là cuộc thi dành cho các coder mới trẻ, khi tham gia cuộc thi các bạn sẻ nhận được tham gia code cùng với chúng tôi!",
-      "time": "Thứ 7, Ngày 12 Tháng 10 năm 2024, Văn phòng NETCOMPANY",
+      "subTitle": "Sáng tạo, đổi mới, chuyển đổi số một cách hiệu quả",
+      "time": "Thứ 7, Ngày 13 Tháng 10 năm 2024, Văn phòng NETCOMPANY",
       "buttonTitle": "Đăng ký ngay"
     },
     "about": {
       "title": "IT Consultant Challenge là gì?",
-      "description": "<extrabold>{contestName}</extrabold>—một sự kiện kéo dài cả ngày đầy thú vị, nơi các sinh viên ngành CNTT có cơ hội thể hiện kỹ năng, sự sáng tạo, và khả năng giải quyết vấn đề. Sự kiện được <extrabold>{netcompanyName}</extrabold> và <extrabold>{codeMelyName}</extrabold> tổ chức, là cơ hội để bạn hóa thân thành một chuyên viên tư vấn CNTT (IT Consultant) và đối mặt với các thử thách thực tế thông qua chuyển đổi số. Hãy tham gia cùng với những người chung chí hướng, tích lũy kinh nghiệm quý báu, và kiến tạo nên những ảnh hưởng lâu dài.",
-      "whoCanJoinQuestion": "<bold>Ai có thể tham gia sự kiện này?</bold>",
+      "description": [
+        "<extrabold>Thử thách IT Consultant</extrabold> là một cuộc thi theo nhóm đầy hấp dẫn, nơi người tham gia nhập vai làm tư vấn viên IT. Trong một nhóm bốn thành viên, các bạn sẽ cùng nhau giải quyết một  vấn đề IT thực tế và phát triển các giải pháp số hóa sáng tạo cho khách hàng. Thử thách này mô phỏng môi trường làm việc năng động của tư vấn IT, đòi hỏi sự hợp tác, tư duy phản biện và đưa ra các giải pháp có tác động, nhằm đáp ứng nhu cầu của khách hàng.",
+        "Sự kiện được phối hợp thực hiện bởi Công ty {netcompanyName} Việt Nam và Cộng đồng Tech dành cho các bạn trẻ {codeMelyName}."
+      ],
+      "whoCanJoinQuestion": "<bold>Hãy tham gia thử thách nếu bạn:</bold>",
       "whoCanJoinAnswers": [
         {
-          "content": "Có nền tảng về: CNTT, Kỹ thuật phần mềm"
+          "content": "Là sinh viên từ năm 2 đến năm 4 đang theo học CNTT, Kĩ Thuật phần mềm, Khoa học Máy tính từ các trường Đại học trên địa bàn thành phố Hồ Chí Minh"
         },
         {
-          "content": "Sinh viên năm 2, 3"
+          "content": "Có khả năng tiếng Anh trình độ tối thiểu từ B1 trở lên"
         },
         {
-          "content": "Có niềm đam mê với công nghệ"
+          "content": "Có hứng thú trong việc tìm hiểu vai trò của một chuyên viên tư vấn IT"
         },
         {
-          "content": "Có hứng thú trong việc khám phá vai trò của một chuyên viên tư vấn CNTT (IT Consultant)"
+          "content": "Muốn gặp gỡ bạn bè mới và các anh, chị trong nghề"
+        },
+        {
+          "content": "Muốn tìm hiểu về môi trường làm việc của Netcompany tại Việt Nam"
         }
       ]
     },
