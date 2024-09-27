@@ -2,7 +2,7 @@
   "HomePage": {
     "names": {
       "contestName": "IT Consultant Challenge",
-      "codeMelyName": "Code Mely",
+      "codeMelyName": "Code MeLy",
       "netcompanyName": "Netcompany"
     },
     "header": {
@@ -27,21 +27,11 @@
       ],
       "whoCanJoinQuestion": "<bold>Hãy tham gia thử thách nếu bạn:</bold>",
       "whoCanJoinAnswers": [
-        {
-          "content": "Là sinh viên từ năm 2 đến năm 4 đang theo học CNTT, Kĩ Thuật phần mềm, Khoa học Máy tính từ các trường Đại học trên địa bàn thành phố Hồ Chí Minh"
-        },
-        {
-          "content": "Có khả năng tiếng Anh trình độ tối thiểu từ B1 trở lên"
-        },
-        {
-          "content": "Có hứng thú trong việc tìm hiểu vai trò của một chuyên viên tư vấn IT"
-        },
-        {
-          "content": "Muốn gặp gỡ bạn bè mới và các anh, chị trong nghề"
-        },
-        {
-          "content": "Muốn tìm hiểu về môi trường làm việc của Netcompany tại Việt Nam"
-        }
+        "Là sinh viên từ năm 2 đến năm 4 đang theo học CNTT, Kĩ Thuật phần mềm, Khoa học Máy tính từ các trường Đại học trên địa bàn thành phố Hồ Chí Minh",
+        "Có khả năng tiếng Anh trình độ tối thiểu từ B1 trở lên",
+        "Có hứng thú trong việc tìm hiểu vai trò của một chuyên viên tư vấn IT",
+        "Muốn gặp gỡ bạn bè mới và các anh, chị trong nghề",
+        "Muốn tìm hiểu về môi trường làm việc của Netcompany tại Việt Nam"
       ]
     },
     "rules": {
@@ -88,7 +78,8 @@
         },
         "email": {
           "label": "Email"
-        }
+        },
+        "note": "(*) BTC sẽ ghép team cho bạn trong trường hợp bạn đăng kí cá nhân nhé."
       },
       "team": {
         "title": "Đội",
@@ -106,7 +97,8 @@
         },
         "email": {
           "label": "Email"
-        }
+        },
+        "note": "(*) BTC sẽ tự ghép thêm thành viên trong trường hợp nhóm bạn chưa đủ người nhé"
       },
       "submit": "Đăng ký",
       "success": {

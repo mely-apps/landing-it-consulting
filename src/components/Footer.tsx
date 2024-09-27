@@ -1,9 +1,8 @@
-import { FaFacebookF, FaLinkedinIn, FaTiktok, FaYoutube } from 'react-icons/fa';
 import CodeSandBox from './icons/CodeSandBox';
 import MailContact from './icons/MailContact';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { Globe } from 'lucide-react';
+import { Facebook, Globe } from 'lucide-react';
 
 const Footer = () => {
   const t = useTranslations('HomePage');
@@ -65,9 +64,7 @@ const Footer = () => {
               className='flex items-center gap-2 transition-all hover:text-primary'
               target='_blank'
             >
-              <div className='flex h-8 w-8 items-center justify-center rounded-lg bg-[#FFFFFF] text-black'>
-                <FaFacebookF />
-              </div>
+              <Facebook />
               Code MeLy
             </Link>
             <Link
@@ -75,9 +72,7 @@ const Footer = () => {
               className='flex items-center gap-2 transition-all hover:text-primary'
               target='_blank'
             >
-              <div className='flex h-8 w-8 items-center justify-center rounded-lg bg-[#FFFFFF] text-black'>
-                <FaFacebookF />
-              </div>
+              <Facebook />
               Netcompany Vietnam
             </Link>
             <Link
@@ -85,19 +80,15 @@ const Footer = () => {
               className='flex items-center gap-2 transition-all hover:text-primary'
               target='_blank'
             >
-              <div className='flex h-8 w-8 items-center justify-center rounded-lg bg-[#FFFFFF] text-black'>
-                <Globe />
-              </div>
-              www.codemely.dev
+              <Globe />
+              codemely.dev
             </Link>
             <Link
               href='https://netcompany.com/'
               className='flex items-center gap-2 transition-all hover:text-primary'
               target='_blank'
             >
-              <div className='flex h-8 w-8 items-center justify-center rounded-lg bg-[#FFFFFF] text-black'>
-                <Globe />
-              </div>
+              <Globe />
               netcompany.com
             </Link>
           </div>

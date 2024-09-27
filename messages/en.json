@@ -2,7 +2,7 @@
   "HomePage": {
     "names": {
       "contestName": "IT Consultant Challenge",
-      "codeMelyName": "Code Mely",
+      "codeMelyName": "Code MeLy",
       "netcompanyName": "Netcompany"
     },
     "header": {
@@ -27,21 +27,11 @@
       ],
       "whoCanJoinQuestion": "<bold>Join the challenge if you:</bold>",
       "whoCanJoinAnswers": [
-        {
-          "content": "Are students from 2nd to 4th year studying IT, Computer Science, Software Engineer from universities in Ho Chi Minh City"
-        },
-        {
-          "content": "Have English proficiency at a minimum level of B1 or higher"
-        },
-        {
-          "content": "Have interest in exploring the roles of an IT consultant"
-        },
-        {
-          "content": "Want to meet new friends, IT fellows and IT professionals"
-        },
-        {
-          "content": "Want to learn more about Netcompany Vietnam's workplace"
-        }
+        "Are students from 2nd to 4th year studying IT, Computer Science, Software Engineer from universities in Ho Chi Minh City",
+        "Have English proficiency at a minimum level of B1 or higher",
+        "Have interest in exploring the roles of an IT consultant",
+        "Want to meet new friends, IT fellows and IT professionals",
+        "Want to learn more about Netcompany Vietnam's workplace"
       ]
     },
     "rules": {
@@ -88,7 +78,8 @@
         },
         "email": {
           "label": "Email"
-        }
+        },
+        "note": "(*) The organizer will help you set up a team with other individuals"
       },
       "team": {
         "title": "Team",
@@ -106,7 +97,8 @@
         },
         "email": {
           "label": "Email"
-        }
+        },
+        "note": "(*) The organizer will add other individuals to your team in case you do not have enough team members"
       },
       "submit": "Submit",
       "success": {

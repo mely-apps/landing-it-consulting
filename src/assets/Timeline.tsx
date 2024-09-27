@@ -34,7 +34,8 @@ export default function Timeline({ locale = 'en', ...props }: TimelineProps) {
     };
 
     handleResize();
-    window.onresize = handleResize;
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   if (locale === 'en') {

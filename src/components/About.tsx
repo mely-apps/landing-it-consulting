@@ -69,9 +69,7 @@ const About = () => {
           </p>
           <ul className='ml-10 list-disc'>
             {Array.from({ length: 5 }).map((_, index) => (
-              <li key={index}>
-                {t(`about.whoCanJoinAnswers.${index}.content`)}
-              </li>
+              <li key={index}>{t(`about.whoCanJoinAnswers.${index}`)}</li>
             ))}
           </ul>
         </motion.div>
