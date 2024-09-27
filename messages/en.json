@@ -52,7 +52,8 @@
       "title": "Timeline"
     },
     "prizes": {
-      "title": "Prizes"
+      "title": "Prizes",
+      "note": "(*) In cash prizes will be awarded in the form of Got It vouchers."
     },
     "timeCounter": {
       "title": "Remaining time",

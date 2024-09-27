@@ -52,7 +52,8 @@
       "title": "Mốc thời gian"
     },
     "prizes": {
-      "title": "Phần thưởng"
+      "title": "Phần thưởng",
+      "note": "(*) Giải thưởng hiện kim sẽ được trao dưới dạng voucher Got It."
     },
     "timeCounter": {
       "title": "Thời gian còn lại",

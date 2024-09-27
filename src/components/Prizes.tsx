@@ -70,6 +70,24 @@ const Prizes = ({ locale }: PrizesProps) => {
           <Top3Mobile className='w-full sm:hidden' locale={locale} />
         </motion.div>
       </motion.div>
+      <motion.p
+        className='w-full text-center text-base italic text-primary max-sm:text-sm'
+        initial={{
+          opacity: 0,
+          y: 50,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.5,
+            bounce: 0.5,
+          },
+        }}
+        viewport={{ once: true }}
+      >
+        {t('prizes.note')}
+      </motion.p>
     </div>
   );
 };
