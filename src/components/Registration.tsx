@@ -93,7 +93,7 @@ const Registration = () => {
   return (
     <div className='container' id={SECTION_IDS.REGISTER}>
       <h2 className='text-center text-2xl font-extrabold uppercase text-primary'>
-        Registration
+        {t('registration.title')}
       </h2>
 
       {submitSuccess ? (

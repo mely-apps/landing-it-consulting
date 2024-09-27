@@ -19,7 +19,7 @@ const Hero = () => {
 
   return (
     <div
-      className='container relative grid grid-cols-1 items-center border-2 border-transparent max-sm:px-0 sm:w-11/12 sm:gap-y-10 sm:py-10 lg:grid-cols-2'
+      className='container relative grid grid-cols-1 items-center border-2 border-transparent max-sm:px-0 sm:w-11/12 sm:gap-y-10 sm:px-20 sm:py-10 lg:grid-cols-2'
       id={SECTION_IDS.HOME}
     >
       <div className='order-2 text-center sm:order-1 lg:text-left'>
