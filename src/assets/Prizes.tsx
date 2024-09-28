@@ -275,13 +275,13 @@ export function Top1({ locale = 'en', height, ...props }: IconProps) {
         <path
           d='M358.5 184.5V538.5H0.5V184.5H358.5Z'
           fill='url(#paint0_linear_831_66)'
-          fill-opacity='0.4'
+          fillOpacity='0.4'
           stroke='url(#paint1_linear_831_66)'
         />
         <path
           d='M357.763 183.5H3.08846L64.1197 152.5H291.888L357.763 183.5Z'
           fill='url(#paint2_linear_831_66)'
-          fill-opacity='0.4'
+          fillOpacity='0.4'
           stroke='url(#paint3_linear_831_66)'
         />
         <rect x='52' width='222' height='194' fill='url(#pattern0_831_66)' />
@@ -348,9 +348,9 @@ export function Top1({ locale = 'en', height, ...props }: IconProps) {
             width='97.7124'
             height='101.712'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -383,9 +383,9 @@ export function Top1({ locale = 'en', height, ...props }: IconProps) {
             width='90.6045'
             height='90.6045'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feColorMatrix
               in='SourceAlpha'
               type='matrix'
@@ -418,9 +418,9 @@ export function Top1({ locale = 'en', height, ...props }: IconProps) {
             width='59.5806'
             height='65.5806'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -454,8 +454,8 @@ export function Top1({ locale = 'en', height, ...props }: IconProps) {
             y2='295.585'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='white' stop-opacity='0.4' />
-            <stop offset='1' stop-color='#737373' stop-opacity='0.1' />
+            <stop stopColor='white' stopOpacity='0.4' />
+            <stop offset='1' stopColor='#737373' stopOpacity='0.1' />
           </linearGradient>
           <linearGradient
             id='paint1_linear_831_66'
@@ -465,10 +465,10 @@ export function Top1({ locale = 'en', height, ...props }: IconProps) {
             y2='304.154'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='white' />
-            <stop offset='0.365494' stop-color='#A3B8B6' />
-            <stop offset='0.672961' stop-color='#557C79' />
-            <stop offset='1' stop-color='#023C38' />
+            <stop stopColor='white' />
+            <stop offset='0.365494' stopColor='#A3B8B6' />
+            <stop offset='0.672961' stopColor='#557C79' />
+            <stop offset='1' stopColor='#023C38' />
           </linearGradient>
           <linearGradient
             id='paint2_linear_831_66'
@@ -478,8 +478,8 @@ export function Top1({ locale = 'en', height, ...props }: IconProps) {
             y2='-59.4148'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='white' stop-opacity='0.4' />
-            <stop offset='1' stop-color='#737373' stop-opacity='0.1' />
+            <stop stopColor='white' stopOpacity='0.4' />
+            <stop offset='1' stopColor='#737373' stopOpacity='0.1' />
           </linearGradient>
           <linearGradient
             id='paint3_linear_831_66'
@@ -489,10 +489,10 @@ export function Top1({ locale = 'en', height, ...props }: IconProps) {
             y2='-50.8464'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='white' />
-            <stop offset='0.365494' stop-color='#A3B8B6' />
-            <stop offset='0.672961' stop-color='#557C79' />
-            <stop offset='1' stop-color='#023C38' />
+            <stop stopColor='white' />
+            <stop offset='0.365494' stopColor='#A3B8B6' />
+            <stop offset='0.672961' stopColor='#557C79' />
+            <stop offset='1' stopColor='#023C38' />
           </linearGradient>
           <linearGradient
             id='paint4_linear_831_66'
@@ -502,9 +502,9 @@ export function Top1({ locale = 'en', height, ...props }: IconProps) {
             y2='319.67'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='#FFB84E' />
-            <stop offset='0.505' stop-color='#FFD26C' />
-            <stop offset='1' stop-color='#FFFAD2' />
+            <stop stopColor='#FFB84E' />
+            <stop offset='0.505' stopColor='#FFD26C' />
+            <stop offset='1' stopColor='#FFFAD2' />
           </linearGradient>
           <image
             id='image0_831_66'
@@ -843,19 +843,19 @@ export function Top2({ locale = 'en', height, ...props }: IconProps) {
           <path
             d='M24.5928 572.322H409.356V191.846H24.5928V572.322Z'
             fill='url(#paint0_linear_831_43)'
-            fill-opacity='0.4'
-            shape-rendering='crispEdges'
+            fillOpacity='0.4'
+            shapeRendering='crispEdges'
           />
           <path
             d='M408.856 192.346V571.822H25.0928V192.346H408.856Z'
             stroke='url(#paint1_linear_831_43)'
-            shape-rendering='crispEdges'
+            shapeRendering='crispEdges'
           />
         </g>
         <path
           d='M407.12 191.346H26.6812L92.2337 158.049H336.365L407.12 191.346Z'
           fill='url(#paint2_linear_831_43)'
-          fill-opacity='0.4'
+          fillOpacity='0.4'
           stroke='url(#paint3_linear_831_43)'
         />
         <rect
@@ -916,9 +916,9 @@ export function Top2({ locale = 'en', height, ...props }: IconProps) {
             width='432.764'
             height='432.477'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feGaussianBlur in='BackgroundImageFix' stdDeviation='12' />
             <feComposite
               in2='SourceAlpha'
@@ -968,9 +968,9 @@ export function Top2({ locale = 'en', height, ...props }: IconProps) {
             width='102.5'
             height='106.5'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1003,9 +1003,9 @@ export function Top2({ locale = 'en', height, ...props }: IconProps) {
             width='94.75'
             height='94.75'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feColorMatrix
               in='SourceAlpha'
               type='matrix'
@@ -1038,9 +1038,9 @@ export function Top2({ locale = 'en', height, ...props }: IconProps) {
             width='62.5'
             height='68.5'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1074,8 +1074,8 @@ export function Top2({ locale = 'en', height, ...props }: IconProps) {
             y2='311.439'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='white' stop-opacity='0.4' />
-            <stop offset='1' stop-color='#737373' stop-opacity='0.1' />
+            <stop stopColor='white' stopOpacity='0.4' />
+            <stop offset='1' stopColor='#737373' stopOpacity='0.1' />
           </linearGradient>
           <linearGradient
             id='paint1_linear_831_43'
@@ -1085,10 +1085,10 @@ export function Top2({ locale = 'en', height, ...props }: IconProps) {
             y2='320.622'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='white' />
-            <stop offset='0.365494' stop-color='#A3B8B6' />
-            <stop offset='0.672961' stop-color='#557C79' />
-            <stop offset='1' stop-color='#023C38' />
+            <stop stopColor='white' />
+            <stop offset='0.365494' stopColor='#A3B8B6' />
+            <stop offset='0.672961' stopColor='#557C79' />
+            <stop offset='1' stopColor='#023C38' />
           </linearGradient>
           <linearGradient
             id='paint2_linear_831_43'
@@ -1098,8 +1098,8 @@ export function Top2({ locale = 'en', height, ...props }: IconProps) {
             y2='-69.0377'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='white' stop-opacity='0.4' />
-            <stop offset='1' stop-color='#737373' stop-opacity='0.1' />
+            <stop stopColor='white' stopOpacity='0.4' />
+            <stop offset='1' stopColor='#737373' stopOpacity='0.1' />
           </linearGradient>
           <linearGradient
             id='paint3_linear_831_43'
@@ -1109,10 +1109,10 @@ export function Top2({ locale = 'en', height, ...props }: IconProps) {
             y2='-59.8544'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='white' />
-            <stop offset='0.365494' stop-color='#A3B8B6' />
-            <stop offset='0.672961' stop-color='#557C79' />
-            <stop offset='1' stop-color='#023C38' />
+            <stop stopColor='white' />
+            <stop offset='0.365494' stopColor='#A3B8B6' />
+            <stop offset='0.672961' stopColor='#557C79' />
+            <stop offset='1' stopColor='#023C38' />
           </linearGradient>
           <linearGradient
             id='paint4_linear_831_43'
@@ -1122,9 +1122,9 @@ export function Top2({ locale = 'en', height, ...props }: IconProps) {
             y2='332.75'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='#FFB84E' />
-            <stop offset='0.505' stop-color='#FFD26C' />
-            <stop offset='1' stop-color='#FFFAD2' />
+            <stop stopColor='#FFB84E' />
+            <stop offset='0.505' stopColor='#FFD26C' />
+            <stop offset='1' stopColor='#FFFAD2' />
           </linearGradient>
           <image
             id='image0_831_43'
@@ -1154,19 +1154,19 @@ export function Top3({ locale = 'en', height, ...props }: IconProps) {
           <path
             d='M24.4688 489.673H352.44V165.356H24.4688V489.673Z'
             fill='url(#paint0_linear_1080_7)'
-            fill-opacity='0.4'
-            shape-rendering='crispEdges'
+            fillOpacity='0.4'
+            shapeRendering='crispEdges'
           />
           <path
             d='M351.94 489.173H24.9688V165.856H351.94V489.173Z'
             stroke='url(#paint1_linear_1080_7)'
-            shape-rendering='crispEdges'
+            shapeRendering='crispEdges'
           />
         </g>
         <path
           d='M290.206 136.622L350.204 164.856H26.5572L82.1434 136.622H290.206Z'
           fill='url(#paint2_linear_1080_7)'
-          fill-opacity='0.4'
+          fillOpacity='0.4'
           stroke='url(#paint3_linear_1080_7)'
         />
         <rect
@@ -1227,9 +1227,9 @@ export function Top3({ locale = 'en', height, ...props }: IconProps) {
             width='375.972'
             height='376.317'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feGaussianBlur in='BackgroundImageFix' stdDeviation='12' />
             <feComposite
               in2='SourceAlpha'
@@ -1279,9 +1279,9 @@ export function Top3({ locale = 'en', height, ...props }: IconProps) {
             width='97.7124'
             height='101.712'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1314,9 +1314,9 @@ export function Top3({ locale = 'en', height, ...props }: IconProps) {
             width='90.6045'
             height='90.6045'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feColorMatrix
               in='SourceAlpha'
               type='matrix'
@@ -1349,9 +1349,9 @@ export function Top3({ locale = 'en', height, ...props }: IconProps) {
             width='59.5806'
             height='65.5806'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1385,8 +1385,8 @@ export function Top3({ locale = 'en', height, ...props }: IconProps) {
             y2='267.297'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='white' stop-opacity='0.4' />
-            <stop offset='1' stop-color='#737373' stop-opacity='0.1' />
+            <stop stopColor='white' stopOpacity='0.4' />
+            <stop offset='1' stopColor='#737373' stopOpacity='0.1' />
           </linearGradient>
           <linearGradient
             id='paint1_linear_1080_7'
@@ -1396,10 +1396,10 @@ export function Top3({ locale = 'en', height, ...props }: IconProps) {
             y2='275.125'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='white' />
-            <stop offset='0.365494' stop-color='#A3B8B6' />
-            <stop offset='0.672961' stop-color='#557C79' />
-            <stop offset='1' stop-color='#023C38' />
+            <stop stopColor='white' />
+            <stop offset='0.365494' stopColor='#A3B8B6' />
+            <stop offset='0.672961' stopColor='#557C79' />
+            <stop offset='1' stopColor='#023C38' />
           </linearGradient>
           <linearGradient
             id='paint2_linear_1080_7'
@@ -1409,8 +1409,8 @@ export function Top3({ locale = 'en', height, ...props }: IconProps) {
             y2='-57.0204'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='white' stop-opacity='0.4' />
-            <stop offset='1' stop-color='#737373' stop-opacity='0.1' />
+            <stop stopColor='white' stopOpacity='0.4' />
+            <stop offset='1' stopColor='#737373' stopOpacity='0.1' />
           </linearGradient>
           <linearGradient
             id='paint3_linear_1080_7'
@@ -1420,10 +1420,10 @@ export function Top3({ locale = 'en', height, ...props }: IconProps) {
             y2='-49.1926'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='white' />
-            <stop offset='0.365494' stop-color='#A3B8B6' />
-            <stop offset='0.672961' stop-color='#557C79' />
-            <stop offset='1' stop-color='#023C38' />
+            <stop stopColor='white' />
+            <stop offset='0.365494' stopColor='#A3B8B6' />
+            <stop offset='0.672961' stopColor='#557C79' />
+            <stop offset='1' stopColor='#023C38' />
           </linearGradient>
           <linearGradient
             id='paint4_linear_1080_7'
@@ -1433,9 +1433,9 @@ export function Top3({ locale = 'en', height, ...props }: IconProps) {
             y2='285.67'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='#FFB84E' />
-            <stop offset='0.505' stop-color='#FFD26C' />
-            <stop offset='1' stop-color='#FFFAD2' />
+            <stop stopColor='#FFB84E' />
+            <stop offset='0.505' stopColor='#FFD26C' />
+            <stop offset='1' stopColor='#FFFAD2' />
           </linearGradient>
           <image
             id='image0_1080_7'
@@ -1463,19 +1463,19 @@ export function Top3({ locale = 'en', height, ...props }: IconProps) {
           <path
             d='M24.4688 489.673H352.44V165.356H24.4688V489.673Z'
             fill='url(#paint0_linear_839_24)'
-            fill-opacity='0.4'
-            shape-rendering='crispEdges'
+            fillOpacity='0.4'
+            shapeRendering='crispEdges'
           />
           <path
             d='M351.94 165.856V489.173H24.9688V165.856H351.94Z'
             stroke='url(#paint1_linear_839_24)'
-            shape-rendering='crispEdges'
+            shapeRendering='crispEdges'
           />
         </g>
         <path
           d='M350.204 164.856H26.5572L82.1434 136.622H290.206L350.204 164.856Z'
           fill='url(#paint2_linear_839_24)'
-          fill-opacity='0.4'
+          fillOpacity='0.4'
           stroke='url(#paint3_linear_839_24)'
         />
         <rect
@@ -1536,9 +1536,9 @@ export function Top3({ locale = 'en', height, ...props }: IconProps) {
             width='375.972'
             height='376.317'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feGaussianBlur in='BackgroundImageFix' stdDeviation='12' />
             <feComposite
               in2='SourceAlpha'
@@ -1588,9 +1588,9 @@ export function Top3({ locale = 'en', height, ...props }: IconProps) {
             width='97.7124'
             height='101.712'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1623,9 +1623,9 @@ export function Top3({ locale = 'en', height, ...props }: IconProps) {
             width='90.6045'
             height='90.6045'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feColorMatrix
               in='SourceAlpha'
               type='matrix'
@@ -1658,9 +1658,9 @@ export function Top3({ locale = 'en', height, ...props }: IconProps) {
             width='59.5806'
             height='65.5806'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1694,8 +1694,8 @@ export function Top3({ locale = 'en', height, ...props }: IconProps) {
             y2='267.297'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='white' stop-opacity='0.4' />
-            <stop offset='1' stop-color='#737373' stop-opacity='0.1' />
+            <stop stopColor='white' stopOpacity='0.4' />
+            <stop offset='1' stopColor='#737373' stopOpacity='0.1' />
           </linearGradient>
           <linearGradient
             id='paint1_linear_839_24'
@@ -1705,10 +1705,10 @@ export function Top3({ locale = 'en', height, ...props }: IconProps) {
             y2='275.125'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='white' />
-            <stop offset='0.365494' stop-color='#A3B8B6' />
-            <stop offset='0.672961' stop-color='#557C79' />
-            <stop offset='1' stop-color='#023C38' />
+            <stop stopColor='white' />
+            <stop offset='0.365494' stopColor='#A3B8B6' />
+            <stop offset='0.672961' stopColor='#557C79' />
+            <stop offset='1' stopColor='#023C38' />
           </linearGradient>
           <linearGradient
             id='paint2_linear_839_24'
@@ -1718,8 +1718,8 @@ export function Top3({ locale = 'en', height, ...props }: IconProps) {
             y2='-57.0204'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='white' stop-opacity='0.4' />
-            <stop offset='1' stop-color='#737373' stop-opacity='0.1' />
+            <stop stopColor='white' stopOpacity='0.4' />
+            <stop offset='1' stopColor='#737373' stopOpacity='0.1' />
           </linearGradient>
           <linearGradient
             id='paint3_linear_839_24'
@@ -1729,10 +1729,10 @@ export function Top3({ locale = 'en', height, ...props }: IconProps) {
             y2='-49.1926'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='white' />
-            <stop offset='0.365494' stop-color='#A3B8B6' />
-            <stop offset='0.672961' stop-color='#557C79' />
-            <stop offset='1' stop-color='#023C38' />
+            <stop stopColor='white' />
+            <stop offset='0.365494' stopColor='#A3B8B6' />
+            <stop offset='0.672961' stopColor='#557C79' />
+            <stop offset='1' stopColor='#023C38' />
           </linearGradient>
           <linearGradient
             id='paint4_linear_839_24'
@@ -1742,9 +1742,9 @@ export function Top3({ locale = 'en', height, ...props }: IconProps) {
             y2='285.67'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='#FFB84E' />
-            <stop offset='0.505' stop-color='#FFD26C' />
-            <stop offset='1' stop-color='#FFFAD2' />
+            <stop stopColor='#FFB84E' />
+            <stop offset='0.505' stopColor='#FFD26C' />
+            <stop offset='1' stopColor='#FFFAD2' />
           </linearGradient>
           <image
             id='image0_839_24'
