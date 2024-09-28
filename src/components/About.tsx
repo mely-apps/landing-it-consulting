@@ -17,7 +17,7 @@ const About = () => {
         className='font-montserrat text-2xl font-extrabold uppercase !text-primary'
         words={[t('about.title')]}
       />
-      <div className='mx-auto mt-12 flex flex-col gap-8 text-justify font-inter text-base italic'>
+      <div className='mx-auto mt-12 flex flex-col text-justify font-inter text-base italic'>
         {Array.from({ length: 2 }).map((_, index) => (
           <motion.p
             key={index}
@@ -62,7 +62,7 @@ const About = () => {
           viewport={{ once: true }}
           className='lg:px-20'
         >
-          <p className='font-bold'>
+          <p className='pt-8 font-bold'>
             {t.rich('about.whoCanJoinQuestion', {
               bold: (chunks) => <span className='font-bold'>{chunks}</span>,
             })}
