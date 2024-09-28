@@ -12,7 +12,6 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { Menu } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { Progress } from './ui/progress';
 import { cn } from '@/lib/utils';
 
 const SECTION_ITEMS = [
