@@ -10,7 +10,7 @@
       "about": "Về sự kiện",
       "rules": "Luật thi",
       "timeline": "Mốc thời gian",
-      "prizes": "Phần thưởng",
+      "prizes": "Giải thưởng",
       "register": "Đăng ký",
       "organizers": "Đơn vị tổ chức"
     },
@@ -22,7 +22,7 @@
     "about": {
       "title": "IT Consultant Challenge là gì?",
       "description": [
-        "<extrabold>Thử thách IT Consultant</extrabold> là một cuộc thi theo nhóm đầy hấp dẫn, nơi người tham gia nhập vai làm tư vấn viên IT. Trong một nhóm bốn thành viên, các bạn sẽ cùng nhau giải quyết một  vấn đề IT thực tế và phát triển các giải pháp số hóa sáng tạo cho khách hàng. Thử thách này mô phỏng môi trường làm việc năng động của tư vấn IT, đòi hỏi sự hợp tác, tư duy phản biện và đưa ra các giải pháp có tác động, nhằm đáp ứng nhu cầu của khách hàng.",
+        "<extrabold>IT Consultant Challenge</extrabold>  là một cuộc thi theo nhóm nơi người tham gia sẽ nhập vai làm một IT Consultant thực thụ. Mỗi đội gồm bốn thành viên và một người hướng dẫn giàu kinh nghiệm, đồng hành cùng nhau giải quyết một vấn đề thực tiễn do Ban tổ chức đưa ra. Từ việc phân tích vấn đề, đề xuất giải pháp khả thi, cho đến việc trình bày ý tưởng một cách thuyết phục, cuộc thi đòi hỏi tinh thần đồng đội, khả năng tư duy phản biện sắc bén và kỹ năng giải quyết vấn đề sáng tạo.",
         "Sự kiện được phối hợp thực hiện bởi Công ty {netcompanyName} Việt Nam và Cộng đồng Tech dành cho các bạn trẻ {codeMelyName}."
       ],
       "whoCanJoinQuestion": "<bold>Hãy tham gia thử thách nếu bạn:</bold>",
@@ -42,7 +42,7 @@
       "title": "Mốc thời gian"
     },
     "prizes": {
-      "title": "Phần thưởng",
+      "title": "Giải thưởng",
       "note": "(*) Giải thưởng hiện kim sẽ được trao dưới dạng voucher Got It."
     },
     "timeCounter": {
