@@ -41,6 +41,21 @@ export default async function LocaleLayout({
         <link rel='apple-touch-icon' href='/favicon.png' />
         <link rel='mask-icon' href='/favicon.png' color='#000000' />
         <meta name='theme-color' content='#000000' />
+        <meta name='author' content='Code MeLy | Netcompany' />
+        <meta
+          property='og:image'
+          content='/cover.png'
+          data-react-helmet='true'
+        />
+        <meta
+          property='og:title'
+          content='IT Consultant Challenge | Innovate, Modernize and Digitize effectively'
+        />
+
+        <meta
+          property='og:description'
+          content='IT Consultant Challenge—an exciting full-day event where IT students have the chance to showcase their skills, creativity, and problem-solving abilities. This event, hosted by Netcompany and Code MeLy, is your opportunity to step into the shoes of an IT consultant and tackle real-life challenges through digital transformation. Work alongside like-minded peers, gain valuable experience, and make a lasting impact.'
+        />
       </head>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>

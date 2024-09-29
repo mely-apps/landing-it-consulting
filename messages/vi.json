@@ -2,7 +2,7 @@
   "HomePage": {
     "names": {
       "contestName": "IT Consultant Challenge",
-      "codeMelyName": "Code Mely",
+      "codeMelyName": "Code MeLy",
       "netcompanyName": "Netcompany"
     },
     "header": {
@@ -10,32 +10,28 @@
       "about": "Về sự kiện",
       "rules": "Luật thi",
       "timeline": "Mốc thời gian",
-      "prizes": "Phần thưởng",
+      "prizes": "Giải thưởng",
       "register": "Đăng ký",
       "organizers": "Đơn vị tổ chức"
     },
     "hero": {
-      "subTitle": "Hackathon là cuộc thi dành cho các coder mới trẻ, khi tham gia cuộc thi các bạn sẻ nhận được tham gia code cùng với chúng tôi!",
-      "time": "Thứ 7, Ngày 12 Tháng 10 năm 2024, Văn phòng NETCOMPANY",
+      "subTitle": "Sáng tạo, đổi mới, chuyển đổi số một cách hiệu quả",
+      "time": "Thứ 7, Ngày 13 Tháng 10 năm 2024, Văn phòng NETCOMPANY",
       "buttonTitle": "Đăng ký ngay"
     },
     "about": {
       "title": "IT Consultant Challenge là gì?",
-      "description": "<extrabold>{contestName}</extrabold>—một sự kiện kéo dài cả ngày đầy thú vị, nơi các sinh viên ngành CNTT có cơ hội thể hiện kỹ năng, sự sáng tạo, và khả năng giải quyết vấn đề. Sự kiện được <extrabold>{netcompanyName}</extrabold> và <extrabold>{codeMelyName}</extrabold> tổ chức, là cơ hội để bạn hóa thân thành một chuyên viên tư vấn CNTT (IT Consultant) và đối mặt với các thử thách thực tế thông qua chuyển đổi số. Hãy tham gia cùng với những người chung chí hướng, tích lũy kinh nghiệm quý báu, và kiến tạo nên những ảnh hưởng lâu dài.",
-      "whoCanJoinQuestion": "<bold>Ai có thể tham gia sự kiện này?</bold>",
+      "description": [
+        "<extrabold>IT Consultant Challenge</extrabold>  là một cuộc thi theo nhóm nơi người tham gia sẽ nhập vai làm một IT Consultant thực thụ. Mỗi đội gồm bốn thành viên và một người hướng dẫn giàu kinh nghiệm, đồng hành cùng nhau giải quyết một vấn đề thực tiễn do Ban tổ chức đưa ra. Từ việc phân tích vấn đề, đề xuất giải pháp khả thi, cho đến việc trình bày ý tưởng một cách thuyết phục, cuộc thi đòi hỏi tinh thần đồng đội, khả năng tư duy phản biện sắc bén và kỹ năng giải quyết vấn đề sáng tạo.",
+        "Sự kiện được phối hợp thực hiện bởi Công ty {netcompanyName} Việt Nam và Cộng đồng Tech dành cho các bạn trẻ {codeMelyName}."
+      ],
+      "whoCanJoinQuestion": "<bold>Hãy tham gia thử thách nếu bạn:</bold>",
       "whoCanJoinAnswers": [
-        {
-          "content": "Có nền tảng về: CNTT, Kỹ thuật phần mềm"
-        },
-        {
-          "content": "Sinh viên năm 2, 3"
-        },
-        {
-          "content": "Có niềm đam mê với công nghệ"
-        },
-        {
-          "content": "Có hứng thú trong việc khám phá vai trò của một chuyên viên tư vấn CNTT (IT Consultant)"
-        }
+        "Là sinh viên từ năm 2 đến năm 4 đang theo học CNTT, Kĩ Thuật phần mềm, Khoa học Máy tính từ các trường Đại học trên địa bàn thành phố Hồ Chí Minh",
+        "Có khả năng tiếng Anh trình độ tối thiểu từ B1 trở lên",
+        "Có hứng thú trong việc tìm hiểu vai trò của một chuyên viên tư vấn IT",
+        "Muốn gặp gỡ bạn bè mới và các anh, chị trong nghề",
+        "Muốn tìm hiểu về môi trường làm việc của Netcompany tại Việt Nam"
       ]
     },
     "rules": {
@@ -46,7 +42,8 @@
       "title": "Mốc thời gian"
     },
     "prizes": {
-      "title": "Phần thưởng"
+      "title": "Giải thưởng",
+      "note": "(*) Giải thưởng hiện kim sẽ được trao dưới dạng voucher Got It."
     },
     "timeCounter": {
       "title": "Thời gian còn lại",
@@ -62,8 +59,8 @@
         "fullName": {
           "label": "Tên đầy đủ"
         },
-        "dateOfBirth": {
-          "label": "Ngày tháng năm sinh"
+        "expectedGraduationYear": {
+          "label": "Năm dự định tốt nghiệp"
         },
         "gender": {
           "label": "Giới tính",
@@ -81,10 +78,16 @@
         },
         "email": {
           "label": "Email"
-        }
+        },
+        "note": "(*) BTC sẽ ghép team cho bạn trong trường hợp bạn đăng kí cá nhân nhé."
       },
       "team": {
         "title": "Đội",
+        "memberIndex": "Thành viên {index}",
+        "memberInfo": {
+          "title": "Thông tin thành viên"
+        },
+        "addMember": " Thêm thành viên",
         "teamName": {
           "label": "Tên đội"
         },
@@ -99,7 +102,8 @@
         },
         "email": {
           "label": "Email"
-        }
+        },
+        "note": "(*) BTC sẽ tự ghép thêm thành viên trong trường hợp nhóm bạn chưa đủ người nhé"
       },
       "submit": "Đăng ký",
       "success": {
@@ -114,8 +118,9 @@
         "fullName": {
           "required": "Tên đầy đủ không được để trống"
         },
-        "dateOfBirth": {
-          "required": "Ngày tháng năm sinh không được để trống"
+        "expectedGraduationYear": {
+          "required": "Năm dự định tốt nghiệp không được để trống",
+          "invalid": "Năm dự định tốt nghiệp không hợp lệ"
         },
         "gender": {
           "required": "Giới tính không được để trống"

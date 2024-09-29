@@ -1,7 +1,8 @@
-import { FaFacebookF, FaLinkedinIn, FaTiktok, FaYoutube } from 'react-icons/fa';
 import CodeSandBox from './icons/CodeSandBox';
 import MailContact from './icons/MailContact';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import { Facebook, Globe } from 'lucide-react';
 
 const Footer = () => {
   const t = useTranslations('HomePage');
@@ -10,8 +11,8 @@ const Footer = () => {
     <div className='mt-40 bg-[#023C38] py-10'>
       <div className='container grid grid-cols-2 gap-x-4 gap-y-6 md:grid-cols-4'>
         <div className='text-lg font-extrabold max-md:col-span-2'>
-          <p>IT CONSULTANT</p>
-          <p className='text-primary'>CHALLENGE</p>
+          <p className='max-md:text-center'>IT CONSULTANT</p>
+          <p className='text-primary max-md:text-center'>CHALLENGE</p>
         </div>
         <div>
           <p className='inline-block border-b-2 border-[#419D98] py-1 font-bold'>
@@ -35,29 +36,61 @@ const Footer = () => {
           <ul className='mt-2 flex flex-col gap-2'>
             <li className='flex gap-x-2'>
               <MailContact className='h-6 w-6' />
-              <p className='inline-block break-all text-white'>
+              <Link
+                href='mailto:contact@codemely.dev'
+                className='inline-block break-all text-white transition-all hover:text-primary'
+              >
                 contact@codemely.dev
-              </p>
+              </Link>
+            </li>
+            <li className='flex gap-x-2'>
+              <MailContact className='h-6 w-6' />
+              <Link
+                href='mailto:recruitment.vn@netcompany.com'
+                className='inline-block break-all text-white transition-all hover:text-primary'
+              >
+                recruitment.vn@netcompany.com
+              </Link>
             </li>
           </ul>
         </div>
-        <div className='max-md:col-span-2 max-md:flex-col max-md:justify-center'>
+        <div className='max-md:col-span-2 max-md:flex max-md:flex-col max-md:items-center'>
           <p className='inline-block border-b-2 border-[#419D98] py-1 font-bold'>
             {t('footer.followUs')}
           </p>
-          <div className='mt-2 flex gap-x-3'>
-            <div className='flex h-8 w-8 items-center justify-center rounded-lg bg-[#FFFFFF] text-black'>
-              <FaFacebookF />
-            </div>
-            <div className='flex h-8 w-8 items-center justify-center rounded-lg bg-[#FFFFFF] text-black'>
-              <FaLinkedinIn />
-            </div>
-            <div className='flex h-8 w-8 items-center justify-center rounded-lg bg-[#FFFFFF] text-black'>
-              <FaTiktok />
-            </div>
-            <div className='flex h-8 w-8 items-center justify-center rounded-lg bg-[#FFFFFF] text-black'>
-              <FaYoutube />
-            </div>
+          <div className='mt-2 flex flex-col gap-2'>
+            <Link
+              href='https://www.facebook.com/code.mely'
+              className='flex items-center gap-2 transition-all hover:text-primary'
+              target='_blank'
+            >
+              <Facebook />
+              Code MeLy
+            </Link>
+            <Link
+              href='https://www.facebook.com/netcompanyvietnam'
+              className='flex items-center gap-2 transition-all hover:text-primary'
+              target='_blank'
+            >
+              <Facebook />
+              Netcompany Vietnam
+            </Link>
+            <Link
+              href='https://www.codemely.dev/'
+              className='flex items-center gap-2 transition-all hover:text-primary'
+              target='_blank'
+            >
+              <Globe />
+              codemely.dev
+            </Link>
+            <Link
+              href='https://netcompany.com/'
+              className='flex items-center gap-2 transition-all hover:text-primary'
+              target='_blank'
+            >
+              <Globe />
+              netcompany.com
+            </Link>
           </div>
         </div>
       </div>
