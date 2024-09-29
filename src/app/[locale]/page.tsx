@@ -35,6 +35,7 @@ export default function Home({
       <div className='main-container absolute inset-0 left-0 top-0 z-50 h-screen w-screen overflow-x-hidden overflow-y-scroll scrollbar-none'>
         <ScrollToTop locale={locale} />
         <Header locale={locale as LocaleProps['locale']} />
+        <div className='h-[92px]'></div>
         <Hero />
         <About />
         <Rules locale={locale} />
