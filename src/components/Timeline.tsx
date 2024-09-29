@@ -1,9 +1,13 @@
 import { SECTION_IDS } from '@/constants';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
+import TimelineImage from '@/assets/Timeline';
 
-export default function Timeline() {
+interface TimelineProps {
+  locale: string;
+}
+
+export default function Timeline({ locale }: TimelineProps) {
   const t = useTranslations('HomePage');
 
   return (
@@ -30,10 +34,10 @@ export default function Timeline() {
           y: 0,
           transition: { duration: 0.5, bounce: 0.5, delay: 0.4 },
         }}
-        className='relative h-[200px] w-full select-none sm:h-[380px] lg:h-[550px] xl:h-[650px]'
+        className='relative select-none'
         viewport={{ once: true }}
       >
-        <Image src={'/timeline.png'} className='object-cover' fill alt='' />
+        <TimelineImage className='w-full' locale={locale} />
       </motion.div>
     </div>
   );

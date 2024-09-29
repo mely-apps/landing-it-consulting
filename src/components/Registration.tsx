@@ -93,7 +93,7 @@ const Registration = () => {
   return (
     <div className='container' id={SECTION_IDS.REGISTER}>
       <h2 className='text-center text-2xl font-extrabold uppercase text-primary'>
-        Registration
+        {t('registration.title')}
       </h2>
 
       {submitSuccess ? (
@@ -216,6 +216,12 @@ const Registration = () => {
                 />
               </div>
 
+              <div className='col-span-2 mt-4'>
+                <p className='text-center text-base italic text-primary'>
+                  {t('registration.individual.note')}
+                </p>
+              </div>
+
               <div className='col-span-2 mt-4 flex justify-end'>
                 <button
                   disabled={isLoading}
@@ -299,6 +305,11 @@ const Registration = () => {
                   name='email'
                   required
                 />
+              </div>
+              <div className='col-span-2 mt-4'>
+                <p className='text-center text-base italic text-primary'>
+                  {t('registration.team.note')}
+                </p>
               </div>
               <div className='col-span-2 mt-4 flex justify-end'>
                 <button
