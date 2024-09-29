@@ -17,31 +17,34 @@ const About = () => {
         className='font-montserrat text-2xl font-extrabold uppercase !text-primary'
         words={[t('about.title')]}
       />
-      <div className='mx-auto mt-12 flex flex-col gap-8 text-justify font-inter text-base italic'>
-        <motion.p
-          initial={{
-            opacity: 0,
-            y: 100,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: {
-              duration: 0.5,
-            },
-          }}
-          viewport={{ once: true }}
-          className='lg:px-20'
-        >
-          {t.rich('about.description', {
-            extrabold: (chunks) => (
-              <span className='font-extrabold'>{chunks}</span>
-            ),
-            contestName: t('names.contestName'),
-            netcompanyName: t('names.netcompanyName'),
-            codeMelyName: t('names.codeMelyName'),
-          })}
-        </motion.p>
+      <div className='mx-auto mt-12 flex flex-col text-justify font-inter text-base italic'>
+        {Array.from({ length: 2 }).map((_, index) => (
+          <motion.p
+            key={index}
+            initial={{
+              opacity: 0,
+              y: 100,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 0.5,
+              },
+            }}
+            viewport={{ once: true }}
+            className='lg:px-20'
+          >
+            {t.rich(`about.description.${index}`, {
+              extrabold: (chunks) => (
+                <span className='font-extrabold'>{chunks}</span>
+              ),
+              contestName: t('names.contestName'),
+              netcompanyName: t('names.netcompanyName'),
+              codeMelyName: t('names.codeMelyName'),
+            })}
+          </motion.p>
+        ))}
 
         <motion.div
           initial={{
@@ -59,16 +62,14 @@ const About = () => {
           viewport={{ once: true }}
           className='lg:px-20'
         >
-          <p className='font-bold'>
+          <p className='pt-8 font-bold'>
             {t.rich('about.whoCanJoinQuestion', {
               bold: (chunks) => <span className='font-bold'>{chunks}</span>,
             })}
           </p>
           <ul className='ml-10 list-disc'>
-            {Array.from({ length: 4 }).map((_, index) => (
-              <li key={index}>
-                {t(`about.whoCanJoinAnswers.${index}.content`)}
-              </li>
+            {Array.from({ length: 5 }).map((_, index) => (
+              <li key={index}>{t(`about.whoCanJoinAnswers.${index}`)}</li>
             ))}
           </ul>
         </motion.div>
