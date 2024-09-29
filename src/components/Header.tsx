@@ -120,7 +120,7 @@ const Header = ({ locale }: LocaleProps) => {
     >
       <div className={progressClassName} />
       <motion.div
-        className={`container hidden items-center justify-end lg:flex`}
+        className={`container hidden items-center justify-between lg:flex`}
         initial={{
           paddingTop: 16,
         }}

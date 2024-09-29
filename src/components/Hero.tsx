@@ -73,7 +73,7 @@ const Hero = () => {
             className='h-full w-full'
             containerClassName=''
           ></BackgroundGradient> */}
-          <div className='bg-poster max-sm:hidden sm:h-[500px] sm:w-[360px] lg:mt-[60px] lg:h-[calc(100%_-_8vw_-_66px)] lg:w-[26vw]'>
+          <div className='bg-poster max-sm:hidden sm:h-[500px] sm:w-[360px] lg:mt-[60px] lg:h-[calc(100%_-_8vw_-_66px)] lg:w-[26vw] xl:h-[580px] xl:w-[378px]'>
             <div className='fade-in-right relative h-full w-full overflow-hidden rounded-3xl'>
               <Image
                 src='/cover.png'
