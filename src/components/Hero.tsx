@@ -16,9 +16,9 @@ const Hero = () => {
     }
   };
   return (
-    <div className='px-10'>
+    <>
       <div
-        className='hero-section container relative grid grid-cols-1 items-center px-0 max-[1024px]:bg-none sm:gap-y-10 sm:px-8 sm:py-10 lg:grid-cols-2'
+        className='hero-section relative grid grid-cols-1 items-center px-0 md:container max-[1024px]:bg-none sm:m-0 sm:w-full sm:gap-y-10 sm:px-8 sm:py-10 md:mx-auto md:w-11/12 lg:grid-cols-2'
         id={SECTION_IDS.HOME}
       >
         <div className='order-2 text-center sm:order-1 lg:text-left'>
@@ -31,7 +31,7 @@ const Hero = () => {
             />
           </h1> */}
 
-          <h1 className='tracking-in-expand text-center font-montserrat text-3xl font-extrabold leading-[1.2] sm:block lg:text-left'>
+          <h1 className='tracking-in-expand text-center font-montserrat text-3xl font-extrabold leading-[1.2] sm:mt-2 sm:block md:mt-0 lg:text-left'>
             IT CONSULTANT
             <br />
             <span className='!text-primary'>CHALLENGE</span>
@@ -98,7 +98,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
