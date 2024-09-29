@@ -1,0 +1,21 @@
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: rgb(20, 67, 65, 0.5);
+  }
+  100% {
+    background: rgb(25, 75, 72);
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: rgb(20, 67, 65, 0.5);
+  }
+  100% {
+    background: rgb(25, 75, 72);
+  }
+}
+
+.background-animation{
+  -webkit-animation: color-change-2x 3s linear infinite alternate both;
+  animation: color-change-2x 3s linear infinite alternate both;
+}
