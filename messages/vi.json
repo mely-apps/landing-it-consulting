@@ -59,8 +59,8 @@
         "fullName": {
           "label": "Tên đầy đủ"
         },
-        "dateOfBirth": {
-          "label": "Ngày tháng năm sinh"
+        "expectedGraduationYear": {
+          "label": "Năm dự định tốt nghiệp"
         },
         "gender": {
           "label": "Giới tính",
@@ -83,6 +83,7 @@
       },
       "team": {
         "title": "Đội",
+        "memberIndex": "Thành viên {index}",
         "teamName": {
           "label": "Tên đội"
         },
@@ -113,8 +114,9 @@
         "fullName": {
           "required": "Tên đầy đủ không được để trống"
         },
-        "dateOfBirth": {
-          "required": "Ngày tháng năm sinh không được để trống"
+        "expectedGraduationYear": {
+          "required": "Năm dự định tốt nghiệp không được để trống",
+          "invalid": "Năm dự định tốt nghiệp không hợp lệ"
         },
         "gender": {
           "required": "Giới tính không được để trống"

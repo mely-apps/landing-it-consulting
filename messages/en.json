@@ -59,8 +59,8 @@
         "fullName": {
           "label": "Full name"
         },
-        "dateOfBirth": {
-          "label": "Date of Birth"
+        "expectedGraduationYear": {
+          "label": "Expected graduation year"
         },
         "gender": {
           "label": "Gender",
@@ -83,6 +83,7 @@
       },
       "team": {
         "title": "Team",
+        "memberIndex": "Member {index}",
         "teamName": {
           "label": "Team name"
         },
@@ -113,8 +114,9 @@
         "fullName": {
           "required": "Full name is required"
         },
-        "dateOfBirth": {
-          "required": "Date of birth is required"
+        "expectedGraduationYear": {
+          "required": "Expected graduation year is required",
+          "invalid": "Expected graduation year is invalid"
         },
         "gender": {
           "required": "Gender is required"
