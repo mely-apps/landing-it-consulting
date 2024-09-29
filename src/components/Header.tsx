@@ -105,7 +105,7 @@ const Header = ({ locale }: LocaleProps) => {
   });
 
   const headerClassName = cn(
-    'sm:bg-transparent fixed z-[1000] flex h-[70px] w-full justify-center',
+    'sm:bg-transparent fixed z-[1000]  w-full justify-center',
     {
       ['lg:bg-[#023C38]']: isActiveScroll,
     },
@@ -120,7 +120,7 @@ const Header = ({ locale }: LocaleProps) => {
     >
       <div className={progressClassName} />
       <motion.div
-        className={`container hidden items-center justify-between lg:flex`}
+        className={`container hidden h-[70px] items-center justify-between lg:flex`}
         initial={{
           paddingTop: 16,
         }}
