@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { IoLocationSharp } from 'react-icons/io5';
 import BlurFade from './ui/blur-fade';
-import { FlipWords } from './ui/flip-words';
+import { GlareCard } from '@/components/ui/glare-card';
 
 const Hero = () => {
   const t = useTranslations('HomePage');
@@ -73,19 +73,17 @@ const Hero = () => {
             className='h-full w-full'
             containerClassName=''
           ></BackgroundGradient> */}
-          <div className='bg-poster max-sm:hidden sm:h-[500px] sm:w-[360px] lg:mt-[60px] lg:h-[calc(100%_-_8vw_-_66px)] lg:w-[26vw] xl:h-[580px] xl:w-[378px]'>
-            <div className='fade-in-right relative h-full w-full overflow-hidden rounded-3xl'>
-              <Image
-                src='/cover.png'
-                alt='landing-it-consulting'
-                sizes='auto'
-                className='static object-cover'
-                priority
-                fill
-              />
-            </div>
-          </div>
-
+          {/*<AnimateCard />*/}
+          <GlareCard className='bg-poster hover:shadow-none max-sm:hidden sm:h-[500px] sm:w-[360px] lg:mt-[60px] lg:h-[calc(100%_-_8vw_-_66px)] lg:w-[26vw]'>
+            <Image
+              src='/cover.png'
+              alt='landing-it-consulting'
+              sizes='auto'
+              className='object-cover'
+              priority
+              fill
+            />
+          </GlareCard>
           <div className='relative h-[600px] w-full overflow-hidden p-0 sm:hidden'>
             <Image
               src='/cover.png'
