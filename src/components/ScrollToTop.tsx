@@ -31,7 +31,9 @@ const ScrollToTop = ({ locale }: { locale: string }) => {
   const isHiddenComponent = [SECTION_IDS.HOME, SECTION_IDS.REGISTER];
   const [isHidden, setIsHidden] = useState(false);
   const scrollToTop = () => {
-    document.querySelector('#header')?.scrollIntoView({ behavior: 'smooth' });
+    document
+      .getElementById(SECTION_IDS.HOME)
+      ?.scrollIntoView({ behavior: 'smooth' });
   };
   const scrollToTopRef = useRef<ComponentRef<'div'>>(null);
   const [showScrollToTopButton, setShowScrollToTopButton] = useState(false);
