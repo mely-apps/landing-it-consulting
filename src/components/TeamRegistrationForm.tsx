@@ -132,12 +132,12 @@ export default function TeamRegistrationForm({
           <div className='col-span-2'>
             <hr className='border-white' />
             <h3 className='mt-4 w-full text-center text-lg font-bold text-primary'>
-              Members information
+              {t('registration.team.memberInfo.title')}
             </h3>
           </div>
 
           <div className='col-span-2 grid grid-cols-4 gap-4'>
-            <div className='col-span-1 flex flex-col items-center border-r border-white'>
+            <div className='col-span-4 flex flex-col items-center border-white sm:col-span-1 sm:border-r'>
               {membersFormData.map((data) => (
                 <button
                   key={`member_tab_${data.index}`}
@@ -176,16 +176,18 @@ export default function TeamRegistrationForm({
                   )}
                 </button>
               ))}
-              <button
-                type='button'
-                className='mt-6 flex w-10/12 items-center justify-around rounded-md !bg-[#7FFFF7] px-4 py-2 font-semibold text-black shadow-[0_0_2px_#7FFFF7,inset_0_0_2px_#7FFFF7,0_0_5px_#7FFFF7,0_0_15px_#7FFFF7,0_0_30px_#7FFFF7] hover:opacity-90'
-                onClick={handleAddMember}
-              >
-                <Plus />
-                Add member
-              </button>
+              {membersFormData.length < 4 && (
+                <button
+                  type='button'
+                  className='mt-4 flex items-center justify-around rounded-lg bg-[#7FFFF7] px-4 py-2 font-bold text-black hover:opacity-90 max-sm:gap-x-2 sm:w-11/12'
+                  onClick={handleAddMember}
+                >
+                  <Plus />
+                  {t('registration.team.addMember')}
+                </button>
+              )}
             </div>
-            <div className='col-span-3'>
+            <div className='col-span-4 sm:col-span-3'>
               {membersFormData.map((data, index) => (
                 <PersonalRegistrationForm
                   key={`member_form_${data.index}`}
@@ -214,7 +216,7 @@ export default function TeamRegistrationForm({
               type='submit'
               disabled={isValidating || isSubmitting}
               className={cn(
-                'flex items-center justify-center rounded-lg bg-[#7FFFF7] px-6 py-2 font-bold text-black hover:opacity-90',
+                'w-auto rounded-md !bg-[#7FFFF7] px-6 py-2 font-semibold text-black shadow-[0_0_2px_#7FFFF7,inset_0_0_2px_#7FFFF7,0_0_5px_#7FFFF7,0_0_15px_#7FFFF7,0_0_30px_#7FFFF7] transition-all hover:opacity-90',
                 {
                   'cursor-not-allowed opacity-90': isValidating || isSubmitting,
                 },

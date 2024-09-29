@@ -215,7 +215,7 @@ function PersonalRegistrationForm(
               disabled={isLoading}
               type='submit'
               className={cn(
-                'flex items-center justify-center rounded-lg bg-[#7FFFF7] px-6 py-2 font-bold text-black hover:opacity-90',
+                'w-auto rounded-md !bg-[#7FFFF7] px-6 py-2 font-semibold text-black shadow-[0_0_2px_#7FFFF7,inset_0_0_2px_#7FFFF7,0_0_5px_#7FFFF7,0_0_15px_#7FFFF7,0_0_30px_#7FFFF7] transition-all hover:opacity-90',
                 isLoading && 'cursor-not-allowed opacity-90',
               )}
             >

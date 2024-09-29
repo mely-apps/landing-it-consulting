@@ -84,6 +84,10 @@
       "team": {
         "title": "Đội",
         "memberIndex": "Thành viên {index}",
+        "memberInfo": {
+          "title": "Thông tin thành viên"
+        },
+        "addMember": " Thêm thành viên",
         "teamName": {
           "label": "Tên đội"
         },
