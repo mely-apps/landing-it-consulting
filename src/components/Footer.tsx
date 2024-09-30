@@ -2,7 +2,7 @@ import CodeSandBox from './icons/CodeSandBox';
 import MailContact from './icons/MailContact';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { Facebook, Globe } from 'lucide-react';
+import { Copyright, Facebook, Globe } from 'lucide-react';
 
 const Footer = () => {
   const t = useTranslations('HomePage');
@@ -115,7 +115,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div style={{ height: '40px' }}></div>
+      <div className='container mt-10 flex items-center gap-2'>
+        <Copyright />
+        <p className='text-muted-foreground'>
+          2024 Copyright Code MeLy. All Reserved.
+        </p>
+      </div>
     </div>
   );
 };
