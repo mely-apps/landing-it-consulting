@@ -1,8 +1,7 @@
-import CodeSandBox from './icons/CodeSandBox';
-import MailContact from './icons/MailContact';
+import { Facebook, Globe } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { Facebook, Globe } from 'lucide-react';
+import MailContact from './icons/MailContact';
 
 const Footer = () => {
   const t = useTranslations('HomePage');
@@ -14,33 +13,9 @@ const Footer = () => {
           <p>IT CONSULTANT</p>
           <p className='text-primary'>CHALLENGE</p>
         </div>
-        {/* <div>
-          <p className='inline-block border-b-2 border-[#419D98] py-1 font-bold'>
-            {t('header.organizers')}
-          </p>
-            <ul className='mt-2'>
-              
-              <Facebook />
-              <Link
-                href='https://www.facebook.com/code.mely'
-                className='flex items-center gap-2 transition-all hover:text-primary'
-                target='_blank'
-              >
-                Code MeLy
-              </Link>
-              <Facebook />
-              <Link
-                href='https://www.facebook.com/netcompanyvietnam'
-                className='flex items-center gap-2 transition-all hover:text-primary'
-                target='_blank'
-              >
-                Netcompany Vietnam
-              </Link>
-            </ul>
-        </div> */}
         <div>
           <p className='inline-block border-b-2 border-[#419D98] py-1 font-bold'>
-            {t('footer.contact')}
+            {t('organizers.title')}
           </p>
           <ul className='mt-2 flex flex-col gap-2'>
             <li className='flex gap-x-2'>
