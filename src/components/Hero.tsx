@@ -47,8 +47,8 @@ const Hero = () => {
 
         <div className='order-1 flex h-full items-center justify-center sm:order-2 lg:mt-0'>
           <BackgroundGradient
-            className='h-full w-full'
-            containerClassName='w-[300px] h-[421px] sm:h-[570px] sm:w-[406px]'
+            className='h-full w-full max-sm:hidden'
+            containerClassName='w-[300px] h-[421px] sm:h-[570px] sm:w-[406px] max-sm:hidden'
           >
             <div className='relative h-full w-full overflow-hidden rounded-3xl'>
               <Image
