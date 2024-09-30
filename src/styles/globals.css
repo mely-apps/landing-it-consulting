@@ -5,6 +5,7 @@
 @import url("./fade.css");
 @import url("./shadow.css");
 @import url('./tracking.css');
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -66,12 +67,51 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply scroll-smooth bg-background text-foreground;
   }
+
   .react-datepicker-wrapper {
     display: block !important;
   }
+}
+
+.card {
+  font-weight: bold;
+  padding: 1em;
+  text-align: right;
+  color: #181a1a;
+
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 1px 5px #00000099;
+
+  border-radius: 10px;
+  background-image: url(https://images.unsplash.com/photo-1557672199-6e8c8b2b8fff?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80);
+  background-size: cover;
+
+  position: relative;
+
+  transition-duration: 300ms;
+  transition-property: transform, box-shadow;
+  transition-timing-function: ease-out;
+  transform: rotate3d(0);
+}
+
+.card:hover {
+  transition-duration: 150ms;
+  box-shadow: 0 5px 20px 5px #00000044;
+}
+
+.card .glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
 }
 
 @layer utilities {
@@ -79,6 +119,7 @@
     border-radius: 68px 0px 68px 68px;
     border: 4px #b9ffad solid;
   }
+
   .neon-text {
     text-shadow:
       0 0 10px rgba(0, 255, 255, 0.8),
@@ -86,6 +127,7 @@
       0 0 30px rgba(0, 255, 255, 0.4),
       0 0 40px rgba(0, 255, 255, 0.3);
   }
+
   .bg-hero {
     background-image: url('../../public/Vector13.svg');
     background-size: cover;
@@ -105,12 +147,9 @@
     border: 1px solid transparent;
 
     /* color of border */
-    background: linear-gradient(
-        to right,
+    background: linear-gradient(to right,
         rgba(255, 255, 255, 1),
-        rgba(255, 255, 255, 0)
-      )
-      border-box;
+        rgba(255, 255, 255, 0)) border-box;
 
     /* ----IMPORTANT---- */
     -webkit-mask:
@@ -124,7 +163,7 @@
   }
 }
 
-g[filter]{
+g[filter] {
   cursor: pointer;
 }
 
@@ -134,16 +173,18 @@ g[filter]{
   animation: progressBar 0.5s ease-in-out;
   animation-fill-mode: both;
 }
+
 @keyframes progressBar {
   0% {
     width: 0;
   }
+
   100% {
     width: 100%;
   }
 }
 
-.hero-section{
+.hero-section {
   background-image: url('/heroBackground.svg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -151,7 +192,7 @@ g[filter]{
   aspect-ratio: 15/9;
 }
 
-.bg-poster{
-    box-shadow: #7FFFF7 0px -1px 6px 7px;
-    border-radius: 1.5rem;  
+.bg-poster {
+  box-shadow: #7FFFF7 0px -1px 6px 7px;
+  border-radius: 1.5rem;
 }

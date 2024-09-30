@@ -47,6 +47,7 @@
     "next": "14.2.5",
     "next-intl": "^3.17.6",
     "react": "^18",
+    "react-animated-3d-card": "^1.0.2",
     "react-countdown": "^2.3.6",
     "react-datepicker": "^7.3.0",
     "react-dom": "^18",

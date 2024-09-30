@@ -3,6 +3,7 @@ import { SECTION_IDS } from '@/constants';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { IoLocationSharp } from 'react-icons/io5';
+import AnimatedCard from './ui/animated-card';
 import { BackgroundGradient } from './ui/background-gradient';
 
 const Hero = () => {
@@ -46,21 +47,23 @@ const Hero = () => {
         </div>
 
         <div className='order-1 flex h-full items-center justify-center sm:order-2 lg:mt-0'>
-          <BackgroundGradient
-            className='h-full w-full max-sm:hidden'
-            containerClassName='w-[300px] h-[421px] sm:h-[570px] sm:w-[406px] max-sm:hidden'
-          >
-            <div className='relative h-full w-full overflow-hidden rounded-3xl'>
-              <Image
-                src='/cover.png'
-                alt='landing-it-consulting'
-                sizes='auto'
-                className='object-cover'
-                priority
-                fill
-              />
-            </div>
-          </BackgroundGradient>
+          <AnimatedCard>
+            <BackgroundGradient
+              className='h-full w-full max-sm:hidden'
+              containerClassName='w-[300px] h-[421px] sm:h-[570px] sm:w-[406px] max-sm:hidden'
+            >
+              <div className='relative h-full w-full overflow-hidden rounded-3xl'>
+                <Image
+                  src='/cover.png'
+                  alt='landing-it-consulting'
+                  sizes='auto'
+                  className='object-cover'
+                  priority
+                  fill
+                />
+              </div>
+            </BackgroundGradient>
+          </AnimatedCard>
 
           <div className='relative h-[600px] w-full overflow-hidden p-0 sm:hidden'>
             <Image

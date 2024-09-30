@@ -80,6 +80,9 @@ importers:
       react:
         specifier: ^18
         version: 18.3.1
+      react-animated-3d-card:
+        specifier: ^1.0.2
+        version: 1.0.2(react@18.3.1)
       react-countdown:
         specifier: ^2.3.6
         version: 2.3.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2037,6 +2040,12 @@ packages:
 
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
+
+  react-animated-3d-card@1.0.2:
+    resolution: {integrity: sha512-Gx3eo3EEk6/2h8fjZ/kYv5YWiZzEUdUBi9Vw6zvvj2HvuFw1SR3h/Y0Z7T99jS5CHupI8eqWqyQ81oUu4IN4fw==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16.0.0
 
   react-countdown@2.3.6:
     resolution: {integrity: sha512-ZfX6S08Hb6x6W6eCn1hMDvxPICI/T30fd+gaeVTCR/2cGZ2WJ3f26e4ImNIMX1fHkopJrUdnRpWXP13/D39+gg==}
@@ -4516,6 +4525,10 @@ snapshots:
   punycode@2.3.1: {}
 
   queue-microtask@1.2.3: {}
+
+  react-animated-3d-card@1.0.2(react@18.3.1):
+    dependencies:
+      react: 18.3.1
 
   react-countdown@2.3.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
