@@ -7,7 +7,7 @@ interface Rotation {
 }
 
 const Card: React.FC<
-  PropsWithChildren & { className?: string; classNameContainer: string }
+  PropsWithChildren & { className?: string; classNameContainer?: string }
 > = ({ children, className, classNameContainer }) => {
   const [rotation, setRotation] = useState<Rotation>({ x: 0, y: 0 });
 
