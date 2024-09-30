@@ -116,6 +116,7 @@ const SuccessMessage = () => {
 };
 
 const ClosedFormMessage = () => {
+  const t = useTranslations('HomePage');
   return (
     <>
       <motion.div
@@ -139,9 +140,11 @@ const ClosedFormMessage = () => {
         }}
         viewport={{ once: true }}
       >
-        <p className='text-base font-bold min-[400px]:text-lg'>Oops!</p>
         <p className='text-base font-bold min-[400px]:text-lg'>
-          Registration is closed.
+          {t('registration.closed.title')}
+        </p>
+        <p className='text-base font-bold min-[400px]:text-lg'>
+          {t('registration.closed.content')}
         </p>
       </motion.div>
     </>
