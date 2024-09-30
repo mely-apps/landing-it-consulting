@@ -1,4 +1,4 @@
-import React, { ComponentProps, useEffect, useState } from 'react';
+import React, { type ComponentProps, useEffect, useState } from 'react';
 
 interface IconProps extends ComponentProps<'svg'> {
   locale?: string;

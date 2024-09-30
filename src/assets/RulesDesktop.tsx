@@ -1,6 +1,8 @@
-import { ComponentProps } from 'react';
-import { Tooltip } from 'react-tooltip';
 import 'react-tooltip/dist/react-tooltip.css';
+
+import { type ComponentProps } from 'react';
+import { Tooltip } from 'react-tooltip';
+
 import RulesDesktopVN from './RulesDesktopVN';
 
 interface RulesDesktopProps extends ComponentProps<'svg'> {

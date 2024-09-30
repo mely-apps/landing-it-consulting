@@ -1,15 +1,16 @@
 'use client';
+import { AnimatePresence, motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
+import { type ComponentRef, useEffect, useRef, useState } from 'react';
+import { FaArrowUp } from 'react-icons/fa';
+
 import { Home } from '@/components/icons/Home';
 import { Information } from '@/components/icons/Information';
 import { Rule } from '@/components/icons/Rule';
 import { BtnNav } from '@/components/ui/btn-nav';
 import { SECTION_IDS } from '@/constants';
 import { cn } from '@/lib/utils';
-import { AnimatePresence, motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
-import { useRouter } from 'next/navigation';
-import { ComponentRef, useEffect, useRef, useState } from 'react';
-import { FaArrowUp } from 'react-icons/fa';
 
 const itemNavs = [
   {
@@ -100,7 +101,11 @@ const ScrollToTop = ({ locale }: { locale: string }) => {
       <motion.div
         ref={scrollToTopRef}
         key={'header-mobile'}
-        className='fixed inset-x-0 bottom-4 z-50 flex cursor-pointer justify-center lg:hidden'
+        className={`
+          fixed inset-x-0 bottom-4 z-50 flex cursor-pointer justify-center
+
+          lg:hidden
+        `}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 20 }}
@@ -114,7 +119,12 @@ const ScrollToTop = ({ locale }: { locale: string }) => {
             duration: 0.3,
             ease: 'easeIn',
           }}
-          className='card-gradient-border flex items-center justify-center !rounded-[20px] pl-1 pr-1 shadow-2xl before:rounded-[20px]'
+          className={`
+            card-gradient-border flex items-center justify-center
+            !rounded-[20px] px-1 shadow-2xl
+
+            before:rounded-[20px]
+          `}
         >
           {itemNavs.map((item) => (
             <BtnNav
@@ -131,14 +141,22 @@ const ScrollToTop = ({ locale }: { locale: string }) => {
 
           <div
             className={cn(
-              'w ml-[2px] h-[28px] border border-[#7CD5C4] transition-all duration-500',
+              `
+                w ml-[2px] h-[28px] border border-[#7CD5C4] transition-all
+                duration-500
+              `,
               { 'opacity-0': isMobileRegisterBtnHidden },
             )}
           />
 
           <button
             className={cn(
-              'mx-[8px] w-[130px] rounded-[12px] !bg-[#7FFFF7] p-[10px] font-semibold text-black shadow-[0_0_2px_#7FFFF7,inset_0_0_2px_#7FFFF7,0_0_5px_#7FFFF7,0_0_15px_#7FFFF7,0_0_30px_#7FFFF7] transition-all duration-500',
+              `
+                mx-[8px] w-[130px] rounded-[12px] !bg-[#7FFFF7] p-[10px]
+                font-semibold text-black
+                shadow-[0_0_2px_#7FFFF7,inset_0_0_2px_#7FFFF7,0_0_5px_#7FFFF7,0_0_15px_#7FFFF7,0_0_30px_#7FFFF7]
+                transition-all duration-500
+              `,
               { 'm-0 w-0 p-0 opacity-0': isMobileRegisterBtnHidden },
             )}
             onClick={
@@ -159,11 +177,16 @@ const ScrollToTop = ({ locale }: { locale: string }) => {
         className={cn(
           { 'cursor-pointer opacity-100': showScrollToTopButton },
           { 'opacity-0': !showScrollToTopButton },
-          'fixed bottom-8 right-8 z-50 hidden h-12 w-12 items-center justify-center rounded-full bg-[#226472] transition-all lg:flex',
+          `
+            fixed bottom-8 right-8 z-50 hidden h-12 w-12 items-center
+            justify-center rounded-full bg-[#226472] transition-all
+
+            lg:flex
+          `,
         )}
       >
         <motion.div
-          className='flex h-12 w-12 items-center justify-center overflow-hidden'
+          className='flex size-12 items-center justify-center overflow-hidden'
           whileHover={{
             scale: 1.1,
             transition: {

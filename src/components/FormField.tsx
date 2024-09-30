@@ -1,6 +1,6 @@
 import { ErrorMessage, Field } from 'formik';
-import React from 'react';
 import { useTranslations } from 'next-intl';
+import React from 'react';
 
 interface FormFieldProps {
   name: string;

@@ -1,10 +1,11 @@
 'use client';
 
-import { SECTION_IDS } from '@/constants';
-import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import React, { useEffect, useState } from 'react';
+
 import { Top1, Top2, Top3 } from '@/assets/Prizes';
+import { SECTION_IDS } from '@/constants';
 
 interface PrizesProps {
   locale?: string;
@@ -77,20 +78,51 @@ const Prizes = ({ locale }: PrizesProps) => {
         }}
         viewport={{ once: true }}
       >
-        <motion.div className='relative flex items-center justify-center transition-all hover:scale-105'>
-          <Top2 className='w-4/5 xl:w-2/3' locale={locale} height={svgHeight} />
+        <motion.div className={`
+          relative flex items-center justify-center transition-all
+
+          hover:scale-105
+        `}>
+          <Top2 className={`
+            w-4/5
+
+            xl:w-2/3
+          `} locale={locale} height={svgHeight} />
         </motion.div>
 
-        <motion.div className='relative flex -translate-y-12 items-center justify-center transition-all hover:scale-105 sm:-translate-y-20'>
-          <Top1 className='w-4/5 xl:w-2/3' locale={locale} height={svgHeight} />
+        <motion.div className={`
+          relative flex -translate-y-12 items-center justify-center
+          transition-all
+
+          hover:scale-105
+
+          sm:-translate-y-20
+        `}>
+          <Top1 className={`
+            w-4/5
+
+            xl:w-2/3
+          `} locale={locale} height={svgHeight} />
         </motion.div>
 
-        <motion.div className='relative flex items-center justify-center transition-all hover:scale-105'>
-          <Top3 className='w-4/5 xl:w-2/3' locale={locale} height={svgHeight} />
+        <motion.div className={`
+          relative flex items-center justify-center transition-all
+
+          hover:scale-105
+        `}>
+          <Top3 className={`
+            w-4/5
+
+            xl:w-2/3
+          `} locale={locale} height={svgHeight} />
         </motion.div>
       </motion.div>
       <motion.p
-        className='w-full text-center text-base italic text-primary max-sm:text-sm'
+        className={`
+          w-full text-center text-base italic text-primary
+
+          max-sm:text-sm
+        `}
         initial={{
           opacity: 0,
           y: 50,

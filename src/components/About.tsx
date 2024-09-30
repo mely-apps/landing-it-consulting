@@ -1,23 +1,33 @@
 'use client';
-import React from 'react';
-import { FlipWords } from './ui/flip-words';
-import { useTranslations } from 'next-intl';
-import { SECTION_IDS } from '@/constants';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
+import React from 'react';
+
+import { SECTION_IDS } from '@/constants';
+
+import { FlipWords } from './ui/flip-words';
 
 const About = () => {
   const t = useTranslations('HomePage');
 
   return (
     <div
-      className='container w-11/12 border-2 border-transparent pt-24 lg:px-20'
+      className={`
+        container w-11/12 border-2 border-transparent pt-24
+
+        lg:px-20
+      `}
       id={SECTION_IDS.ABOUT}
     >
       <FlipWords
-        className='font-montserrat text-2xl font-extrabold uppercase !text-primary'
+        className={`
+          font-montserrat text-2xl font-extrabold uppercase !text-primary
+        `}
         words={[t('about.title')]}
       />
-      <div className='mx-auto mt-12 flex flex-col text-justify font-inter text-base'>
+      <div className={`
+        mx-auto mt-12 flex flex-col text-justify font-inter text-base
+      `}>
         {Array.from({ length: 2 }).map((_, index) => (
           <motion.p
             key={index}

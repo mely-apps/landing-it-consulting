@@ -1,24 +1,25 @@
-import { FormField, SelectField } from '@/components/FormField';
-import {
-  PersonalForm,
-  personalFormInitValue,
-  personalFormSchema,
-} from '@/components/Schema';
-import { MembersFormDataValue } from '@/components/TeamRegistrationForm';
-import { cn } from '@/lib/utils';
-import { Form, Formik, FormikHelpers, useFormik } from 'formik';
+import { Form, Formik, type FormikHelpers, useFormik } from 'formik';
 import { useTranslations } from 'next-intl';
 import {
-  Dispatch,
-  ForwardedRef,
+  type Dispatch,
+  type ForwardedRef,
   forwardRef,
-  SetStateAction,
+  type SetStateAction,
   useId,
   useImperativeHandle,
   useState,
 } from 'react';
 import { FaSpinner } from 'react-icons/fa';
 import { toast } from 'react-toastify';
+
+import { FormField, SelectField } from '@/components/FormField';
+import {
+  type PersonalForm,
+  personalFormInitValue,
+  personalFormSchema,
+} from '@/components/Schema';
+import { type MembersFormDataValue } from '@/components/TeamRegistrationForm';
+import { cn } from '@/lib/utils';
 
 interface PersonalRegistrationFormProps {
   onSubmitSuccess?: () => void;
@@ -143,7 +144,11 @@ function PersonalRegistrationForm(
               required
             />
           </div>
-          <div className='col-span-2 md:col-span-1'>
+          <div className={`
+            col-span-2
+
+            md:col-span-1
+          `}>
             <FormField
               label={mainTranslations(
                 'registration.individual.expectedGraduationYear.label',
@@ -152,7 +157,11 @@ function PersonalRegistrationForm(
               required
             />
           </div>
-          <div className='col-span-2 md:col-span-1'>
+          <div className={`
+            col-span-2
+
+            md:col-span-1
+          `}>
             <SelectField
               label={mainTranslations('registration.individual.gender.label')}
               name='gender'
@@ -173,14 +182,22 @@ function PersonalRegistrationForm(
               ]}
             />
           </div>
-          <div className='col-span-2 md:col-span-1'>
+          <div className={`
+            col-span-2
+
+            md:col-span-1
+          `}>
             <FormField
               label={mainTranslations('registration.individual.school.label')}
               name='school'
               required
             />
           </div>
-          <div className='col-span-2 md:col-span-1'>
+          <div className={`
+            col-span-2
+
+            md:col-span-1
+          `}>
             <FormField
               label={mainTranslations('registration.individual.major.label')}
               name='major'
@@ -215,7 +232,14 @@ function PersonalRegistrationForm(
               disabled={isLoading}
               type='submit'
               className={cn(
-                'w-auto rounded-md !bg-[#7FFFF7] px-6 py-2 font-semibold text-black shadow-[0_0_2px_#7FFFF7,inset_0_0_2px_#7FFFF7,0_0_5px_#7FFFF7,0_0_15px_#7FFFF7,0_0_30px_#7FFFF7] transition-all hover:opacity-90',
+                `
+                  w-auto rounded-md !bg-[#7FFFF7] px-6 py-2 font-semibold
+                  text-black
+                  shadow-[0_0_2px_#7FFFF7,inset_0_0_2px_#7FFFF7,0_0_5px_#7FFFF7,0_0_15px_#7FFFF7,0_0_30px_#7FFFF7]
+                  transition-all
+
+                  hover:opacity-90
+                `,
                 isLoading && 'cursor-not-allowed opacity-90',
               )}
             >
@@ -264,7 +288,11 @@ function PersonalRegistrationForm(
           </p>
         )}
       </div>
-      <div className='col-span-2 md:col-span-1'>
+      <div className={`
+        col-span-2
+
+        md:col-span-1
+      `}>
         <label
           className='block w-full font-bold text-primary'
           htmlFor={`expectedGraduationYear_${id}`}
@@ -301,7 +329,11 @@ function PersonalRegistrationForm(
           </p>
         )}
       </div>
-      <div className='col-span-2 md:col-span-1'>
+      <div className={`
+        col-span-2
+
+        md:col-span-1
+      `}>
         <label
           className='block w-full font-bold text-primary'
           htmlFor={`gender_${id}`}
@@ -339,7 +371,11 @@ function PersonalRegistrationForm(
           </p>
         )}
       </div>
-      <div className='col-span-2 md:col-span-1'>
+      <div className={`
+        col-span-2
+
+        md:col-span-1
+      `}>
         <label
           className='block w-full font-bold text-primary'
           htmlFor={`school_${id}`}
@@ -370,7 +406,11 @@ function PersonalRegistrationForm(
           </p>
         )}
       </div>
-      <div className='col-span-2 md:col-span-1'>
+      <div className={`
+        col-span-2
+
+        md:col-span-1
+      `}>
         <label
           className='block w-full font-bold text-primary'
           htmlFor={`major_${id}`}

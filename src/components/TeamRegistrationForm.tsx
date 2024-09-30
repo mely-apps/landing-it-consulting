@@ -1,21 +1,22 @@
-import { FormField } from '@/components/FormField';
-import PersonalRegistrationForm, {
-  PersonalRegistrationFormHandle,
-} from '@/components/PersonalRegistrationForm';
-import {
-  PersonalForm,
-  personalFormInitValue,
-  TeamForm,
-  teamFormInitValue,
-  teamFormSchema,
-} from '@/components/Schema';
-import { cn } from '@/lib/utils';
-import { Form, Formik, FormikHelpers } from 'formik';
+import { Form, Formik, type FormikHelpers } from 'formik';
 import { Delete, Plus } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useEffect, useRef, useState } from 'react';
 import { FaSpinner } from 'react-icons/fa';
 import { toast } from 'react-toastify';
+
+import { FormField } from '@/components/FormField';
+import PersonalRegistrationForm, {
+  type PersonalRegistrationFormHandle,
+} from '@/components/PersonalRegistrationForm';
+import {
+  type PersonalForm,
+  personalFormInitValue,
+  type TeamForm,
+  teamFormInitValue,
+  teamFormSchema,
+} from '@/components/Schema';
+import { cn } from '@/lib/utils';
 
 interface TeamRegistrationFormProps {
   onSubmitSuccess?: () => void;
@@ -124,19 +125,30 @@ export default function TeamRegistrationForm({
 
           <div className='col-span-2'>
             <hr className='border-white' />
-            <h3 className='mt-4 w-full text-center text-lg font-bold text-primary'>
+            <h3 className={`
+              mt-4 w-full text-center text-lg font-bold text-primary
+            `}>
               {t('registration.team.memberInfo.title')}
             </h3>
           </div>
 
           <div className='col-span-2 grid grid-cols-4 gap-4'>
-            <div className='col-span-4 flex flex-col items-center border-white sm:col-span-1 sm:border-r'>
+            <div className={`
+              col-span-4 flex flex-col items-center border-white
+
+              sm:col-span-1 sm:border-r
+            `}>
               {membersFormData.map((data) => (
                 <button
                   key={`member_tab_${data.index}`}
                   type='button'
                   className={cn(
-                    'flex w-full justify-between rounded-s-lg border-r-8 border-transparent p-4 text-white transition-all hover:bg-[#ccc]/30',
+                    `
+                      flex w-full justify-between rounded-s-lg border-r-8
+                      border-transparent p-4 text-white transition-all
+
+                      hover:bg-[#ccc]/30
+                    `,
                     {
                       'border-primary bg-[#ccc]/30':
                         selectedMemberIndex === data.index,
@@ -160,7 +172,11 @@ export default function TeamRegistrationForm({
                   </span>
                   {membersFormData.length > 2 && (
                     <Delete
-                      className='h-6 w-6 transition-all hover:text-red-500'
+                      className={`
+                        size-6 transition-all
+
+                        hover:text-red-500
+                      `}
                       onClick={(e) => {
                         e.stopPropagation();
                         handleDeleteMember(data);
@@ -172,7 +188,16 @@ export default function TeamRegistrationForm({
               {membersFormData.length < 4 && (
                 <button
                   type='button'
-                  className='mt-4 flex items-center justify-around rounded-lg bg-[#7FFFF7] px-4 py-2 font-bold text-black hover:opacity-90 max-sm:gap-x-2 sm:w-11/12'
+                  className={`
+                    mt-4 flex items-center justify-around rounded-lg
+                    bg-[#7FFFF7] px-4 py-2 font-bold text-black
+
+                    hover:opacity-90
+
+                    max-sm:gap-x-2
+
+                    sm:w-11/12
+                  `}
                   onClick={handleAddMember}
                 >
                   <Plus />
@@ -180,7 +205,11 @@ export default function TeamRegistrationForm({
                 </button>
               )}
             </div>
-            <div className='col-span-4 sm:col-span-3'>
+            <div className={`
+              col-span-4
+
+              sm:col-span-3
+            `}>
               {membersFormData.map((data, index) => (
                 <PersonalRegistrationForm
                   key={`member_form_${data.index}`}
@@ -209,7 +238,14 @@ export default function TeamRegistrationForm({
               type='submit'
               disabled={isValidating || isSubmitting}
               className={cn(
-                'w-auto rounded-md !bg-[#7FFFF7] px-6 py-2 font-semibold text-black shadow-[0_0_2px_#7FFFF7,inset_0_0_2px_#7FFFF7,0_0_5px_#7FFFF7,0_0_15px_#7FFFF7,0_0_30px_#7FFFF7] transition-all hover:opacity-90',
+                `
+                  w-auto rounded-md !bg-[#7FFFF7] px-6 py-2 font-semibold
+                  text-black
+                  shadow-[0_0_2px_#7FFFF7,inset_0_0_2px_#7FFFF7,0_0_5px_#7FFFF7,0_0_15px_#7FFFF7,0_0_30px_#7FFFF7]
+                  transition-all
+
+                  hover:opacity-90
+                `,
                 {
                   'cursor-not-allowed opacity-90': isValidating || isSubmitting,
                 },

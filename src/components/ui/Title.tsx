@@ -1,12 +1,22 @@
-import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 import React from 'react';
+
+import { cn } from '@/lib/utils';
+
 interface TitleProps {
   isActiveScroll?: boolean;
 }
 const Title = ({ isActiveScroll }: TitleProps) => {
   const titleClassName = cn(
-    ' mt-[70px] ml-[50px] invisible font-montserrat text-lg font-extrabold sm:visible md:hidden xl:block',
+    `
+      invisible ml-[50px] mt-[70px] font-montserrat text-lg font-extrabold
+
+      md:hidden
+
+      sm:visible
+
+      xl:block
+    `,
     { ['mt-[0px] md:block']: isActiveScroll },
   );
   return (

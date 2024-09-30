@@ -1,5 +1,7 @@
 'use client';
-import { LocaleProps } from '@/@types';
+import { Bounce, ToastContainer, type ToastContainerProps } from 'react-toastify';
+
+import { type LocaleProps } from '@/@types';
 import HexagonBackground from '@/assets/HexagonBackground';
 import About from '@/components/About';
 import Footer from '@/components/Footer';
@@ -13,7 +15,6 @@ import ScrollToTop from '@/components/ScrollToTop';
 import TimeCounter from '@/components/TimeCounter';
 import Timeline from '@/components/Timeline';
 import { BackgroundGradientAnimation } from '@/components/ui/background-gradient-animation';
-import { Bounce, ToastContainer, ToastContainerProps } from 'react-toastify';
 
 const toastContainerConfig: ToastContainerProps = {
   position: 'top-right',
@@ -33,7 +34,10 @@ export default function Home({
   return (
     <>
       <ToastContainer {...toastContainerConfig} />
-      <div className='background-animation main-container absolute inset-0 left-0 top-0 z-50 h-screen w-screen overflow-x-hidden overflow-y-scroll scrollbar-none'>
+      <div className={`
+        background-animation main-container absolute inset-0 z-50 h-screen
+        w-screen overflow-x-hidden overflow-y-scroll scrollbar-none
+      `}>
         <ScrollToTop locale={locale} />
         <Header locale={locale as LocaleProps['locale']} />
         {/* <div className='h-[92px]'></div> */}

@@ -1,10 +1,10 @@
+import 'react-toastify/dist/ReactToastify.css';
+import '../../styles/globals.css';
+
 import type { Metadata } from 'next';
 import { Inter, Montserrat } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
-
-import 'react-toastify/dist/ReactToastify.css';
-import '../../styles/globals.css';
 
 const inter = Inter({
   subsets: ['latin'],

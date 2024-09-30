@@ -1,6 +1,7 @@
 'use client';
+import { AnimatePresence, LayoutGroup,motion } from 'framer-motion';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { AnimatePresence, motion, LayoutGroup } from 'framer-motion';
+
 import { cn } from '@/lib/utils';
 
 export const FlipWords = ({
@@ -24,9 +25,9 @@ export const FlipWords = ({
 
   useEffect(() => {
     if (!isAnimating)
-      setTimeout(() => {
+      {setTimeout(() => {
         startAnimation();
-      }, duration);
+      }, duration);}
   }, [isAnimating, duration, startAnimation]);
 
   return (
@@ -62,7 +63,11 @@ export const FlipWords = ({
           position: 'absolute',
         }}
         className={cn(
-          'relative z-10 inline-block text-left text-neutral-900 dark:text-neutral-100',
+          `
+            relative z-10 inline-block text-left text-neutral-900
+
+            dark:text-neutral-100
+          `,
           className,
         )}
         key={currentWord}

@@ -1,12 +1,13 @@
 'use client';
-import { SECTION_IDS } from '@/constants';
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import React, { useEffect, useState } from 'react';
+
 import PersonalRegistrationForm from '@/components/PersonalRegistrationForm';
-import { cn } from '@/lib/utils';
 import TeamRegistrationForm from '@/components/TeamRegistrationForm';
+import { SECTION_IDS } from '@/constants';
+import { cn } from '@/lib/utils';
 
 const Registration = () => {
   const t = useTranslations('HomePage');
@@ -21,7 +22,7 @@ const Registration = () => {
   };
 
   useEffect(() => {
-    let intervalId = setInterval(() => {
+    const intervalId = setInterval(() => {
       const now = new Date();
       const registrationCloseDate = new Date('2024-10-12T17:00:00Z'); // 13th Oct 2022, 00:00 GMT+7
       if (now >= registrationCloseDate) {
@@ -38,13 +39,25 @@ const Registration = () => {
         {t('registration.title')}
       </h2>
 
-      <div className='card-gradient-border mx-auto mt-10 flex w-full flex-col items-center justify-center gap-y-6 p-10 sm:w-3/4'>
+      <div className={`
+        card-gradient-border mx-auto mt-10 flex w-full flex-col items-center
+        justify-center gap-y-6 p-10
+
+        sm:w-3/4
+      `}>
         {submitSuccess || isFormClosed || (
-          <div className='grid w-full grid-cols-2 gap-y-6 text-center text-3xl font-bold'>
+          <div className={`
+            grid w-full grid-cols-2 gap-y-6 text-center text-3xl font-bold
+          `}>
             <button
               onClick={() => toggleTypeForm('personal')}
               className={cn(
-                'border-b-4 border-white pb-4 text-base uppercase transition-all sm:text-lg',
+                `
+                  border-b-4 border-white pb-4 text-base uppercase
+                  transition-all
+
+                  sm:text-lg
+                `,
                 { '!border-[#FFB84E] text-primary': typeForm === 'personal' },
               )}
               type='button'
@@ -54,7 +67,12 @@ const Registration = () => {
             <button
               onClick={() => toggleTypeForm('team')}
               className={cn(
-                'border-b-4 border-white pb-4 text-base uppercase transition-all sm:text-lg',
+                `
+                  border-b-4 border-white pb-4 text-base uppercase
+                  transition-all
+
+                  sm:text-lg
+                `,
                 { '!border-[#FFB84E] text-primary': typeForm === 'team' },
               )}
               type='button'
@@ -93,7 +111,7 @@ const SuccessMessage = () => {
         }}
         viewport={{ once: true }}
       >
-        <Check className='h-16 w-16 rounded-full bg-primary p-2' />
+        <Check className='size-16 rounded-full bg-primary p-2' />
       </motion.div>
       <motion.div
         className='text-center'
@@ -104,10 +122,18 @@ const SuccessMessage = () => {
         }}
         viewport={{ once: true }}
       >
-        <p className='text-base font-bold min-[400px]:text-lg'>
+        <p className={`
+          text-base font-bold
+
+          min-[400px]:text-lg
+        `}>
           {t('registration.success.title')}
         </p>
-        <p className='text-base font-bold min-[400px]:text-lg'>
+        <p className={`
+          text-base font-bold
+
+          min-[400px]:text-lg
+        `}>
           {t('registration.success.content')}
         </p>
       </motion.div>
@@ -127,7 +153,9 @@ const ClosedFormMessage = () => {
         }}
         viewport={{ once: true }}
       >
-        <div className='h-16 w-16 rounded-full bg-red-500 p-2 text-center text-xl font-bold'>
+        <div className={`
+          size-16 rounded-full bg-red-500 p-2 text-center text-xl font-bold
+        `}>
           !
         </div>
       </motion.div>
@@ -140,10 +168,18 @@ const ClosedFormMessage = () => {
         }}
         viewport={{ once: true }}
       >
-        <p className='text-base font-bold min-[400px]:text-lg'>
+        <p className={`
+          text-base font-bold
+
+          min-[400px]:text-lg
+        `}>
           {t('registration.closed.title')}
         </p>
-        <p className='text-base font-bold min-[400px]:text-lg'>
+        <p className={`
+          text-base font-bold
+
+          min-[400px]:text-lg
+        `}>
           {t('registration.closed.content')}
         </p>
       </motion.div>

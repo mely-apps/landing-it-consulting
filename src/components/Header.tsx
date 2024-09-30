@@ -1,20 +1,22 @@
 'use client';
-import { LocaleProps } from '@/@types';
-import { SECTION_IDS } from '@/constants';
+import { motion } from 'framer-motion';
+import { Menu } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 import React, { useEffect, useState } from 'react';
-import { Switch } from './ui/switch';
-import Title from './ui/Title';
+
+import { type LocaleProps } from '@/@types';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Menu } from 'lucide-react';
-import { useTranslations } from 'next-intl';
-import { motion } from 'framer-motion';
+import { SECTION_IDS } from '@/constants';
 import { cn } from '@/lib/utils';
+
+import { Switch } from './ui/switch';
+import Title from './ui/Title';
 
 const SECTION_ITEMS = [
   {
@@ -116,14 +118,24 @@ const Header = ({ locale }: LocaleProps) => {
   });
 
   const headerClassName = cn(
-    'sm:bg-transparent fixed z-[1000]  w-full justify-center',
+    `
+      fixed z-[1000] w-full justify-center
+
+      sm:bg-transparent
+    `,
     {
       ['lg:bg-[#023C38]']: isActiveScroll,
     },
   );
 
   const navClassName = cn(
-    'container hidden h-[70px] items-center justify-between xl:justify-between lg:flex',
+    `
+      container hidden h-[70px] items-center justify-between
+
+      lg:flex
+
+      xl:justify-between
+    `,
     {
       ['md:justify-end']: !isActiveScroll,
     },
@@ -155,7 +167,11 @@ const Header = ({ locale }: LocaleProps) => {
         <Title isActiveScroll={isActiveScroll} />
 
         <nav className='flex h-full items-center gap-x-8 font-semibold text-gray'>
-          <div className='hidden items-center gap-x-8 lg:flex'>
+          <div className={`
+            hidden items-center gap-x-8
+
+            lg:flex
+          `}>
             {SECTION_ITEMS.map((item, idx) => (
               <div
                 onClick={() => {
@@ -164,7 +180,13 @@ const Header = ({ locale }: LocaleProps) => {
                 key={item.title}
               >
                 <motion.p
-                  className={`cursor-pointer hover:text-primary ${activeClass === item.path && 'text-primary'}`}
+                  className={`
+                    cursor-pointer
+
+                    hover:text-primary
+
+                    ${activeClass === item.path && `text-primary`}
+                  `}
                 >
                   {t(`header.${item.path}` as any)}
                 </motion.p>
@@ -187,7 +209,11 @@ const Header = ({ locale }: LocaleProps) => {
             ))}
           </div>
 
-          <div className='flex lg:hidden'>
+          <div className={`
+            flex
+
+            lg:hidden
+          `}>
             <DropdownMenu>
               <DropdownMenuTrigger>
                 <Menu />
@@ -209,7 +235,11 @@ const Header = ({ locale }: LocaleProps) => {
             </DropdownMenu>
           </div>
 
-          <div className='flex min-w-12 cursor-pointer items-center gap-x-2 uppercase hover:text-primary'>
+          <div className={`
+            flex min-w-12 cursor-pointer items-center gap-x-2 uppercase
+
+            hover:text-primary
+          `}>
             <Switch onClick={handleToggleLocale} checked={locale === 'vi'} />
             <span>{locale}</span>
           </div>

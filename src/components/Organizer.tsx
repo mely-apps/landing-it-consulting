@@ -1,8 +1,9 @@
-import { SECTION_IDS } from '@/constants';
-import Image from 'next/image';
-import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import React from 'react';
+
+import { SECTION_IDS } from '@/constants';
 
 const Organizer = () => {
   const t = useTranslations('HomePage');
@@ -10,7 +11,10 @@ const Organizer = () => {
   return (
     <div className='container mt-40' id={SECTION_IDS.ORGANIZERS}>
       <motion.h2
-        className='flex w-full justify-center text-2xl font-extrabold uppercase text-primary'
+        className={`
+          flex w-full justify-center text-2xl font-extrabold uppercase
+          text-primary
+        `}
         initial={{
           opacity: 0,
           y: 50,
@@ -29,9 +33,16 @@ const Organizer = () => {
       </motion.h2>
 
       <div className='flex flex-col gap-20'>
-        <div className='mt-20 grid grid-cols-3 gap-x-10 gap-y-10'>
+        <div className='mt-20 grid grid-cols-3 gap-10'>
           <motion.div
-            className='card-gradient-border relative col-span-3 flex h-32 min-w-52 items-center justify-center shadow-lg sm:h-56 md:col-span-1 md:max-w-96'
+            className={`
+              card-gradient-border relative col-span-3 flex h-32 min-w-52
+              items-center justify-center shadow-lg
+
+              md:col-span-1 md:max-w-96
+
+              sm:h-56
+            `}
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{
               opacity: 1,
@@ -42,12 +53,20 @@ const Organizer = () => {
           >
             <Image
               src={'/companies/codemely.png'}
-              className='object-contain px-6 sm:px-10'
+              className={`
+                object-contain px-6
+
+                sm:px-10
+              `}
               alt=''
               fill
             />
           </motion.div>
-          <div className='col-span-3 md:col-span-2'>
+          <div className={`
+            col-span-3
+
+            md:col-span-2
+          `}>
             <motion.p
               className='text-justify text-lg font-light leading-[1.3]'
               initial={{
@@ -69,9 +88,16 @@ const Organizer = () => {
           </div>
         </div>
 
-        <div className='grid grid-cols-3 gap-x-10 gap-y-10'>
+        <div className='grid grid-cols-3 gap-10'>
           <motion.div
-            className='card-gradient-border relative col-span-3 flex h-32 min-w-52 items-center justify-center shadow-lg sm:h-56 md:col-span-1 md:max-w-96'
+            className={`
+              card-gradient-border relative col-span-3 flex h-32 min-w-52
+              items-center justify-center shadow-lg
+
+              md:col-span-1 md:max-w-96
+
+              sm:h-56
+            `}
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{
               opacity: 1,
@@ -82,12 +108,20 @@ const Organizer = () => {
           >
             <Image
               src={'/companies/netcompany.png'}
-              className='object-contain px-6 sm:px-10'
+              className={`
+                object-contain px-6
+
+                sm:px-10
+              `}
               alt=''
               fill
             />
           </motion.div>
-          <div className='col-span-3 md:col-span-2'>
+          <div className={`
+            col-span-3
+
+            md:col-span-2
+          `}>
             <motion.p
               className='text-justify text-lg font-light leading-[1.3]'
               initial={{

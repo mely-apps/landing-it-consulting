@@ -1,5 +1,5 @@
 declare module '@formfacade/embed-react' {
-  import { ComponentType } from 'react';
+  import { type ComponentType } from 'react';
 
   interface FormfacadeEmbedProps {
     formFacadeURL: string;

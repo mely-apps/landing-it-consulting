@@ -1,6 +1,8 @@
-import { SECTION_IDS } from '@/constants';
-import { motion, Variants } from 'framer-motion';
-import React, { useEffect, useState } from 'react';
+import { motion, type Variants } from 'framer-motion';
+import type React from 'react';
+import { useEffect, useState } from 'react';
+
+import { type SECTION_IDS } from '@/constants';
 
 const itemVariants: Variants = {
   open: {
@@ -54,7 +56,10 @@ export const BtnNav = (item: {
   return (
     <motion.li
       className={
-        'm-1 mb-2 mt-2 flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl'
+        `
+          m-1 my-2 flex size-10 items-center justify-center overflow-hidden
+          rounded-xl
+        `
       }
       animate={{
         backgroundColor: isActive ? '#012F2C' : '#7CD5C4',

@@ -1,4 +1,4 @@
-import { ComponentProps, useState, useEffect } from 'react';
+import { type ComponentProps, useEffect,useState } from 'react';
 
 interface TimelineProps extends ComponentProps<'svg'> {
   locale?: string;

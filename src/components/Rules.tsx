@@ -1,10 +1,12 @@
-import React, { useEffect, useRef } from 'react';
-import GradualSpacing from './ui/gradual-spacing';
-import { SECTION_IDS } from '@/constants';
-import RulesMobile from '@/assets/RulesMobile';
-import RulesDesktop from '@/assets/RulesDesktop';
 import { useTranslations } from 'next-intl';
+import React, { useEffect, useRef } from 'react';
 import { Tooltip } from 'react-tooltip';
+
+import RulesDesktop from '@/assets/RulesDesktop';
+import RulesMobile from '@/assets/RulesMobile';
+import { SECTION_IDS } from '@/constants';
+
+import GradualSpacing from './ui/gradual-spacing';
 
 interface RulesProps {
   locale?: string;
@@ -42,25 +44,52 @@ const Rules = ({ locale }: RulesProps) => {
   ];
   return (
     <div
-      className='card-gradient-border container mt-44 w-11/12 rounded-lg py-3 shadow-2xl backdrop-blur-sm sm:px-10 md:px-20 md:py-8 lg:py-10'
+      className={`
+        card-gradient-border container mt-44 w-11/12 rounded-lg py-3 shadow-2xl
+        backdrop-blur-sm
+
+        lg:py-10
+
+        md:px-20 md:py-8
+
+        sm:px-10
+      `}
       id={SECTION_IDS.RULES}
     >
       <div className='grid grid-cols-4 gap-y-4'>
-        <div className='col-span-4 flex max-lg:justify-center lg:col-span-1'>
+        <div className={`
+          col-span-4 flex
+
+          lg:col-span-1
+
+          max-lg:justify-center
+        `}>
           <GradualSpacing
             text={t('rules.title')}
             className='text-2xl font-extrabold uppercase !text-primary'
           />
         </div>
-        <div className='col-span-4 lg:col-span-3'>
+        <div className={`
+          col-span-4
+
+          lg:col-span-3
+        `}>
           <p className='text-justify text-base'>
             &quot;{t('rules.description')}&quot;
           </p>
         </div>
       </div>
       <div className='relative h-max w-full select-none' ref={ruleSectionRef}>
-        <RulesDesktop className='hidden w-full sm:block' locale={locale} />
-        <RulesMobile className='w-full sm:hidden' locale={locale} />
+        <RulesDesktop className={`
+          hidden w-full
+
+          sm:block
+        `} locale={locale} />
+        <RulesMobile className={`
+          w-full
+
+          sm:hidden
+        `} locale={locale} />
         {points.map((point) => (
           <Tooltip
             key={point.id}

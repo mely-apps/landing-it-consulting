@@ -1,7 +1,8 @@
-import { SECTION_IDS } from '@/constants';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+
 import TimelineImage from '@/assets/Timeline';
+import { SECTION_IDS } from '@/constants';
 
 interface TimelineProps {
   locale: string;
@@ -12,7 +13,14 @@ export default function Timeline({ locale }: TimelineProps) {
 
   return (
     <div
-      className='card-gradient-border container relative mt-44 w-11/12 px-0 py-3 shadow-2xl backdrop-blur-sm md:py-8 lg:py-10'
+      className={`
+        card-gradient-border container relative mt-44 w-11/12 px-0 py-3
+        shadow-2xl backdrop-blur-sm
+
+        lg:py-10
+
+        md:py-8
+      `}
       id={SECTION_IDS.TIMELINE}
     >
       <motion.h2
