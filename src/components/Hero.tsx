@@ -4,9 +4,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { IoLocationSharp } from 'react-icons/io5';
 import BlurFade from './ui/blur-fade';
-import { FlipWords } from './ui/flip-words';
-import { BackgroundGradient } from './ui/background-gradient';
-import AnimatedCard from './ui/AnimatedCard';
+import AppCard from './ui/AppCard';
 
 const Hero = () => {
   const t = useTranslations('HomePage');
@@ -51,17 +49,19 @@ const Hero = () => {
         </div>
 
         <div className='order-1 flex h-full w-full items-center justify-center sm:order-2 lg:mt-[0px]'>
-          <div className='bg-poster max-sm:hidden sm:h-[500px] sm:w-[360px] lg:mt-[70px] lg:h-[calc(100%_-_8vw_-_66px)] lg:w-[26vw] xl:h-[580px] xl:w-[378px]'>
-            <div className='fade-in-right relative h-full w-full overflow-hidden rounded-3xl'>
-              <Image
-                src='/cover.png'
-                alt='landing-it-consulting'
-                sizes='auto'
-                className='static object-cover'
-                priority
-                fill
-              />
-            </div>
+          <div className='fade-in-right max-sm:hidden sm:h-[500px] sm:w-[360px] lg:mt-[70px] lg:h-[calc(100%_-_8vw_-_66px)] lg:w-[26vw] xl:h-[580px] xl:w-[378px]'>
+            <AppCard className='card bg-poster relative h-full w-full overflow-hidden rounded-3xl'>
+              <div className='relative h-full w-full overflow-hidden rounded-3xl'>
+                <Image
+                  src='/cover.png'
+                  alt='landing-it-consulting'
+                  sizes='auto'
+                  className='object-cover'
+                  priority
+                  fill
+                />
+              </div>
+            </AppCard>
           </div>
           {/* <AnimatedCard>
             <BackgroundGradient
