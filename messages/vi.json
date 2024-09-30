@@ -19,8 +19,8 @@
       "organizers": "Đơn vị tổ chức"
     },
     "hero": {
-      "subTitle": "Sáng tạo, đổi mới, chuyển đổi số một cách hiệu quả",
-      "time": "Thứ 7, Ngày 19 Tháng 10 năm 2024, Văn phòng NETCOMPANY",
+      "subTitle": "Đổi mới, Hiện đại hóa và Số hóa hiệu quả",
+      "time": "Thứ 7, Ngày 19 Tháng 10 năm 2024, Văn phòng Netcompany.",
       "buttonTitle": "Đăng ký ngay"
     },
     "about": {
@@ -32,10 +32,9 @@
       "whoCanJoinQuestion": "<bold>Hãy tham gia thử thách nếu bạn:</bold>",
       "whoCanJoinAnswers": [
         "Là sinh viên từ năm 2 đến năm 4 đang theo học CNTT, Kĩ Thuật phần mềm, Khoa học Máy tính từ các trường Đại học trên địa bàn thành phố Hồ Chí Minh",
-        "Có khả năng tiếng Anh trình độ tối thiểu từ B1 trở lên",
-        "Có hứng thú trong việc tìm hiểu vai trò của một chuyên viên tư vấn IT",
-        "Muốn gặp gỡ bạn bè mới và các anh, chị trong nghề",
-        "Muốn tìm hiểu về môi trường làm việc của Netcompany tại Việt Nam"
+        "Có Tiếng Anh là một lợi thế.",
+        "Có hứng thú trong việc tìm hiểu vai trò của một chuyên viên tư vấn IT.",
+        "Muốn gặp gỡ bạn bè mới và các anh, chị trong nghề."
       ]
     },
     "rules": {

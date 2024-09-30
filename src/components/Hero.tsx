@@ -6,6 +6,7 @@ import { IoLocationSharp } from 'react-icons/io5';
 import BlurFade from './ui/blur-fade';
 import { FlipWords } from './ui/flip-words';
 import { BackgroundGradient } from './ui/background-gradient';
+import AnimatedCard from './ui/AnimatedCard';
 
 const Hero = () => {
   const t = useTranslations('HomePage');
@@ -49,8 +50,8 @@ const Hero = () => {
           </BlurFade>
         </div>
 
-        <div className='order-1 flex h-full w-full items-center justify-center sm:order-2 lg:mt-0'>
-          {/* <div className='bg-poster max-sm:hidden sm:h-[500px] sm:w-[360px] lg:mt-[60px] lg:h-[calc(100%_-_8vw_-_66px)] lg:w-[26vw] xl:h-[580px] xl:w-[378px]'>
+        <div className='order-1 flex h-full w-full items-center justify-center sm:order-2 lg:mt-[0px]'>
+          <div className='bg-poster max-sm:hidden sm:h-[500px] sm:w-[360px] lg:mt-[70px] lg:h-[calc(100%_-_8vw_-_66px)] lg:w-[26vw] xl:h-[580px] xl:w-[378px]'>
             <div className='fade-in-right relative h-full w-full overflow-hidden rounded-3xl'>
               <Image
                 src='/cover.png'
@@ -61,13 +62,13 @@ const Hero = () => {
                 fill
               />
             </div>
-          </div> */}
-          <div className='h-full w-full max-sm:hidden'>
+          </div>
+          {/* <AnimatedCard>
             <BackgroundGradient
-              className='h-full w-full'
-              containerClassName='mx-auto sm:h-[500px] sm:w-[360px] lg:mt-[90px] lg:h-[calc(100%_-_8vw_-_66px)] lg:w-[26vw] xl:h-[580px] xl:w-[378px]'
+              className='h-full w-full max-sm:hidden'
+              containerClassName='w-[300px] h-[421px] sm:h-[570px] sm:w-[406px] max-sm:hidden'
             >
-              <div className='fade-in-right relative h-full w-full overflow-hidden rounded-3xl'>
+              <div className='relative h-full w-full overflow-hidden rounded-3xl'>
                 <Image
                   src='/cover.png'
                   alt='landing-it-consulting'
@@ -78,7 +79,7 @@ const Hero = () => {
                 />
               </div>
             </BackgroundGradient>
-          </div>
+          </AnimatedCard> */}
 
           <div className='relative h-[600px] w-full overflow-hidden p-0 sm:hidden'>
             <Image

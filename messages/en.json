@@ -31,11 +31,10 @@
       ],
       "whoCanJoinQuestion": "<bold>Join the challenge if you:</bold>",
       "whoCanJoinAnswers": [
-        "Are students from 2nd to 4th year studying IT, Computer Science, Software Engineer from universities in Ho Chi Minh City",
-        "Have English proficiency at a minimum level of B1 or higher",
-        "Have interest in exploring the roles of an IT consultant",
-        "Want to meet new friends, IT fellows and IT professionals",
-        "Want to learn more about Netcompany Vietnam's workplace"
+        "Are students from 2nd to 4th year studying IT, Computer Science, Software Engineer from universities in Ho Chi Minh City.",
+        "Have English skills as an advantage.",
+        "Have interest in exploring the roles of an IT consultant.",
+        "Want to meet new friends, IT fellows and IT professionals."
       ]
     },
     "rules": {
