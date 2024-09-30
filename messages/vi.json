@@ -39,7 +39,13 @@
     },
     "rules": {
       "title": "Luật thi",
-      "description": "Các đội thi lựa chọn một case study (nghiên cứu tình huống) từ thử thách được ban tổ chức đưa ra, sau đó phân tích và thiết kế nên các ý tưởng, giải pháp để giải quyết các vấn đề đã xác định. Phần thưởng sẽ được trao cho những ý tưởng có tính khả thi, sáng tạo, và thể hiện tinh thần làm việc nhóm mạnh mẽ."
+      "content": "Các đội thi lựa chọn một case study (nghiên cứu tình huống) từ thử thách được ban tổ chức đưa ra, sau đó phân tích và thiết kế nên các ý tưởng, giải pháp để giải quyết các vấn đề đã xác định. Phần thưởng sẽ được trao cho những ý tưởng có tính khả thi, sáng tạo, và thể hiện tinh thần làm việc nhóm mạnh mẽ.",
+      "description": [
+        "(1) Sau khi nhận được bài toán từ BTC, các đội sẽ tìm ra giải pháp/case study để giải quyết bài toán mà BTC đặt ra",
+        "(2) Với mỗi giải pháp, các đội thi sẽ cần phân tích với góc độ nghiệp vụ và kỹ thuật. Sau đó minh họa các giải pháp bằng các thiết kế hệ thống với sự cố vấn từ các mentor",
+        "(3) Sau khi hoàn thành bài toán hoặc kết thúc thời gian quy định, các đội sẽ nộp bài và thuyết trình về giải pháp của mình với BTC",
+        "(4) BTC đánh giá và 3 đội thi có giải pháp ấn tượng sẽ nhận được giải thưởng từ cuộc thi"
+      ]
     },
     "timeline": {
       "title": "Mốc thời gian"

@@ -39,7 +39,13 @@
     },
     "rules": {
       "title": "Rules",
-      "description": "Teams select a case study from the challenge provided by the organizers, then analyze and design ideas and solutions to address the identified issues. Prizes will be given to ideas that are feasible, creative, and exemplify strong teamwork."
+      "content": "Teams select a case study from the challenge provided by the organizers, then analyze and design ideas and solutions to address the identified issues. Prizes will be given to ideas that are feasible, creative, and exemplify strong teamwork.",
+      "description": [
+        "(1) After receiving the problem from the organizers, the teams come up with solutions/case studies to solve the problem posed by the organizers.",
+        "(2) For each solution, the teams need to analyze it from both business and technical perspectives. Then, illustrate the solutions with system designs under the guidance of mentors.",
+        "(3) After completing the task or when the allotted time is up, the teams submit their work and present their solutions to the organizers.",
+        "(4) The organizers evaluate the submissions, and the 3 teams with the most impressive solutions receive awards from the competition."
+      ]
     },
     "timeline": {
       "title": "Timeline"
