@@ -13,7 +13,7 @@ const HeroWrapper = () => {
         <path
           d='M639.347 1H21C9.95431 1 1 9.95428 1 21V924.971C1 936.028 9.97167 944.987 21.0285 944.971L1664.03 942.633C1675.06 942.617 1684 933.667 1684 922.633V108.102C1684 97.0566 1675.05 88.1022 1664 88.1022H1175.3H755.42C750.633 88.1022 746.004 86.3851 742.375 83.2629L652.391 5.83939C648.763 2.7171 644.134 1 639.347 1Z'
           fill='url(#paint0_linear_107_329)'
-          fill-opacity='0.4'
+          fillOpacity='0.4'
         />
         <path
           d='M639.347 1H21C9.95431 1 1 9.95428 1 21V924.971C1 936.028 9.97167 944.987 21.0285 944.971L1664.03 942.633C1675.06 942.617 1684 933.667 1684 922.633V108.102C1684 97.0566 1675.05 88.1022 1664 88.1022H1175.3H755.42C750.633 88.1022 746.004 86.3851 742.375 83.2629L652.391 5.83939C648.763 2.7171 644.134 1 639.347 1Z'
@@ -28,9 +28,9 @@ const HeroWrapper = () => {
           width='1732'
           height='992.971'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix' />
+          <feFlood floodOpacity='0' result='BackgroundImageFix' />
           <feGaussianBlur in='BackgroundImageFix' stdDeviation='12' />
           <feComposite
             in2='SourceAlpha'
