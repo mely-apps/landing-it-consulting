@@ -74,7 +74,18 @@ const Header = ({ locale }: LocaleProps) => {
   const handleScrollToSection = (path: string) => {
     const section = document.getElementById(path);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      const paddingTop = window
+        .getComputedStyle(section, null)
+        .getPropertyValue('padding-top')
+        .replace('px', '');
+      const marginTop = window
+        .getComputedStyle(section, null)
+        .getPropertyValue('margin-top')
+        .replace('px', '');
+      document.querySelector('.main-container')!.scrollTo({
+        top: section.offsetTop - parseInt(paddingTop) - parseInt(marginTop) / 2,
+        behavior: 'smooth',
+      });
     }
   };
 
