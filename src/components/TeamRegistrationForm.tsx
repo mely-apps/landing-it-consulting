@@ -40,13 +40,6 @@ export default function TeamRegistrationForm({
     { index: 1, ...personalFormInitValue },
   ]);
 
-  useEffect(() => {
-    console.clear();
-    console.table(membersFormData);
-    console.log(indexCount);
-    console.log(memberFormsRef.current);
-  }, [membersFormData]);
-
   const handleSubmit = async (
     values: TeamForm,
     formikHelpers: FormikHelpers<TeamForm>,
