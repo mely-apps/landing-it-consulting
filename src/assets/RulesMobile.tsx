@@ -57,7 +57,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
           x2='344'
           y2='245'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='145'
@@ -65,7 +65,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
           x2='145'
           y2='102'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='45'
@@ -73,7 +73,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
           x2='145'
           y2='50'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='145'
@@ -81,7 +81,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
           x2='241'
           y2='50'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='242'
@@ -89,7 +89,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
           x2='344'
           y2='50'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <g filter='url(#filter0_f_672_97)'>
           <g filter='url(#filter1_i_672_97)'>
@@ -101,7 +101,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
               cy='50.4436'
               r='1.22176'
               fill='#023C38'
-              fill-opacity='0.8'
+              fillOpacity='0.8'
             />
           </g>
         </g>
@@ -114,7 +114,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             cy='50.4436'
             r='1.22176'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter5_f_672_97)'>
@@ -127,7 +127,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
               cy='50.4436'
               r='1.22176'
               fill='#023C38'
-              fill-opacity='0.8'
+              fillOpacity='0.8'
             />
           </g>
         </g>
@@ -140,7 +140,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             cy='50.4436'
             r='1.22176'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter10_f_672_97)'>
@@ -153,7 +153,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
               cy='50.4436'
               r='1.22176'
               fill='#023C38'
-              fill-opacity='0.8'
+              fillOpacity='0.8'
             />
           </g>
         </g>
@@ -166,7 +166,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             cy='50.4436'
             r='1.22176'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter15_f_672_97)'>
@@ -179,7 +179,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
               cy='50.4436'
               r='1.22176'
               fill='#023C38'
-              fill-opacity='0.8'
+              fillOpacity='0.8'
             />
           </g>
         </g>
@@ -192,7 +192,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             cy='50.4436'
             r='1.22176'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <line
@@ -201,7 +201,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
           x2='46'
           y2='244'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='98'
@@ -209,7 +209,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
           x2='98'
           y2='156'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='145'
@@ -217,7 +217,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
           x2='145'
           y2='156'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='194'
@@ -225,7 +225,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
           x2='194'
           y2='156'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='97'
@@ -233,7 +233,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
           x2='195'
           y2='101'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <g filter='url(#filter20_f_672_97)'>
           <g filter='url(#filter21_i_672_97)'>
@@ -245,7 +245,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
               cy='157.444'
               r='1.22176'
               fill='#023C38'
-              fill-opacity='0.8'
+              fillOpacity='0.8'
             />
           </g>
         </g>
@@ -258,7 +258,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             cy='157.444'
             r='1.22176'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter25_f_672_97)'>
@@ -271,7 +271,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
               cy='157.444'
               r='1.22176'
               fill='#023C38'
-              fill-opacity='0.8'
+              fillOpacity='0.8'
             />
           </g>
         </g>
@@ -284,7 +284,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             cy='157.444'
             r='1.22176'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter30_f_672_97)'>
@@ -297,7 +297,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
               cy='157.444'
               r='1.22176'
               fill='#023C38'
-              fill-opacity='0.8'
+              fillOpacity='0.8'
             />
           </g>
         </g>
@@ -310,7 +310,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             cy='157.444'
             r='1.22176'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter35_f_672_97)'>
@@ -323,7 +323,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
               cy='244.444'
               r='1.22176'
               fill='#023C38'
-              fill-opacity='0.8'
+              fillOpacity='0.8'
             />
           </g>
         </g>
@@ -337,7 +337,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
               cy='244.444'
               r='1.22176'
               fill='#023C38'
-              fill-opacity='0.8'
+              fillOpacity='0.8'
             />
           </g>
         </g>
@@ -351,7 +351,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
               cy='244.444'
               r='1.22176'
               fill='#023C38'
-              fill-opacity='0.8'
+              fillOpacity='0.8'
             />
           </g>
         </g>
@@ -364,7 +364,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             cy='244.444'
             r='1.22176'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <defs>
@@ -375,9 +375,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='18.887'
             height='18.8871'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -396,9 +396,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -437,9 +437,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -472,9 +472,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -513,9 +513,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -548,9 +548,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='18.887'
             height='18.8871'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -569,9 +569,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -610,9 +610,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -645,9 +645,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -686,9 +686,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -721,9 +721,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='18.887'
             height='18.8871'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -742,9 +742,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -783,9 +783,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -818,9 +818,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -859,9 +859,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -894,9 +894,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='18.887'
             height='18.8871'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -915,9 +915,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -956,9 +956,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -991,9 +991,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1032,9 +1032,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1067,9 +1067,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='18.887'
             height='18.8871'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1088,9 +1088,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1129,9 +1129,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1164,9 +1164,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1205,9 +1205,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1240,9 +1240,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='18.887'
             height='18.8871'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1261,9 +1261,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1302,9 +1302,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1337,9 +1337,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1378,9 +1378,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1413,9 +1413,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='18.887'
             height='18.8871'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1434,9 +1434,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1475,9 +1475,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1510,9 +1510,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1551,9 +1551,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1586,9 +1586,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='18.887'
             height='18.8871'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1607,9 +1607,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1648,9 +1648,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1683,9 +1683,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='12.887'
             height='12.8871'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feColorMatrix
               in='SourceAlpha'
               type='matrix'
@@ -1718,9 +1718,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1759,9 +1759,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1794,9 +1794,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='18.887'
             height='18.8871'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1815,9 +1815,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1856,9 +1856,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1891,9 +1891,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -1932,9 +1932,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -2017,7 +2017,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
           x2='342'
           y2='234'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='143'
@@ -2025,7 +2025,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
           x2='143'
           y2='91'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='43'
@@ -2033,7 +2033,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
           x2='143'
           y2='39'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='143'
@@ -2041,7 +2041,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
           x2='239'
           y2='39'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='240'
@@ -2049,7 +2049,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
           x2='342'
           y2='39'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <g filter='url(#filter0_f_1204_7)'>
           <g filter='url(#filter1_i_1204_7)'>
@@ -2061,7 +2061,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
               cy='39.4436'
               r='1.22176'
               fill='#023C38'
-              fill-opacity='0.8'
+              fillOpacity='0.8'
             />
           </g>
         </g>
@@ -2074,7 +2074,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             cy='39.4436'
             r='1.22176'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter5_f_1204_7)'>
@@ -2087,7 +2087,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
               cy='39.4436'
               r='1.22176'
               fill='#023C38'
-              fill-opacity='0.8'
+              fillOpacity='0.8'
             />
           </g>
         </g>
@@ -2100,7 +2100,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             cy='39.4436'
             r='1.22176'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter10_f_1204_7)'>
@@ -2113,7 +2113,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
               cy='39.4436'
               r='1.22176'
               fill='#023C38'
-              fill-opacity='0.8'
+              fillOpacity='0.8'
             />
           </g>
         </g>
@@ -2126,7 +2126,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             cy='39.4436'
             r='1.22176'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter15_f_1204_7)'>
@@ -2139,7 +2139,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
               cy='39.4436'
               r='1.22176'
               fill='#023C38'
-              fill-opacity='0.8'
+              fillOpacity='0.8'
             />
           </g>
         </g>
@@ -2152,7 +2152,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             cy='39.4436'
             r='1.22176'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <line
@@ -2161,7 +2161,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
           x2='44'
           y2='233'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='96'
@@ -2169,7 +2169,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
           x2='96'
           y2='145'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='143'
@@ -2177,7 +2177,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
           x2='143'
           y2='145'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='192'
@@ -2185,7 +2185,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
           x2='192'
           y2='145'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <line
           x1='95'
@@ -2193,7 +2193,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
           x2='193'
           y2='90'
           stroke='#80FFF7'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <g filter='url(#filter20_f_1204_7)'>
           <g filter='url(#filter21_i_1204_7)'>
@@ -2205,7 +2205,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
               cy='146.444'
               r='1.22176'
               fill='#023C38'
-              fill-opacity='0.8'
+              fillOpacity='0.8'
             />
           </g>
         </g>
@@ -2218,7 +2218,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             cy='146.444'
             r='1.22176'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter25_f_1204_7)'>
@@ -2231,7 +2231,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
               cy='146.444'
               r='1.22176'
               fill='#023C38'
-              fill-opacity='0.8'
+              fillOpacity='0.8'
             />
           </g>
         </g>
@@ -2244,7 +2244,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             cy='146.444'
             r='1.22176'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter30_f_1204_7)'>
@@ -2257,7 +2257,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
               cy='146.444'
               r='1.22176'
               fill='#023C38'
-              fill-opacity='0.8'
+              fillOpacity='0.8'
             />
           </g>
         </g>
@@ -2270,7 +2270,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             cy='146.444'
             r='1.22176'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <g filter='url(#filter35_f_1204_7)'>
@@ -2283,7 +2283,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
               cy='233.444'
               r='1.22176'
               fill='#023C38'
-              fill-opacity='0.8'
+              fillOpacity='0.8'
             />
           </g>
         </g>
@@ -2297,7 +2297,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
               cy='233.444'
               r='1.22176'
               fill='#023C38'
-              fill-opacity='0.8'
+              fillOpacity='0.8'
             />
           </g>
         </g>
@@ -2311,7 +2311,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
               cy='233.444'
               r='1.22176'
               fill='#023C38'
-              fill-opacity='0.8'
+              fillOpacity='0.8'
             />
           </g>
         </g>
@@ -2324,7 +2324,7 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             cy='233.444'
             r='1.22176'
             fill='#023C38'
-            fill-opacity='0.8'
+            fillOpacity='0.8'
           />
         </g>
         <defs>
@@ -2335,9 +2335,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='18.8872'
             height='18.8871'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -2356,9 +2356,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88721'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -2397,9 +2397,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.44336'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -2432,9 +2432,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88721'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -2473,9 +2473,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.44336'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -2508,9 +2508,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='18.8872'
             height='18.8871'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -2529,9 +2529,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88721'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -2570,9 +2570,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -2605,9 +2605,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88721'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -2646,9 +2646,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -2681,9 +2681,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='18.887'
             height='18.8871'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -2702,9 +2702,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -2743,9 +2743,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -2778,9 +2778,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -2819,9 +2819,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -2854,9 +2854,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='18.8872'
             height='18.8871'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -2875,9 +2875,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88721'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -2916,9 +2916,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.44336'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -2951,9 +2951,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88721'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -2992,9 +2992,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.44336'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3027,9 +3027,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='18.887'
             height='18.8871'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3048,9 +3048,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3089,9 +3089,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3124,9 +3124,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3165,9 +3165,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3200,9 +3200,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='18.8872'
             height='18.8871'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3221,9 +3221,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88721'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3262,9 +3262,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3297,9 +3297,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88721'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3338,9 +3338,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3373,9 +3373,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='18.8872'
             height='18.8871'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3394,9 +3394,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88721'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3435,9 +3435,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.44336'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3470,9 +3470,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88721'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3511,9 +3511,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.44336'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3546,9 +3546,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='18.887'
             height='18.8871'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3567,9 +3567,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3608,9 +3608,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3643,9 +3643,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='12.887'
             height='12.8871'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feColorMatrix
               in='SourceAlpha'
               type='matrix'
@@ -3678,9 +3678,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88696'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3719,9 +3719,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.4436'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3754,9 +3754,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='18.8872'
             height='18.8871'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3775,9 +3775,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88721'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3816,9 +3816,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.44336'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3851,9 +3851,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='4.88721'
             height='7.88708'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
@@ -3892,9 +3892,9 @@ export default function RulesMobile({ locale, ...props }: RulesMobileProps) {
             width='2.44336'
             height='6.44348'
             filterUnits='userSpaceOnUse'
-            color-interpolation-filters='sRGB'
+            colorInterpolationFilters='sRGB'
           >
-            <feFlood flood-opacity='0' result='BackgroundImageFix' />
+            <feFlood floodOpacity='0' result='BackgroundImageFix' />
             <feBlend
               mode='normal'
               in='SourceGraphic'
