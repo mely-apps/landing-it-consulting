@@ -17,7 +17,7 @@ const TimeCounter = ({ locale = 'en' }: TimeCounterProps) => {
   }, []);
 
   const date = useMemo(() => {
-    return Date.now() + (new Date('2024-10-13').getTime() - Date.now());
+    return Date.now() + (new Date('2024-10-19').getTime() - Date.now());
   }, []);
 
   return (
