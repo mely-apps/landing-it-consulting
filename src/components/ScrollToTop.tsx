@@ -28,14 +28,18 @@ const itemNavs = [
 const ScrollToTop = ({ locale }: { locale: string }) => {
   const router = useRouter();
   const translations = useTranslations('HomePage');
-  const isHiddenComponent = [SECTION_IDS.HOME, SECTION_IDS.REGISTER];
-  const [isHidden, setIsHidden] = useState(false);
+  const [isMobileRegisterBtnHidden, setIsMobileRegisterBtnHidden] =
+    useState<boolean>(true);
+
   const scrollToTop = () => {
-    document.querySelector('#header')?.scrollIntoView({ behavior: 'smooth' });
+    document
+      .getElementById(SECTION_IDS.HOME)
+      ?.scrollIntoView({ behavior: 'smooth' });
   };
   const scrollToTopRef = useRef<ComponentRef<'div'>>(null);
   const [showScrollToTopButton, setShowScrollToTopButton] = useState(false);
   const [lang, setLang] = useState(locale.toUpperCase());
+
   const handleScrollToRegistration = () => {
     const section = document.getElementById(SECTION_IDS.REGISTER);
     if (section) {
@@ -51,7 +55,7 @@ const ScrollToTop = ({ locale }: { locale: string }) => {
 
     const handleScroll = () => {
       const aboutSectionPosition = document
-        .querySelector('#about')!
+        .querySelector(`#${SECTION_IDS.ABOUT}`)!
         .getBoundingClientRect().y;
       if (scrollToTopRef.current) {
         setShowScrollToTopButton(
@@ -60,49 +64,41 @@ const ScrollToTop = ({ locale }: { locale: string }) => {
       }
     };
 
+    const handleHideMobileRegisterBtn = () => {
+      const aboutSectionPosition = document.getElementById(
+        SECTION_IDS.ABOUT,
+      )!.offsetTop;
+      const registerSectionPosition = document.getElementById(
+        SECTION_IDS.REGISTER,
+      )!.offsetTop;
+      const organizersSectionPosition = document.getElementById(
+        SECTION_IDS.ORGANIZERS,
+      )!.offsetTop;
+
+      setIsMobileRegisterBtnHidden(
+        mainContainer!.scrollTop < aboutSectionPosition ||
+          (mainContainer!.scrollTop >= registerSectionPosition &&
+            mainContainer!.scrollTop <= organizersSectionPosition),
+      );
+    };
+
     mainContainer!.addEventListener('scroll', handleScroll);
-    return () => mainContainer!.removeEventListener('scroll', handleScroll);
+    mainContainer!.addEventListener('scrollend', handleHideMobileRegisterBtn);
+    return () => {
+      mainContainer!.removeEventListener('scroll', handleScroll);
+      mainContainer!.removeEventListener(
+        'scrollend',
+        handleHideMobileRegisterBtn,
+      );
+    };
   }, []);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0];
-        if (entry.intersectionRatio < 0.6) {
-          setIsHidden(true);
-        } else {
-          setIsHidden(false);
-        }
-      },
-      { threshold: 0.6 },
-    );
-
-    // const home = document.getElementById(SECTION_IDS.HOME);
-    // const register = document.getElementById(SECTION_IDS.REGISTER);
-
-    // if (home) {
-    //   observer.observe(home);
-    // }
-
-    // if (register) {
-    //   observer.observe(register);
-    // }
-
-    // return () => {
-    //   if (home) {
-    //     observer.unobserve(home);
-    //   }
-    //   if (register) {
-    //     observer.unobserve(register);
-    //   }
-    // };
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <AnimatePresence>
       <motion.div
         ref={scrollToTopRef}
-        onClick={showScrollToTopButton ? scrollToTop : undefined}
         key={'header-mobile'}
         className='fixed inset-x-0 bottom-4 z-50 flex cursor-pointer justify-center lg:hidden'
         initial={{ opacity: 0, y: 20 }}
@@ -133,13 +129,25 @@ const ScrollToTop = ({ locale }: { locale: string }) => {
             key={'icon_lang'}
           />
 
-          <div className='w ml-[2px] h-[28px] border border-[#7CD5C4]' />
+          <div
+            className={cn(
+              'w ml-[2px] h-[28px] border border-[#7CD5C4] transition-all duration-500',
+              { 'opacity-0': isMobileRegisterBtnHidden },
+            )}
+          />
 
           <button
-            className='mx-[8px] rounded-[12px] !bg-[#7FFFF7] p-[10px] font-semibold text-black shadow-[0_0_2px_#7FFFF7,inset_0_0_2px_#7FFFF7,0_0_5px_#7FFFF7,0_0_15px_#7FFFF7,0_0_30px_#7FFFF7] hover:opacity-90'
-            onClick={handleScrollToRegistration}
+            className={cn(
+              'mx-[8px] w-[130px] rounded-[12px] !bg-[#7FFFF7] p-[10px] font-semibold text-black shadow-[0_0_2px_#7FFFF7,inset_0_0_2px_#7FFFF7,0_0_5px_#7FFFF7,0_0_15px_#7FFFF7,0_0_30px_#7FFFF7] transition-all duration-500',
+              { 'm-0 w-0 p-0 opacity-0': isMobileRegisterBtnHidden },
+            )}
+            onClick={
+              isMobileRegisterBtnHidden ? undefined : handleScrollToRegistration
+            }
           >
-            {translations('hero.buttonTitle')}
+            <span className='line-clamp-1'>
+              {translations('hero.buttonTitle')}
+            </span>
           </button>
         </motion.ul>
       </motion.div>

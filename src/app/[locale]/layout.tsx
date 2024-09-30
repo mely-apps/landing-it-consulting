@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Montserrat } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, getTranslations } from 'next-intl/server';
 
 import 'react-toastify/dist/ReactToastify.css';
 import '../../styles/globals.css';
@@ -18,10 +18,11 @@ const montserrat = Montserrat({
   variable: '--font-montserrat',
 });
 
-export const metadata: Metadata = {
-  title: 'IT Consulting',
-  description: '',
-};
+// export const metadata: Metadata = {
+//   title: 'IT Consulting Challenge',
+//   description:
+//     'IT Consultant Challenge—an exciting full-day event where IT students have the chance to showcase their skills, creativity, and problem-solving abilities. This event, hosted by Netcompany and Code MeLy, is your opportunity to step into the shoes of an IT consultant and tackle real-life challenges through digital transformation. Work alongside like-minded peers, gain valuable experience, and make a lasting impact.',
+// };
 
 export default async function LocaleLayout({
   children,
@@ -49,4 +50,44 @@ export default async function LocaleLayout({
       </body>
     </html>
   );
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  const translations = await getTranslations();
+  //@ts-ignore
+  const title = translations('metadata.title');
+
+  const info = {
+    title,
+    description: translations('metadata.description'),
+    images: [
+      {
+        url: '/favicon.png',
+      },
+    ],
+  };
+  return {
+    title,
+    applicationName: 'IT Consultant Challenge',
+    description: translations('metadata.description'),
+    openGraph: {
+      type: 'website',
+      url: 'https://www.itconsultantchallenge.org',
+      siteName: title,
+      ...info,
+    },
+    authors: [
+      {
+        name: 'Code MeLy',
+        url: 'https://codemely.dev',
+      },
+      {
+        name: 'Netcompany',
+        url: 'https://netcompany.com',
+      },
+    ],
+    keywords: ['IT Consultant Challenge', 'Code MeLy', 'Netcompany'],
+    twitter: info,
+    icons: '/favicon.png',
+  };
 }

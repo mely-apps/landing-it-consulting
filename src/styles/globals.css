@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("./background.css");
+@import url("./fade.css");
+@import url("./shadow.css");
+@import url('./tracking.css');
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -119,4 +122,36 @@
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
   }
+}
+
+g[filter]{
+  cursor: pointer;
+}
+
+
+.progress {
+  background-color: var(--primary);
+  animation: progressBar 0.5s ease-in-out;
+  animation-fill-mode: both;
+}
+@keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.hero-section{
+  background-image: url('/heroBackground.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  aspect-ratio: 15/9;
+}
+
+.bg-poster{
+    box-shadow: #7FFFF7 0px -1px 6px 7px;
+    border-radius: 1.5rem;  
 }
