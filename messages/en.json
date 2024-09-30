@@ -20,7 +20,7 @@
     },
     "hero": {
       "subTitle": "Innovate, Modernize and Digitize effectively",
-      "time": "saturday, 13th october, netcompany office",
+      "time": "saturday, 19th october, netcompany office",
       "buttonTitle": "Register now"
     },
     "about": {
@@ -114,6 +114,10 @@
         "title": "Congratulations!",
         "content": "Your application has been successfully submitted.",
         "toastMessage": "Registration successful!"
+      },
+      "closed": {
+        "title": "Registration is now closed!",
+        "content": "We're thrilled by the overwhelming response. See you at the event!"
       },
       "failed": {
         "toastMessage": "Registration failed, please try again!"

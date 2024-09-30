@@ -1,5 +1,4 @@
 {
-
   "metadata": {
     "title": "IT Consultant Challenge | Sáng tạo, đổi mới, chuyển đổi số một cách hiệu quả",
     "description": "T Consultant Challenge là một cuộc thi theo nhóm nơi người tham gia sẽ nhập vai làm một IT Consultant thực thụ. Mỗi đội gồm bốn thành viên và một người hướng dẫn giàu kinh nghiệm, đồng hành cùng nhau giải quyết một vấn đề thực tiễn do Ban tổ chức đưa ra. Từ việc phân tích vấn đề, đề xuất giải pháp khả thi, cho đến việc trình bày ý tưởng một cách thuyết phục, cuộc thi đòi hỏi tinh thần đồng đội, khả năng tư duy phản biện sắc bén và kỹ năng giải quyết vấn đề sáng tạo."
@@ -12,16 +11,16 @@
     },
     "header": {
       "home": "Trang chủ",
-      "about": "Về sự kiện",
+      "about": "Sự kiện",
       "rules": "Luật thi",
-      "timeline": "Mốc thời gian",
+      "timeline": "Thời gian",
       "prizes": "Giải thưởng",
       "register": "Đăng ký",
       "organizers": "Đơn vị tổ chức"
     },
     "hero": {
       "subTitle": "Sáng tạo, đổi mới, chuyển đổi số một cách hiệu quả",
-      "time": "Thứ 7, Ngày 13 Tháng 10 năm 2024, Văn phòng NETCOMPANY",
+      "time": "Thứ 7, Ngày 19 Tháng 10 năm 2024, Văn phòng NETCOMPANY",
       "buttonTitle": "Đăng ký ngay"
     },
     "about": {
@@ -115,6 +114,10 @@
         "title": "Xin chúc mừng!",
         "content": "Bạn đã nộp đơn đăng ký thành công!",
         "toastMessage": "Đăng ký thành công!"
+      },
+      "closed": {
+        "title": "Hạn đăng ký đã kết thúc!",
+        "content": "Rất vui khi nhận được sự quan tâm rất lớn từ bạn. Hẹn gặp lại bạn tại sự kiện!"
       },
       "failed": {
         "toastMessage": "Đăng ký thất bại, vui lòng thử lại!"

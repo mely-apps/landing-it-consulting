@@ -74,7 +74,18 @@ const Header = ({ locale }: LocaleProps) => {
   const handleScrollToSection = (path: string) => {
     const section = document.getElementById(path);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      const paddingTop = window
+        .getComputedStyle(section, null)
+        .getPropertyValue('padding-top')
+        .replace('px', '');
+      const marginTop = window
+        .getComputedStyle(section, null)
+        .getPropertyValue('margin-top')
+        .replace('px', '');
+      document.querySelector('.main-container')!.scrollTo({
+        top: section.offsetTop - parseInt(paddingTop) - parseInt(marginTop) / 2,
+        behavior: 'smooth',
+      });
     }
   };
 
@@ -110,6 +121,13 @@ const Header = ({ locale }: LocaleProps) => {
       ['lg:bg-[#023C38]']: isActiveScroll,
     },
   );
+
+  const navClassName = cn(
+    'container hidden h-[70px] items-center justify-between xl:justify-between lg:flex',
+    {
+      ['md:justify-end']: !isActiveScroll,
+    },
+  );
   return (
     <motion.div
       className={headerClassName}
@@ -120,7 +138,7 @@ const Header = ({ locale }: LocaleProps) => {
     >
       <div className={progressClassName} />
       <motion.div
-        className={`container hidden h-[70px] items-center justify-between lg:flex`}
+        className={navClassName}
         initial={{
           paddingTop: 16,
         }}
