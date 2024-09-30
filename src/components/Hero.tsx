@@ -62,12 +62,12 @@ const Hero = () => {
               />
             </div>
           </div> */}
-          <BlurFade delay={1} duration={0.5} className='mt-20 max-sm:hidden'>
+          <div className='h-full w-full'>
             <BackgroundGradient
               className='h-full w-full'
-              containerClassName='w-[300px] h-[421px] sm:h-[570px] sm:w-[406px]'
+              containerClassName='mx-auto sm:h-[500px] sm:w-[360px] lg:mt-[80px] lg:h-[calc(100%_-_8vw_-_66px)] lg:w-[26vw] xl:h-[580px] xl:w-[378px]'
             >
-              <div className='relative h-full w-full overflow-hidden rounded-3xl'>
+              <div className='fade-in-right relative h-full w-full overflow-hidden rounded-3xl'>
                 <Image
                   src='/cover.png'
                   alt='landing-it-consulting'
@@ -78,7 +78,7 @@ const Hero = () => {
                 />
               </div>
             </BackgroundGradient>
-          </BlurFade>
+          </div>
 
           <div className='relative h-[600px] w-full overflow-hidden p-0 sm:hidden'>
             <Image

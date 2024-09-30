@@ -110,6 +110,13 @@ const Header = ({ locale }: LocaleProps) => {
       ['lg:bg-[#023C38]']: isActiveScroll,
     },
   );
+
+  const navClassName = cn(
+    'container hidden h-[70px] items-center justify-between xl:justify-between lg:flex',
+    {
+      ['md:justify-end']: !isActiveScroll,
+    },
+  );
   return (
     <motion.div
       className={headerClassName}
@@ -120,7 +127,7 @@ const Header = ({ locale }: LocaleProps) => {
     >
       <div className={progressClassName} />
       <motion.div
-        className={`container hidden h-[70px] items-center justify-between lg:flex`}
+        className={navClassName}
         initial={{
           paddingTop: 16,
         }}
