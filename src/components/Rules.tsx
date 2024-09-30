@@ -103,6 +103,7 @@ const Rules = ({ locale }: RulesProps) => {
         <RulesMobile className='w-full sm:hidden' locale={locale} />
         {points.map((point) => (
           <Tooltip
+            className='max-w-80 text-wrap text-justify'
             key={point.id}
             anchorSelect={`g[filter="${point.id}"]`}
             content={point.description}
