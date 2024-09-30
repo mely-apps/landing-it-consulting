@@ -17,7 +17,7 @@ const About = () => {
         className='font-montserrat text-2xl font-extrabold uppercase !text-primary'
         words={[t('about.title')]}
       />
-      <div className='mx-auto mt-12 flex flex-col text-justify font-inter text-base italic'>
+      <div className='mx-auto mt-12 flex flex-col text-justify font-inter text-base'>
         {Array.from({ length: 2 }).map((_, index) => (
           <motion.p
             key={index}

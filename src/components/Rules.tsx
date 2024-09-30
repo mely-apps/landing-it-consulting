@@ -53,7 +53,7 @@ const Rules = ({ locale }: RulesProps) => {
           />
         </div>
         <div className='col-span-4 lg:col-span-3'>
-          <p className='text-justify text-base italic'>
+          <p className='text-justify text-base'>
             &quot;{t('rules.description')}&quot;
           </p>
         </div>

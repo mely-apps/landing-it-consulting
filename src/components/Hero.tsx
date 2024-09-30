@@ -22,26 +22,11 @@ const Hero = () => {
         id={SECTION_IDS.HOME}
       >
         <div className='order-2 text-center sm:order-1 lg:text-left'>
-          {/* <h1 className='hidden text-center font-montserrat text-3xl font-extrabold leading-[1.2] sm:block lg:text-left'>
-            <div delay={0}>IT CONSULTANT</BlurFade>{' '}
-            <FlipWords
-              duration={3}
-              className='!text-primary'
-              words={['CHALLENGE']}
-            />
-          </h1> */}
-
-          <h1 className='tracking-in-expand text-center font-montserrat text-3xl font-extrabold leading-[1.2] sm:mt-2 sm:block md:mt-0 lg:text-left'>
+          <h1 className='hidden text-center font-montserrat text-3xl font-extrabold leading-[1.2] sm:block md:mt-0 lg:text-left'>
             IT CONSULTANT
             <br />
             <span className='!text-primary'>CHALLENGE</span>
           </h1>
-          {/* <BlurFade delay={0.3}>
-            <p className='m-auto hidden max-w-[60%] py-5 text-center text-muted-foreground sm:block lg:m-0 lg:text-left'>
-              {t('hero.subTitle')}
-            </p>
-          </BlurFade> */}
-
           <p className='tracking-in-expand m-auto hidden max-w-[60%] py-5 text-center text-muted-foreground sm:block lg:m-0 lg:text-left'>
             {t('hero.subTitle')}
           </p>
@@ -64,15 +49,6 @@ const Hero = () => {
         </div>
 
         <div className='order-1 flex h-full items-center justify-center sm:order-2 lg:mt-0'>
-          {/* <BlurFade
-            delay={1}
-            duration={0.5}
-            className='bg-poster max-sm:hidden'
-          > */}
-          {/* <BackgroundGradient
-            className='h-full w-full'
-            containerClassName=''
-          ></BackgroundGradient> */}
           <div className='bg-poster max-sm:hidden sm:h-[500px] sm:w-[360px] lg:mt-[60px] lg:h-[calc(100%_-_8vw_-_66px)] lg:w-[26vw] xl:h-[580px] xl:w-[378px]'>
             <div className='fade-in-right relative h-full w-full overflow-hidden rounded-3xl'>
               <Image
