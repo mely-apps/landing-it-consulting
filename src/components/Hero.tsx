@@ -16,9 +16,9 @@ const Hero = () => {
     }
   };
   return (
-    <div>
+    <div className='container px-4'>
       <div
-        className='hero-section md: relative grid grid-cols-1 items-center px-0 md:container max-[1024px]:bg-none sm:m-0 sm:w-full sm:gap-y-10 sm:px-8 sm:py-10 md:mx-auto lg:grid-cols-2'
+        className='hero-section grid grid-cols-1 items-center max-[1024px]:bg-none sm:m-0 sm:w-full sm:gap-y-10 sm:px-8 sm:py-10 md:relative md:mx-auto lg:grid-cols-2'
         id={SECTION_IDS.HOME}
       >
         <div className='order-2 text-center sm:order-1 lg:ml-[50px] lg:text-left'>
