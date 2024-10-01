@@ -16,35 +16,35 @@ const Rules = ({ locale }: RulesProps) => {
 
   const points = [
     {
-      id: 'url(#filter3_i_956_74)',
+      id: 'url(#filter28_i_1076_7)',
       description: t('rules.description.0'),
     },
     {
-      id: 'url(#filter4_i_956_74)',
+      id: 'url(#filter29_i_1076_7)',
       description: t('rules.description.0'),
     },
     {
-      id: 'url(#filter1_i_956_74)',
+      id: 'url(#filter26_i_1076_7)',
       description: t('rules.description.1'),
     },
     {
-      id: 'url(#filter2_i_956_74)',
+      id: 'url(#filter27_i_1076_7)',
       description: t('rules.description.1'),
     },
     {
-      id: 'url(#filter6_i_956_74)',
+      id: 'url(#filter30_i_1076_7)',
       description: t('rules.description.2'),
     },
     {
-      id: 'url(#filter5_i_956_74)',
+      id: 'url(#filter31_i_1076_7)',
       description: t('rules.description.2'),
     },
     {
-      id: 'url(#filter8_i_956_74)',
+      id: 'url(#filter32_i_1076_7)',
       description: t('rules.description.3'),
     },
     {
-      id: 'url(#filter7_i_956_74)',
+      id: 'url(#filter33_i_1076_7)',
       description: t('rules.description.3'),
     },
     {
