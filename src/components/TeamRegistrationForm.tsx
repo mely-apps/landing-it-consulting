@@ -19,6 +19,7 @@ import { toast } from 'react-toastify';
 
 interface TeamRegistrationFormProps {
   onSubmitSuccess?: () => void;
+  onRegistrationExpired?: () => void;
 }
 
 export interface MembersFormDataValue extends PersonalForm {
@@ -29,6 +30,7 @@ let indexCount = 2;
 
 export default function TeamRegistrationForm({
   onSubmitSuccess,
+  onRegistrationExpired,
 }: TeamRegistrationFormProps) {
   const t = useTranslations('HomePage');
   const memberFormsRef = useRef<PersonalRegistrationFormHandle[]>([]);
@@ -45,6 +47,12 @@ export default function TeamRegistrationForm({
     formikHelpers: FormikHelpers<TeamForm>,
   ) => {
     try {
+      const registrationCloseDate = new Date('2024-10-12T17:00:00Z'); // 13th Oct 2022, 00:00 GMT+7
+      if (new Date() >= registrationCloseDate) {
+        onRegistrationExpired?.();
+        return;
+      }
+
       const allMemberFormsAreValid = await (
         await Promise.all(memberFormsRef.current.map((form) => form.validate()))
       ).every(Boolean);

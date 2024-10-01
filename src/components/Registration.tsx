@@ -21,15 +21,8 @@ const Registration = () => {
   };
 
   useEffect(() => {
-    let intervalId = setInterval(() => {
-      const now = new Date();
-      const registrationCloseDate = new Date('2024-10-12T17:00:00Z'); // 13th Oct 2022, 00:00 GMT+7
-      if (now >= registrationCloseDate) {
-        setIsFormClosed(true);
-      }
-    }, 500);
-
-    return () => clearInterval(intervalId);
+    const registrationCloseDate = new Date('2024-10-12T17:00:00Z'); // 13th Oct 2022, 00:00 GMT+7
+    setIsFormClosed(new Date() >= registrationCloseDate);
   }, []);
 
   return (
@@ -70,10 +63,12 @@ const Registration = () => {
         ) : typeForm === 'personal' ? (
           <PersonalRegistrationForm
             onSubmitSuccess={() => setSubmitSuccess(true)}
+            onRegistrationExpired={() => setIsFormClosed(true)}
           />
         ) : (
           <TeamRegistrationForm
             onSubmitSuccess={() => setSubmitSuccess(true)}
+            onRegistrationExpired={() => setIsFormClosed(true)}
           />
         )}
       </div>

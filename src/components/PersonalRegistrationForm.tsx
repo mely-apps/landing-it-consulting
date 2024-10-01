@@ -22,6 +22,7 @@ import { toast } from 'react-toastify';
 
 interface PersonalRegistrationFormProps {
   onSubmitSuccess?: () => void;
+  onRegistrationExpired?: () => void;
   showNotes?: boolean;
   asChild?: boolean;
   className?: string;
@@ -46,6 +47,7 @@ function PersonalRegistrationForm(
     formIndex,
     formValues,
     onChange,
+    onRegistrationExpired,
   }: PersonalRegistrationFormProps,
   ref: ForwardedRef<PersonalRegistrationFormHandle>,
 ) {
@@ -60,8 +62,13 @@ function PersonalRegistrationForm(
     formikHelpers: FormikHelpers<PersonalForm>,
   ) => {
     try {
-      setIsLoading(true);
+      const registrationCloseDate = new Date('2024-10-12T17:00:00Z'); // 13th Oct 2022, 00:00 GMT+7
+      if (new Date() >= registrationCloseDate) {
+        onRegistrationExpired?.();
+        return;
+      }
 
+      setIsLoading(true);
       const url =
         `https://docs.google.com/forms/d/e/1FAIpQLSea32a8wFT9NJl8Tjpq_UbsuaEzd9W3JN482qH06Q_rG7wTZw/formResponse?` +
         `entry.2104713088=${encodeURIComponent(values.fullName)}&` +
