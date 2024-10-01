@@ -52,7 +52,6 @@ const Registration = () => {
             >
               {t('registration.individual.title')}
             </button>
-         
           </div>
         )}
         {submitSuccess ? (
