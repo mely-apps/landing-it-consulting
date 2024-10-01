@@ -38,9 +38,9 @@ export default async function LocaleLayout({
       <head>
         <meta charSet='utf-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href='/favicon.png' />
-        <link rel='apple-touch-icon' href='/favicon.png' />
-        <link rel='mask-icon' href='/favicon.png' color='#000000' />
+        <link rel='icon' href='/favicon.svg' />
+        <link rel='apple-touch-icon' href='/favicon.svg' />
+        <link rel='mask-icon' href='/favicon.svg' color='#000000' />
         <meta name='theme-color' content='#000000' />
       </head>
       <body className={inter.className}>
@@ -62,7 +62,7 @@ export async function generateMetadata(): Promise<Metadata> {
     description: translations('metadata.description'),
     images: [
       {
-        url: '/favicon.png',
+        url: '/favicon.svg',
       },
     ],
   };
@@ -88,6 +88,6 @@ export async function generateMetadata(): Promise<Metadata> {
     ],
     keywords: ['IT Consultant Challenge', 'Code MeLy', 'Netcompany'],
     twitter: info,
-    icons: '/favicon.png',
+    icons: '/favicon.svg',
   };
 }
