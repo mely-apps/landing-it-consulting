@@ -10,9 +10,7 @@ import TeamRegistrationForm from '@/components/TeamRegistrationForm';
 
 const Registration = () => {
   const t = useTranslations('HomePage');
-  const [typeForm, setTypeForm] = React.useState<'team' | 'personal'>(
-    'personal',
-  );
+  const [typeForm, setTypeForm] = React.useState<'team' | 'personal'>('team');
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [isFormClosed, setIsFormClosed] = useState(false);
 
@@ -42,16 +40,6 @@ const Registration = () => {
         {submitSuccess || isFormClosed || (
           <div className='grid w-full grid-cols-2 gap-y-6 text-center text-lg font-bold lg:text-3xl'>
             <button
-              onClick={() => toggleTypeForm('personal')}
-              className={cn(
-                'border-b-4 border-white pb-4 uppercase transition-all',
-                { '!border-[#FFB84E] text-primary': typeForm === 'personal' },
-              )}
-              type='button'
-            >
-              {t('registration.individual.title')}
-            </button>
-            <button
               onClick={() => toggleTypeForm('team')}
               className={cn(
                 'border-b-4 border-white pb-4 uppercase transition-all',
@@ -61,6 +49,17 @@ const Registration = () => {
             >
               {t('registration.team.title')}
             </button>
+            <button
+              onClick={() => toggleTypeForm('personal')}
+              className={cn(
+                'border-b-4 border-white pb-4 uppercase transition-all',
+                { '!border-[#FFB84E] text-primary': typeForm === 'personal' },
+              )}
+              type='button'
+            >
+              {t('registration.individual.title')}
+            </button>
+         
           </div>
         )}
         {submitSuccess ? (

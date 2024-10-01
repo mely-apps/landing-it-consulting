@@ -91,9 +91,10 @@ const Footer = () => {
         </div>
       </div>
       <div className='container mt-10 flex items-center gap-2'>
-        <Copyright />
         <p className='text-muted-foreground'>
-          ©2024 Copyright itconsultantchallenge.org. All Reserved.
+          ©2024 Copyright{' '}
+          <span className='text-primary'>Code MeLy | itconsultantchallenge.org</span> All
+          Reserved.
         </p>
       </div>
     </div>
