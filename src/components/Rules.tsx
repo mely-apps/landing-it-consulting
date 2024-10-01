@@ -81,32 +81,34 @@ const Rules = ({ locale }: RulesProps) => {
     },
   ];
   return (
-    <div
-      className='card-gradient-border container mt-14 rounded-lg py-3 shadow-2xl backdrop-blur-sm md:mt-24 md:py-8 lg:py-10'
-      id={SECTION_IDS.RULES}
-    >
-      <div className='gap-10 lg:flex'>
-        <div className='col-span-4 flex max-lg:justify-center lg:col-span-1'>
-          <GradualSpacing
-            text={t('rules.title')}
-            className='mb-3 font-montserrat text-3xl font-extrabold uppercase !text-primary md:text-5xl'
-          />
+    <div className='container px-4'>
+      <div
+        className='card-gradient-border mt-14 rounded-lg px-4 py-3 shadow-2xl backdrop-blur-sm md:mt-24 md:px-20 md:py-8 lg:py-10'
+        id={SECTION_IDS.RULES}
+      >
+        <div className='gap-10 lg:flex'>
+          <div className='col-span-4 flex max-lg:justify-center lg:col-span-1'>
+            <GradualSpacing
+              text={t('rules.title')}
+              className='mb-3 font-montserrat text-3xl font-extrabold uppercase !text-primary md:text-5xl'
+            />
+          </div>
+          <div className='col-span-4 lg:col-span-3'>
+            <p className='text-justify'>&quot;{t('rules.content')}&quot;</p>
+          </div>
         </div>
-        <div className='col-span-4 lg:col-span-3'>
-          <p className='text-justify'>&quot;{t('rules.content')}&quot;</p>
+        <div className='relative h-max w-full select-none' ref={ruleSectionRef}>
+          <RulesDesktop className='hidden w-full sm:block' locale={locale} />
+          <RulesMobile className='w-full sm:hidden' locale={locale} />
+          {points.map((point) => (
+            <Tooltip
+              className='max-w-80 text-wrap text-justify'
+              key={point.id}
+              anchorSelect={`g[filter="${point.id}"]`}
+              content={point.description}
+            />
+          ))}
         </div>
-      </div>
-      <div className='relative h-max w-full select-none' ref={ruleSectionRef}>
-        <RulesDesktop className='hidden w-full sm:block' locale={locale} />
-        <RulesMobile className='w-full sm:hidden' locale={locale} />
-        {points.map((point) => (
-          <Tooltip
-            className='max-w-80 text-wrap text-justify'
-            key={point.id}
-            anchorSelect={`g[filter="${point.id}"]`}
-            content={point.description}
-          />
-        ))}
       </div>
     </div>
   );
