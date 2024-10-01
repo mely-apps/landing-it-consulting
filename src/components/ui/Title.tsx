@@ -6,7 +6,7 @@ interface TitleProps {
 }
 const Title = ({ isActiveScroll }: TitleProps) => {
   const titleClassName = cn(
-    ' mt-[70px] ml-[50px] invisible font-montserrat text-lg font-extrabold sm:visible md:hidden xl:block',
+    ' mt-[70px] ml-[50px] invisible font-montserrat text-3xl font-extrabold sm:visible md:hidden xl:block',
     { ['mt-[0px] md:block']: isActiveScroll },
   );
   return (

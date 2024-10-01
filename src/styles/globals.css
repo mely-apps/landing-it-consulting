@@ -1,9 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("./background.css");
-@import url("./fade.css");
-@import url("./shadow.css");
+@import url('./background.css');
+@import url('./fade.css');
+@import url('./shadow.css');
 @import url('./tracking.css');
 @layer base {
   :root {
@@ -67,7 +67,7 @@
     @apply border-border;
   }
   body {
-    @apply scroll-smooth bg-background text-foreground;
+    @apply scroll-smooth bg-background text-sm text-foreground md:text-base;
   }
   .react-datepicker-wrapper {
     display: block !important;
@@ -124,10 +124,9 @@
   }
 }
 
-g[filter]{
+g[filter] {
   cursor: pointer;
 }
-
 
 .progress {
   background-color: var(--primary);
@@ -143,7 +142,7 @@ g[filter]{
   }
 }
 
-.hero-section{
+.hero-section {
   background-image: url('/heroBackground.svg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -151,7 +150,7 @@ g[filter]{
   aspect-ratio: 15/9;
 }
 
-.bg-poster{
-    box-shadow: #59ada8bf 0px 0px 20px 10px;
-    border-radius: 1.5rem;  
+.bg-poster {
+  box-shadow: #59ada8bf 0px 0px 20px 10px;
+  border-radius: 1.5rem;
 }

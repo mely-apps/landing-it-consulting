@@ -41,9 +41,9 @@ const Prizes = ({ locale }: PrizesProps) => {
   }, []);
 
   return (
-    <div className='container pt-32' id={SECTION_IDS.PRIZES}>
+    <div className='container pt-20 md:pt-32' id={SECTION_IDS.PRIZES}>
       <motion.h2
-        className='text-center text-2xl font-extrabold uppercase text-primary'
+        className='text-center text-3xl font-extrabold uppercase text-primary md:text-5xl'
         initial={{
           opacity: 0,
           y: 50,
@@ -90,7 +90,7 @@ const Prizes = ({ locale }: PrizesProps) => {
         </motion.div>
       </motion.div>
       <motion.p
-        className='w-full text-center text-base italic text-primary max-sm:text-sm'
+        className='w-full text-center italic text-primary max-sm:text-sm'
         initial={{
           opacity: 0,
           y: 50,

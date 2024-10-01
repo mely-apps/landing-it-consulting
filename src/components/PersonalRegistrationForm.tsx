@@ -212,7 +212,7 @@ function PersonalRegistrationForm(
           </div>
           {showNotes && (
             <div className='col-span-2 mt-4'>
-              <p className='text-center text-base italic text-primary'>
+              <p className='text-center italic text-primary'>
                 {mainTranslations('registration.individual.note')}
               </p>
             </div>
@@ -472,7 +472,7 @@ function PersonalRegistrationForm(
       </div>
       {showNotes && (
         <div className='col-span-2 mt-4'>
-          <p className='text-center text-base italic text-primary'>
+          <p className='text-center italic text-primary'>
             {mainTranslations('registration.individual.note')}
           </p>
         </div>
