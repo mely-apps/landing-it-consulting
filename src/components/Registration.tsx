@@ -40,11 +40,11 @@ const Registration = () => {
 
       <div className='card-gradient-border mx-auto mt-10 flex w-full flex-col items-center justify-center gap-y-6 p-10 sm:w-3/4'>
         {submitSuccess || isFormClosed || (
-          <div className='grid w-full grid-cols-2 gap-y-6 text-center text-3xl font-bold'>
+          <div className='grid w-full grid-cols-2 gap-y-6 text-center text-lg font-bold lg:text-3xl'>
             <button
               onClick={() => toggleTypeForm('personal')}
               className={cn(
-                'border-b-4 border-white pb-4 text-base uppercase transition-all sm:text-lg',
+                'border-b-4 border-white pb-4 uppercase transition-all',
                 { '!border-[#FFB84E] text-primary': typeForm === 'personal' },
               )}
               type='button'
@@ -54,7 +54,7 @@ const Registration = () => {
             <button
               onClick={() => toggleTypeForm('team')}
               className={cn(
-                'border-b-4 border-white pb-4 text-base uppercase transition-all sm:text-lg',
+                'border-b-4 border-white pb-4 uppercase transition-all',
                 { '!border-[#FFB84E] text-primary': typeForm === 'team' },
               )}
               type='button'
@@ -104,10 +104,10 @@ const SuccessMessage = () => {
         }}
         viewport={{ once: true }}
       >
-        <p className='text-base font-bold min-[400px]:text-lg'>
+        <p className='font-bold min-[400px]:text-lg'>
           {t('registration.success.title')}
         </p>
-        <p className='text-base font-bold min-[400px]:text-lg'>
+        <p className='font-bold min-[400px]:text-lg'>
           {t('registration.success.content')}
         </p>
       </motion.div>
@@ -140,10 +140,10 @@ const ClosedFormMessage = () => {
         }}
         viewport={{ once: true }}
       >
-        <p className='text-base font-bold min-[400px]:text-lg'>
+        <p className='font-bold min-[400px]:text-lg'>
           {t('registration.closed.title')}
         </p>
-        <p className='text-base font-bold min-[400px]:text-lg'>
+        <p className='font-bold min-[400px]:text-lg'>
           {t('registration.closed.content')}
         </p>
       </motion.div>

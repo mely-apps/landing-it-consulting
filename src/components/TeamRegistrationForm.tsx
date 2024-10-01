@@ -200,7 +200,7 @@ export default function TeamRegistrationForm({
           </div>
 
           <div className='col-span-2 mt-4'>
-            <p className='text-center text-base italic text-primary'>
+            <p className='text-center italic text-primary'>
               {t('registration.team.note')}
             </p>
           </div>

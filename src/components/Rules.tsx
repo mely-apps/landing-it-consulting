@@ -93,9 +93,7 @@ const Rules = ({ locale }: RulesProps) => {
           />
         </div>
         <div className='col-span-4 lg:col-span-3'>
-          <p className='text-justify text-base'>
-            &quot;{t('rules.content')}&quot;
-          </p>
+          <p className='text-justify'>&quot;{t('rules.content')}&quot;</p>
         </div>
       </div>
       <div className='relative h-max w-full select-none' ref={ruleSectionRef}>

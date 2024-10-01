@@ -90,7 +90,7 @@ const Prizes = ({ locale }: PrizesProps) => {
         </motion.div>
       </motion.div>
       <motion.p
-        className='w-full text-center text-base italic text-primary max-sm:text-sm'
+        className='w-full text-center italic text-primary max-sm:text-sm'
         initial={{
           opacity: 0,
           y: 50,

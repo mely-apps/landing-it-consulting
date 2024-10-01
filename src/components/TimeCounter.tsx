@@ -43,7 +43,7 @@ const TimeCounter = ({ locale = 'en' }: TimeCounterProps) => {
                   <p className='neon-text text-center text-3xl font-extrabold drop-shadow-2xl'>
                     {time.days >= 10 ? time.days : `0${time.days}`}
                   </p>
-                  <p className='text-center text-base font-semibold uppercase text-white sm:text-lg'>
+                  <p className='text-center font-semibold uppercase text-white sm:text-lg'>
                     {t('timeCounter.days')}
                   </p>
                 </div>
@@ -51,7 +51,7 @@ const TimeCounter = ({ locale = 'en' }: TimeCounterProps) => {
                   <p className='neon-text text-center text-3xl font-extrabold drop-shadow-2xl'>
                     {time.hours >= 10 ? time.hours : `0${time.hours}`}
                   </p>
-                  <p className='text-center text-base font-semibold uppercase text-white sm:text-lg'>
+                  <p className='text-center font-semibold uppercase text-white sm:text-lg'>
                     {t('timeCounter.hours')}
                   </p>
                 </div>
@@ -59,7 +59,7 @@ const TimeCounter = ({ locale = 'en' }: TimeCounterProps) => {
                   <p className='neon-text text-center text-3xl font-extrabold drop-shadow-2xl'>
                     {time.minutes >= 10 ? time.minutes : `0${time.minutes}`}
                   </p>
-                  <p className='text-center text-base font-semibold uppercase text-white sm:text-lg'>
+                  <p className='text-center font-semibold uppercase text-white sm:text-lg'>
                     {t('timeCounter.minutes')}
                   </p>
                 </div>
@@ -67,7 +67,7 @@ const TimeCounter = ({ locale = 'en' }: TimeCounterProps) => {
                   <p className='neon-text text-center text-3xl font-extrabold drop-shadow-2xl'>
                     {time.seconds >= 10 ? time.seconds : `0${time.seconds}`}
                   </p>
-                  <p className='text-center text-base font-semibold uppercase text-white sm:text-lg'>
+                  <p className='text-center font-semibold uppercase text-white sm:text-lg'>
                     {t('timeCounter.seconds')}
                   </p>
                 </div>

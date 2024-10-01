@@ -10,14 +10,14 @@ const About = () => {
 
   return (
     <div
-      className='container w-11/12 border-2 border-transparent pt-24 lg:px-20'
+      className='container border-2 border-transparent pt-24 lg:px-20'
       id={SECTION_IDS.ABOUT}
     >
       <FlipWords
         className='font-montserrat text-2xl font-extrabold uppercase !text-primary'
         words={[t('about.title')]}
       />
-      <div className='mx-auto mt-12 flex flex-col text-justify font-inter text-base'>
+      <div className='mx-auto mt-12 flex flex-col text-justify font-inter'>
         {Array.from({ length: 2 }).map((_, index) => (
           <motion.p
             key={index}

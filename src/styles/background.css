@@ -15,11 +15,10 @@
   }
 }
 
-.background-animation{
+.background-animation {
   -webkit-animation: color-change-2x 3s linear infinite alternate both;
   animation: color-change-2x 3s linear infinite alternate both;
 }
-
 
 /* .card {
   font-weight: bold;
@@ -58,7 +57,6 @@
   background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
 } */
 
-
 /* File: Card.css */
 .card-container {
   perspective: 1000px;
@@ -74,7 +72,9 @@
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  transition:
+    transform 0.2s ease-out,
+    box-shadow 0.2s ease-out;
   transform-style: preserve-3d;
   cursor: pointer;
 }
