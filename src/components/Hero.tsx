@@ -16,7 +16,7 @@ const Hero = () => {
     }
   };
   return (
-    <div className='container px-4'>
+    <div className='container px-0 md:px-4'>
       <div
         className='hero-section grid grid-cols-1 items-center max-[1024px]:bg-none sm:m-0 sm:w-full sm:gap-y-10 sm:px-8 sm:py-10 md:relative md:mx-auto lg:grid-cols-2'
         id={SECTION_IDS.HOME}
