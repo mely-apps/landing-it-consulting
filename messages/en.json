@@ -31,16 +31,21 @@
       ],
       "whoCanJoinQuestion": "<bold>Join the challenge if you:</bold>",
       "whoCanJoinAnswers": [
-        "Are students from 2nd to 4th year studying IT, Computer Science, Software Engineer from universities in Ho Chi Minh City",
-        "Have English proficiency at a minimum level of B1 or higher",
-        "Have interest in exploring the roles of an IT consultant",
-        "Want to meet new friends, IT fellows and IT professionals",
-        "Want to learn more about Netcompany Vietnam's workplace"
+        "Are students from 2nd to 4th year studying IT, Computer Science, Software Engineer from universities in Ho Chi Minh City.",
+        "Have English skills as an advantage.",
+        "Have interest in exploring the roles of an IT consultant.",
+        "Want to meet new friends, IT fellows and IT professionals."
       ]
     },
     "rules": {
       "title": "Rules",
-      "description": "Teams select a case study from the challenge provided by the organizers, then analyze and design ideas and solutions to address the identified issues. Prizes will be given to ideas that are feasible, creative, and exemplify strong teamwork."
+      "content": "Teams select a case study from the challenge provided by the organizers, then analyze and design ideas and solutions to address the identified issues. Prizes will be given to ideas that are feasible, creative, and exemplify strong teamwork.",
+      "description": [
+        "(1) After receiving the problem from the organizers, the teams come up with solutions/case studies to solve the problem posed by the organizers.",
+        "(2) For each solution, the teams need to analyze it from both business and technical perspectives. Then, illustrate the solutions with system designs under the guidance of mentors.",
+        "(3) After completing the task or when the allotted time is up, the teams submit their work and present their solutions to the organizers.",
+        "(4) The organizers evaluate the submissions, and the 3 teams with the most impressive solutions receive awards from the competition."
+      ]
     },
     "timeline": {
       "title": "Timeline"

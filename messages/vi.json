@@ -19,8 +19,8 @@
       "organizers": "Đơn vị tổ chức"
     },
     "hero": {
-      "subTitle": "Sáng tạo, đổi mới, chuyển đổi số một cách hiệu quả",
-      "time": "Thứ 7, Ngày 19 Tháng 10 năm 2024, Văn phòng NETCOMPANY",
+      "subTitle": "Đổi mới, Hiện đại hóa và Số hóa hiệu quả",
+      "time": "Thứ 7, Ngày 19 Tháng 10 năm 2024, Văn phòng Netcompany.",
       "buttonTitle": "Đăng ký ngay"
     },
     "about": {
@@ -32,15 +32,20 @@
       "whoCanJoinQuestion": "<bold>Hãy tham gia thử thách nếu bạn:</bold>",
       "whoCanJoinAnswers": [
         "Là sinh viên từ năm 2 đến năm 4 đang theo học CNTT, Kĩ Thuật phần mềm, Khoa học Máy tính từ các trường Đại học trên địa bàn thành phố Hồ Chí Minh",
-        "Có khả năng tiếng Anh trình độ tối thiểu từ B1 trở lên",
-        "Có hứng thú trong việc tìm hiểu vai trò của một chuyên viên tư vấn IT",
-        "Muốn gặp gỡ bạn bè mới và các anh, chị trong nghề",
-        "Muốn tìm hiểu về môi trường làm việc của Netcompany tại Việt Nam"
+        "Có Tiếng Anh là một lợi thế.",
+        "Có hứng thú trong việc tìm hiểu vai trò của một chuyên viên tư vấn IT.",
+        "Muốn gặp gỡ bạn bè mới và các anh, chị trong nghề."
       ]
     },
     "rules": {
       "title": "Luật thi",
-      "description": "Các đội thi lựa chọn một case study (nghiên cứu tình huống) từ thử thách được ban tổ chức đưa ra, sau đó phân tích và thiết kế nên các ý tưởng, giải pháp để giải quyết các vấn đề đã xác định. Phần thưởng sẽ được trao cho những ý tưởng có tính khả thi, sáng tạo, và thể hiện tinh thần làm việc nhóm mạnh mẽ."
+      "content": "Các đội thi lựa chọn một case study (nghiên cứu tình huống) từ thử thách được ban tổ chức đưa ra, sau đó phân tích và thiết kế nên các ý tưởng, giải pháp để giải quyết các vấn đề đã xác định. Phần thưởng sẽ được trao cho những ý tưởng có tính khả thi, sáng tạo, và thể hiện tinh thần làm việc nhóm mạnh mẽ.",
+      "description": [
+        "(1) Sau khi nhận được bài toán từ BTC, các đội sẽ tìm ra giải pháp/case study để giải quyết bài toán mà BTC đặt ra",
+        "(2) Với mỗi giải pháp, các đội thi sẽ cần phân tích với góc độ nghiệp vụ và kỹ thuật. Sau đó minh họa các giải pháp bằng các thiết kế hệ thống với sự cố vấn từ các mentor",
+        "(3) Sau khi hoàn thành bài toán hoặc kết thúc thời gian quy định, các đội sẽ nộp bài và thuyết trình về giải pháp của mình với BTC",
+        "(4) BTC đánh giá và 3 đội thi có giải pháp ấn tượng sẽ nhận được giải thưởng từ cuộc thi"
+      ]
     },
     "timeline": {
       "title": "Mốc thời gian"

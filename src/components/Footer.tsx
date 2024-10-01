@@ -1,6 +1,6 @@
-import { Facebook, Globe } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { Copyright, Facebook, Globe } from 'lucide-react';
 import MailContact from './icons/MailContact';
 
 const Footer = () => {
@@ -90,7 +90,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div style={{ height: '40px' }}></div>
+      <div className='container mt-10 flex items-center gap-2'>
+        <Copyright />
+        <p className='text-muted-foreground'>
+          ©2024 Copyright itconsultantchallenge.org. All Reserved.
+        </p>
+      </div>
     </div>
   );
 };
