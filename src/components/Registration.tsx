@@ -33,12 +33,12 @@ const Registration = () => {
   }, []);
 
   return (
-    <div className='container' id={SECTION_IDS.REGISTER}>
-      <h2 className='text-center text-2xl font-extrabold uppercase text-primary'>
+    <div className='container px-4' id={SECTION_IDS.REGISTER}>
+      <h2 className='text-center text-2xl font-extrabold uppercase text-primary md:text-5xl'>
         {t('registration.title')}
       </h2>
 
-      <div className='card-gradient-border mx-auto mt-10 flex w-full flex-col items-center justify-center gap-y-6 p-10 sm:w-3/4'>
+      <div className='card-gradient-border mx-auto mt-3 flex w-full flex-col items-center justify-center gap-y-6 p-10 px-4 md:mt-10 md:w-3/4 md:px-10'>
         {submitSuccess || isFormClosed || (
           <div className='grid w-full grid-cols-2 gap-y-6 text-center text-lg font-bold lg:text-3xl'>
             <button

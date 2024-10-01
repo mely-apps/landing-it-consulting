@@ -8,9 +8,9 @@ const Organizer = () => {
   const t = useTranslations('HomePage');
 
   return (
-    <div className='container mt-40' id={SECTION_IDS.ORGANIZERS}>
+    <div className='container mt-16 px-4 md:mt-32' id={SECTION_IDS.ORGANIZERS}>
       <motion.h2
-        className='flex w-full justify-center text-2xl font-extrabold uppercase text-primary'
+        className='flex w-full justify-center text-3xl font-extrabold uppercase text-primary md:text-5xl'
         initial={{
           opacity: 0,
           y: 50,
@@ -28,8 +28,8 @@ const Organizer = () => {
         {t('organizers.title')}
       </motion.h2>
 
-      <div className='flex flex-col gap-20'>
-        <div className='mt-20 grid grid-cols-3 gap-x-10 gap-y-10'>
+      <div className='flex flex-col gap-y-4 md:gap-y-10'>
+        <div className='mt-10 grid grid-cols-3 gap-3'>
           <motion.div
             className='card-gradient-border relative col-span-3 flex h-32 min-w-52 items-center justify-center shadow-lg sm:h-56 md:col-span-1 md:max-w-96'
             initial={{ opacity: 0, scale: 0.8 }}
@@ -69,7 +69,7 @@ const Organizer = () => {
           </div>
         </div>
 
-        <div className='grid grid-cols-3 gap-x-10 gap-y-10'>
+        <div className='mt-10 grid grid-cols-3 gap-3'>
           <motion.div
             className='card-gradient-border relative col-span-3 flex h-32 min-w-52 items-center justify-center shadow-lg sm:h-56 md:col-span-1 md:max-w-96'
             initial={{ opacity: 0, scale: 0.8 }}

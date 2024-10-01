@@ -16,18 +16,18 @@ const Hero = () => {
     }
   };
   return (
-    <>
+    <div>
       <div
-        className='hero-section relative grid grid-cols-1 items-center px-0 md:container max-[1024px]:bg-none sm:m-0 sm:w-full sm:gap-y-10 sm:px-8 sm:py-10 md:mx-auto md:w-11/12 lg:grid-cols-2'
+        className='hero-section md: relative grid grid-cols-1 items-center px-0 md:container max-[1024px]:bg-none sm:m-0 sm:w-full sm:gap-y-10 sm:px-8 sm:py-10 md:mx-auto lg:grid-cols-2'
         id={SECTION_IDS.HOME}
       >
         <div className='order-2 text-center sm:order-1 lg:ml-[50px] lg:text-left'>
-          <h1 className='hidden text-center font-montserrat text-3xl font-extrabold leading-[1.2] sm:block md:mt-0 lg:text-left'>
+          <h1 className='hidden text-center font-montserrat text-6xl font-extrabold leading-[1.2] sm:block md:mt-0 lg:text-left'>
             IT CONSULTANT
             <br />
             <span className='!text-primary'>CHALLENGE</span>
           </h1>
-          <p className='tracking-in-expand m-auto hidden max-w-[60%] py-5 text-center text-muted-foreground sm:block lg:m-0 lg:text-left'>
+          <p className='tracking-in-expand m-auto hidden max-w-[60%] pb-5 pt-3 text-center text-muted-foreground sm:block lg:m-0 lg:text-left'>
             {t('hero.subTitle')}
           </p>
           <BlurFade delay={0.5}>
@@ -93,7 +93,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -82,14 +82,14 @@ const Rules = ({ locale }: RulesProps) => {
   ];
   return (
     <div
-      className='card-gradient-border container mt-44 w-11/12 rounded-lg py-3 shadow-2xl backdrop-blur-sm sm:px-10 md:px-20 md:py-8 lg:py-10'
+      className='card-gradient-border container mt-14 rounded-lg py-3 shadow-2xl backdrop-blur-sm md:mt-24 md:py-8 lg:py-10'
       id={SECTION_IDS.RULES}
     >
-      <div className='grid grid-cols-4 gap-y-4'>
+      <div className='gap-10 lg:flex'>
         <div className='col-span-4 flex max-lg:justify-center lg:col-span-1'>
           <GradualSpacing
             text={t('rules.title')}
-            className='text-2xl font-extrabold uppercase !text-primary'
+            className='mb-3 font-montserrat text-3xl font-extrabold uppercase !text-primary md:text-5xl'
           />
         </div>
         <div className='col-span-4 lg:col-span-3'>

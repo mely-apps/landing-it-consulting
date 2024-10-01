@@ -7,8 +7,8 @@ const Footer = () => {
   const t = useTranslations('HomePage');
 
   return (
-    <div className='mt-40 bg-[#023C38] py-10'>
-      <div className='container grid grid-cols-2 gap-x-4 gap-y-6 md:grid-cols-4'>
+    <div className='mt-16 bg-[#023C38] py-10'>
+      <div className='container grid grid-cols-2 gap-x-4 gap-y-6 px-4 md:grid-cols-4'>
         <div className='text-lg font-extrabold max-md:col-span-2'>
           <p>IT CONSULTANT</p>
           <p className='text-primary'>CHALLENGE</p>

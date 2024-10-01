@@ -10,14 +10,14 @@ const About = () => {
 
   return (
     <div
-      className='container border-2 border-transparent pt-24 lg:px-20'
+      className='container border-2 border-transparent px-4 pt-10 md:pt-24 lg:px-20'
       id={SECTION_IDS.ABOUT}
     >
       <FlipWords
-        className='font-montserrat text-2xl font-extrabold uppercase !text-primary'
+        className='font-montserrat text-xl font-extrabold uppercase !text-primary md:text-5xl'
         words={[t('about.title')]}
       />
-      <div className='mx-auto mt-12 flex flex-col text-justify font-inter'>
+      <div className='mx-auto mt-7 flex flex-col text-justify font-inter md:mt-12'>
         {Array.from({ length: 2 }).map((_, index) => (
           <motion.p
             key={index}
@@ -33,7 +33,7 @@ const About = () => {
               },
             }}
             viewport={{ once: true }}
-            className='lg:px-20'
+            className='lg:px-2'
           >
             {t.rich(`about.description.${index}`, {
               extrabold: (chunks) => (
@@ -62,7 +62,7 @@ const About = () => {
           viewport={{ once: true }}
           className='lg:px-20'
         >
-          <p className='pt-8 font-bold'>
+          <p className='mb-2 mt-4 font-bold md:pt-8'>
             {t.rich('about.whoCanJoinQuestion', {
               bold: (chunks) => <span className='font-bold'>{chunks}</span>,
             })}

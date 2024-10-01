@@ -12,11 +12,11 @@ export default function Timeline({ locale }: TimelineProps) {
 
   return (
     <div
-      className='card-gradient-border container relative mt-44 w-11/12 px-0 py-3 shadow-2xl backdrop-blur-sm md:py-8 lg:py-10'
+      className='card-gradient-border container relative mt-16 px-0 py-3 shadow-2xl backdrop-blur-sm md:mt-24 md:py-8 lg:py-10'
       id={SECTION_IDS.TIMELINE}
     >
       <motion.h2
-        className='text-center text-2xl font-extrabold uppercase text-primary'
+        className='mb-2 text-center text-3xl font-extrabold uppercase text-primary md:text-5xl'
         initial={{ opacity: 0, y: 50 }}
         whileInView={{
           opacity: 1,

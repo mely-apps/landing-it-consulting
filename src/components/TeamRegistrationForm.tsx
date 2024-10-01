@@ -172,7 +172,7 @@ export default function TeamRegistrationForm({
               {membersFormData.length < 4 && (
                 <button
                   type='button'
-                  className='mt-4 flex items-center justify-around rounded-lg bg-[#7FFFF7] px-4 py-2 font-bold text-black hover:opacity-90 max-sm:gap-x-2 sm:w-11/12'
+                  className='sm: mt-4 flex items-center justify-around rounded-lg bg-[#7FFFF7] px-4 py-2 font-bold text-black hover:opacity-90 max-sm:gap-x-2'
                   onClick={handleAddMember}
                 >
                   <Plus />
