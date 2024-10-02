@@ -26,6 +26,7 @@ interface PersonalRegistrationFormProps {
   showNotes?: boolean;
   asChild?: boolean;
   className?: string;
+  hidden?: boolean;
 
   // only enabled when asChild is true
   formIndex?: number;
@@ -46,6 +47,7 @@ function PersonalRegistrationForm(
     className,
     formIndex,
     formValues,
+    hidden,
     onChange,
     onRegistrationExpired,
   }: PersonalRegistrationFormProps,
@@ -134,13 +136,14 @@ function PersonalRegistrationForm(
   if (!asChild) {
     return (
       <Formik
-        enableReinitialize
         initialValues={personalFormInitValue}
         validationSchema={personalFormSchema}
         onSubmit={handleSubmit}
       >
         <Form
-          className={cn('grid w-full grid-cols-2 gap-4', className)}
+          className={cn('grid w-full grid-cols-2 gap-4', className, {
+            hidden: !hidden,
+          })}
           suppressHydrationWarning
         >
           <div className='col-span-2'>

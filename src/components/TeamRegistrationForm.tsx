@@ -20,6 +20,7 @@ import { toast } from 'react-toastify';
 interface TeamRegistrationFormProps {
   onSubmitSuccess?: () => void;
   onRegistrationExpired?: () => void;
+  hidden?: boolean;
 }
 
 export interface MembersFormDataValue extends PersonalForm {
@@ -31,6 +32,7 @@ let indexCount = 2;
 export default function TeamRegistrationForm({
   onSubmitSuccess,
   onRegistrationExpired,
+  hidden
 }: TeamRegistrationFormProps) {
   const t = useTranslations('HomePage');
   const memberFormsRef = useRef<PersonalRegistrationFormHandle[]>([]);
@@ -112,14 +114,15 @@ export default function TeamRegistrationForm({
 
   return (
     <Formik
-      enableReinitialize
       initialValues={teamFormInitValue}
       validationSchema={teamFormSchema}
       onSubmit={handleSubmit}
     >
       {({ isValidating, isSubmitting }) => (
         <Form
-          className='grid w-full grid-cols-2 gap-4'
+          className={cn('grid w-full grid-cols-2 gap-4', {
+            hidden: !hidden
+          })}
           suppressHydrationWarning
         >
           <div className='col-span-2'>

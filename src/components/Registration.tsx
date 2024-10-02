@@ -18,6 +18,29 @@ const Registration = () => {
     setTypeForm(type);
   };
 
+  const renderContent = ()=> {
+    if(submitSuccess) {
+        return <SuccessMessage/>
+    }
+    if(isFormClosed){
+      return <ClosedFormMessage/>
+    } 
+    const isPersonalForm = typeForm === 'personal';
+
+    return <>
+       <PersonalRegistrationForm
+            hidden={isPersonalForm}
+            onSubmitSuccess={() => setSubmitSuccess(true)}
+            onRegistrationExpired={() => setIsFormClosed(true)}
+          />
+       <TeamRegistrationForm
+            hidden={!isPersonalForm}
+            onSubmitSuccess={() => setSubmitSuccess(true)}
+            onRegistrationExpired={() => setIsFormClosed(true)}
+          />
+    </>
+
+  }
   useEffect(() => {
     const registrationCloseDate = new Date('2024-10-12T17:00:00Z'); // 13th Oct 2022, 00:00 GMT+7
     setIsFormClosed(new Date() >= registrationCloseDate);
@@ -66,21 +89,8 @@ const Registration = () => {
             </div>
           </>
         )}
-        {submitSuccess ? (
-          <SuccessMessage />
-        ) : isFormClosed ? (
-          <ClosedFormMessage />
-        ) : typeForm === 'personal' ? (
-          <PersonalRegistrationForm
-            onSubmitSuccess={() => setSubmitSuccess(true)}
-            onRegistrationExpired={() => setIsFormClosed(true)}
-          />
-        ) : (
-          <TeamRegistrationForm
-            onSubmitSuccess={() => setSubmitSuccess(true)}
-            onRegistrationExpired={() => setIsFormClosed(true)}
-          />
-        )}
+
+        {renderContent()}
       </div>
     </div>
   );
