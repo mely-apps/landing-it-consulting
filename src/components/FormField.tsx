@@ -6,9 +6,15 @@ interface FormFieldProps {
   name: string;
   label: string;
   required?: boolean;
+  autoFocus?: boolean;
 }
 
-const FormField = ({ label, name, required = false }: FormFieldProps) => {
+const FormField = ({
+  label,
+  name,
+  autoFocus,
+  required = false,
+}: FormFieldProps) => {
   const t = useTranslations('HomePage.registration.errorMessages');
 
   return (
@@ -18,6 +24,7 @@ const FormField = ({ label, name, required = false }: FormFieldProps) => {
       </label>
       <Field
         name={name}
+        autoFocus={autoFocus}
         className='mt-1 w-full rounded-lg px-4 py-2 text-black'
       />
       <ErrorMessage

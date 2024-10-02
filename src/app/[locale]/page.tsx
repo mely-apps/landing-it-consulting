@@ -11,6 +11,8 @@ import Rules from '@/components/Rules';
 import ScrollToTop from '@/components/ScrollToTop';
 import TimeCounter from '@/components/TimeCounter';
 import Timeline from '@/components/Timeline';
+import { MotionGlobalConfig } from 'framer-motion';
+import { isMobile } from 'react-device-detect';
 import { Bounce, ToastContainer, ToastContainerProps } from 'react-toastify';
 
 const toastContainerConfig: ToastContainerProps = {
@@ -22,6 +24,8 @@ const toastContainerConfig: ToastContainerProps = {
   transition: Bounce,
   pauseOnHover: false,
 };
+
+MotionGlobalConfig.skipAnimations = isMobile;
 
 export default function Home({
   params: { locale },

@@ -121,7 +121,7 @@ export default function TeamRegistrationForm({
       {({ isValidating, isSubmitting }) => (
         <Form
           className={cn('grid w-full grid-cols-2 gap-4', {
-            hidden: !hidden
+            hidden: !hidden,
           })}
           suppressHydrationWarning
         >
@@ -129,6 +129,7 @@ export default function TeamRegistrationForm({
             <FormField
               label={t('registration.team.teamName.label')}
               name='teamName'
+              autoFocus={!hidden}
               required
             />
           </div>
