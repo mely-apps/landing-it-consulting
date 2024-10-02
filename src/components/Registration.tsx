@@ -31,28 +31,40 @@ const Registration = () => {
 
       <div className='card-gradient-border mx-auto mt-3 flex w-full flex-col items-center justify-center gap-y-6 p-10 px-4 md:mt-10 md:w-3/4 md:px-10'>
         {submitSuccess || isFormClosed || (
-          <div className='grid w-full grid-cols-2 gap-y-6 text-center text-lg font-bold lg:text-3xl'>
-            <button
-              onClick={() => toggleTypeForm('team')}
-              className={cn(
-                'border-b-4 border-white pb-4 uppercase transition-all',
-                { '!border-[#FFB84E] text-primary': typeForm === 'team' },
-              )}
-              type='button'
-            >
-              {t('registration.team.title')}
-            </button>
-            <button
-              onClick={() => toggleTypeForm('personal')}
-              className={cn(
-                'border-b-4 border-white pb-4 uppercase transition-all',
-                { '!border-[#FFB84E] text-primary': typeForm === 'personal' },
-              )}
-              type='button'
-            >
-              {t('registration.individual.title')}
-            </button>
-          </div>
+          <>
+            <div className='grid w-full grid-cols-2 gap-y-6 text-center text-lg font-bold lg:text-3xl'>
+              <button
+                onClick={() => toggleTypeForm('team')}
+                className={cn('uppercase transition-all', {
+                  'text-primary': typeForm === 'team',
+                })}
+                type='button'
+              >
+                {t('registration.team.title')}
+              </button>
+              <button
+                onClick={() => toggleTypeForm('personal')}
+                className={cn('uppercase transition-all', {
+                  'text-primary': typeForm === 'personal',
+                })}
+                type='button'
+              >
+                {t('registration.individual.title')}
+              </button>
+            </div>
+            <div className='h-[4px] w-full bg-white'>
+              <motion.div
+                initial='team'
+                animate={typeForm}
+                className='h-full w-1/2 bg-primary'
+                transition={{ duration: 0.3, type: 'spring' }}
+                variants={{
+                  team: { translateX: 0 },
+                  personal: { translateX: '100%' },
+                }}
+              ></motion.div>
+            </div>
+          </>
         )}
         {submitSuccess ? (
           <SuccessMessage />
