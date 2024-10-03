@@ -49,10 +49,10 @@ const Footer = () => {
             <li className='flex gap-x-2'>
               <MailContact className='h-6 w-6 flex-1' />
               <Link
-                href='mailto:contact@codemely.dev'
+                href='mailto:code.mely@gmail.com'
                 className='inline-block flex-1 break-all text-white transition-all hover:text-primary'
               >
-                contact@codemely.dev
+                code.mely@gmail.com
               </Link>
             </li>
             <li className='flex gap-x-2'>
