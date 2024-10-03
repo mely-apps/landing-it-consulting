@@ -5,14 +5,41 @@ import Image from 'next/image';
 import { IoLocationSharp } from 'react-icons/io5';
 import BlurFade from './ui/blur-fade';
 import AppCard from './ui/AppCard';
+import { isMobile } from 'react-device-detect';
 
 const Hero = () => {
   const t = useTranslations('HomePage');
+
+  const focusInput = (input: HTMLInputElement) => {
+    if (isMobile) {
+      setTimeout(() => {
+        input.focus({
+          preventScroll: true,
+        });
+      }, 300);
+    } else {
+      input.focus({
+        preventScroll: true,
+      });
+    }
+  };
 
   const handleScrollToRegistration = () => {
     const section = document.getElementById(SECTION_IDS.REGISTER);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+      const inputTeamName = document.querySelector(
+        'input[name="teamName"]',
+      ) as HTMLInputElement;
+      const inputFullName = document.querySelector(
+        'input[name="fullName"]',
+      ) as HTMLInputElement;
+      if (inputTeamName?.checkVisibility()) {
+        focusInput(inputTeamName);
+      }
+      if (inputFullName?.checkVisibility()) {
+        focusInput(inputFullName);
+      }
     }
   };
   return (
