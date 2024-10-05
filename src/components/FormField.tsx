@@ -1,8 +1,8 @@
-import { ErrorMessage, Field } from 'formik';
+import { ErrorMessage, Field, FieldAttributes } from 'formik';
 import React from 'react';
 import { useTranslations } from 'next-intl';
 
-interface FormFieldProps {
+interface FormFieldProps extends FieldAttributes<any> {
   name: string;
   label: string;
   required?: boolean;
@@ -14,6 +14,7 @@ const FormField = ({
   name,
   autoFocus,
   required = false,
+  ...defaultProps
 }: FormFieldProps) => {
   const t = useTranslations('HomePage.registration.errorMessages');
 
@@ -26,6 +27,7 @@ const FormField = ({
         name={name}
         autoFocus={autoFocus}
         className='mt-1 w-full rounded-lg px-4 py-2 text-black'
+        {...defaultProps}
       />
       <ErrorMessage
         render={(msg) => <p className='italic text-red-500'>{t(msg as any)}</p>}

@@ -66,10 +66,12 @@
       "individual": {
         "title": "Individual",
         "fullName": {
-          "label": "Full name"
+          "label": "Full name",
+          "placeholder": "For example: Nguyen Van A"
         },
         "expectedGraduationYear": {
-          "label": "Expected graduation year"
+          "label": "Expected graduation year",
+          "placeholder": "2026"
         },
         "gender": {
           "label": "Gender",
@@ -77,16 +79,20 @@
           "female": "Female"
         },
         "school": {
-          "label": "School"
+          "label": "School",
+          "placeholder":"For example: Su Pham Ki Thuat HCM"
         },
         "major": {
-          "label": "Major"
+          "label": "Major",
+          "placeholder": "For example: Ky Thuat Phan Mem"
         },
         "phoneNumber": {
-          "label": "Phone number"
+          "label": "Phone number",
+          "placeholder": "For example: 0123456789"
         },
         "email": {
-          "label": "Email"
+          "label": "Email",
+          "placeholder": "For example: example@exmple.com"
         },
         "note": "(*) The organizer will help you set up a team with other individuals"
       },
@@ -98,7 +104,8 @@
         },
         "addMember": "Add member",
         "teamName": {
-          "label": "Team name"
+          "label": "Team name",
+          "placeholder": "For example: Team A"
         },
         "teamSize": {
           "label": "Number of team members"
@@ -112,7 +119,7 @@
         "email": {
           "label": "Email"
         },
-        "note": "(*) The organizer will add other individuals to your team in case you do not have enough team members"
+        "note": "(*) The organizer will add other individuals to your team in case you do not have enough team members. Team size is 4 members in total"
       },
       "submit": "Submit",
       "success": {

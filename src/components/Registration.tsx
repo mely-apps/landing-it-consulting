@@ -1,5 +1,5 @@
 'use client';
-import { SECTION_IDS } from '@/constants';
+import { REGISTRATION_CLOSE_DATE, SECTION_IDS } from '@/constants';
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 import { useTranslations } from 'next-intl';
@@ -18,32 +18,32 @@ const Registration = () => {
     setTypeForm(type);
   };
 
-  const renderContent = ()=> {
-    if(submitSuccess) {
-        return <SuccessMessage/>
+  const renderContent = () => {
+    if (submitSuccess) {
+      return <SuccessMessage />;
     }
-    if(isFormClosed){
-      return <ClosedFormMessage/>
-    } 
+    if (isFormClosed) {
+      return <ClosedFormMessage />;
+    }
     const isPersonalForm = typeForm === 'personal';
 
-    return <>
-       <PersonalRegistrationForm
-            hidden={isPersonalForm}
-            onSubmitSuccess={() => setSubmitSuccess(true)}
-            onRegistrationExpired={() => setIsFormClosed(true)}
-          />
-       <TeamRegistrationForm
-            hidden={!isPersonalForm}
-            onSubmitSuccess={() => setSubmitSuccess(true)}
-            onRegistrationExpired={() => setIsFormClosed(true)}
-          />
-    </>
-
-  }
+    return (
+      <>
+        <PersonalRegistrationForm
+          hidden={isPersonalForm}
+          onSubmitSuccess={() => setSubmitSuccess(true)}
+          onRegistrationExpired={() => setIsFormClosed(true)}
+        />
+        <TeamRegistrationForm
+          hidden={!isPersonalForm}
+          onSubmitSuccess={() => setSubmitSuccess(true)}
+          onRegistrationExpired={() => setIsFormClosed(true)}
+        />
+      </>
+    );
+  };
   useEffect(() => {
-    const registrationCloseDate = new Date('2024-10-12T17:00:00Z'); // 13th Oct 2022, 00:00 GMT+7
-    setIsFormClosed(new Date() >= registrationCloseDate);
+    setIsFormClosed(new Date() >= REGISTRATION_CLOSE_DATE);
   }, []);
 
   return (

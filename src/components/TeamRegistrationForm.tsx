@@ -32,7 +32,7 @@ let indexCount = 2;
 export default function TeamRegistrationForm({
   onSubmitSuccess,
   onRegistrationExpired,
-  hidden
+  hidden,
 }: TeamRegistrationFormProps) {
   const t = useTranslations('HomePage');
   const memberFormsRef = useRef<PersonalRegistrationFormHandle[]>([]);
@@ -130,6 +130,7 @@ export default function TeamRegistrationForm({
               label={t('registration.team.teamName.label')}
               name='teamName'
               autoFocus={!hidden}
+              placeholder={t('registration.team.teamName.placeholder')}
               required
             />
           </div>

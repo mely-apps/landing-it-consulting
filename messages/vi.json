@@ -29,10 +29,10 @@
         "<extrabold>IT Consultant Challenge</extrabold>  là một cuộc thi theo nhóm nơi người tham gia sẽ nhập vai làm một IT Consultant thực thụ. Mỗi đội gồm bốn thành viên và một người hướng dẫn giàu kinh nghiệm, đồng hành cùng nhau giải quyết một vấn đề thực tiễn do Ban tổ chức đưa ra. Từ việc phân tích vấn đề, đề xuất giải pháp khả thi, cho đến việc trình bày ý tưởng một cách thuyết phục, cuộc thi đòi hỏi tinh thần đồng đội, khả năng tư duy phản biện sắc bén và kỹ năng giải quyết vấn đề sáng tạo.",
         "Sự kiện được phối hợp thực hiện bởi Công ty {netcompanyName} Việt Nam và Cộng đồng Tech dành cho các bạn trẻ {codeMelyName}."
       ],
-      "whoCanJoinQuestion": "<bold>Hãy tham gia thử thách nếu bạn:</bold>",
+      "whoCanJoinQuestion": "<bold>Hãy tham gia ngay khi bạn:</bold>",
       "whoCanJoinAnswers": [
-        "Là sinh viên từ năm 2 đến năm 4 đang theo học CNTT, Kĩ Thuật phần mềm, Khoa học Máy tính từ các trường Đại học trên địa bàn thành phố Hồ Chí Minh",
-        "Có Tiếng Anh là một lợi thế.",
+        "Là sinh viên từ năm 2 đến năm 4 đang theo học CNTT, Kĩ Thuật phần mềm, Khoa học Máy tính từ các trường Đại học trên địa bàn thành phố Hồ Chí Minh.",
+        "Có Tiếng Anh là một điểm mạnh.",
         "Có hứng thú trong việc tìm hiểu vai trò của IT Consultant.",
         "Muốn gặp gỡ bạn bè mới và các anh, chị trong nghề."
       ]
@@ -66,10 +66,12 @@
       "individual": {
         "title": "Cá nhân",
         "fullName": {
-          "label": "Tên đầy đủ"
+          "label": "Tên đầy đủ",
+          "placeholder": "Ví dụ: Nguyễn Văn A"
         },
         "expectedGraduationYear": {
-          "label": "Năm dự định tốt nghiệp"
+          "label": "Năm dự định tốt nghiệp",
+          "placeholder": "Ví dụ: 2026"
         },
         "gender": {
           "label": "Giới tính",
@@ -77,16 +79,20 @@
           "female": "Nữ"
         },
         "school": {
-          "label": "Trường học"
+          "label": "Trường học",
+          "placeholder": "Ví dụ: Sư Phạm Kĩ Thuật HCM"
         },
         "major": {
-          "label": "Chuyên ngành"
+          "label": "Chuyên ngành",
+          "placeholder": "Ví dụ: Kỹ thuật phần mềm"
         },
         "phoneNumber": {
-          "label": "Số điện thoại"
+          "label": "Số điện thoại",
+          "placeholder": "Ví dụ: 0123456789"
         },
         "email": {
-          "label": "Email"
+          "label": "Email",
+          "placeholder": "Ví dụ: example@example.com"
         },
         "note": "(*) BTC sẽ ghép team cho bạn trong trường hợp bạn đăng kí cá nhân nhé."
       },
@@ -98,7 +104,8 @@
         },
         "addMember": " Thêm thành viên",
         "teamName": {
-          "label": "Tên đội"
+          "label": "Tên đội",
+          "placeholder": "Ví dụ: Team A"
         },
         "teamSize": {
           "label": "Số thành viên"
@@ -112,7 +119,7 @@
         "email": {
           "label": "Email"
         },
-        "note": "(*) BTC sẽ tự ghép thêm thành viên trong trường hợp nhóm bạn chưa đủ người nhé"
+        "note": "(*) BTC sẽ tự ghép thêm thành viên trong trường hợp nhóm bạn chưa đủ người nhé. Số lượng mỗi đội là 4 thành viên"
       },
       "submit": "Đăng ký",
       "success": {

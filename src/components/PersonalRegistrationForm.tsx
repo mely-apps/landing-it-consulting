@@ -53,7 +53,7 @@ function PersonalRegistrationForm(
   }: PersonalRegistrationFormProps,
   ref: ForwardedRef<PersonalRegistrationFormHandle>,
 ) {
-  const mainTranslations = useTranslations('HomePage');
+  const mainTranslations = useTranslations('HomePage.registration');
   const errorTranslations = useTranslations(
     'HomePage.registration.errorMessages',
   );
@@ -85,13 +85,11 @@ function PersonalRegistrationForm(
       });
 
       onSubmitSuccess?.();
-      toast.success(mainTranslations('registration.success.toastMessage'));
+      toast.success(mainTranslations('success.toastMessage'));
       formikHelpers.resetForm();
     } catch (error: any) {
       console.log(error);
-      toast.error(
-        mainTranslations('registration.failed.toastMessage') + error.message,
-      );
+      toast.error(mainTranslations('failed.toastMessage') + error.message);
     } finally {
       setIsLoading(false);
     }
@@ -148,75 +146,79 @@ function PersonalRegistrationForm(
         >
           <div className='col-span-2'>
             <FormField
-              label={mainTranslations('registration.individual.fullName.label')}
+              label={mainTranslations('individual.fullName.label')}
               name='fullName'
+              placeholder={mainTranslations('individual.fullName.placeholder')}
               required
             />
           </div>
           <div className='col-span-2 md:col-span-1'>
             <FormField
               label={mainTranslations(
-                'registration.individual.expectedGraduationYear.label',
+                'individual.expectedGraduationYear.label',
               )}
               name='expectedGraduationYear'
+              placeholder={mainTranslations(
+                'individual.expectedGraduationYear.placeholder',
+              )}
               required
             />
           </div>
           <div className='col-span-2 md:col-span-1'>
             <SelectField
-              label={mainTranslations('registration.individual.gender.label')}
+              label={mainTranslations('individual.gender.label')}
               name='gender'
               required
               options={[
                 {
                   value: 'male',
-                  label: mainTranslations(
-                    'registration.individual.gender.male',
-                  ),
+                  label: mainTranslations('individual.gender.male'),
                 },
                 {
                   value: 'female',
-                  label: mainTranslations(
-                    'registration.individual.gender.female',
-                  ),
+                  label: mainTranslations('individual.gender.female'),
                 },
               ]}
             />
           </div>
           <div className='col-span-2 md:col-span-1'>
             <FormField
-              label={mainTranslations('registration.individual.school.label')}
+              label={mainTranslations('individual.school.label')}
               name='school'
               required
+              placeholder={mainTranslations('individual.school.placeholder')}
             />
           </div>
           <div className='col-span-2 md:col-span-1'>
             <FormField
-              label={mainTranslations('registration.individual.major.label')}
+              label={mainTranslations('individual.major.label')}
               name='major'
+              placeholder={mainTranslations('individual.major.placeholder')}
               required
             />
           </div>
           <div className='col-span-2'>
             <FormField
-              label={mainTranslations(
-                'registration.individual.phoneNumber.label',
-              )}
+              label={mainTranslations('individual.phoneNumber.label')}
               name='phoneNumber'
               required
+              placeholder={mainTranslations(
+                'individual.phoneNumber.placeholder',
+              )}
             />
           </div>
           <div className='col-span-2'>
             <FormField
-              label={mainTranslations('registration.individual.email.label')}
+              label={mainTranslations('individual.email.label')}
               name='email'
               required
+              placeholder={mainTranslations('individual.email.placeholder')}
             />
           </div>
           {showNotes && (
             <div className='col-span-2 mt-4'>
               <p className='text-center italic text-primary'>
-                {mainTranslations('registration.individual.note')}
+                {mainTranslations('individual.note')}
               </p>
             </div>
           )}
@@ -232,7 +234,7 @@ function PersonalRegistrationForm(
               {isLoading ? (
                 <FaSpinner className='animate-spin' />
               ) : (
-                mainTranslations('registration.submit')
+                mainTranslations('submit')
               )}
             </button>
           </div>
@@ -248,12 +250,13 @@ function PersonalRegistrationForm(
           className='block w-full font-bold text-primary'
           htmlFor={`fullName_${id}`}
         >
-          {mainTranslations('registration.individual.fullName.label')}{' '}
+          {mainTranslations('individual.fullName.label')}{' '}
           <span className='text-red-500'>*</span>
         </label>
         <input
           name='fullName'
           id={`fullName_${id}`}
+          placeholder={mainTranslations('individual.fullName.placeholder')}
           value={formValues?.fullName || values.fullName}
           className='mt-1 w-full rounded-lg px-4 py-2 text-black'
           onChange={(e) => {
@@ -279,14 +282,15 @@ function PersonalRegistrationForm(
           className='block w-full font-bold text-primary'
           htmlFor={`expectedGraduationYear_${id}`}
         >
-          {mainTranslations(
-            'registration.individual.expectedGraduationYear.label',
-          )}{' '}
+          {mainTranslations('individual.expectedGraduationYear.label')}{' '}
           <span className='text-red-500'>*</span>
         </label>
         <input
           name='expectedGraduationYear'
           id={`expectedGraduationYear_${id}`}
+          placeholder={mainTranslations(
+            'individual.expectedGraduationYear.placeholder',
+          )}
           value={
             formValues?.expectedGraduationYear || values.expectedGraduationYear
           }
@@ -316,7 +320,7 @@ function PersonalRegistrationForm(
           className='block w-full font-bold text-primary'
           htmlFor={`gender_${id}`}
         >
-          {mainTranslations('registration.individual.gender.label')}{' '}
+          {mainTranslations('individual.gender.label')}{' '}
           <span className='text-red-500'>*</span>
         </label>
         <select
@@ -337,10 +341,10 @@ function PersonalRegistrationForm(
           value={formValues?.gender || values.gender}
         >
           <option value='male'>
-            {mainTranslations('registration.individual.gender.male')}
+            {mainTranslations('individual.gender.male')}
           </option>
           <option value='female'>
-            {mainTranslations('registration.individual.gender.female')}
+            {mainTranslations('individual.gender.female')}
           </option>
         </select>
         {errors.gender && touched.gender && (
@@ -354,12 +358,13 @@ function PersonalRegistrationForm(
           className='block w-full font-bold text-primary'
           htmlFor={`school_${id}`}
         >
-          {mainTranslations('registration.individual.school.label')}{' '}
+          {mainTranslations('individual.school.label')}{' '}
           <span className='text-red-500'>*</span>
         </label>
         <input
           name='school'
           id={`school_${id}`}
+          placeholder={mainTranslations('individual.school.placeholder')}
           value={formValues?.school || values.school}
           className='mt-1 w-full rounded-lg px-4 py-2 text-black'
           onChange={(e) => {
@@ -385,13 +390,14 @@ function PersonalRegistrationForm(
           className='block w-full font-bold text-primary'
           htmlFor={`major_${id}`}
         >
-          {mainTranslations('registration.individual.major.label')}{' '}
+          {mainTranslations('individual.major.label')}{' '}
           <span className='text-red-500'>*</span>
         </label>
         <input
           name='major'
           id={`major_${id}`}
           value={formValues?.major || values.major}
+          placeholder={mainTranslations('individual.major.placeholder')}
           className='mt-1 w-full rounded-lg px-4 py-2 text-black'
           onChange={(e) => {
             handleChange(e);
@@ -416,7 +422,7 @@ function PersonalRegistrationForm(
           className='block w-full font-bold text-primary'
           htmlFor={`phoneNumber_${id}`}
         >
-          {mainTranslations('registration.individual.phoneNumber.label')}{' '}
+          {mainTranslations('individual.phoneNumber.label')}{' '}
           <span className='text-red-500'>*</span>
         </label>
         <input
@@ -424,6 +430,7 @@ function PersonalRegistrationForm(
           id={`phoneNumber_${id}`}
           value={formValues?.phoneNumber || values.phoneNumber}
           className='mt-1 w-full rounded-lg px-4 py-2 text-black'
+          placeholder={mainTranslations('individual.phoneNumber.placeholder')}
           onChange={(e) => {
             handleChange(e);
             onChange?.((prev) =>
@@ -447,11 +454,12 @@ function PersonalRegistrationForm(
           className='block w-full font-bold text-primary'
           htmlFor={`email_${id}`}
         >
-          {mainTranslations('registration.individual.email.label')}{' '}
+          {mainTranslations('individual.email.label')}{' '}
           <span className='text-red-500'>*</span>
         </label>
         <input
           name='email'
+          placeholder={mainTranslations('individual.email.placeholder')}
           id={`email_${id}`}
           value={formValues?.email || values.email}
           className='mt-1 w-full rounded-lg px-4 py-2 text-black'
@@ -476,7 +484,7 @@ function PersonalRegistrationForm(
       {showNotes && (
         <div className='col-span-2 mt-4'>
           <p className='text-center italic text-primary'>
-            {mainTranslations('registration.individual.note')}
+            {mainTranslations('individual.note')}
           </p>
         </div>
       )}
