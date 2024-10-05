@@ -9,6 +9,7 @@ import {
   teamFormInitValue,
   teamFormSchema,
 } from '@/components/Schema';
+import { REGISTRATION_CLOSE_DATE } from '@/constants';
 import { cn } from '@/lib/utils';
 import { Form, Formik, FormikHelpers } from 'formik';
 import { Delete, Plus } from 'lucide-react';
@@ -49,8 +50,7 @@ export default function TeamRegistrationForm({
     formikHelpers: FormikHelpers<TeamForm>,
   ) => {
     try {
-      const registrationCloseDate = new Date('2024-10-12T17:00:00Z'); // 13th Oct 2022, 00:00 GMT+7
-      if (new Date() >= registrationCloseDate) {
+      if (new Date() >= REGISTRATION_CLOSE_DATE) {
         onRegistrationExpired?.();
         return;
       }
@@ -60,7 +60,7 @@ export default function TeamRegistrationForm({
       ).every(Boolean);
 
       if (!allMemberFormsAreValid) {
-        toast.error(t('registration.failed.toastMessage'));
+        toast.error(t('registration.failed.inputError'));
         return;
       }
 

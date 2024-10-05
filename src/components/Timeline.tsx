@@ -40,6 +40,11 @@ export default function Timeline({ locale }: TimelineProps) {
         >
           <TimelineImage className='w-full' locale={locale} />
         </motion.div>
+        <div className='col-span-2 mt-4'>
+          <p className='text-center italic text-primary'>
+            {t('timeline.note')}
+          </p>
+        </div>
       </div>
     </div>
   );

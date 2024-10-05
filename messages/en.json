@@ -48,7 +48,8 @@
       ]
     },
     "timeline": {
-      "title": "Timeline"
+      "title": "Timeline",
+      "note": "(*) The event will take place for the full day on October 19, 2024."
     },
     "prizes": {
       "title": "Prizes",
@@ -132,6 +133,7 @@
         "content": "We're thrilled by the overwhelming response. See you at the event!"
       },
       "failed": {
+        "inputError": "Input form has errors, please check again!",
         "toastMessage": "Registration failed, please try again!"
       },
       "errorMessages": {

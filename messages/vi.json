@@ -39,7 +39,7 @@
     },
     "rules": {
       "title": "Luật thi",
-      "content": "Các đội thi lựa chọn một case study (nghiên cứu tình huống) từ thử thách được ban tổ chức đưa ra, sau đó phân tích và thiết kế nên các ý tưởng, giải pháp để giải quyết các vấn đề đã xác định. Phần thưởng sẽ được trao cho những ý tưởng có tính khả thi, sáng tạo, và thể hiện tinh thần làm việc nhóm mạnh mẽ.",
+      "content": "Các đội thi lựa chọn một case study (nghiên cứu tình huống) từ chủ đề được ban tổ chức đưa ra vào ngày diễn ra sự kiện, sau đó phân tích và thiết kế nên các ý tưởng, giải pháp để giải quyết các vấn đề đã xác định. Phần thưởng sẽ được trao cho những ý tưởng có tính khả thi, sáng tạo, và thể hiện tinh thần làm việc nhóm mạnh mẽ.",
       "description": [
         "(1) Sau khi nhận được bài toán từ BTC, các đội sẽ tìm ra giải pháp/case study để giải quyết bài toán mà BTC đặt ra",
         "(2) Với mỗi giải pháp, các đội thi sẽ cần phân tích với góc độ nghiệp vụ và kỹ thuật. Sau đó minh họa các giải pháp bằng các thiết kế hệ thống với sự cố vấn từ các mentor",
@@ -48,7 +48,8 @@
       ]
     },
     "timeline": {
-      "title": "Mốc thời gian"
+      "title": "Mốc thời gian",
+      "note": "(*) Sự kiện diễn ra nguyên ngày 19/10/2024."
     },
     "prizes": {
       "title": "Giải thưởng",
@@ -119,7 +120,7 @@
         "email": {
           "label": "Email"
         },
-        "note": "(*) BTC sẽ tự ghép thêm thành viên trong trường hợp nhóm bạn chưa đủ người nhé. Số lượng mỗi đội là 4 thành viên"
+        "note": "(*) BTC sẽ tự ghép thêm thành viên trong trường hợp nhóm bạn chưa đủ người nhé. Số lượng mỗi đội là 4 thành viên."
       },
       "submit": "Đăng ký",
       "success": {
@@ -132,7 +133,8 @@
         "content": "Rất vui khi nhận được sự quan tâm rất lớn từ bạn. Hẹn gặp lại bạn tại sự kiện!"
       },
       "failed": {
-        "toastMessage": "Đăng ký thất bại, vui lòng thử lại!"
+        "inputError": "Thông tin của bạn không đúng, vui lòng kiểm tra lại.",
+        "toastMessage": "Đăng ký thất bại, vui lòng thử lại!."
       },
       "errorMessages": {
         "fullName": {
