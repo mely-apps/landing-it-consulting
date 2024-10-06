@@ -142,7 +142,7 @@ const ClosedFormMessage = () => {
         }}
         viewport={{ once: true }}
       >
-        <div className='h-16 w-16 rounded-full bg-red-500 p-2 text-center text-xl font-bold'>
+        <div className='flex h-16 w-16 items-center justify-center rounded-full bg-red-500 p-2 text-center text-4xl font-bold'>
           !
         </div>
       </motion.div>

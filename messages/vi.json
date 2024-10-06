@@ -56,7 +56,8 @@
       "note": "(*) Giải thưởng hiện kim sẽ được trao dưới dạng voucher Got It."
     },
     "timeCounter": {
-      "title": "Thời gian còn lại",
+      "title": "Thời hạn đăng ký",
+      "titleClosed": "Sự kiện diễn ra sau",
       "days": "ngày",
       "hours": "giờ",
       "minutes": "phút",

@@ -1,4 +1,5 @@
 'use client';
+import { EVENT_START_DATE, REGISTRATION_CLOSE_DATE } from '@/constants';
 import { cn } from '@/lib/utils';
 import { useTranslations } from 'next-intl';
 import React, { useEffect, useMemo, useState } from 'react';
@@ -11,14 +12,18 @@ interface TimeCounterProps {
 const TimeCounter = ({ locale = 'en' }: TimeCounterProps) => {
   const t = useTranslations('HomePage');
   const [isClient, setIsClient] = useState(false);
+  const isClosedForm = Date.now() >= REGISTRATION_CLOSE_DATE.getTime();
 
   useEffect(() => {
     setIsClient(true);
   }, []);
 
-  const date = useMemo(() => {
-    return Date.now() + (new Date('2024-10-19').getTime() - Date.now());
-  }, []);
+  // const date = useMemo(() => {
+  //   if (isClosedForm){
+  //    return  Date.now() + (EVENT_START_DATE.getTime() - Date.now());
+  //   }
+  //     return Date.now() + (REGISTRATION_CLOSE_DATE.getTime() - Date.now());
+  // }, [isClosedForm]);
 
   return (
     isClient && (
@@ -27,7 +32,7 @@ const TimeCounter = ({ locale = 'en' }: TimeCounterProps) => {
         suppressHydrationWarning
       >
         <Countdown
-          date={date}
+          date={isClosedForm ? EVENT_START_DATE : REGISTRATION_CLOSE_DATE}
           renderer={(time) => (
             <div
               className={cn(
@@ -36,7 +41,9 @@ const TimeCounter = ({ locale = 'en' }: TimeCounterProps) => {
               )}
             >
               <h2 className='text-center text-2xl font-extrabold uppercase text-primary md:mb-5 md:text-5xl'>
-                {t('timeCounter.title')}
+                {isClosedForm
+                  ? t('timeCounter.titleClosed')
+                  : t('timeCounter.title')}
               </h2>
               <div className='flex w-full flex-wrap items-center justify-around rounded-3xl [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]'>
                 <div>

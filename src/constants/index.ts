@@ -9,4 +9,5 @@ export enum SECTION_IDS {
   ORGANIZERS = 'organizers',
 }
 
-export const REGISTRATION_CLOSE_DATE = new Date('2024-10-12T17:00:00Z'); // 13th Oct 2022, 00:00 GMT+7
+export const REGISTRATION_CLOSE_DATE = new Date('2024-10-12T17:00:00Z');
+export const EVENT_START_DATE = new Date('2024-10-18T17:00:00Z');//19/10/2024

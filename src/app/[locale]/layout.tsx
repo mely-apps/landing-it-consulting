@@ -37,7 +37,10 @@ export default async function LocaleLayout({
     <html lang={locale} className='dark !scroll-smooth'>
       <head>
         <meta charSet='utf-8' />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta
+          name='viewport'
+          content='width=device-width,initial-scale=1,maximum-scale=1'
+        />
         <link rel='icon' href='/favicon.svg' />
         <link rel='apple-touch-icon' href='/favicon.svg' />
         <link rel='mask-icon' href='/favicon.svg' color='#000000' />
@@ -86,7 +89,13 @@ export async function generateMetadata(): Promise<Metadata> {
         url: 'https://netcompany.com',
       },
     ],
-    keywords: ['IT Consultant Challenge', 'Code MeLy', 'Netcompany'],
+    keywords: [
+      'IT Consultant Challenge',
+      'Code MeLy',
+      'Netcompany',
+      'Consultant Challenge',
+      'Code MeLy Consultant Challenge',
+    ],
     twitter: info,
     icons: '/favicon.svg',
   };
