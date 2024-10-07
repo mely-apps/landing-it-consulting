@@ -2,19 +2,21 @@ import { FormField } from '@/components/FormField';
 import PersonalRegistrationForm, {
   PersonalRegistrationFormHandle,
 } from '@/components/PersonalRegistrationForm';
+import { REGISTRATION_CLOSE_DATE } from '@/constants';
+import { cn } from '@/lib/utils';
 import {
   PersonalForm,
   personalFormInitValue,
+} from '@/lib/validators/personalFormSchema';
+import {
   TeamForm,
   teamFormInitValue,
   teamFormSchema,
-} from '@/components/Schema';
-import { REGISTRATION_CLOSE_DATE } from '@/constants';
-import { cn } from '@/lib/utils';
+} from '@/lib/validators/teamFormSchema';
 import { Form, Formik, FormikHelpers } from 'formik';
 import { Delete, Plus } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { FaSpinner } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 
@@ -35,7 +37,7 @@ export default function TeamRegistrationForm({
   onRegistrationExpired,
   hidden,
 }: TeamRegistrationFormProps) {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('root');
   const memberFormsRef = useRef<PersonalRegistrationFormHandle[]>([]);
   const [selectedMemberIndex, setSelectedMemberIndex] = useState(0);
   const [membersFormData, setMembersFormData] = useState<

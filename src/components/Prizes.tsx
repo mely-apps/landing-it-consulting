@@ -11,7 +11,7 @@ interface PrizesProps {
 }
 
 const Prizes = ({ locale }: PrizesProps) => {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('root');
   const [svgHeight, setSvgHeight] = useState<number>();
 
   useEffect(() => {

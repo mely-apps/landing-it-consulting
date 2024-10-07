@@ -1,5 +1,4 @@
 import { ComponentProps } from 'react';
-import { Tooltip } from 'react-tooltip';
 import 'react-tooltip/dist/react-tooltip.css';
 import RulesDesktopVN from './RulesDesktopVN';
 

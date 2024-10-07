@@ -1,11 +1,11 @@
 import { FormField, SelectField } from '@/components/FormField';
+import { MembersFormDataValue } from '@/components/TeamRegistrationForm';
+import { cn } from '@/lib/utils';
 import {
   PersonalForm,
   personalFormInitValue,
   personalFormSchema,
-} from '@/components/Schema';
-import { MembersFormDataValue } from '@/components/TeamRegistrationForm';
-import { cn } from '@/lib/utils';
+} from '@/lib/validators/personalFormSchema';
 import { Form, Formik, FormikHelpers, useFormik } from 'formik';
 import { useTranslations } from 'next-intl';
 import {
@@ -53,10 +53,8 @@ function PersonalRegistrationForm(
   }: PersonalRegistrationFormProps,
   ref: ForwardedRef<PersonalRegistrationFormHandle>,
 ) {
-  const mainTranslations = useTranslations('HomePage.registration');
-  const errorTranslations = useTranslations(
-    'HomePage.registration.errorMessages',
-  );
+  const mainTranslations = useTranslations('root.registration');
+  const errorTranslations = useTranslations('root.registration.errorMessages');
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (

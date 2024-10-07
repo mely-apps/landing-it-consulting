@@ -1,4 +1,5 @@
 import * as Yup from 'yup';
+
 export interface PersonalForm {
   fullName: string;
   expectedGraduationYear: string;
@@ -7,10 +8,6 @@ export interface PersonalForm {
   major: string;
   phoneNumber: string;
   email: string;
-}
-
-export interface TeamForm {
-  teamName: string;
 }
 
 export const personalFormSchema = Yup.object().shape<
@@ -33,18 +30,6 @@ export const personalFormSchema = Yup.object().shape<
     .required('phoneNumber.required'),
   email: Yup.string().email('email.invalid').required('email.required'),
 });
-
-export const teamFormSchema = Yup.object().shape<
-  Record<keyof TeamForm, Yup.StringSchema>
->({
-  teamName: Yup.string()
-    .required('teamName.required')
-    .min(1, 'Team name must be at least 1 character'),
-});
-
-export const teamFormInitValue: TeamForm = {
-  teamName: '',
-};
 
 export const personalFormInitValue: PersonalForm = {
   fullName: '',

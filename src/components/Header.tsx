@@ -33,18 +33,10 @@ const SECTION_ITEMS = [
     title: 'Timeline',
     path: SECTION_IDS.TIMELINE,
   },
-  // {
-  //   title: 'Prizes',
-  //   path: SECTION_IDS.PRIZES,
-  // },
   {
     title: 'Register',
     path: SECTION_IDS.REGISTER,
   },
-  // {
-  //   title: 'Organizers',
-  //   path: SECTION_IDS.ORGANIZERS,
-  // },
 ];
 
 const Header = ({ locale }: LocaleProps) => {
@@ -53,7 +45,7 @@ const Header = ({ locale }: LocaleProps) => {
   const [activeClass, setActiveClass] = useState(SECTION_IDS.HOME);
   const [isChangingLang, setIsChangingLang] = useState(false);
 
-  const t = useTranslations('HomePage');
+  const t = useTranslations('root');
   useEffect(() => {
     const screen = document.querySelector('.main-container');
     if (screen) {

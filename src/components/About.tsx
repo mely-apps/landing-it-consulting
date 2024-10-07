@@ -6,7 +6,7 @@ import { SECTION_IDS } from '@/constants';
 import { motion } from 'framer-motion';
 
 const About = () => {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('root');
 
   return (
     <div
