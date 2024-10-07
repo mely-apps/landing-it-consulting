@@ -18,12 +18,6 @@ const montserrat = Montserrat({
   variable: '--font-montserrat',
 });
 
-// export const metadata: Metadata = {
-//   title: 'IT Consulting Challenge',
-//   description:
-//     'IT Consultant Challenge—an exciting full-day event where IT students have the chance to showcase their skills, creativity, and problem-solving abilities. This event, hosted by Netcompany and Code MeLy, is your opportunity to step into the shoes of an IT consultant and tackle real-life challenges through digital transformation. Work alongside like-minded peers, gain valuable experience, and make a lasting impact.',
-// };
-
 export default async function LocaleLayout({
   children,
   params: { locale },

@@ -14,7 +14,7 @@ import { cn } from '@/lib/utils';
 import { Form, Formik, FormikHelpers } from 'formik';
 import { Delete, Plus } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { FaSpinner } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 

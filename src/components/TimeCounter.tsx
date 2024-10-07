@@ -2,7 +2,7 @@
 import { EVENT_START_DATE, REGISTRATION_CLOSE_DATE } from '@/constants';
 import { cn } from '@/lib/utils';
 import { useTranslations } from 'next-intl';
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Countdown from 'react-countdown';
 
 interface TimeCounterProps {
@@ -17,13 +17,6 @@ const TimeCounter = ({ locale = 'en' }: TimeCounterProps) => {
   useEffect(() => {
     setIsClient(true);
   }, []);
-
-  // const date = useMemo(() => {
-  //   if (isClosedForm){
-  //    return  Date.now() + (EVENT_START_DATE.getTime() - Date.now());
-  //   }
-  //     return Date.now() + (REGISTRATION_CLOSE_DATE.getTime() - Date.now());
-  // }, [isClosedForm]);
 
   return (
     isClient && (

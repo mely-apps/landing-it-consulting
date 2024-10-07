@@ -33,18 +33,10 @@ const SECTION_ITEMS = [
     title: 'Timeline',
     path: SECTION_IDS.TIMELINE,
   },
-  // {
-  //   title: 'Prizes',
-  //   path: SECTION_IDS.PRIZES,
-  // },
   {
     title: 'Register',
     path: SECTION_IDS.REGISTER,
   },
-  // {
-  //   title: 'Organizers',
-  //   path: SECTION_IDS.ORGANIZERS,
-  // },
 ];
 
 const Header = ({ locale }: LocaleProps) => {
