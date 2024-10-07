@@ -2,15 +2,17 @@ import { FormField } from '@/components/FormField';
 import PersonalRegistrationForm, {
   PersonalRegistrationFormHandle,
 } from '@/components/PersonalRegistrationForm';
+import { REGISTRATION_CLOSE_DATE } from '@/constants';
+import { cn } from '@/lib/utils';
 import {
   PersonalForm,
   personalFormInitValue,
+} from '@/lib/validators/personalFormSchema';
+import {
   TeamForm,
   teamFormInitValue,
   teamFormSchema,
-} from '@/components/Schema';
-import { REGISTRATION_CLOSE_DATE } from '@/constants';
-import { cn } from '@/lib/utils';
+} from '@/lib/validators/teamFormSchema';
 import { Form, Formik, FormikHelpers } from 'formik';
 import { Delete, Plus } from 'lucide-react';
 import { useTranslations } from 'next-intl';
