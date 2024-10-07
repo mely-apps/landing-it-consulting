@@ -53,10 +53,8 @@ function PersonalRegistrationForm(
   }: PersonalRegistrationFormProps,
   ref: ForwardedRef<PersonalRegistrationFormHandle>,
 ) {
-  const mainTranslations = useTranslations('HomePage.registration');
-  const errorTranslations = useTranslations(
-    'HomePage.registration.errorMessages',
-  );
+  const mainTranslations = useTranslations('root.registration');
+  const errorTranslations = useTranslations('root.registration.errorMessages');
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (

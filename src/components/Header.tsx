@@ -53,7 +53,7 @@ const Header = ({ locale }: LocaleProps) => {
   const [activeClass, setActiveClass] = useState(SECTION_IDS.HOME);
   const [isChangingLang, setIsChangingLang] = useState(false);
 
-  const t = useTranslations('HomePage');
+  const t = useTranslations('root');
   useEffect(() => {
     const screen = document.querySelector('.main-container');
     if (screen) {

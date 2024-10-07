@@ -10,7 +10,7 @@ interface TimeCounterProps {
 }
 
 const TimeCounter = ({ locale = 'en' }: TimeCounterProps) => {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('root');
   const [isClient, setIsClient] = useState(false);
   const isClosedForm = Date.now() >= REGISTRATION_CLOSE_DATE.getTime();
 

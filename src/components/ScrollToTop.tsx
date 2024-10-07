@@ -27,7 +27,7 @@ const itemNavs = [
 ];
 const ScrollToTop = ({ locale }: { locale: string }) => {
   const router = useRouter();
-  const translations = useTranslations('HomePage');
+  const translations = useTranslations('root');
   const [isMobileRegisterBtnHidden, setIsMobileRegisterBtnHidden] =
     useState<boolean>(true);
 

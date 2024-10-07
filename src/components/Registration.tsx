@@ -9,7 +9,7 @@ import { cn } from '@/lib/utils';
 import TeamRegistrationForm from '@/components/TeamRegistrationForm';
 
 const Registration = () => {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('root');
   const [typeForm, setTypeForm] = React.useState<'team' | 'personal'>('team');
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [isFormClosed, setIsFormClosed] = useState(false);
@@ -97,7 +97,7 @@ const Registration = () => {
 };
 
 const SuccessMessage = () => {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('root');
   return (
     <>
       <motion.div
@@ -131,7 +131,7 @@ const SuccessMessage = () => {
 };
 
 const ClosedFormMessage = () => {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('root');
   return (
     <>
       <motion.div

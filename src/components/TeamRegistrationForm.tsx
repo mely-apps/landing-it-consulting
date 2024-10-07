@@ -35,7 +35,7 @@ export default function TeamRegistrationForm({
   onRegistrationExpired,
   hidden,
 }: TeamRegistrationFormProps) {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('root');
   const memberFormsRef = useRef<PersonalRegistrationFormHandle[]>([]);
   const [selectedMemberIndex, setSelectedMemberIndex] = useState(0);
   const [membersFormData, setMembersFormData] = useState<

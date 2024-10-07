@@ -4,7 +4,7 @@ import { Facebook, Globe } from 'lucide-react';
 import MailContact from '@/assets/MailContact';
 
 const Footer = () => {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('root');
 
   return (
     <div className='mt-16 bg-[#023C38] py-10'>

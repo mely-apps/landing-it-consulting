@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 
 const Organizer = () => {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('root');
 
   return (
     <div className='container mt-16 px-4 md:mt-32' id={SECTION_IDS.ORGANIZERS}>

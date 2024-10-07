@@ -11,7 +11,7 @@ interface RulesProps {
 }
 
 const Rules = ({ locale }: RulesProps) => {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('root');
   const ruleSectionRef = useRef<HTMLDivElement>(null);
 
   const points = [

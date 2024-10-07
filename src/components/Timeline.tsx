@@ -8,7 +8,7 @@ interface TimelineProps {
 }
 
 export default function Timeline({ locale }: TimelineProps) {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('root');
 
   return (
     <div className='container px-4'>

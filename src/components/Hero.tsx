@@ -9,7 +9,7 @@ import { isMobile } from 'react-device-detect';
 import { gotoRegistration } from '@/lib/utils';
 
 const Hero = () => {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('root');
 
   return (
     <div className='container px-0 md:px-4'>

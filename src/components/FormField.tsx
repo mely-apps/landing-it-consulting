@@ -16,7 +16,7 @@ const FormField = ({
   required = false,
   ...defaultProps
 }: FormFieldProps) => {
-  const t = useTranslations('HomePage.registration.errorMessages');
+  const t = useTranslations('root.registration.errorMessages');
 
   return (
     <div>
