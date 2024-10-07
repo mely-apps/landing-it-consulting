@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { Copyright, Facebook, Globe } from 'lucide-react';
-import MailContact from './icons/MailContact';
+import { Facebook, Globe } from 'lucide-react';
+import MailContact from '@/assets/MailContact';
 
 const Footer = () => {
   const t = useTranslations('HomePage');
@@ -47,7 +47,7 @@ const Footer = () => {
           </p>
           <ul className='mt-2 flex flex-col gap-2'>
             <li className='flex gap-x-2'>
-              <MailContact className='h-6 w-6 flex-1' />
+              <MailContact className='h-6 w-6' />
               <Link
                 href='mailto:code.mely@gmail.com'
                 className='inline-block flex-1 break-all text-white transition-all hover:text-primary'
@@ -56,7 +56,7 @@ const Footer = () => {
               </Link>
             </li>
             <li className='flex gap-x-2'>
-              <MailContact className='h-6 w-6 flex-1' />
+              <MailContact className='h-6 w-6' />
               <Link
                 href='mailto:recruitment.vn@netcompany.com'
                 className='inline-block flex-1 break-all text-white transition-all hover:text-primary'

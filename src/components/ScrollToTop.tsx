@@ -1,7 +1,7 @@
 'use client';
-import { Home } from '@/components/icons/Home';
-import { Information } from '@/components/icons/Information';
-import { Rule } from '@/components/icons/Rule';
+import { Home } from '@/assets/Home';
+import { Information } from '@/assets/Information';
+import { Rule } from '@/assets/Rule';
 import { BtnNav } from '@/components/ui/btn-nav';
 import { SECTION_IDS } from '@/constants';
 import { cn } from '@/lib/utils';

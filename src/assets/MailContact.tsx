@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils';
 import { clsx } from 'clsx';
 import type { IconBaseProps } from 'react-icons';
 
@@ -6,7 +7,6 @@ export interface IPhoneProps extends IconBaseProps {
 }
 
 const MailContact = (props: IPhoneProps) => {
-  const classN = clsx(props.className, 'lucide lucide-phone');
   return (
     <svg
       width='24'
@@ -14,6 +14,8 @@ const MailContact = (props: IPhoneProps) => {
       viewBox='0 0 24 24'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
+      className={cn(props.className, 'lucide lucide-phone')}
+      {...props}
     >
       <g id='Icons/communication/outline/mail'>
         <path
