@@ -1,8 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# IT Consulting Landing Page
+
+This project is an landing page built with Next.js and TypeScript. It includes various components and assets to create an engaging and interactive user experience. The landing page is designed for the IT Consultant Challenge, a team-based competition where participants develop innovative solutions for real-life IT problems.
+
+The IT Consultant Challenge is an engaging team-based competition where participants step into the role of IT consultants. In groups of four, you are tasked with solving real-life IT problems by developing innovative, digitalized solutions for a client. This challenge simulates the dynamic environment of IT consulting
+
+## Project Structure
+
+The project structure is as follows:
+
+- `components.json`: Configuration file for components.
+- `global.d.ts`: Global TypeScript declarations.
+- `messages`: Contains localization files for English and Vietnamese.
+- `public`: Contains public assets like images and icons.
+- `src/@types`: Contains TypeScript type definitions.
+- `src/app`: Contains the main application files.
+- `src/assets`: Contains various asset files like icons and images.
+- `src/components`: Contains React components used in the project.
+- `src/constants`: Contains constant values used throughout the project.
+- `src/i18n.ts`: Contains internationalization setup.
+- `src/lib`: Contains utility functions and validation schemas.
+- `src/middleware.ts`: Contains middleware configuration.
+- `src/styles`: Contains CSS files for styling.
+- `src/types`: Contains additional TypeScript type definitions.
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +43,26 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Localization Support
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The project includes localization support with translations in English and Vietnamese. The localization files are located in the `messages` folder.
 
-## Learn More
+## Form Handling
 
-To learn more about Next.js, take a look at the following resources:
+The project uses Formik for form handling. Relevant components can be found in the `src/components` folder, such as `FormField.tsx` and `PersonalRegistrationForm.tsx`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Animations and Interactive Elements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The project includes animations and interactive elements. Relevant components can be found in the `src/components/ui` folder, such as `AppCard.tsx` and `background-gradient-animation.tsx`.
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! Please open an issue or submit a pull request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+This project is licensed under the MIT License.
