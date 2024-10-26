@@ -14,6 +14,7 @@ import Timeline from '@/components/Timeline';
 import { MotionGlobalConfig } from 'framer-motion';
 import { isMobile } from 'react-device-detect';
 import { Bounce, ToastContainer, ToastContainerProps } from 'react-toastify';
+import Slider from '@/components/Slider';
 
 const toastContainerConfig: ToastContainerProps = {
   position: 'top-right',
@@ -39,6 +40,7 @@ export default function Home({
         <ScrollToTop locale={locale} />
         <Header locale={locale as LocaleProps['locale']} />
         <Hero />
+        <Slider />
         <About />
         <Rules locale={locale} />
         <Timeline locale={locale} />
