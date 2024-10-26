@@ -1,7 +1,7 @@
 'use client';
 
-import { motion, AnimatePresence, MotionGlobalConfig } from 'framer-motion';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
