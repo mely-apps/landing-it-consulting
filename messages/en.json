@@ -25,10 +25,15 @@
     },
     "about": {
       "title": "What is the IT Consultant Challenge?",
+      "sectionTitle": "The IT Consultant Challenge",
+      "organizers": "Organizers",
+      "eventPartner": "Event Partner",
       "description": [
         "The <extrabold>{contestName}</extrabold> is an engaging team-based competition where participants step into the role of IT consultants. In groups of four, you are tasked with solving real-life IT problems by developing innovative, digitalized solutions for a client. This challenge simulates the dynamic environment of IT consulting, requiring teams to collaborate, think critically, and deliver impactful solutions that meet client needs.",
         "The event is jointly organized by {netcompanyName} Vietnam and {codeMelyName} - a Tech community for young enthusiasts."
       ],
+      "miniChallenge": "[MINI-CHALLENGE] AI FOR LIFE – AI IDEA CHALLENGE IN DAILY LIFE",
+      "workshop": "[WORKSHOP] IT CONSULTANT CAREER TALK – WHEN SOFTWARE ENGINEERS STEP INTO THE WORLD OF TECHNOLOGY CONSULTING",
       "whoCanJoinQuestion": "<bold>Join the challenge if you:</bold>",
       "whoCanJoinAnswers": [
         "Are students from 2nd to 4th year studying IT, Computer Science, Software Engineer from universities in Ho Chi Minh City.",
@@ -178,6 +183,10 @@
       "netcompany": {
         "description": "<bold>{netcompanyName}</bold> is an IT consulting firm founded in 2000 in Copenhagen, Denmark. The company plays a crucial role in digital transformation for both public and private sectors. Netcompany believes that technology can have a positive impact on society and business, and continuously seeks talented IT professionals, offering career development opportunities."
       }
+    },
+    "highlights": {
+      "title": "Competition Moment of IT Consultant Challenge",
+      "subtitle": "Highlights of IT Consultant 2024"
     },
     "footer": {
       "contact": "Contact",

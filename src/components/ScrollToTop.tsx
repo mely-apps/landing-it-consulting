@@ -71,14 +71,14 @@ const ScrollToTop = ({ locale }: { locale: string }) => {
       const registerSectionPosition = document.getElementById(
         SECTION_IDS.REGISTER,
       )!.offsetTop;
-      const organizersSectionPosition = document.getElementById(
-        SECTION_IDS.ORGANIZERS,
+      const highlightsSectionPosition = document.getElementById(
+        SECTION_IDS.HIGHLIGHTS,
       )!.offsetTop;
 
       setIsMobileRegisterBtnHidden(
         mainContainer!.scrollTop < aboutSectionPosition ||
           (mainContainer!.scrollTop >= registerSectionPosition &&
-            mainContainer!.scrollTop <= organizersSectionPosition),
+            mainContainer!.scrollTop <= highlightsSectionPosition),
       );
     };
 

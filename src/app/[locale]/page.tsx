@@ -4,6 +4,7 @@ import About from '@/components/About';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import Highlights from '@/components/Highlights';
 import Organizer from '@/components/Organizer';
 import Prizes from '@/components/Prizes';
 import Registration from '@/components/Registration';
@@ -40,14 +41,15 @@ export default function Home({
         <ScrollToTop locale={locale} />
         <Header locale={locale as LocaleProps['locale']} />
         <Hero />
-        <Slider />
+
         <About />
         <Rules locale={locale} />
         <Timeline locale={locale} />
         <Prizes locale={locale} />
         <TimeCounter locale={locale} />
         <Registration />
-        <Organizer />
+        {/* <Organizer /> */}
+        <Highlights />
         <Footer />
       </div>
     </div>

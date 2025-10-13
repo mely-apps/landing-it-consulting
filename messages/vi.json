@@ -25,10 +25,15 @@
     },
     "about": {
       "title": "IT Consultant Challenge là gì?",
+      "sectionTitle": "Cuộc thi IT Consultant Challenge",
+      "organizers": "Đơn vị tổ chức",
+      "eventPartner": "Đối tác sự kiện",
       "description": [
         "<extrabold>IT Consultant Challenge</extrabold>  là một cuộc thi theo nhóm nơi người tham gia sẽ nhập vai làm một IT Consultant thực thụ. Mỗi đội gồm bốn thành viên và một người hướng dẫn giàu kinh nghiệm, đồng hành cùng nhau giải quyết một vấn đề thực tiễn do Ban tổ chức đưa ra. Từ việc phân tích vấn đề, đề xuất giải pháp khả thi, cho đến việc trình bày ý tưởng một cách thuyết phục, cuộc thi đòi hỏi tinh thần đồng đội, khả năng tư duy phản biện sắc bén và kỹ năng giải quyết vấn đề sáng tạo.",
         "Sự kiện được phối hợp thực hiện bởi Công ty {netcompanyName} Việt Nam và Cộng đồng Tech dành cho các bạn trẻ {codeMelyName}."
       ],
+      "miniChallenge": "[MINI-CHALLENGE] AI FOR LIFE – THỬ THÁCH Ý TƯỞNG AI TRONG ĐỜI SỐNG",
+      "workshop": "[WORKSHOP] CHUYỆN NGHỀ \"IT CONSULTANT\" – KHI KỸ SƯ PHẦN MỀM BƯỚC VÀO THẾ GIỚI TƯ VẤN CÔNG NGHỆ",
       "whoCanJoinQuestion": "<bold>Hãy tham gia ngay khi bạn:</bold>",
       "whoCanJoinAnswers": [
         "Là sinh viên từ năm 2 đến năm 4 đang theo học CNTT, Kĩ Thuật phần mềm, Khoa học Máy tính từ các trường Đại học trên địa bàn thành phố Hồ Chí Minh.",
@@ -178,6 +183,10 @@
       "netcompany": {
         "description": "<bold>{netcompanyName}</bold> là một công ty tư vấn CNTT được thành lập vào năm 2000 tại Copenhagen, Đan Mạch. Công ty đóng vai trò quan trọng trong quá trình chuyển đổi số cho cả khu vực công và tư nhân. {netcompanyName} tin rằng công nghệ có thể mang lại tác động tích cực cho xã hội và doanh nghiệp, đồng thời luôn tìm kiếm những chuyên gia CNTT tài năng, cung cấp các cơ hội phát triển nghề nghiệp."
       }
+    },
+    "highlights": {
+      "title": "Khoảnh khắc cuộc thi IT Consultant Challenge",
+      "subtitle": "Những khoảnh khắc đáng nhớ của IT Consultant 2024"
     },
     "footer": {
       "contact": "Liên hệ",
