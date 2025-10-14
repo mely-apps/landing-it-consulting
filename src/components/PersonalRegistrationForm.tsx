@@ -1,5 +1,6 @@
 import { FormField, SelectField } from '@/components/FormField';
 import { MembersFormDataValue } from '@/components/TeamRegistrationForm';
+import { REGISTRATION_CLOSE_DATE } from '@/constants';
 import { cn } from '@/lib/utils';
 import {
   PersonalForm,
@@ -62,8 +63,7 @@ function PersonalRegistrationForm(
     formikHelpers: FormikHelpers<PersonalForm>,
   ) => {
     try {
-      const registrationCloseDate = new Date('2024-10-12T17:00:00Z'); // 13th Oct 2022, 00:00 GMT+7
-      if (new Date() >= registrationCloseDate) {
+      if (new Date() >= REGISTRATION_CLOSE_DATE) {
         onRegistrationExpired?.();
         return;
       }

@@ -20,7 +20,7 @@
     },
     "hero": {
       "subTitle": "Innovate, Modernize and Digitize effectively",
-      "time": "Full day on Saturday, October 19, 2024, at Netcompany office.",
+      "time": "Full day on Saturday, October 25, 2025, at Netcompany office.",
       "buttonTitle": "Register now"
     },
     "about": {
@@ -54,11 +54,12 @@
     },
     "timeline": {
       "title": "Timeline",
-      "note": "(*) The event will take place for the full day on October 19, 2024."
+      "note": "(*) The event will take place for the full day on October 25, 2025."
     },
     "prizes": {
       "title": "Prizes",
-      "note": "(*) In cash prizes will be awarded in the form of Got It vouchers."
+      "note": "(*) In cash prizes will be awarded in the form of Got It vouchers.",
+      "more": "In addition, members of the top 3 winning teams will receive a 20% voucher from EngineerPro worth up to 10 million VND."
     },
     "timeCounter": {
       "title": "Registration deadline",
@@ -187,6 +188,10 @@
     "highlights": {
       "title": "Competition Moment of IT Consultant Challenge",
       "subtitle": "Highlights of IT Consultant 2024"
+    },
+    "videoRecap": {
+      "title": "Recap 2024",
+      "subtitle": "Watch the highlights from IT Consultant Challenge 2024"
     },
     "footer": {
       "contact": "Contact",

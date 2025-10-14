@@ -106,6 +106,8 @@ const Prizes = ({ locale }: PrizesProps) => {
         viewport={{ once: true }}
       >
         {t('prizes.note')}
+        <br />
+        {t('prizes.more')}
       </motion.p>
     </div>
   );

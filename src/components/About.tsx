@@ -114,7 +114,7 @@ const About = () => {
               <div className='absolute -bottom-2 -left-2 h-20 w-[1px] bg-cyan-400'></div>
               <div className='absolute -bottom-2 -left-2 h-[1px] w-20 bg-cyan-400'></div>
               <Image
-                src='/events/mini_game.png'
+                src='/images/slider/12.jpg'
                 alt='IT Consultant Challenge Journey'
                 width={500}
                 height={300}
@@ -140,7 +140,7 @@ const About = () => {
               <div className='absolute -bottom-2 -left-2 h-[1px] w-20 bg-cyan-400'></div>
 
               <Image
-                src='/events/workshop.png'
+                src='/images/slider/1.jpg'
                 alt='IT Consultant Challenge Team'
                 height={200}
                 width={400}

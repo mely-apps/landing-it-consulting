@@ -43,13 +43,13 @@ export default function Home({
         <Hero />
 
         <About />
+        <Highlights />
         <Rules locale={locale} />
         <Timeline locale={locale} />
         <Prizes locale={locale} />
         <TimeCounter locale={locale} />
         <Registration />
         {/* <Organizer /> */}
-        <Highlights />
         <Footer />
       </div>
     </div>

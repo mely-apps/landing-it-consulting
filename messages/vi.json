@@ -20,7 +20,7 @@
     },
     "hero": {
       "subTitle": "Đổi mới, Hiện đại hóa và Số hóa hiệu quả",
-      "time": "Nguyên ngày ngày thứ 7, 19/10/2024, tại văn phòng Netcompany.",
+      "time": "Nguyên ngày ngày thứ 7, 25/10/2025, tại văn phòng Netcompany.",
       "buttonTitle": "Đăng ký ngay"
     },
     "about": {
@@ -54,11 +54,12 @@
     },
     "timeline": {
       "title": "Mốc thời gian",
-      "note": "(*) Sự kiện diễn ra nguyên ngày 19/10/2024."
+      "note": "(*) Sự kiện diễn ra nguyên ngày 25/10/2025."
     },
     "prizes": {
-      "title": "Giải thưởng",
-      "note": "(*) Giải thưởng hiện kim sẽ được trao dưới dạng voucher Got It."
+      "title": "Giải thưởng lên đến 100 triệu VNĐ",
+      "note": "(*) Giải thưởng hiện kim sẽ được trao dưới dạng voucher Got It.",
+      "more": "Ngoài ra, các thành viên trong top 3 đội thắng cuộc sẽ nhận học bổng 20% đến từ EngineerPro trị giá lên đến 10 triệu đồng."
     },
     "timeCounter": {
       "title": "Thời hạn đăng ký",
@@ -187,6 +188,10 @@
     "highlights": {
       "title": "Khoảnh khắc cuộc thi IT Consultant Challenge",
       "subtitle": "Những khoảnh khắc đáng nhớ của IT Consultant 2024"
+    },
+    "videoRecap": {
+      "title": "Recap 2024",
+      "subtitle": "Xem lại những khoảnh khắc đáng nhớ của IT Consultant Challenge 2024"
     },
     "footer": {
       "contact": "Liên hệ",

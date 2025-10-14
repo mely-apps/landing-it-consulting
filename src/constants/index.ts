@@ -9,7 +9,8 @@ export enum SECTION_IDS {
   REGISTER = 'register',
   ORGANIZERS = 'organizers',
   HIGHLIGHTS = 'highlights',
+  VIDEO_RECAP = 'video-recap',
 }
 
-export const REGISTRATION_CLOSE_DATE = new Date('2025-10-30T17:00:00Z');
+export const REGISTRATION_CLOSE_DATE = new Date('2025-10-22T17:00:00Z');
 export const EVENT_START_DATE = new Date('2025-10-18T17:00:00Z'); //19/10/2025

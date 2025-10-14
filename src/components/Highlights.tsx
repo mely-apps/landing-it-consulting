@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { SECTION_IDS } from '@/constants';
 import { useState } from 'react';
+import VideoRecap from '@/components/VideoRecap';
 
 const Highlights = () => {
   const t = useTranslations('root');
@@ -16,7 +17,7 @@ const Highlights = () => {
     '/images/slider/4.jpg',
     '/images/slider/5.jpg',
     '/images/slider/6.jpg',
-    '/images/slider/7.jpg',
+    '/images/slider/23.jpg',
   ];
 
   return (
@@ -29,8 +30,10 @@ const Highlights = () => {
         {t('highlights.subtitle')}
       </p>
 
+      <VideoRecap />
+
       {/* Row 1 - 4 ảnh */}
-      <div className='mb-6 grid grid-cols-4 gap-3 md:gap-6'>
+      <div className='mb-6 mt-12 grid grid-cols-4 gap-3 md:gap-6'>
         {/* Ảnh 1 */}
         <div className='col-span-1'>
           <div
