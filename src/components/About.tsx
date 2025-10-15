@@ -47,7 +47,7 @@ const About = () => {
               {t('about.eventPartner')}
             </span>
           </div>
-          <div className='flex items-center gap-6'>
+          <div className='flex flex-wrap items-center justify-center gap-6'>
             <Image
               src='/companies/engineerpro.png'
               alt='engineerpro'
