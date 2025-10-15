@@ -49,6 +49,13 @@ const About = () => {
           </div>
           <div className='flex items-center gap-6'>
             <Image
+              src='/companies/engineerpro.png'
+              alt='engineerpro'
+              width={120}
+              height={60}
+              className='h-[100px] w-24 object-contain md:w-32'
+            />
+            <Image
               src='/companies/DevOi.png'
               alt='DevOi'
               width={120}
@@ -102,17 +109,17 @@ const About = () => {
           {/* First Image Card */}
           <div className='flex flex-col'>
             <div className='relative mb-4'>
-              <div className='absolute -left-2 -top-2 h-[1px] w-20 bg-cyan-400'></div>
-              <div className='absolute -left-2 -top-2 h-20 w-[1px] bg-cyan-400'></div>
-              <div className='absolute -bottom-2 -right-2 h-[1px] w-20 bg-cyan-400'></div>
-              <div className='absolute -bottom-2 -right-2 h-20 w-[1px] bg-cyan-400'></div>
-              <div className='absolute -bottom-2 -right-2 h-20 w-[1px] bg-cyan-400'></div>
+              <div className='absolute -left-2 -top-2 h-[1px] w-20 bg-[#80FFF7]'></div>
+              <div className='absolute -left-2 -top-2 h-20 w-[1px] bg-[#80FFF7]'></div>
+              <div className='absolute -bottom-2 -right-2 h-[1px] w-20 bg-[#80FFF7]'></div>
+              <div className='absolute -bottom-2 -right-2 h-20 w-[1px] bg-[#80FFF7]'></div>
+              <div className='absolute -bottom-2 -right-2 h-20 w-[1px] bg-[#80FFF7]'></div>
 
-              <div className='absolute -right-2 -top-2 h-[1px] w-20 bg-cyan-400'></div>
-              <div className='absolute -right-2 -top-2 h-20 w-[1px] bg-cyan-400'></div>
+              <div className='absolute -right-2 -top-2 h-[1px] w-20 bg-[#80FFF7]'></div>
+              <div className='absolute -right-2 -top-2 h-20 w-[1px] bg-[#80FFF7]'></div>
 
-              <div className='absolute -bottom-2 -left-2 h-20 w-[1px] bg-cyan-400'></div>
-              <div className='absolute -bottom-2 -left-2 h-[1px] w-20 bg-cyan-400'></div>
+              <div className='absolute -bottom-2 -left-2 h-20 w-[1px] bg-[#80FFF7]'></div>
+              <div className='absolute -bottom-2 -left-2 h-[1px] w-20 bg-[#80FFF7]'></div>
               <Image
                 src='/images/slider/12.jpg'
                 alt='IT Consultant Challenge Journey'
@@ -129,15 +136,15 @@ const About = () => {
           {/* Second Image Card */}
           <div className='flex flex-col'>
             <div className='relative'>
-              <div className='absolute -left-2 -top-2 h-[1px] w-20 bg-cyan-400'></div>
-              <div className='absolute -left-2 -top-2 h-20 w-[1px] bg-cyan-400'></div>
-              <div className='absolute -bottom-2 -right-2 h-[1px] w-20 bg-cyan-400'></div>
-              <div className='absolute -bottom-2 -right-2 h-20 w-[1px] bg-cyan-400'></div>
-              <div className='absolute -bottom-2 -right-2 h-20 w-[1px] bg-cyan-400'></div>
-              <div className='absolute -right-2 -top-2 h-[1px] w-20 bg-cyan-400'></div>
-              <div className='absolute -right-2 -top-2 h-20 w-[1px] bg-cyan-400'></div>
-              <div className='absolute -bottom-2 -left-2 h-20 w-[1px] bg-cyan-400'></div>
-              <div className='absolute -bottom-2 -left-2 h-[1px] w-20 bg-cyan-400'></div>
+              <div className='absolute -left-2 -top-2 h-[1px] w-20 bg-[#80FFF7]'></div>
+              <div className='absolute -left-2 -top-2 h-20 w-[1px] bg-[#80FFF7]'></div>
+              <div className='absolute -bottom-2 -right-2 h-[1px] w-20 bg-[#80FFF7]'></div>
+              <div className='absolute -bottom-2 -right-2 h-20 w-[1px] bg-[#80FFF7]'></div>
+              <div className='absolute -bottom-2 -right-2 h-20 w-[1px] bg-[#80FFF7]'></div>
+              <div className='absolute -right-2 -top-2 h-[1px] w-20 bg-[#80FFF7]'></div>
+              <div className='absolute -right-2 -top-2 h-20 w-[1px] bg-[#80FFF7]'></div>
+              <div className='absolute -bottom-2 -left-2 h-20 w-[1px] bg-[#80FFF7]'></div>
+              <div className='absolute -bottom-2 -left-2 h-[1px] w-20 bg-[#80FFF7]'></div>
 
               <Image
                 src='/images/slider/1.jpg'
