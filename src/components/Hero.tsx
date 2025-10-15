@@ -9,8 +9,9 @@ import { isMobile } from 'react-device-detect';
 import { gotoRegistration } from '@/lib/utils';
 import CountdownTimer from './CountdownTimer';
 import { REGISTRATION_CLOSE_DATE } from '@/constants';
+import { LocaleProps } from '@/@types';
 
-const Hero = ({ locale }) => {
+const Hero = ({ locale }: LocaleProps) => {
   const t = useTranslations('root');
 
   return (
