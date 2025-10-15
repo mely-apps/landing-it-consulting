@@ -8,6 +8,7 @@ import AppCard from './ui/AppCard';
 import { isMobile } from 'react-device-detect';
 import { gotoRegistration } from '@/lib/utils';
 import CountdownTimer from './CountdownTimer';
+import { REGISTRATION_CLOSE_DATE } from '@/constants';
 
 const Hero = () => {
   const t = useTranslations('root');
@@ -38,7 +39,7 @@ const Hero = () => {
 
           {/* Countdown Timer */}
           <BlurFade delay={0.6}>
-            <CountdownTimer closeDate='2025-10-25T23:59:59' />
+            <CountdownTimer closeDate={REGISTRATION_CLOSE_DATE} />
           </BlurFade>
 
           <BlurFade delay={0.7}>

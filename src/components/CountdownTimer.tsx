@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 
 interface CountdownTimerProps {
-  closeDate: string;
+  closeDate: string | Date;
 }
 
 interface TimeLeft {
