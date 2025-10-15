@@ -83,7 +83,7 @@ const About = () => {
       {/* Main Content */}
       <div className='grid gap-6 lg:grid-cols-12 lg:gap-12'>
         {/* Left Column - Text Content - 5/12 */}
-        <div className='flex flex-col justify-center lg:col-span-5'>
+        <div className='flex flex-col justify-center lg:col-span-7'>
           <h2 className='mb-6 font-montserrat text-3xl font-extrabold uppercase text-primary md:text-4xl lg:text-5xl'>
             {t('about.sectionTitle')}
           </h2>
@@ -105,7 +105,7 @@ const About = () => {
         </div>
 
         {/* Right Column - Images - 7/12 */}
-        <div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:col-span-7'>
+        <div className='grid grid-cols-1 gap-6 lg:col-span-5'>
           {/* First Image Card */}
           <div className='flex flex-col'>
             <div className='relative mb-4'>
@@ -125,38 +125,9 @@ const About = () => {
                 alt='IT Consultant Challenge Journey'
                 width={500}
                 height={300}
-                className='object-fit h-64 w-full'
+                className='h-[320px] w-full object-cover'
               />
             </div>
-            <p className='font-inter text-xs leading-relaxed text-gray-300 md:text-sm'>
-              <span className='font-bold'>{t('about.miniChallenge')}</span>
-            </p>
-          </div>
-
-          {/* Second Image Card */}
-          <div className='flex flex-col'>
-            <div className='relative'>
-              <div className='absolute -left-2 -top-2 h-[1px] w-20 bg-[#80FFF7]'></div>
-              <div className='absolute -left-2 -top-2 h-20 w-[1px] bg-[#80FFF7]'></div>
-              <div className='absolute -bottom-2 -right-2 h-[1px] w-20 bg-[#80FFF7]'></div>
-              <div className='absolute -bottom-2 -right-2 h-20 w-[1px] bg-[#80FFF7]'></div>
-              <div className='absolute -bottom-2 -right-2 h-20 w-[1px] bg-[#80FFF7]'></div>
-              <div className='absolute -right-2 -top-2 h-[1px] w-20 bg-[#80FFF7]'></div>
-              <div className='absolute -right-2 -top-2 h-20 w-[1px] bg-[#80FFF7]'></div>
-              <div className='absolute -bottom-2 -left-2 h-20 w-[1px] bg-[#80FFF7]'></div>
-              <div className='absolute -bottom-2 -left-2 h-[1px] w-20 bg-[#80FFF7]'></div>
-
-              <Image
-                src='/images/slider/1.jpg'
-                alt='IT Consultant Challenge Team'
-                height={200}
-                width={400}
-                className='object-fit h-64 w-full'
-              />
-            </div>
-            <p className='mt-4 font-inter text-xs leading-relaxed text-gray-300 md:text-sm'>
-              <span className='font-bold'>{t('about.workshop')}</span>
-            </p>
           </div>
         </div>
       </div>

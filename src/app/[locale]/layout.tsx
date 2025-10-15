@@ -65,7 +65,6 @@ export async function generateMetadata(): Promise<Metadata> {
   };
   return {
     title,
-    image: '/favicon.svg',
     applicationName: 'IT Consultant Challenge',
     description: translations('metadata.description'),
     openGraph: {
