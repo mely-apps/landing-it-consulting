@@ -10,7 +10,7 @@ import { gotoRegistration } from '@/lib/utils';
 import CountdownTimer from './CountdownTimer';
 import { REGISTRATION_CLOSE_DATE } from '@/constants';
 
-const Hero = () => {
+const Hero = ({ locale }) => {
   const t = useTranslations('root');
 
   return (
@@ -57,7 +57,7 @@ const Hero = () => {
             <AppCard className='card bg-poster relative h-full w-full overflow-hidden rounded-3xl'>
               <div className='relative h-full w-full overflow-hidden rounded-3xl'>
                 <Image
-                  src='/cover.png'
+                  src={locale === 'vi' ? '/cover_vn.png' : '/cover.png'}
                   alt='landing-it-consulting'
                   sizes='auto'
                   className='object-cover'
