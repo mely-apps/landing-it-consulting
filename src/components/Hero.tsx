@@ -7,6 +7,7 @@ import BlurFade from './ui/blur-fade';
 import AppCard from './ui/AppCard';
 import { isMobile } from 'react-device-detect';
 import { gotoRegistration } from '@/lib/utils';
+import CountdownTimer from './CountdownTimer';
 
 const Hero = () => {
   const t = useTranslations('root');
@@ -34,9 +35,15 @@ const Hero = () => {
               </p>
             </div>
           </BlurFade>
+
+          {/* Countdown Timer */}
+          <BlurFade delay={0.6}>
+            <CountdownTimer closeDate='2025-10-25T23:59:59' />
+          </BlurFade>
+
           <BlurFade delay={0.7}>
             <button
-              className='mt-6 w-auto rounded-md !bg-[#7FFFF7] px-6 py-2 font-semibold text-black shadow-[0_0_2px_#7FFFF7,inset_0_0_2px_#7FFFF7,0_0_5px_#7FFFF7,0_0_15px_#7FFFF7,0_0_30px_#7FFFF7] hover:opacity-90'
+              className='mt-8 w-auto rounded-md !bg-[#7FFFF7] px-6 py-2 font-semibold text-black shadow-[0_0_2px_#7FFFF7,inset_0_0_2px_#7FFFF7,0_0_5px_#7FFFF7,0_0_15px_#7FFFF7,0_0_30px_#7FFFF7] hover:opacity-90'
               onClick={gotoRegistration}
             >
               {t('hero.buttonTitle')}

@@ -69,6 +69,13 @@
       "minutes": "phút",
       "seconds": "giây"
     },
+    "countdown": {
+      "days": "Ngày",
+      "hours": "Giờ",
+      "minutes": "Phút",
+      "seconds": "Giây",
+      "closed": "Đã đóng đăng ký"
+    },
     "registration": {
       "title": "Đăng ký",
       "individual": {

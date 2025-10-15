@@ -69,6 +69,13 @@
       "minutes": "minutes",
       "seconds": "seconds"
     },
+    "countdown": {
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds",
+      "closed": "Registration Closed"
+    },
     "registration": {
       "title": "Registration",
       "individual": {
